@@ -2,7 +2,7 @@
   "name": "@rwaimport/registry",
   "version": "0.1.0",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "type": "module",
   "packageManager": "npm@10.8.2",
   "description": "Verified, source-backed metadata for tokenized real-world assets.",

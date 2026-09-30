@@ -1,5 +1,7 @@
 # RWAImport Registry
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 The structured, source-backed asset registry used by RWAImport.
 
 This repository describes real-world assets, their issuers, blockchain deployments,
@@ -92,4 +94,4 @@ schema version change.
 
 ## License
 
-No license has been selected yet. Add a `LICENSE` file before public distribution.
+RWAImport Registry is open-source software released under the [MIT License](LICENSE).
