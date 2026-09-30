@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "avgoon",
+  "name": "Broadcom (Ondo Tokenized)",
+  "symbol": "AVGOon",
+  "description": "Tokenized economic exposure to Broadcom, issued by Ondo Global Markets (BVI) Limited.",
+  "assetClass": "public-equity",
+  "issuerId": "ondo-global-markets",
+  "tokenizationProviderIds": [
+    "ondo-finance"
+  ],
+  "status": "active",
+  "website": "https://app.ondo.finance/assets/avgoon",
+  "marketDataLinks": [
+    {
+      "provider": "Ondo Finance",
+      "type": "issuer",
+      "url": "https://app.ondo.finance/assets/avgoon",
+      "description": "Issuer product page and primary instrument information."
+    },
+    {
+      "provider": "RWA.xyz",
+      "type": "aggregator",
+      "url": "https://app.rwa-xyz.com/stocks",
+      "description": "Independent tokenized-stock market dashboard; search for AVGOon."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/ethereum:0x0d54D4279B9E8c54cD8547c2C75A8Ee81A0BcaE8",
+      "description": "Current third-party price response for the ethereum deployment."
+    },
+    {
+      "provider": "Etherscan",
+      "type": "chain-explorer",
+      "url": "https://etherscan.io/token/0x0d54D4279B9E8c54cD8547c2C75A8Ee81A0BcaE8",
+      "description": "Onchain supply, holders, transfers, and contract activity on ethereum."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/bsc:0x0ED2E3180EDf393e6bf8Db124bD15DDD54dE150A",
+      "description": "Current third-party price response for the bnb-chain deployment."
+    },
+    {
+      "provider": "BscScan",
+      "type": "chain-explorer",
+      "url": "https://bscscan.com/token/0x0ED2E3180EDf393e6bf8Db124bD15DDD54dE150A",
+      "description": "Onchain supply, holders, transfers, and contract activity on bnb-chain."
+    }
+  ],
+  "verifiedBy": [
+    "ondo-token-list",
+    "ondo-product-page"
+  ]
+}

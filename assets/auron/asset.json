@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "auron",
+  "name": "Aurora Innovation (Ondo Tokenized)",
+  "symbol": "AURon",
+  "description": "Tokenized economic exposure to Aurora Innovation, issued by Ondo Global Markets (BVI) Limited.",
+  "assetClass": "public-equity",
+  "issuerId": "ondo-global-markets",
+  "tokenizationProviderIds": [
+    "ondo-finance"
+  ],
+  "status": "active",
+  "website": "https://app.ondo.finance/assets/auron",
+  "marketDataLinks": [
+    {
+      "provider": "Ondo Finance",
+      "type": "issuer",
+      "url": "https://app.ondo.finance/assets/auron",
+      "description": "Issuer product page and primary instrument information."
+    },
+    {
+      "provider": "RWA.xyz",
+      "type": "aggregator",
+      "url": "https://app.rwa-xyz.com/stocks",
+      "description": "Independent tokenized-stock market dashboard; search for AURon."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/ethereum:0xFc9D0eBBd17d3aAa336a50488795806c69EA4b32",
+      "description": "Current third-party price response for the ethereum deployment."
+    },
+    {
+      "provider": "Etherscan",
+      "type": "chain-explorer",
+      "url": "https://etherscan.io/token/0xFc9D0eBBd17d3aAa336a50488795806c69EA4b32",
+      "description": "Onchain supply, holders, transfers, and contract activity on ethereum."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/bsc:0x66a1409FE303d00209202933e3d31eE43AaAB39d",
+      "description": "Current third-party price response for the bnb-chain deployment."
+    },
+    {
+      "provider": "BscScan",
+      "type": "chain-explorer",
+      "url": "https://bscscan.com/token/0x66a1409FE303d00209202933e3d31eE43AaAB39d",
+      "description": "Onchain supply, holders, transfers, and contract activity on bnb-chain."
+    }
+  ],
+  "verifiedBy": [
+    "ondo-token-list",
+    "ondo-product-page"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "bnb-chain",
+  "name": "BNB Smart Chain",
+  "chainId": 56,
+  "type": "evm",
+  "nativeCurrency": "BNB",
+  "explorerUrl": "https://bscscan.com",
+  "status": "active"
+}

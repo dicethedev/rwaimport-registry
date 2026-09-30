@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc7651",
+  "name": "ERC-7651",
+  "category": "semi-fungible-token",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Proposal for representing fractional ownership and whole non-fungible assets together within one token contract.",
+  "capabilities": ["fractional-ownership", "whole-asset-ownership", "fractional-transfer", "nft-transfer", "nft-banking"],
+  "relatedStandardIds": ["erc20", "erc721"],
+  "status": "draft",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-7651"
+}

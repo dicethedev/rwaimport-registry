@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "pddon",
+  "name": "PDD Holdings (Ondo Tokenized)",
+  "symbol": "PDDon",
+  "description": "Tokenized economic exposure to PDD Holdings, issued by Ondo Global Markets (BVI) Limited.",
+  "assetClass": "public-equity",
+  "issuerId": "ondo-global-markets",
+  "tokenizationProviderIds": [
+    "ondo-finance"
+  ],
+  "status": "active",
+  "website": "https://app.ondo.finance/assets/pddon",
+  "marketDataLinks": [
+    {
+      "provider": "Ondo Finance",
+      "type": "issuer",
+      "url": "https://app.ondo.finance/assets/pddon",
+      "description": "Issuer product page and primary instrument information."
+    },
+    {
+      "provider": "RWA.xyz",
+      "type": "aggregator",
+      "url": "https://app.rwa-xyz.com/stocks",
+      "description": "Independent tokenized-stock market dashboard; search for PDDon."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/ethereum:0xCc40965D3621362C3eE1dd946bA98d6A708EA86B",
+      "description": "Current third-party price response for the ethereum deployment."
+    },
+    {
+      "provider": "Etherscan",
+      "type": "chain-explorer",
+      "url": "https://etherscan.io/token/0xCc40965D3621362C3eE1dd946bA98d6A708EA86B",
+      "description": "Onchain supply, holders, transfers, and contract activity on ethereum."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/bsc:0xf3E82Ea164Cb344B2B11BAD4c24b0ea4f7BA4714",
+      "description": "Current third-party price response for the bnb-chain deployment."
+    },
+    {
+      "provider": "BscScan",
+      "type": "chain-explorer",
+      "url": "https://bscscan.com/token/0xf3E82Ea164Cb344B2B11BAD4c24b0ea4f7BA4714",
+      "description": "Onchain supply, holders, transfers, and contract activity on bnb-chain."
+    }
+  ],
+  "verifiedBy": [
+    "ondo-token-list",
+    "ondo-product-page"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "tenon",
+  "name": "Tsakos Energy Navigation (Ondo Tokenized)",
+  "symbol": "TENon",
+  "description": "Tokenized economic exposure to Tsakos Energy Navigation, issued by Ondo Global Markets (BVI) Limited.",
+  "assetClass": "public-equity",
+  "issuerId": "ondo-global-markets",
+  "tokenizationProviderIds": [
+    "ondo-finance"
+  ],
+  "status": "active",
+  "website": "https://app.ondo.finance/assets/tenon",
+  "marketDataLinks": [
+    {
+      "provider": "Ondo Finance",
+      "type": "issuer",
+      "url": "https://app.ondo.finance/assets/tenon",
+      "description": "Issuer product page and primary instrument information."
+    },
+    {
+      "provider": "RWA.xyz",
+      "type": "aggregator",
+      "url": "https://app.rwa-xyz.com/stocks",
+      "description": "Independent tokenized-stock market dashboard; search for TENon."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/ethereum:0xdb2e166F0c76b05BC07700CbF74cC36Ae2603624",
+      "description": "Current third-party price response for the ethereum deployment."
+    },
+    {
+      "provider": "Etherscan",
+      "type": "chain-explorer",
+      "url": "https://etherscan.io/token/0xdb2e166F0c76b05BC07700CbF74cC36Ae2603624",
+      "description": "Onchain supply, holders, transfers, and contract activity on ethereum."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/bsc:0x686F8264625fe4E51F520Db856003A4dD52A49fF",
+      "description": "Current third-party price response for the bnb-chain deployment."
+    },
+    {
+      "provider": "BscScan",
+      "type": "chain-explorer",
+      "url": "https://bscscan.com/token/0x686F8264625fe4E51F520Db856003A4dD52A49fF",
+      "description": "Onchain supply, holders, transfers, and contract activity on bnb-chain."
+    }
+  ],
+  "verifiedBy": [
+    "ondo-token-list",
+    "ondo-product-page"
+  ]
+}

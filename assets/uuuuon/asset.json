@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "uuuuon",
+  "name": "Energy Fuels (Ondo Tokenized)",
+  "symbol": "UUUUon",
+  "description": "Tokenized economic exposure to Energy Fuels, issued by Ondo Global Markets (BVI) Limited.",
+  "assetClass": "public-equity",
+  "issuerId": "ondo-global-markets",
+  "tokenizationProviderIds": [
+    "ondo-finance"
+  ],
+  "status": "active",
+  "website": "https://app.ondo.finance/assets/uuuuon",
+  "marketDataLinks": [
+    {
+      "provider": "Ondo Finance",
+      "type": "issuer",
+      "url": "https://app.ondo.finance/assets/uuuuon",
+      "description": "Issuer product page and primary instrument information."
+    },
+    {
+      "provider": "RWA.xyz",
+      "type": "aggregator",
+      "url": "https://app.rwa-xyz.com/stocks",
+      "description": "Independent tokenized-stock market dashboard; search for UUUUon."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/ethereum:0xF14d47AeD45e16BF1f6E06904ac7f852FCe6cdf4",
+      "description": "Current third-party price response for the ethereum deployment."
+    },
+    {
+      "provider": "Etherscan",
+      "type": "chain-explorer",
+      "url": "https://etherscan.io/token/0xF14d47AeD45e16BF1f6E06904ac7f852FCe6cdf4",
+      "description": "Onchain supply, holders, transfers, and contract activity on ethereum."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/bsc:0xD2C06fef2ca2375a9C7ceB4AbcA9DBc2aB6aF981",
+      "description": "Current third-party price response for the bnb-chain deployment."
+    },
+    {
+      "provider": "BscScan",
+      "type": "chain-explorer",
+      "url": "https://bscscan.com/token/0xD2C06fef2ca2375a9C7ceB4AbcA9DBc2aB6aF981",
+      "description": "Onchain supply, holders, transfers, and contract activity on bnb-chain."
+    }
+  ],
+  "verifiedBy": [
+    "ondo-token-list",
+    "ondo-product-page"
+  ]
+}

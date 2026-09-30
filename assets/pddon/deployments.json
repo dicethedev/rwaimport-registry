@@ -1,0 +1,30 @@
+[
+  {
+    "chain": "ethereum",
+    "chainId": 1,
+    "address": "0xCc40965D3621362C3eE1dd946bA98d6A708EA86B",
+    "standardIds": [
+      "erc20"
+    ],
+    "decimals": 18,
+    "status": "active",
+    "verifiedBy": [
+      "ondo-token-list",
+      "ethereum-explorer"
+    ]
+  },
+  {
+    "chain": "bnb-chain",
+    "chainId": 56,
+    "address": "0xf3E82Ea164Cb344B2B11BAD4c24b0ea4f7BA4714",
+    "standardIds": [
+      "erc20"
+    ],
+    "decimals": 18,
+    "status": "active",
+    "verifiedBy": [
+      "ondo-token-list",
+      "bnb-chain-explorer"
+    ]
+  }
+]

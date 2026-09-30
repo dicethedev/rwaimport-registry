@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ondo-token-list",
+    "type": "issuer",
+    "title": "Ondo official token list at commit f5a82fca4b2a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ondo-product-page",
+    "type": "issuer",
+    "title": "AbbVie (Ondo Tokenized) product page",
+    "url": "https://app.ondo.finance/assets/abbvon",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ondo-stocks-guide",
+    "type": "documentation",
+    "title": "Ondo Stocks product, onboarding, and eligibility overview",
+    "url": "https://ondo.finance/ondo-stocks",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ethereum-explorer",
+    "type": "chain-explorer",
+    "title": "ABBVon contract on ethereum",
+    "url": "https://etherscan.io/token/0x7C7378143a9c8839E0502E2178f058F46C6Ea504",
+    "publisher": "Etherscan",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "bnb-chain-explorer",
+    "type": "chain-explorer",
+    "title": "ABBVon contract on bnb-chain",
+    "url": "https://bscscan.com/token/0x8677abad7B458Bf16A0Fb2676Dfc7D3F55aC202a",
+    "publisher": "BscScan",
+    "accessedAt": "2026-09-30"
+  }
+]

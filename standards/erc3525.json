@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc3525",
+  "name": "ERC-3525",
+  "category": "semi-fungible-token",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Semi-fungible token model combining unique token IDs with fungible values grouped into slots.",
+  "capabilities": ["unique-positions", "slots", "fractional-value", "value-transfer", "metadata"],
+  "relatedStandardIds": ["erc20", "erc721", "erc7518"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-3525"
+}

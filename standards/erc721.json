@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc721",
+  "name": "ERC-721",
+  "category": "non-fungible-token",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Standard interface for unique assets, including deeds and ownership records for distinct physical or digital property.",
+  "capabilities": ["unique-token-id", "ownership", "transfer", "operator-approval", "metadata"],
+  "relatedStandardIds": ["erc3525", "erc4519", "erc7651"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-721"
+}

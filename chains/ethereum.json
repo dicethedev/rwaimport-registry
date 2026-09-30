@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "ethereum",
+  "name": "Ethereum",
+  "chainId": 1,
+  "type": "evm",
+  "nativeCurrency": "ETH",
+  "explorerUrl": "https://etherscan.io",
+  "status": "active"
+}

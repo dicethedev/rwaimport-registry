@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc7518",
+  "name": "ERC-7518",
+  "category": "security-token",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "ERC-1155-based security-token proposal with compliant partitions, token locking, recovery, payouts, and cross-chain interoperability.",
+  "capabilities": ["partitions", "fractional-ownership", "dynamic-compliance", "lock", "freeze", "forced-transfer", "recovery", "payouts", "cross-chain"],
+  "relatedStandardIds": ["erc1155", "erc3525", "erc3643", "erc7943"],
+  "status": "review",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-7518"
+}

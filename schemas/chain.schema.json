@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rwaimport.org/schemas/chain.schema.json",
+  "title": "RWAImport chain",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name", "chainId", "type", "nativeCurrency", "explorerUrl", "status"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "$ref": "#/$defs/id" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "chainId": { "type": "integer", "minimum": 1 },
+    "type": { "const": "evm" },
+    "nativeCurrency": { "type": "string", "minLength": 1, "maxLength": 12 },
+    "explorerUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "status": { "enum": ["active", "inactive"] }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 }
+  }
+}

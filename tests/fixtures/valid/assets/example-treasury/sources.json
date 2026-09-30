@@ -1,0 +1,18 @@
+[
+  {
+    "id": "product-page",
+    "type": "issuer",
+    "title": "Example product page",
+    "url": "https://example.invalid/product",
+    "publisher": "Example Issuer",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "explorer",
+    "type": "chain-explorer",
+    "title": "Example explorer record",
+    "url": "https://example.invalid/token/0x1111111111111111111111111111111111111111",
+    "publisher": "Example Explorer",
+    "accessedAt": "2026-09-30"
+  }
+]

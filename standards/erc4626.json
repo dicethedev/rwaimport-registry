@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc4626",
+  "name": "ERC-4626",
+  "category": "tokenized-vault",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Standardized API for tokenized vaults representing shares of an underlying ERC-20 asset.",
+  "capabilities": ["deposit", "withdraw", "share-accounting", "asset-conversion"],
+  "relatedStandardIds": ["erc20"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-4626"
+}

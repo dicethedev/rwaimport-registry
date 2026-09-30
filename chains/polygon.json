@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "polygon",
+  "name": "Polygon",
+  "chainId": 137,
+  "type": "evm",
+  "nativeCurrency": "POL",
+  "explorerUrl": "https://polygonscan.com",
+  "status": "active"
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc1450",
+  "name": "ERC-1450",
+  "category": "security-token",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Security-token interface where a registered transfer agent controls transfers, issuance, redemption, and recovery actions.",
+  "capabilities": ["transfer-agent-control", "restricted-transfer", "mint", "burn", "forced-transfer", "wallet-recovery", "broker-registration", "compliance-precheck"],
+  "relatedStandardIds": ["erc20", "erc3643"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-1450"
+}

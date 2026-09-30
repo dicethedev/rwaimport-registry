@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ondo-token-list",
+    "type": "issuer",
+    "title": "Ondo official token list at commit f5a82fca4b2a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ondo-product-page",
+    "type": "issuer",
+    "title": "Southern (Ondo Tokenized) product page",
+    "url": "https://app.ondo.finance/assets/soon",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ondo-stocks-guide",
+    "type": "documentation",
+    "title": "Ondo Stocks product, onboarding, and eligibility overview",
+    "url": "https://ondo.finance/ondo-stocks",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ethereum-explorer",
+    "type": "chain-explorer",
+    "title": "SOon contract on ethereum",
+    "url": "https://etherscan.io/token/0x99AA107e55250a9Fe52BB4b5541a59239eB6D974",
+    "publisher": "Etherscan",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "bnb-chain-explorer",
+    "type": "chain-explorer",
+    "title": "SOon contract on bnb-chain",
+    "url": "https://bscscan.com/token/0xD7a6353A23Ed2c4fcAc29a63cBBE3f65ffef41F5",
+    "publisher": "BscScan",
+    "accessedAt": "2026-09-30"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ondo-token-list",
+    "type": "issuer",
+    "title": "Ondo official token list at commit f5a82fca4b2a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ondo-product-page",
+    "type": "issuer",
+    "title": "Iridium Communications (Ondo Tokenized) product page",
+    "url": "https://app.ondo.finance/assets/irdmon",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ondo-stocks-guide",
+    "type": "documentation",
+    "title": "Ondo Stocks product, onboarding, and eligibility overview",
+    "url": "https://ondo.finance/ondo-stocks",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ethereum-explorer",
+    "type": "chain-explorer",
+    "title": "IRDMon contract on ethereum",
+    "url": "https://etherscan.io/token/0xd0E60D2EF0841E49700772D9889123b9886194c7",
+    "publisher": "Etherscan",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "bnb-chain-explorer",
+    "type": "chain-explorer",
+    "title": "IRDMon contract on bnb-chain",
+    "url": "https://bscscan.com/token/0x3cE678692a60Fb5F31963b05CB158F0cE0Ff1736",
+    "publisher": "BscScan",
+    "accessedAt": "2026-09-30"
+  }
+]

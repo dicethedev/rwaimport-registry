@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc7943",
+  "name": "ERC-7943 (uRWA)",
+  "category": "rwa-interface",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Universal interface for RWA compliance checks, account eligibility, frozen balances, and enforcement actions across base token types.",
+  "capabilities": ["can-send", "can-receive", "can-transfer", "freeze", "forced-transfer", "compliance-interface"],
+  "relatedStandardIds": ["erc20", "erc721", "erc1155", "erc3643", "erc7518", "cmtat"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-7943"
+}

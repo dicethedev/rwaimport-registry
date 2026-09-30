@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "cmtat",
+  "name": "CMTAT",
+  "category": "security-token",
+  "specificationType": "industry-framework",
+  "maintainer": "Capital Markets and Technology Association",
+  "version": "3.2.0",
+  "description": "Blockchain-agnostic security-token framework for regulated financial instruments, with an ERC-20-compatible EVM implementation.",
+  "capabilities": [
+    "access-control",
+    "transfer-restrictions",
+    "rule-engine",
+    "pause",
+    "freeze",
+    "forced-transfer",
+    "mint",
+    "burn",
+    "document-management",
+    "debt-metadata",
+    "cross-chain"
+  ],
+  "relatedStandardIds": ["erc20", "erc1404", "erc3643", "erc7551", "erc7943"],
+  "status": "active",
+  "referenceUrl": "https://github.com/CMTA/CMTAT"
+}

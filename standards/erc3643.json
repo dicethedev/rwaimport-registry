@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc3643",
+  "name": "ERC-3643",
+  "category": "permissioned-token",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Permissioned token standard with identity and compliance checks.",
+  "capabilities": ["identity-registry", "compliance", "freeze", "forced-transfer", "pause", "mint", "burn"],
+  "relatedStandardIds": ["erc20", "erc7518", "erc7943", "cmtat"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-3643"
+}

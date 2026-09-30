@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "example-treasury",
+  "name": "Example Tokenized Treasury Fund",
+  "symbol": "EXTF",
+  "description": "Illustrative data only. Do not add this record to the verified registry.",
+  "assetClass": "treasury",
+  "issuerId": "example-issuer",
+  "tokenizationProviderIds": ["example-tokenization-provider"],
+  "status": "active",
+  "website": "https://example.invalid/products/example-treasury",
+  "marketDataLinks": [
+    {
+      "provider": "Example Market Data Provider",
+      "type": "aggregator",
+      "url": "https://example.invalid/market/example-treasury",
+      "description": "Illustrative external market-data link."
+    }
+  ],
+  "verifiedBy": ["official-product-page"]
+}

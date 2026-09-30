@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "example-treasury",
+  "name": "Example Treasury",
+  "symbol": "EXT",
+  "assetClass": "treasury",
+  "issuerId": "example-issuer",
+  "status": "active",
+  "marketDataLinks": [
+    {
+      "provider": "Example Data",
+      "type": "aggregator",
+      "url": "https://example.invalid/market/example-treasury",
+      "description": "Example external market information."
+    }
+  ],
+  "verifiedBy": ["product-page"]
+}

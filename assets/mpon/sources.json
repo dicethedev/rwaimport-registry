@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ondo-token-list",
+    "type": "issuer",
+    "title": "Ondo official token list at commit f5a82fca4b2a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ondo-product-page",
+    "type": "issuer",
+    "title": "MP Materials (Ondo Tokenized) product page",
+    "url": "https://app.ondo.finance/assets/mpon",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ondo-stocks-guide",
+    "type": "documentation",
+    "title": "Ondo Stocks product, onboarding, and eligibility overview",
+    "url": "https://ondo.finance/ondo-stocks",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ethereum-explorer",
+    "type": "chain-explorer",
+    "title": "MPon contract on ethereum",
+    "url": "https://etherscan.io/token/0x75846A2B2EEee6575Ac775f9984be54FD1D08189",
+    "publisher": "Etherscan",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "bnb-chain-explorer",
+    "type": "chain-explorer",
+    "title": "MPon contract on bnb-chain",
+    "url": "https://bscscan.com/token/0x4bAf4Dc56CF6a525A0874E25CC6372a6a8915135",
+    "publisher": "BscScan",
+    "accessedAt": "2026-09-30"
+  }
+]

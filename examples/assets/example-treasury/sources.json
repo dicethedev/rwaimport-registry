@@ -1,0 +1,18 @@
+[
+  {
+    "id": "official-product-page",
+    "type": "issuer",
+    "title": "Example product page",
+    "url": "https://example.invalid/products/example-treasury",
+    "publisher": "Example Issuer",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "chain-explorer",
+    "type": "chain-explorer",
+    "title": "Example token contract",
+    "url": "https://example.invalid/address/0x1111111111111111111111111111111111111111",
+    "publisher": "Example Explorer",
+    "accessedAt": "2026-09-30"
+  }
+]

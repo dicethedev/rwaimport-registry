@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc4519",
+  "name": "ERC-4519",
+  "category": "non-fungible-token",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "NFT interface tying a token to a physical asset that can authenticate itself and track owner or user engagement.",
+  "capabilities": ["physical-asset-link", "asset-authentication", "owner-engagement", "user-assignment", "operating-modes"],
+  "relatedStandardIds": ["erc721"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-4519"
+}

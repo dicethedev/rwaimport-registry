@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "ondo-global-markets",
+  "name": "Ondo Global Markets",
+  "legalName": "Ondo Global Markets (BVI) Limited",
+  "type": "issuer",
+  "jurisdiction": "VG",
+  "status": "active",
+  "website": "https://ondo.finance/ondo-stocks",
+  "sources": [
+    {
+      "title": "Ondo Stocks product and issuer information",
+      "url": "https://ondo.finance/ondo-stocks",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "title": "Ondo Finance legal and issuer disclosures",
+      "url": "https://ondo.finance/",
+      "accessedAt": "2026-09-30"
+    }
+  ]
+}

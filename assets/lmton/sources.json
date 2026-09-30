@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ondo-token-list",
+    "type": "issuer",
+    "title": "Ondo official token list at commit f5a82fca4b2a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ondo-product-page",
+    "type": "issuer",
+    "title": "Lockheed (Ondo Tokenized) product page",
+    "url": "https://app.ondo.finance/assets/lmton",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ondo-stocks-guide",
+    "type": "documentation",
+    "title": "Ondo Stocks product, onboarding, and eligibility overview",
+    "url": "https://ondo.finance/ondo-stocks",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "ethereum-explorer",
+    "type": "chain-explorer",
+    "title": "LMTon contract on ethereum",
+    "url": "https://etherscan.io/token/0x691b126cF619707Ed5d16CaB1B27C000aa8De300",
+    "publisher": "Etherscan",
+    "accessedAt": "2026-09-30"
+  },
+  {
+    "id": "bnb-chain-explorer",
+    "type": "chain-explorer",
+    "title": "LMTon contract on bnb-chain",
+    "url": "https://bscscan.com/token/0xd09F7B75b9659b864C6F82bb00Ff096f9D277998",
+    "publisher": "BscScan",
+    "accessedAt": "2026-09-30"
+  }
+]

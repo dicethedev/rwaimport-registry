@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc7551",
+  "name": "ERC-7551 (eWpG)",
+  "category": "security-token",
+  "specificationType": "erc",
+  "maintainer": "German Federal Association of Crypto Registrars",
+  "description": "Proposed minimum smart-contract interface for crypto securities aligned with Germany's Electronic Securities Act.",
+  "capabilities": ["partial-freeze", "pause", "forced-transfer", "transfer-validation", "terms-document", "legal-metadata"],
+  "relatedStandardIds": ["erc20", "erc3643", "erc7943", "cmtat"],
+  "status": "draft",
+  "referenceUrl": "https://ethereum-magicians.org/t/erc-7551-crypto-security-token-smart-contract-interface-ewpg-reworked/25477"
+}

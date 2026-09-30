@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc20",
+  "name": "ERC-20",
+  "category": "fungible-token",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Standard interface for fungible tokens on Ethereum-compatible networks.",
+  "capabilities": ["transfer", "allowance", "balance-query", "supply-query"],
+  "relatedStandardIds": ["erc1404", "erc1450", "erc3643", "erc4626", "erc7943", "cmtat"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-20"
+}

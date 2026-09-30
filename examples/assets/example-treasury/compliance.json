@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "permissioned": "yes",
+  "kycRequired": "yes",
+  "identityRequired": "yes",
+  "transferRestricted": "yes",
+  "eligibleInvestorTypes": ["institutional"],
+  "eligibleJurisdictions": ["US"],
+  "notes": "Illustrative requirements only.",
+  "verifiedBy": ["official-product-page"]
+}

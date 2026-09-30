@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "arbitrum",
+  "name": "Arbitrum One",
+  "chainId": 42161,
+  "type": "evm",
+  "nativeCurrency": "ETH",
+  "explorerUrl": "https://arbiscan.io",
+  "status": "active"
+}

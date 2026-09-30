@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "avalanche",
+  "name": "Avalanche C-Chain",
+  "chainId": 43114,
+  "type": "evm",
+  "nativeCurrency": "AVAX",
+  "explorerUrl": "https://snowtrace.io",
+  "status": "active"
+}

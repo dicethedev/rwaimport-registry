@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc7092",
+  "name": "ERC-7092",
+  "category": "bond-token",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Financial-bond interface using familiar fixed-income fields such as ISIN, denomination, coupon, issue date, and maturity date.",
+  "capabilities": ["isin", "principal", "coupon", "maturity", "issuance", "redemption", "batch-operations", "cross-chain"],
+  "relatedStandardIds": ["erc3475"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-7092"
+}

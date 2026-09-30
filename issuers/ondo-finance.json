@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "ondo-finance",
+  "name": "Ondo Finance",
+  "legalName": "Ondo Finance Inc.",
+  "type": "tokenization-provider",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://ondo.finance",
+  "sources": [
+    {
+      "title": "Ondo Finance official website",
+      "url": "https://ondo.finance",
+      "accessedAt": "2026-09-30"
+    }
+  ]
+}

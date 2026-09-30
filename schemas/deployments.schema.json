@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rwaimport.org/schemas/deployments.schema.json",
+  "title": "RWAImport asset deployments",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["chain", "chainId", "address", "standardIds", "status", "verifiedBy"],
+    "properties": {
+      "chain": { "$ref": "#/$defs/id" },
+      "chainId": { "type": "integer", "minimum": 1 },
+      "address": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+      "standardIds": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": { "$ref": "#/$defs/id" }
+      },
+      "decimals": { "type": "integer", "minimum": 0, "maximum": 255 },
+      "status": { "enum": ["active", "inactive", "deprecated"] },
+      "proxyAddress": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+      "implementationAddress": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+      "deployedAt": { "type": "string", "format": "date" },
+      "verifiedBy": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": { "$ref": "#/$defs/id" }
+      }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 }
+  }
+}

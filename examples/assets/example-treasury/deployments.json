@@ -1,0 +1,11 @@
+[
+  {
+    "chain": "ethereum",
+    "chainId": 1,
+    "address": "0x1111111111111111111111111111111111111111",
+    "standardIds": ["erc20"],
+    "decimals": 6,
+    "status": "active",
+    "verifiedBy": ["official-product-page", "chain-explorer"]
+  }
+]

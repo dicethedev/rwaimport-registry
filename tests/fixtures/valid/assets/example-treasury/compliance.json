@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "permissioned": "unknown",
+  "kycRequired": "unknown",
+  "identityRequired": "unknown",
+  "transferRestricted": "unknown",
+  "verifiedBy": ["product-page"]
+}

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "erc20",
+  "name": "ERC-20",
+  "category": "fungible-token",
+  "capabilities": ["transfer"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-20"
+}

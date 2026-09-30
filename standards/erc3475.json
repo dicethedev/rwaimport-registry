@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc3475",
+  "name": "ERC-3475",
+  "category": "bond-token",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Abstract-storage bond interface for tokenized obligations with classes, issuance conditions, metadata, and redemption terms.",
+  "capabilities": ["bond-classes", "bond-metadata", "issuance", "redemption", "batch-operations", "secondary-transfer"],
+  "relatedStandardIds": ["erc20", "erc721", "erc1155", "erc7092"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-3475"
+}

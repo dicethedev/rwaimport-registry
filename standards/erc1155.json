@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc1155",
+  "name": "ERC-1155",
+  "category": "multi-token",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Multi-token interface supporting fungible, non-fungible, and semi-fungible asset types in one contract.",
+  "capabilities": ["multiple-token-types", "fungible-assets", "non-fungible-assets", "semi-fungible-assets", "batch-transfer", "metadata"],
+  "relatedStandardIds": ["erc3475", "erc7518", "erc7943"],
+  "status": "final",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-1155"
+}

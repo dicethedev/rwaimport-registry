@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc1404",
+  "name": "ERC-1404",
+  "category": "restricted-token",
+  "specificationType": "industry-framework",
+  "maintainer": "ERC-1404 community",
+  "description": "ERC-20-compatible restricted-token interface for detecting transfer restrictions and returning human-readable restriction messages.",
+  "capabilities": ["transfer-restrictions", "restriction-detection", "restriction-messages", "allowlist"],
+  "relatedStandardIds": ["erc20", "cmtat"],
+  "status": "active",
+  "referenceUrl": "https://erc1404.org"
+}
