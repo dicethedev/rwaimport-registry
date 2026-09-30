@@ -2,14 +2,17 @@
   "name": "@rwaimport/registry",
   "version": "0.1.0",
   "private": true,
+  "license": "UNLICENSED",
   "type": "module",
+  "packageManager": "npm@10.8.2",
   "description": "Verified, source-backed metadata for tokenized real-world assets.",
   "engines": {
-    "node": ">=20"
+    "node": ">=20",
+    "npm": ">=10"
   },
   "scripts": {
     "build": "node --import tsx scripts/build-index.ts",
-    "check": "npm run typecheck && npm run validate && npm test",
+    "check": "npm run typecheck && npm run validate && npm test && npm run build",
     "import:ondo-stocks": "node --import tsx scripts/import-ondo-stocks.ts",
     "test": "vitest run",
     "test:watch": "vitest",
@@ -22,9 +25,9 @@
     "ajv-formats": "^3.0.1"
   },
   "devDependencies": {
-    "@types/node": "^26.6.3",
+    "@types/node": "^20.17.30",
     "tsx": "^4.19.3",
-    "typescript": "^7.0.2",
-    "vitest": "^5.0.3"
+    "typescript": "~5.8.3",
+    "vitest": "~4.1.11"
   }
 }

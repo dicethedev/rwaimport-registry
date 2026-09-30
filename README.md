@@ -44,6 +44,9 @@ industry frameworks such as CMTAT. See `standards/README.md` for status meanings
 
 Requires Node.js 20 or later.
 
+The repository includes `.nvmrc`; run `nvm use` to select the same Node.js major version
+used by continuous integration.
+
 ```bash
 npm install
 npm run check
