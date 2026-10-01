@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-asml",
+  "name": "ASML Holding NV",
+  "ticker": "ASML",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "asmlon",
+    "robinhood-asml"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "USN070592100"
+    }
+  ]
+}

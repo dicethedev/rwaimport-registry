@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "pricewaterhousecoopers",
+  "name": "PricewaterhouseCoopers",
+  "type": "other",
+  "status": "active",
+  "website": "https://www.pwc.com",
+  "sources": [
+    {
+      "title": "PricewaterhouseCoopers official website",
+      "url": "https://www.pwc.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tmo",
+  "name": "Thermo Fisher Scientific",
+  "ticker": "TMO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "tmoon"
+  ]
+}

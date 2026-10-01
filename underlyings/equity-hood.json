@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-hood",
+  "name": "Robinhood Markets",
+  "ticker": "HOOD",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "hoodon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-sbux",
+  "name": "Starbucks",
+  "ticker": "SBUX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "sbuxon"
+  ]
+}

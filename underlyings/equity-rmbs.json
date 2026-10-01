@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-rmbs",
+  "name": "Rambus",
+  "ticker": "RMBS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "rmbson"
+  ]
+}

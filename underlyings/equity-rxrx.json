@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-rxrx",
+  "name": "Recursion Pharmaceuticals",
+  "ticker": "RXRX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "rxrxon"
+  ]
+}

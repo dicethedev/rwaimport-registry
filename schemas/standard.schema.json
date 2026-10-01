@@ -25,7 +25,7 @@
         "other"
       ]
     },
-    "specificationType": { "enum": ["erc", "solana-program", "industry-framework"] },
+    "specificationType": { "enum": ["erc", "solana-program", "stellar-asset", "move-standard", "industry-framework"] },
     "maintainer": { "type": "string", "minLength": 1, "maxLength": 200 },
     "version": { "type": "string", "minLength": 1, "maxLength": 50 },
     "description": { "type": "string", "minLength": 1, "maxLength": 1000 },

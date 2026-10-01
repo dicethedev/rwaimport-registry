@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-aal",
+  "name": "American Airlines Group",
+  "ticker": "AAL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aalon"
+  ]
+}

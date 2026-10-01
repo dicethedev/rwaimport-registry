@@ -3,9 +3,24 @@
     "chain": "robinhood-chain",
     "chainId": 4663,
     "address": "0x8eF20885F94e3D9bc7eB3080279188Bd5ED7c08C",
+    "assetNamespace": "erc20",
+    "assetReference": "0x8eF20885F94e3D9bc7eB3080279188Bd5ED7c08C",
+    "deploymentType": "issuer-native",
     "standardIds": [
       "erc20",
       "erc8056"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "robinhood-stock-token-docs"
+      },
+      {
+        "standardId": "erc8056",
+        "method": "issuer-documentation",
+        "sourceId": "robinhood-stock-token-docs"
+      }
     ],
     "decimals": 18,
     "status": "active",

@@ -1,0 +1,175 @@
+[
+  {
+    "chain": "stellar",
+    "address": "GBHNGLLIE3KWGKCHIKMHJ5HVZHYIK7WTBE4QF5PLAKL4CJGSEU7HZIW5",
+    "assetNamespace": "stellar",
+    "assetReference": "GBHNGLLIE3KWGKCHIKMHJ5HVZHYIK7WTBE4QF5PLAKL4CJGSEU7HZIW5",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "stellar-asset"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "stellar-asset",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "polygon",
+    "chainId": 137,
+    "address": "0x408A634B8a8f0dE729B48574a3a7Ec3fE820B00A",
+    "assetNamespace": "erc20",
+    "assetReference": "0x408A634B8a8f0dE729B48574a3a7Ec3fE820B00A",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "arbitrum",
+    "chainId": 42161,
+    "address": "0xB9e4765BCE2609bC1949592059B17Ea72fEe6C6A",
+    "assetNamespace": "erc20",
+    "assetReference": "0xB9e4765BCE2609bC1949592059B17Ea72fEe6C6A",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "avalanche",
+    "chainId": 43114,
+    "address": "0xE08b4c1005603427420e64252a8b120cacE4D122",
+    "assetNamespace": "erc20",
+    "assetReference": "0xE08b4c1005603427420e64252a8b120cacE4D122",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "aptos",
+    "address": "0x7b5e9cac3433e9202f28527f707c89e1e47b19de2c33e4db9521a63ad219b739",
+    "assetNamespace": "fa",
+    "assetReference": "0x7b5e9cac3433e9202f28527f707c89e1e47b19de2c33e4db9521a63ad219b739",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "aptos-fungible-asset"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "aptos-fungible-asset",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "ethereum",
+    "chainId": 1,
+    "address": "0x3DDc84940Ab509C11B20B76B466933f40b750dc9",
+    "assetNamespace": "erc20",
+    "assetReference": "0x3DDc84940Ab509C11B20B76B466933f40b750dc9",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "base",
+    "chainId": 8453,
+    "address": "0x60CfC2b186a4CF647486e42c42B11cC6D571d1E4",
+    "assetNamespace": "erc20",
+    "assetReference": "0x60CfC2b186a4CF647486e42c42B11cC6D571d1E4",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "solana",
+    "address": "5Tu84fKBpe9vfXeotjvfvWdWbAjy3hqsExvuHgFqFxA1",
+    "assetNamespace": "spl",
+    "assetReference": "5Tu84fKBpe9vfXeotjvfvWdWbAjy3hqsExvuHgFqFxA1",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "solana-token-2022"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "solana-token-2022",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  }
+]

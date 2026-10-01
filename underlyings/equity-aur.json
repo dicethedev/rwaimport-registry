@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-aur",
+  "name": "Aurora Innovation",
+  "ticker": "AUR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "auron",
+    "robinhood-aur"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US0517741072"
+    }
+  ]
+}

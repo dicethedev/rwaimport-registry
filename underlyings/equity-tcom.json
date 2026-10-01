@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tcom",
+  "name": "Trip.com Group",
+  "ticker": "TCOM",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "tcomon"
+  ]
+}

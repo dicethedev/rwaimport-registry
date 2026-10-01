@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-nke",
+  "name": "Nike",
+  "ticker": "NKE",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nkeon"
+  ]
+}

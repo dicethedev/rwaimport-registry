@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-achr",
+  "name": "Archer Aviation",
+  "ticker": "ACHR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "achron"
+  ]
+}

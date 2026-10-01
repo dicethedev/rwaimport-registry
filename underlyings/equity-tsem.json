@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tsem",
+  "name": "Tower Semiconductor",
+  "ticker": "TSEM",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "IL0010823792"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-tsem",
+    "tsemon"
+  ]
+}

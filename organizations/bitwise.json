@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "bitwise",
+  "name": "Bitwise Asset Management",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://bitwiseinvestments.com",
+  "sources": [
+    {
+      "title": "Bitwise Asset Management official website",
+      "url": "https://bitwiseinvestments.com",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

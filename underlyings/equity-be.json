@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-be",
+  "name": "Bloom Energy",
+  "ticker": "BE",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "beon",
+    "robinhood-be"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US0937121079"
+    }
+  ]
+}

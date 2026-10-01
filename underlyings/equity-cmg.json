@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-cmg",
+  "name": "Chipotle",
+  "ticker": "CMG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cmgon"
+  ]
+}

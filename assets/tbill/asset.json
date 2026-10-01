@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "tbill",
+  "name": "OpenEden TBILL Vault",
+  "symbol": "TBILL",
+  "underlyingId": "fund-openeden-tbill",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "BVI professional fund regulated by the British Virgin Islands Financial Services Commission.",
+  "securityType": "Professional fund share",
+  "underlyingRights": "Proportional economic interest in the fund's net assets, backed primarily by short-dated U.S. Treasury bills and U.S. dollars.",
+  "redemptionRights": "Fully onboarded investors may mint and redeem through the TBILL Vault under the fund terms.",
+  "offeringType": "BVI professional fund",
+  "organizationRoles": [
+    {
+      "organizationId": "openeden",
+      "roles": [
+        "issuer",
+        "tokenization-provider"
+      ]
+    },
+    {
+      "organizationId": "bny-mellon",
+      "roles": [
+        "asset-manager",
+        "custodian"
+      ]
+    },
+    {
+      "organizationId": "protege-fund-services",
+      "roles": [
+        "fund-administrator"
+      ]
+    },
+    {
+      "organizationId": "tj-assurance-partners",
+      "roles": [
+        "auditor"
+      ]
+    },
+    {
+      "organizationId": "ernst-young",
+      "roles": [
+        "auditor"
+      ]
+    }
+  ],
+  "description": "OpenEden TBILL Vault (TBILL), represented through tokenized or blockchain-integrated fund records.",
+  "assetClass": "treasury",
+  "issuerId": "openeden",
+  "tokenizationProviderIds": [
+    "openeden"
+  ],
+  "status": "active",
+  "website": "https://docs.openeden.com/tbill",
+  "marketDataLinks": [
+    {
+      "provider": "OpenEden",
+      "type": "issuer",
+      "url": "https://docs.openeden.com/tbill",
+      "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    }
+  ],
+  "verifiedBy": [
+    "official-product"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-mksi",
+  "name": "MKS Inc.",
+  "ticker": "MKSI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "mksion"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-nvo",
+  "name": "Novo Nordisk",
+  "ticker": "NVO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nvoon"
+  ]
+}

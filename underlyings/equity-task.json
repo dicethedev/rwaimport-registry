@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-task",
+  "name": "TaskUs",
+  "ticker": "TASK",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "taskon"
+  ]
+}

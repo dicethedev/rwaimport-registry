@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-pypl",
+  "name": "PayPal",
+  "ticker": "PYPL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pyplon"
+  ]
+}

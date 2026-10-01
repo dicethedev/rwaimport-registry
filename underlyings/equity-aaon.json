@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-aaon",
+  "name": "AAON",
+  "ticker": "AAON",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aaonon"
+  ]
+}

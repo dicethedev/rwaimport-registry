@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-spxux",
+  "name": "WisdomTree 500 Digital Fund",
+  "ticker": "SPXUX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "spxux"
+  ]
+}

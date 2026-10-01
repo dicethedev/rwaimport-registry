@@ -7,7 +7,7 @@
   "items": {
     "type": "object",
     "additionalProperties": false,
-    "required": ["id", "type", "title", "url", "publisher", "accessedAt"],
+    "required": ["id", "type", "title", "url", "publisher", "accessedAt", "retrievedAt", "lastVerifiedAt", "reviewAfter", "sourceVersion", "confidence"],
     "properties": {
       "id": { "$ref": "#/$defs/id" },
       "type": { "enum": ["issuer", "regulatory-filing", "chain-explorer", "documentation", "audit", "other"] },
@@ -15,6 +15,12 @@
       "url": { "type": "string", "format": "uri", "pattern": "^https://" },
       "publisher": { "type": "string", "minLength": 1, "maxLength": 200 },
       "accessedAt": { "type": "string", "format": "date" },
+      "retrievedAt": { "type": "string", "format": "date-time" },
+      "lastVerifiedAt": { "type": "string", "format": "date" },
+      "reviewAfter": { "type": "string", "format": "date" },
+      "sourceVersion": { "type": "string", "minLength": 1, "maxLength": 200 },
+      "contentHash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+      "confidence": { "enum": ["high", "medium", "low"] },
       "description": { "type": "string", "minLength": 1, "maxLength": 1000 }
     }
   },

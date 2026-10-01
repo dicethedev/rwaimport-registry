@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-li",
+  "name": "Li Auto",
+  "ticker": "LI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "lion"
+  ]
+}

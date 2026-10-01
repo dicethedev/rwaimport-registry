@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-dram",
+  "name": "Roundhill Memory ETF",
+  "ticker": "DRAM",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "dramon"
+  ]
+}

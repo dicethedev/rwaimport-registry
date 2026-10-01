@@ -1,8 +1,28 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "panwon",
   "name": "Palo Alto Networks (Ondo Tokenized)",
   "symbol": "PANWon",
+  "underlyingId": "equity-panw",
+  "instrumentType": "security-backed-token",
+  "denominationCurrency": "USD",
+  "legalStructure": "Issuer-specific tokenized security providing economic exposure to a referenced publicly traded security.",
+  "underlyingRights": "Economic exposure only; rights are governed by the issuer's product terms rather than direct ownership of the referenced security.",
+  "redemptionRights": "Direct minting and redemption are available only through issuer onboarding, subject to eligibility and product terms.",
+  "organizationRoles": [
+    {
+      "organizationId": "ondo-global-markets",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "ondo-finance",
+      "roles": [
+        "tokenization-provider"
+      ]
+    }
+  ],
   "description": "Tokenized economic exposure to Palo Alto Networks, issued by Ondo Global Markets (BVI) Limited.",
   "assetClass": "public-equity",
   "issuerId": "ondo-global-markets",

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-irdm",
+  "name": "Iridium Communications",
+  "ticker": "IRDM",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "irdmon"
+  ]
+}

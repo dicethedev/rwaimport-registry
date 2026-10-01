@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-abbv",
+  "name": "AbbVie",
+  "ticker": "ABBV",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "abbvon"
+  ]
+}

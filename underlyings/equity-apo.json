@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-apo",
+  "name": "Apollo Global Management",
+  "ticker": "APO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "apoon"
+  ]
+}

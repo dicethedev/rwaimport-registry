@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-nne",
+  "name": "Nano Nuclear Energy",
+  "ticker": "NNE",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nneon",
+    "robinhood-nne"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US63010H1086"
+    }
+  ]
+}

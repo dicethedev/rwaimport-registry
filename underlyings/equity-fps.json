@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-fps",
+  "name": "Forgent Power Solutions",
+  "ticker": "FPS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "fpson"
+  ]
+}

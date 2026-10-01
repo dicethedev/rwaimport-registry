@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-fxi",
+  "name": "iShares China Large-Cap ETF",
+  "ticker": "FXI",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "fxion"
+  ]
+}

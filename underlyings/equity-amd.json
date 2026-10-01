@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-amd",
+  "name": "AMD",
+  "ticker": "AMD",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "amdon",
+    "robinhood-amd"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US0079031078"
+    }
+  ]
+}

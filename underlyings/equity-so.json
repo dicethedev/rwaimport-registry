@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-so",
+  "name": "Southern",
+  "ticker": "SO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "soon"
+  ]
+}

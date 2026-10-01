@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "example-issuer",
+  "name": "Example Issuer",
+  "status": "active",
+  "website": "https://example.invalid",
+  "sources": [
+    {
+      "title": "Example issuer page",
+      "url": "https://example.invalid",
+      "accessedAt": "2026-09-30"
+    }
+  ]
+}

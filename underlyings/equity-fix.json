@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-fix",
+  "name": "Comfort Systems",
+  "ticker": "FIX",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US1999081045"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-fix"
+  ]
+}

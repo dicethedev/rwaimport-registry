@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-xlk",
+  "name": "State Street Technology Select Sector SPDR ETF",
+  "ticker": "XLK",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US81369Y8030"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-xlk"
+  ]
+}

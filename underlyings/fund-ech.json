@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ech",
+  "name": "iShares MSCI Chile ETF",
+  "ticker": "ECH",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "echon"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "market-price",
+  "priceSourceUrl": "https://app.ondo.finance/assets/rivnon",
+  "corporateActionModel": "unknown",
+  "distributionTreatment": "unknown",
+  "verifiedBy": [
+    "ondo-product-page"
+  ]
+}

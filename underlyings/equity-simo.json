@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-simo",
+  "name": "Silicon Motion",
+  "ticker": "SIMO",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US82706C1080"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-simo"
+  ]
+}

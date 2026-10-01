@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lscc",
+  "name": "Lattice Semiconductor",
+  "ticker": "LSCC",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "lsccon"
+  ]
+}

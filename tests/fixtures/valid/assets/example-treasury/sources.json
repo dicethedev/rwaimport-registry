@@ -5,7 +5,12 @@
     "title": "Example product page",
     "url": "https://example.invalid/product",
     "publisher": "Example Issuer",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-09-30",
+    "retrievedAt": "2026-09-30T00:00:00Z",
+    "lastVerifiedAt": "2026-09-30",
+    "reviewAfter": "2026-12-31",
+    "sourceVersion": "fixture:1",
+    "confidence": "high"
   },
   {
     "id": "explorer",
@@ -13,6 +18,11 @@
     "title": "Example explorer record",
     "url": "https://example.invalid/token/0x1111111111111111111111111111111111111111",
     "publisher": "Example Explorer",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-09-30",
+    "retrievedAt": "2026-09-30T00:00:00Z",
+    "lastVerifiedAt": "2026-09-30",
+    "reviewAfter": "2026-12-31",
+    "sourceVersion": "fixture:1",
+    "confidence": "high"
   }
 ]

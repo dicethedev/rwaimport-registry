@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-regn",
+  "name": "Regeneron Pharmaceuticals",
+  "ticker": "REGN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "regnon"
+  ]
+}

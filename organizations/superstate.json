@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "superstate",
+  "name": "Superstate",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://superstate.com",
+  "sources": [
+    {
+      "title": "Superstate official website",
+      "url": "https://superstate.com",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

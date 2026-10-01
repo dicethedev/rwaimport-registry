@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-etha",
+  "name": "iShares Ethereum Trust ETF",
+  "ticker": "ETHA",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ethaon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-blkgrw",
+  "name": "Ondo High Growth Powered by BlackRock",
+  "ticker": "BLKGRW",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "blkgrwon"
+  ]
+}

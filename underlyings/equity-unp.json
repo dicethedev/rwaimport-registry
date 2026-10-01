@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-unp",
+  "name": "Union Pacific Corporation",
+  "ticker": "UNP",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "unpon"
+  ]
+}

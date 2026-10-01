@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-alb",
+  "name": "Albemarle",
+  "ticker": "ALB",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "albon"
+  ]
+}

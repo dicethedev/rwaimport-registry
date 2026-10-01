@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-uso",
+  "name": "United States Oil Fund",
+  "ticker": "USO",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US91232N2071"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-uso"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ge",
+  "name": "General Electric",
+  "ticker": "GE",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "geon",
+    "robinhood-ge"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US3696043013"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "fixed",
+  "navSourceUrl": "https://www.wisdomtree.com/onchain/tokenized-funds",
+  "updateFrequency": "Provider-published schedule; see the official product page.",
+  "corporateActionModel": "none",
+  "distributionTreatment": "reinvested",
+  "reserveReportingUrl": "https://www.wisdomtree.com/onchain/tokenized-funds",
+  "verifiedBy": [
+    "official-product"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-shop",
+  "name": "Shopify",
+  "ticker": "SHOP",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "CA82509L1076"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-shop",
+    "shopon"
+  ]
+}

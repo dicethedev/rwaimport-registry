@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-pltr",
+  "name": "Palantir Technologies",
+  "ticker": "PLTR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pltron",
+    "robinhood-pltr"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US69608A1088"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-enb",
+  "name": "Enbridge",
+  "ticker": "ENB",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "enbon"
+  ]
+}

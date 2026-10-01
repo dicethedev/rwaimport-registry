@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-lngvx",
+  "name": "WisdomTree Siegel Longevity Digital Fund",
+  "ticker": "LNGVX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "lngvx"
+  ]
+}

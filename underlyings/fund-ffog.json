@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ffog",
+  "name": "Franklin Focused Growth ETF",
+  "ticker": "FFOG",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ffogon"
+  ]
+}

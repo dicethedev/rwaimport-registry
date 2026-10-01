@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-dbc",
+  "name": "Invesco DB Commodity Index Tracking Fund",
+  "ticker": "DBC",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "dbcon"
+  ]
+}

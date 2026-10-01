@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-acls",
+  "name": "Axcelis Technologies",
+  "ticker": "ACLS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aclson"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tln",
+  "name": "Talen Energy",
+  "ticker": "TLN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "tlnon"
+  ]
+}

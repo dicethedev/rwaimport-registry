@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-cost",
+  "name": "Costco",
+  "ticker": "COST",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "coston",
+    "robinhood-cost"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US22160K1051"
+    }
+  ]
+}

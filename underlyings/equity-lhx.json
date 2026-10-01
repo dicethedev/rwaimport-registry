@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lhx",
+  "name": "L3Harris",
+  "ticker": "LHX",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US5024311095"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-lhx"
+  ]
+}

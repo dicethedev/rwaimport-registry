@@ -1,4 +1,5 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -27,6 +28,8 @@ const SOLANA_LIST_COMMIT = "0688add3c64aadc7006712989e9ec0592b5b10f8";
 const SOLANA_LIST_URL =
   `https://raw.githubusercontent.com/ondoprotocol/gm-solana-simulator/${SOLANA_LIST_COMMIT}/constants.rs`;
 const ACCESSED_AT = "2026-10-01";
+const RETRIEVED_AT = "2026-10-01T00:00:00Z";
+const REVIEW_AFTER = "2026-11-01";
 const TARGET_ASSET_COUNT = 400;
 const CORE_EQUITY_COUNT = 300;
 const excludedEquityNamePattern =
@@ -62,6 +65,24 @@ const chainDetails: Record<
 
 function assetIdFromSymbol(symbol: string): string {
   return symbol.toLowerCase();
+}
+
+function underlyingIdFromSymbol(
+  symbol: string,
+  classification: "public-equity" | "exchange-traded-fund" | "other",
+): string {
+  const ticker = symbol.replace(/on$/, "").toLowerCase();
+  const prefix =
+    classification === "exchange-traded-fund"
+      ? "fund"
+      : classification === "public-equity"
+        ? "equity"
+        : "instrument";
+  return `${prefix}-${ticker}`;
+}
+
+function sha256(value: string): string {
+  return `sha256:${createHash("sha256").update(value).digest("hex")}`;
 }
 
 function underlyingName(name: string): string {
@@ -123,8 +144,10 @@ function parseSolanaMints(source: string): Map<string, SolanaMint> {
 }
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const tokenList = JSON.parse(await loadText(process.argv[2], TOKEN_LIST_URL)) as TokenList;
-const solanaMints = parseSolanaMints(await loadText(process.argv[3], SOLANA_LIST_URL));
+const tokenListSource = await loadText(process.argv[2], TOKEN_LIST_URL);
+const solanaListSource = await loadText(process.argv[3], SOLANA_LIST_URL);
+const tokenList = JSON.parse(tokenListSource) as TokenList;
+const solanaMints = parseSolanaMints(solanaListSource);
 const ethereumTokens = tokenList.tokens.filter(
   (token) => token.chainId === 1 && token.address && !excludedCatalogSymbols.has(token.symbol),
 );
@@ -171,10 +194,20 @@ for (const symbol of selectedSymbols) {
   await mkdir(assetDirectory, { recursive: true });
 
   const asset = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     id,
     name: primary.name,
     symbol,
+    underlyingId: underlyingIdFromSymbol(symbol, classification),
+    instrumentType: "security-backed-token",
+    denominationCurrency: "USD",
+    legalStructure: "Issuer-specific tokenized security providing economic exposure to a referenced publicly traded security.",
+    underlyingRights: "Economic exposure only; rights are governed by the issuer's product terms rather than direct ownership of the referenced security.",
+    redemptionRights: "Direct minting and redemption are available only through issuer onboarding, subject to eligibility and product terms.",
+    organizationRoles: [
+      { organizationId: "ondo-global-markets", roles: ["issuer"] },
+      { organizationId: "ondo-finance", roles: ["tokenization-provider"] },
+    ],
     description:
       classification === "public-equity"
         ? `Tokenized economic exposure to ${name}, issued by Ondo Global Markets (BVI) Limited.`
@@ -244,7 +277,13 @@ for (const symbol of selectedSymbols) {
           chain: chain.id,
           chainId: token.chainId,
           address: token.address,
+          assetNamespace: "erc20",
+          assetReference: token.address,
+          deploymentType: "issuer-native",
           standardIds: ["erc20"],
+          standardEvidence: [
+            { standardId: "erc20", method: "issuer-documentation", sourceId: "ondo-token-list" },
+          ],
           decimals: token.decimals,
           status: "active",
           verifiedBy: ["ondo-token-list", `${chain.id}-explorer`],
@@ -255,7 +294,17 @@ for (const symbol of selectedSymbols) {
           {
             chain: "solana",
             address: solanaMint.address,
+            assetNamespace: "token",
+            assetReference: solanaMint.address,
+            deploymentType: "issuer-native",
             standardIds: ["solana-token-2022"],
+            standardEvidence: [
+              {
+                standardId: "solana-token-2022",
+                method: "issuer-documentation",
+                sourceId: "ondo-solana-mint-list",
+              },
+            ],
             decimals: 9,
             status: "active",
             verifiedBy: ["ondo-solana-mint-list", "solana-explorer"],
@@ -270,6 +319,19 @@ for (const symbol of selectedSymbols) {
     kycRequired: "yes",
     identityRequired: "no",
     transferRestricted: "yes",
+    transferEnforcement: "unknown",
+    primaryMarket: {
+      access: "issuer-onboarding",
+      kycRequired: "yes",
+      kybRequired: "unknown",
+      notes: "Direct minting and redemption require Ondo onboarding and eligibility checks.",
+    },
+    secondaryMarket: {
+      access: "restricted",
+      kycRequired: "no",
+      kybRequired: "no",
+      notes: "Tokens may be acquired through third parties without direct Ondo onboarding, subject to jurisdictional, sanctions, and other restrictions.",
+    },
     eligibleInvestorTypes: ["retail", "professional", "institutional"],
     notes:
       "Direct minting and redemption require Ondo onboarding and KYC. Tokens may be held or acquired through third parties without direct onboarding, subject to jurisdictional, sanctions, and other restrictions.",
@@ -283,6 +345,12 @@ for (const symbol of selectedSymbols) {
       url: TOKEN_LIST_URL,
       publisher: "Ondo Finance",
       accessedAt: ACCESSED_AT,
+      retrievedAt: RETRIEVED_AT,
+      lastVerifiedAt: ACCESSED_AT,
+      reviewAfter: REVIEW_AFTER,
+      sourceVersion: TOKEN_LIST_COMMIT,
+      contentHash: sha256(tokenListSource),
+      confidence: "high",
     },
     {
       id: "ondo-product-page",
@@ -291,6 +359,11 @@ for (const symbol of selectedSymbols) {
       url: `https://app.ondo.finance/assets/${id}`,
       publisher: "Ondo Finance",
       accessedAt: ACCESSED_AT,
+      retrievedAt: RETRIEVED_AT,
+      lastVerifiedAt: ACCESSED_AT,
+      reviewAfter: REVIEW_AFTER,
+      sourceVersion: `live-page:${ACCESSED_AT}`,
+      confidence: "high",
     },
     {
       id: "ondo-stocks-guide",
@@ -299,6 +372,11 @@ for (const symbol of selectedSymbols) {
       url: "https://ondo.finance/ondo-stocks",
       publisher: "Ondo Finance",
       accessedAt: ACCESSED_AT,
+      retrievedAt: RETRIEVED_AT,
+      lastVerifiedAt: ACCESSED_AT,
+      reviewAfter: REVIEW_AFTER,
+      sourceVersion: `live-page:${ACCESSED_AT}`,
+      confidence: "high",
     },
     ...evmTokens.map((token) => {
       const chain = chainDetails[token.chainId];
@@ -310,6 +388,11 @@ for (const symbol of selectedSymbols) {
         url: `${chain.explorer}/${token.address}`,
         publisher: chain.explorerName,
         accessedAt: ACCESSED_AT,
+        retrievedAt: RETRIEVED_AT,
+        lastVerifiedAt: ACCESSED_AT,
+        reviewAfter: REVIEW_AFTER,
+        sourceVersion: `onchain:${ACCESSED_AT}`,
+        confidence: "high",
       };
     }),
     ...(solanaMint
@@ -321,6 +404,12 @@ for (const symbol of selectedSymbols) {
             url: SOLANA_LIST_URL,
             publisher: "Ondo Finance",
             accessedAt: ACCESSED_AT,
+            retrievedAt: RETRIEVED_AT,
+            lastVerifiedAt: ACCESSED_AT,
+            reviewAfter: REVIEW_AFTER,
+            sourceVersion: SOLANA_LIST_COMMIT,
+            contentHash: sha256(solanaListSource),
+            confidence: "high",
           },
           {
             id: "solana-explorer",
@@ -329,10 +418,24 @@ for (const symbol of selectedSymbols) {
             url: `https://explorer.solana.com/address/${solanaMint.address}`,
             publisher: "Solana",
             accessedAt: ACCESSED_AT,
+            retrievedAt: RETRIEVED_AT,
+            lastVerifiedAt: ACCESSED_AT,
+            reviewAfter: REVIEW_AFTER,
+            sourceVersion: `onchain:${ACCESSED_AT}`,
+            confidence: "high",
           },
         ]
       : []),
   ];
+  const valuation = {
+    schemaVersion: 1,
+    quoteCurrency: "USD",
+    valuationType: "market-price",
+    priceSourceUrl: `https://app.ondo.finance/assets/${id}`,
+    corporateActionModel: "unknown",
+    distributionTreatment: "unknown",
+    verifiedBy: ["ondo-product-page"],
+  };
 
   await Promise.all([
     writeFile(path.join(assetDirectory, "asset.json"), `${JSON.stringify(asset, null, 2)}\n`),
@@ -345,6 +448,10 @@ for (const symbol of selectedSymbols) {
       `${JSON.stringify(compliance, null, 2)}\n`,
     ),
     writeFile(path.join(assetDirectory, "sources.json"), `${JSON.stringify(sources, null, 2)}\n`),
+    writeFile(
+      path.join(assetDirectory, "valuation.json"),
+      `${JSON.stringify(valuation, null, 2)}\n`,
+    ),
   ]);
 }
 

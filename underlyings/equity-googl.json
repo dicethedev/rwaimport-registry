@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-googl",
+  "name": "Alphabet Class A",
+  "ticker": "GOOGL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "googlon",
+    "robinhood-googl"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US02079K3059"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-fisv",
+  "name": "Fiserv",
+  "ticker": "FISV",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US3377381088"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-fisv"
+  ]
+}

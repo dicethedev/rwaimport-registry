@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-flql",
+  "name": "Franklin US Large Cap Multifactor Index ETF",
+  "ticker": "FLQL",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "flqlon"
+  ]
+}

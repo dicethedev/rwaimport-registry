@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-hydb",
+  "name": "iShares High Yield Systematic Bond ETF",
+  "ticker": "HYDB",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "hydbon"
+  ]
+}

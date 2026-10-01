@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "nav",
+  "navSourceUrl": "https://example.invalid/products/example-treasury/nav",
+  "updateFrequency": "daily",
+  "corporateActionModel": "accumulating-price",
+  "distributionTreatment": "reinvested",
+  "verifiedBy": ["official-product-page"]
+}

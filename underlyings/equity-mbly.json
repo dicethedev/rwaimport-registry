@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-mbly",
+  "name": "Mobileye Global",
+  "ticker": "MBLY",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "mblyon"
+  ]
+}

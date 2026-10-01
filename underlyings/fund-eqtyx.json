@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-eqtyx",
+  "name": "WisdomTree Siegel Global Equity Digital Fund",
+  "ticker": "EQTYX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "eqtyx"
+  ]
+}

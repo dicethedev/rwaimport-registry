@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-grnd",
+  "name": "Grindr",
+  "ticker": "GRND",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "grndon"
+  ]
+}

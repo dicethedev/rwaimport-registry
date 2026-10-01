@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-crwv",
+  "name": "CoreWeave",
+  "ticker": "CRWV",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "crwvon",
+    "robinhood-crwv"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US21873S1087"
+    }
+  ]
+}

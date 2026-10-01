@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-rgti",
+  "name": "Rigetti Computing",
+  "ticker": "RGTI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "rgtion",
+    "robinhood-rgti"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US76655K1034"
+    }
+  ]
+}

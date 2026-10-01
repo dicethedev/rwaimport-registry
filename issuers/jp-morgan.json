@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "jp-morgan",
+  "name": "J.P. Morgan",
+  "type": "other",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.jpmorgan.com",
+  "sources": [
+    {
+      "title": "J.P. Morgan official website",
+      "url": "https://www.jpmorgan.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

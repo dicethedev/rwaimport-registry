@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ftnt",
+  "name": "Fortinet",
+  "ticker": "FTNT",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US34959E1091"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-ftnt"
+  ]
+}

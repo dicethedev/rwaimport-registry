@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "nav",
+  "priceSourceUrl": "https://example.invalid/product",
+  "corporateActionModel": "none",
+  "distributionTreatment": "reinvested",
+  "verifiedBy": ["product-page"]
+}

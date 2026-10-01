@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-f",
+  "name": "Ford Motor",
+  "ticker": "F",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "fon",
+    "robinhood-f"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US3453708600"
+    }
+  ]
+}

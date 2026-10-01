@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-mpwr",
+  "name": "Monolithic Power Systems",
+  "ticker": "MPWR",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US6098391054"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-mpwr"
+  ]
+}

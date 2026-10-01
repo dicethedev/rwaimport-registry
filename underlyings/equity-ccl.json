@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ccl",
+  "name": "Carnival Corporation",
+  "ticker": "CCL",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "BMG2004J1036"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-ccl"
+  ]
+}

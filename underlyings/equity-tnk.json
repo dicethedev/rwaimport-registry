@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tnk",
+  "name": "Teekay Tankers",
+  "ticker": "TNK",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "tnkon"
+  ]
+}

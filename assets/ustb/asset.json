@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "ustb",
+  "name": "Invesco Short Duration US Government Securities Fund",
+  "symbol": "USTB",
+  "underlyingId": "fund-ustb",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Series of a Delaware statutory trust.",
+  "securityType": "Private fund share",
+  "underlyingRights": "Fund share representing exposure to short-duration U.S. government securities; holders do not own individual Treasury bills directly.",
+  "redemptionRights": "Same-day redemption is available under the fund terms, subject to cutoffs, liquidity, and eligibility.",
+  "offeringType": "Private placement",
+  "regulatoryExemption": "Available to accredited investors and qualified purchasers",
+  "organizationRoles": [
+    {
+      "organizationId": "invesco-short-duration-government-fund",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "superstate",
+      "roles": [
+        "tokenization-provider",
+        "transfer-agent"
+      ]
+    },
+    {
+      "organizationId": "invesco",
+      "roles": [
+        "asset-manager"
+      ]
+    },
+    {
+      "organizationId": "bny-mellon",
+      "roles": [
+        "custodian"
+      ]
+    },
+    {
+      "organizationId": "pricewaterhousecoopers",
+      "roles": [
+        "auditor"
+      ]
+    },
+    {
+      "organizationId": "nav-fund-services",
+      "roles": [
+        "fund-administrator"
+      ]
+    }
+  ],
+  "description": "Invesco Short Duration US Government Securities Fund (USTB), represented through tokenized or blockchain-integrated fund records.",
+  "assetClass": "treasury",
+  "issuerId": "invesco-short-duration-government-fund",
+  "tokenizationProviderIds": [
+    "superstate"
+  ],
+  "status": "active",
+  "website": "https://superstate.com/assets/ustb",
+  "marketDataLinks": [
+    {
+      "provider": "Invesco Short Duration US Government Securities Fund",
+      "type": "issuer",
+      "url": "https://superstate.com/assets/ustb",
+      "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    }
+  ],
+  "verifiedBy": [
+    "official-product"
+  ]
+}

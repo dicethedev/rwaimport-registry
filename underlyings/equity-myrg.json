@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-myrg",
+  "name": "MYR Group",
+  "ticker": "MYRG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "myrgon"
+  ]
+}

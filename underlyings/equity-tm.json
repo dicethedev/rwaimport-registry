@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tm",
+  "name": "Toyota",
+  "ticker": "TM",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "tmon"
+  ]
+}

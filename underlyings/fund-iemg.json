@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-iemg",
+  "name": "iShares Core MSCI Emerging Markets ETF",
+  "ticker": "IEMG",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "iemgon"
+  ]
+}

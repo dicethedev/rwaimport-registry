@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-iau",
+  "name": "iShares Gold Trust",
+  "ticker": "IAU",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "iauon"
+  ]
+}

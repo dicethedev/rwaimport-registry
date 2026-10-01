@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-sgov",
+  "name": "iShares 0-3 Month Treasury Bond",
+  "ticker": "SGOV",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US46436E7186"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-sgov"
+  ]
+}

@@ -1,8 +1,28 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "mag7xon",
   "name": "Ondo Magnificent 7 and Crypto Portfolio",
   "symbol": "MAG7Xon",
+  "underlyingId": "instrument-mag7x",
+  "instrumentType": "security-backed-token",
+  "denominationCurrency": "USD",
+  "legalStructure": "Issuer-specific tokenized security providing economic exposure to a referenced publicly traded security.",
+  "underlyingRights": "Economic exposure only; rights are governed by the issuer's product terms rather than direct ownership of the referenced security.",
+  "redemptionRights": "Direct minting and redemption are available only through issuer onboarding, subject to eligibility and product terms.",
+  "organizationRoles": [
+    {
+      "organizationId": "ondo-global-markets",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "ondo-finance",
+      "roles": [
+        "tokenization-provider"
+      ]
+    }
+  ],
   "description": "Tokenized economic exposure to the Ondo Magnificent 7 and Crypto Portfolio instrument, issued by Ondo Global Markets (BVI) Limited.",
   "assetClass": "other",
   "issuerId": "ondo-global-markets",

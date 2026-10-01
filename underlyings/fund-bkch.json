@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-bkch",
+  "name": "Global X Blockchain ETF",
+  "ticker": "BKCH",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "bkchon"
+  ]
+}

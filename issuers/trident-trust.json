@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "trident-trust",
+  "name": "Trident Trust",
+  "type": "other",
+  "status": "active",
+  "website": "https://www.tridenttrust.com",
+  "sources": [
+    {
+      "title": "Trident Trust official website",
+      "url": "https://www.tridenttrust.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

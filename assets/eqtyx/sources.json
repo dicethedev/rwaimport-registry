@@ -1,0 +1,15 @@
+[
+  {
+    "id": "official-product",
+    "type": "issuer",
+    "title": "WisdomTree Siegel Global Equity Digital Fund in WisdomTree's official tokenized-fund catalog",
+    "url": "https://www.wisdomtree.com/onchain/tokenized-funds",
+    "publisher": "WisdomTree Digital Trust",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  }
+]

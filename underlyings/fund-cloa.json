@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-cloa",
+  "name": "iShares AAA CLO Active ETF",
+  "ticker": "CLOA",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cloaon"
+  ]
+}

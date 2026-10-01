@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-on",
+  "name": "ON Semiconductor",
+  "ticker": "ON",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "onon",
+    "robinhood-on"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US6821891057"
+    }
+  ]
+}

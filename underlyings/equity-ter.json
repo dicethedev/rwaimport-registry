@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ter",
+  "name": "Teradyne",
+  "ticker": "TER",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US8807701029"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-ter",
+    "teron"
+  ]
+}

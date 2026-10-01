@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-pcg",
+  "name": "PG&E",
+  "ticker": "PCG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pcgon"
+  ]
+}

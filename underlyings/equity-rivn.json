@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-rivn",
+  "name": "Rivian Automotive",
+  "ticker": "RIVN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "rivnon",
+    "robinhood-rivn"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US76954A1034"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-iwm",
+  "name": "iShares Russell 2000 ETF",
+  "ticker": "IWM",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "iwmon"
+  ]
+}

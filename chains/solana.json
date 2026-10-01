@@ -5,6 +5,7 @@
   "type": "solana",
   "namespace": "solana",
   "reference": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+  "addressPattern": "^[1-9A-HJ-NP-Za-km-z]{32,44}$",
   "nativeCurrency": "SOL",
   "explorerUrl": "https://explorer.solana.com",
   "status": "active"

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-vfs",
+  "name": "VinFast Auto",
+  "ticker": "VFS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "vfson"
+  ]
+}

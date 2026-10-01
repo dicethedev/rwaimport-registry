@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-crwd",
+  "name": "CrowdStrike Holdings",
+  "ticker": "CRWD",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "crwdon",
+    "robinhood-crwd"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US22788C1053"
+    }
+  ]
+}

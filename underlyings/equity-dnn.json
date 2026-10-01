@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-dnn",
+  "name": "Denison Mines",
+  "ticker": "DNN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "dnnon"
+  ]
+}

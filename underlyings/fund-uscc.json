@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-uscc",
+  "name": "Bitwise Crypto Carry Fund",
+  "ticker": "USCC",
+  "type": "other",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "uscc"
+  ]
+}

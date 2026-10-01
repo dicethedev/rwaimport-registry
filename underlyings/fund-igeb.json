@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-igeb",
+  "name": "iShares Investment Grade Systematic Bond ETF",
+  "ticker": "IGEB",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "igebon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-leco",
+  "name": "Lincoln Electric",
+  "ticker": "LECO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "lecoon"
+  ]
+}

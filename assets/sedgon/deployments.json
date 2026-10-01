@@ -3,8 +3,18 @@
     "chain": "ethereum",
     "chainId": 1,
     "address": "0x8E82a0d7347329703FB6c6A745B1C2b3aBB1658c",
+    "assetNamespace": "erc20",
+    "assetReference": "0x8E82a0d7347329703FB6c6A745B1C2b3aBB1658c",
+    "deploymentType": "issuer-native",
     "standardIds": [
       "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "ondo-token-list"
+      }
     ],
     "decimals": 18,
     "status": "active",
@@ -17,8 +27,18 @@
     "chain": "bnb-chain",
     "chainId": 56,
     "address": "0x8755c5C39b1AA9053a83AC731242a2cf4D04B0Fe",
+    "assetNamespace": "erc20",
+    "assetReference": "0x8755c5C39b1AA9053a83AC731242a2cf4D04B0Fe",
+    "deploymentType": "issuer-native",
     "standardIds": [
       "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "ondo-token-list"
+      }
     ],
     "decimals": 18,
     "status": "active",
@@ -30,8 +50,18 @@
   {
     "chain": "solana",
     "address": "EAwP9LGNjTkQ2YeKE6CGKqBYtrJ6APFvRe7KCMmondo",
+    "assetNamespace": "token",
+    "assetReference": "EAwP9LGNjTkQ2YeKE6CGKqBYtrJ6APFvRe7KCMmondo",
+    "deploymentType": "issuer-native",
     "standardIds": [
       "solana-token-2022"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "solana-token-2022",
+        "method": "issuer-documentation",
+        "sourceId": "ondo-solana-mint-list"
+      }
     ],
     "decimals": 9,
     "status": "active",

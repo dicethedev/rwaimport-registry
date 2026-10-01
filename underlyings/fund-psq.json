@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-psq",
+  "name": "ProShares Short QQQ",
+  "ticker": "PSQ",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "psqon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "stellar",
+  "name": "Stellar",
+  "type": "stellar",
+  "namespace": "stellar",
+  "reference": "pubnet",
+  "addressPattern": "^G[A-Z2-7]{55}$",
+  "nativeCurrency": "XLM",
+  "explorerUrl": "https://stellar.expert/explorer/public",
+  "status": "active"
+}

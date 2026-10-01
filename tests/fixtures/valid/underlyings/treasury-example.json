@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "treasury-example",
+  "name": "Example Treasury Basket",
+  "ticker": "EXT",
+  "type": "treasury",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": ["example-treasury"]
+}

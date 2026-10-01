@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ttmi",
+  "name": "TTM Technologies",
+  "ticker": "TTMI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ttmion"
+  ]
+}

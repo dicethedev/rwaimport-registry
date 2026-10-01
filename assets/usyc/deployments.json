@@ -1,0 +1,67 @@
+[
+  {
+    "chain": "ethereum",
+    "chainId": 1,
+    "address": "0x136471a34f6ef19fE571EFFC1CA711fdb8E49f2b",
+    "assetNamespace": "erc20",
+    "assetReference": "0x136471a34f6ef19fE571EFFC1CA711fdb8E49f2b",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "bnb-chain",
+    "chainId": 56,
+    "address": "0x8D0fA28f221eB5735BC71d3a0Da67EE5bC821311",
+    "assetNamespace": "bep20",
+    "assetReference": "0x8D0fA28f221eB5735BC71d3a0Da67EE5bC821311",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "solana",
+    "address": "7LWanZteUKtvFjv4MHYgKXXdAuCQYFPJysL9pxxdRQGn",
+    "assetNamespace": "spl",
+    "assetReference": "7LWanZteUKtvFjv4MHYgKXXdAuCQYFPJysL9pxxdRQGn",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "solana-token-2022"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "solana-token-2022",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  }
+]

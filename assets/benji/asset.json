@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "id": "benji",
+  "name": "Franklin OnChain U.S. Government Money Fund",
+  "symbol": "BENJI",
+  "underlyingId": "fund-fobxx",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "U.S.-registered open-end government money market fund using blockchain-integrated share recordkeeping.",
+  "securityType": "Registered mutual fund share",
+  "underlyingRights": "One BENJI token represents one share of the Franklin OnChain U.S. Government Money Fund.",
+  "redemptionRights": "Shareholders may purchase and redeem fund shares through approved Franklin Templeton channels under the prospectus.",
+  "offeringType": "SEC-registered public fund",
+  "organizationRoles": [
+    {
+      "organizationId": "franklin-templeton",
+      "roles": [
+        "issuer",
+        "asset-manager",
+        "tokenization-provider",
+        "transfer-agent"
+      ]
+    }
+  ],
+  "description": "Franklin OnChain U.S. Government Money Fund (BENJI), represented through tokenized or blockchain-integrated fund records.",
+  "assetClass": "money-market",
+  "issuerId": "franklin-templeton",
+  "tokenizationProviderIds": [
+    "franklin-templeton"
+  ],
+  "status": "active",
+  "website": "https://digitalassets.franklintempleton.com/benji/",
+  "marketDataLinks": [
+    {
+      "provider": "Franklin Templeton",
+      "type": "issuer",
+      "url": "https://digitalassets.franklintempleton.com/benji/",
+      "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    }
+  ],
+  "verifiedBy": [
+    "official-product"
+  ]
+}

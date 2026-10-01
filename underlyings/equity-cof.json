@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-cof",
+  "name": "Capital One",
+  "ticker": "COF",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cofon"
+  ]
+}

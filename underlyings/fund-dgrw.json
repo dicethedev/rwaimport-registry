@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-dgrw",
+  "name": "WisdomTree US Quality Dividend Growth Fund",
+  "ticker": "DGRW",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "dgrwon"
+  ]
+}

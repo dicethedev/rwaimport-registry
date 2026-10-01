@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-asts",
+  "name": "AST SpaceMobile",
+  "ticker": "ASTS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "astson",
+    "robinhood-asts"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US00217D1000"
+    }
+  ]
+}

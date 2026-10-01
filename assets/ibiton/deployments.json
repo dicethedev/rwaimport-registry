@@ -3,8 +3,18 @@
     "chain": "ethereum",
     "chainId": 1,
     "address": "0x122940c4C5F9cCFAe7Fa86455a42D3EC140855cE",
+    "assetNamespace": "erc20",
+    "assetReference": "0x122940c4C5F9cCFAe7Fa86455a42D3EC140855cE",
+    "deploymentType": "issuer-native",
     "standardIds": [
       "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "ondo-token-list"
+      }
     ],
     "decimals": 18,
     "status": "active",
@@ -17,8 +27,18 @@
     "chain": "bnb-chain",
     "chainId": 56,
     "address": "0x68B07cEf227Cea1b2b6683921C8c825cd5C69Ec7",
+    "assetNamespace": "erc20",
+    "assetReference": "0x68B07cEf227Cea1b2b6683921C8c825cd5C69Ec7",
+    "deploymentType": "issuer-native",
     "standardIds": [
       "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "ondo-token-list"
+      }
     ],
     "decimals": 18,
     "status": "active",

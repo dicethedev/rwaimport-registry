@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-intc",
+  "name": "Intel",
+  "ticker": "INTC",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "intcon",
+    "robinhood-intc"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US4581401001"
+    }
+  ]
+}

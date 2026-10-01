@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-cohu",
+  "name": "Cohu",
+  "ticker": "COHU",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cohuon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-fn",
+  "name": "Fabrinet",
+  "ticker": "FN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "fnon"
+  ]
+}

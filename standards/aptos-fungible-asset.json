@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "aptos-fungible-asset",
+  "name": "Aptos Fungible Asset",
+  "category": "fungible-token",
+  "specificationType": "move-standard",
+  "maintainer": "Aptos Labs",
+  "description": "The Aptos object-based standard for fungible assets and their metadata, stores, and controlled capabilities.",
+  "capabilities": ["fungible", "metadata", "object-model"],
+  "status": "active",
+  "referenceUrl": "https://aptos.dev/build/smart-contracts/fungible-asset"
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-buidl",
+  "name": "BlackRock USD Institutional Digital Liquidity Fund",
+  "ticker": "BUIDL",
+  "type": "money-market-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "buidl"
+  ]
+}

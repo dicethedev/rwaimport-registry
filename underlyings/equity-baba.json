@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-baba",
+  "name": "Alibaba",
+  "ticker": "BABA",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "babaon",
+    "robinhood-baba"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US01609W1027"
+    }
+  ]
+}

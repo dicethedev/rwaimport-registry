@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-flhy",
+  "name": "Franklin High Yield Corporate ETF",
+  "ticker": "FLHY",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "flhyon"
+  ]
+}

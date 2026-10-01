@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-iefa",
+  "name": "iShares Core MSCI EAFE ETF",
+  "ticker": "IEFA",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "iefaon"
+  ]
+}

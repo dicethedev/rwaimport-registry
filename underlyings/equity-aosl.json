@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-aosl",
+  "name": "Alpha and Omega Semiconductor",
+  "ticker": "AOSL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aoslon"
+  ]
+}

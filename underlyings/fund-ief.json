@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ief",
+  "name": "iShares 7-10 Year Treasury Bond ETF",
+  "ticker": "IEF",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "iefon"
+  ]
+}

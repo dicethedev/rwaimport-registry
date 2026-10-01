@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-entg",
+  "name": "Entegris",
+  "ticker": "ENTG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "entgon"
+  ]
+}

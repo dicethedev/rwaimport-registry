@@ -6,6 +6,7 @@
   "type": "evm",
   "namespace": "eip155",
   "reference": "4663",
+  "addressPattern": "^0x[a-fA-F0-9]{40}$",
   "nativeCurrency": "ETH",
   "explorerUrl": "https://robinhoodchain.blockscout.com",
   "status": "active"

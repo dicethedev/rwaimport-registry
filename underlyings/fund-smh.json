@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-smh",
+  "name": "VanEck Semiconductor ETF",
+  "ticker": "SMH",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US92189F6768"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-smh"
+  ]
+}

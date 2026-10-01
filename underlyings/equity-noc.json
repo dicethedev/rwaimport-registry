@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-noc",
+  "name": "Northrop Grumman",
+  "ticker": "NOC",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nocon"
+  ]
+}

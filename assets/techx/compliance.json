@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "permissioned": "yes",
+  "kycRequired": "yes",
+  "identityRequired": "yes",
+  "transferRestricted": "yes",
+  "transferEnforcement": "mixed",
+  "primaryMarket": {
+    "access": "issuer-onboarding",
+    "kycRequired": "yes",
+    "kybRequired": "yes",
+    "notes": "Investors must complete the issuer or distributor onboarding process before subscribing or redeeming."
+  },
+  "secondaryMarket": {
+    "access": "restricted",
+    "kycRequired": "yes",
+    "kybRequired": "yes",
+    "notes": "Transfers are limited by the product documents, platform rules, and, where deployed, onchain allowlist controls."
+  },
+  "offeringDocuments": [
+    "https://www.wisdomtree.com/onchain/tokenized-funds"
+  ],
+  "notes": "Eligibility is a summary of published requirements and is not legal or investment advice. Consult the current offering documents before transacting.",
+  "verifiedBy": [
+    "official-product"
+  ],
+  "eligibleInvestorTypes": [
+    "retail",
+    "institutional"
+  ],
+  "eligibleJurisdictions": [
+    "US"
+  ]
+}

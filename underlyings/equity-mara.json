@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-mara",
+  "name": "MARA Holdings",
+  "ticker": "MARA",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "maraon"
+  ]
+}

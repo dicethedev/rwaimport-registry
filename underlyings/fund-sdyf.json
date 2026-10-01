@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-sdyf",
+  "name": "Hashnote International Short Duration Yield Fund",
+  "ticker": "USYC",
+  "type": "money-market-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "usyc"
+  ]
+}

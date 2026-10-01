@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "mha-cayman",
+  "name": "MHA Cayman",
+  "jurisdiction": "KY",
+  "status": "active",
+  "website": "https://www.mha.ky",
+  "sources": [
+    {
+      "title": "MHA Cayman official website",
+      "url": "https://www.mha.ky",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

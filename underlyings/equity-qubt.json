@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-qubt",
+  "name": "Quantum Computing",
+  "ticker": "QUBT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "qubton",
+    "robinhood-qubt"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US74766W1080"
+    }
+  ]
+}

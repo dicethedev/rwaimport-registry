@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-hsai",
+  "name": "Hesai Group",
+  "ticker": "HSAI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "hsaion"
+  ]
+}

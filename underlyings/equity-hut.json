@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-hut",
+  "name": "Hut 8",
+  "ticker": "HUT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "huton"
+  ]
+}

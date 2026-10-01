@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-flex",
+  "name": "Flex",
+  "ticker": "FLEX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "flexon"
+  ]
+}

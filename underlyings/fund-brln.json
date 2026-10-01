@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-brln",
+  "name": "iShares Floating Rate Loan Active ETF",
+  "ticker": "BRLN",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "brlnon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-drs",
+  "name": "Leonardo DRS",
+  "ticker": "DRS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "drson"
+  ]
+}

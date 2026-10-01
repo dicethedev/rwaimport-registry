@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-aiq",
+  "name": "Global X Artificial Intelligence & Technology ETF",
+  "ticker": "AIQ",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aiqon"
+  ]
+}

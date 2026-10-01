@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-abnb",
+  "name": "Airbnb",
+  "ticker": "ABNB",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "abnbon"
+  ]
+}

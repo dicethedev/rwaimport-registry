@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-eqix",
+  "name": "Equinix",
+  "ticker": "EQIX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "eqixon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-wtgxx",
+  "name": "WisdomTree Treasury Money Market Digital Fund",
+  "ticker": "WTGXX",
+  "type": "money-market-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "wtgxx"
+  ]
+}

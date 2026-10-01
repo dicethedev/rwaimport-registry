@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ionq",
+  "name": "IonQ",
+  "ticker": "IONQ",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ionqon",
+    "robinhood-ionq"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US46222L1089"
+    }
+  ]
+}

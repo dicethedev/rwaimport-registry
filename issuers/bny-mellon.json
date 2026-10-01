@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "bny-mellon",
+  "name": "BNY",
+  "legalName": "The Bank of New York Mellon Corporation",
+  "type": "other",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.bny.com",
+  "sources": [
+    {
+      "title": "BNY official website",
+      "url": "https://www.bny.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

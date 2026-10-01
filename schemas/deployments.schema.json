@@ -10,13 +10,10 @@
     "properties": {
       "chain": { "$ref": "#/$defs/id" },
       "chainId": { "type": "integer", "minimum": 1 },
-      "address": {
-        "type": "string",
-        "oneOf": [
-          { "pattern": "^0x[a-fA-F0-9]{40}$" },
-          { "pattern": "^[1-9A-HJ-NP-Za-km-z]{32,44}$" }
-        ]
-      },
+      "address": { "type": "string", "minLength": 1, "maxLength": 300 },
+      "assetNamespace": { "type": "string", "pattern": "^[-a-z0-9]{1,32}$" },
+      "assetReference": { "type": "string", "minLength": 1, "maxLength": 300 },
+      "deploymentType": { "enum": ["issuer-native", "bridged", "wrapped", "synthetic", "unknown"] },
       "standardIds": {
         "type": "array",
         "minItems": 1,
@@ -28,6 +25,39 @@
       "proxyAddress": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
       "implementationAddress": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
       "deployedAt": { "type": "string", "format": "date" },
+      "deploymentTransaction": { "type": "string", "minLength": 1, "maxLength": 200 },
+      "deploymentBlock": { "type": "integer", "minimum": 0 },
+      "standardEvidence": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["standardId", "method"],
+          "properties": {
+            "standardId": { "$ref": "#/$defs/id" },
+            "method": { "enum": ["onchain-interface", "issuer-documentation", "source-code", "manual-review"] },
+            "sourceId": { "$ref": "#/$defs/id" }
+          }
+        }
+      },
+      "verification": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["lastVerifiedAt", "accountExists", "method"],
+        "properties": {
+          "lastVerifiedAt": { "type": "string", "format": "date-time" },
+          "accountExists": { "type": "boolean" },
+          "method": { "enum": ["evm-bytecode", "solana-account-owner", "explorer", "manual"] },
+          "runtimeCodeSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "accountDataSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "owner": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "explorerVerified": { "enum": ["yes", "no", "unknown"] },
+          "observedName": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "observedSymbol": { "type": "string", "minLength": 1, "maxLength": 32 },
+          "observedDecimals": { "type": "integer", "minimum": 0, "maximum": 255 }
+        }
+      },
       "verifiedBy": {
         "type": "array",
         "minItems": 1,

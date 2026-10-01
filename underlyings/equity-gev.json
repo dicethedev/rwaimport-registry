@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-gev",
+  "name": "GE Vernova",
+  "ticker": "GEV",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "gevon",
+    "robinhood-gev"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US36828A1016"
+    }
+  ]
+}

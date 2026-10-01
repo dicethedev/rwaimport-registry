@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-mrna",
+  "name": "Moderna",
+  "ticker": "MRNA",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "mrnaon",
+    "robinhood-mrna"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US60770K1079"
+    }
+  ]
+}

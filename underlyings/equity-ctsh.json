@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ctsh",
+  "name": "Cognizant",
+  "ticker": "CTSH",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US1924461023"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-ctsh"
+  ]
+}

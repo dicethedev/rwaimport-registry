@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-gemi",
+  "name": "Gemini Space Station",
+  "ticker": "GEMI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "gemion"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-wtlgx",
+  "name": "WisdomTree Long Term Treasury Digital Fund",
+  "ticker": "WTLGX",
+  "type": "treasury",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "wtlgx"
+  ]
+}

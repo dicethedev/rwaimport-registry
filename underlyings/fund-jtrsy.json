@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-jtrsy",
+  "name": "Janus Henderson Anemoy Treasury Fund",
+  "ticker": "JTRSY",
+  "type": "treasury",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "jtrsy"
+  ]
+}

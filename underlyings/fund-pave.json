@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-pave",
+  "name": "Global X US Infrastructure Development ETF",
+  "ticker": "PAVE",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "paveon"
+  ]
+}

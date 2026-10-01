@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-igv",
+  "name": "iShares Expanded Tech-Software ETF",
+  "ticker": "IGV",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "igvon"
+  ]
+}

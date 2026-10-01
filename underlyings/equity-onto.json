@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-onto",
+  "name": "Onto Innovation",
+  "ticker": "ONTO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ontoon",
+    "robinhood-onto"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US6833441057"
+    }
+  ]
+}

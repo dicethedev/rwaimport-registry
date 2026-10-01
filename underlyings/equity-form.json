@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-form",
+  "name": "FormFactor",
+  "ticker": "FORM",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "formon"
+  ]
+}

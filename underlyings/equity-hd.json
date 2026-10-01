@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-hd",
+  "name": "Home Depot",
+  "ticker": "HD",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "hdon"
+  ]
+}

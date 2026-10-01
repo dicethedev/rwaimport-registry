@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-openeden-tbill",
+  "name": "OpenEden TBILL Vault",
+  "ticker": "TBILL",
+  "type": "treasury",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "tbill"
+  ]
+}

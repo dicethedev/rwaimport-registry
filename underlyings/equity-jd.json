@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-jd",
+  "name": "JD.com",
+  "ticker": "JD",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "jdon"
+  ]
+}

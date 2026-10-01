@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-rok",
+  "name": "Rockwell Automation",
+  "ticker": "ROK",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "rokon"
+  ]
+}

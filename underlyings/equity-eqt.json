@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-eqt",
+  "name": "EQT",
+  "ticker": "EQT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "eqton"
+  ]
+}

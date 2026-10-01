@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-avav",
+  "name": "AeroVironment",
+  "ticker": "AVAV",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US0080731088"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-avav"
+  ]
+}

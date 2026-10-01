@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-abt",
+  "name": "Abbott",
+  "ticker": "ABT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "abton"
+  ]
+}

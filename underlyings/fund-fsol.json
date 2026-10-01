@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-fsol",
+  "name": "Fidelity Solana Fund",
+  "ticker": "FSOL",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "fsolon"
+  ]
+}

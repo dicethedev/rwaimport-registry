@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ddog",
+  "name": "Datadog",
+  "ticker": "DDOG",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US23804L1035"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-ddog"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "id": "wtsix",
+  "name": "WisdomTree Short-Duration Income Digital Fund",
+  "symbol": "WTSIX",
+  "underlyingId": "fund-wtsix",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Open-end mutual fund series of WisdomTree Digital Trust registered under the Investment Company Act of 1940.",
+  "securityType": "Registered mutual fund share with blockchain-integrated recordkeeping",
+  "underlyingRights": "Fund share; the blockchain record represents ownership in the registered fund rather than direct ownership of portfolio securities.",
+  "redemptionRights": "Purchases and redemptions are available through approved WisdomTree channels under the fund prospectus.",
+  "offeringType": "SEC-registered public fund",
+  "organizationRoles": [
+    {
+      "organizationId": "wisdomtree-digital-trust",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "wisdomtree-asset-management",
+      "roles": [
+        "asset-manager",
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "WisdomTree Short-Duration Income Digital Fund (WTSIX), represented through tokenized or blockchain-integrated fund records.",
+  "assetClass": "money-market",
+  "issuerId": "wisdomtree-digital-trust",
+  "tokenizationProviderIds": [
+    "wisdomtree-asset-management"
+  ],
+  "status": "active",
+  "website": "https://www.wisdomtree.com/onchain/tokenized-funds",
+  "marketDataLinks": [
+    {
+      "provider": "WisdomTree Digital Trust",
+      "type": "issuer",
+      "url": "https://www.wisdomtree.com/onchain/tokenized-funds",
+      "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    }
+  ],
+  "verifiedBy": [
+    "official-product"
+  ]
+}

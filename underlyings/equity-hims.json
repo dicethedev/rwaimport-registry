@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-hims",
+  "name": "Hims & Hers Health",
+  "ticker": "HIMS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "himson",
+    "robinhood-hims"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US4330001060"
+    }
+  ]
+}

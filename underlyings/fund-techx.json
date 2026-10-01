@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-techx",
+  "name": "WisdomTree Technology & Innovation 100 Digital Fund",
+  "ticker": "TECHX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "techx"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-qlta",
+  "name": "iShares Aaa - A Rated Corporate Bond ETF",
+  "ticker": "QLTA",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "qltaon"
+  ]
+}

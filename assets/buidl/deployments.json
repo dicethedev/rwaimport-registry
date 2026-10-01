@@ -1,0 +1,45 @@
+[
+  {
+    "chain": "ethereum",
+    "chainId": 1,
+    "address": "0x6a9DA2D710BB9B700acde7Cb81F10F1fF8C89041",
+    "assetNamespace": "erc20",
+    "assetReference": "0x6a9DA2D710BB9B700acde7Cb81F10F1fF8C89041",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "solana",
+    "address": "GyWgeqpy5GueU2YbkE8xqUeVEokCMMCEeUrfbtMw6phr",
+    "assetNamespace": "spl",
+    "assetReference": "GyWgeqpy5GueU2YbkE8xqUeVEokCMMCEeUrfbtMw6phr",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "solana-token-2022"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "solana-token-2022",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  }
+]

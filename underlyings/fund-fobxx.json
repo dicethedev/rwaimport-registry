@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-fobxx",
+  "name": "Franklin OnChain U.S. Government Money Fund",
+  "ticker": "BENJI",
+  "type": "money-market-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "benji"
+  ]
+}

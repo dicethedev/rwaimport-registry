@@ -1,0 +1,24 @@
+[
+  {
+    "chain": "ethereum",
+    "chainId": 1,
+    "address": "0xdd50C053C096CB04A3e3362E2b622529EC5f2e8a",
+    "assetNamespace": "erc20",
+    "assetReference": "0xdd50C053C096CB04A3e3362E2b622529EC5f2e8a",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  }
+]

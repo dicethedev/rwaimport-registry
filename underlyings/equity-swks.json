@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-swks",
+  "name": "Skyworks Solutions",
+  "ticker": "SWKS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "swkson"
+  ]
+}

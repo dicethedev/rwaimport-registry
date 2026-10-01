@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-clf",
+  "name": "Cleveland-Cliffs",
+  "ticker": "CLF",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "clfon"
+  ]
+}

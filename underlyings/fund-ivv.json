@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ivv",
+  "name": "iShares Core S&P 500 ETF",
+  "ticker": "IVV",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ivvon"
+  ]
+}

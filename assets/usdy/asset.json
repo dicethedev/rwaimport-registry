@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "id": "usdy",
+  "name": "Ondo US Dollar Yield Token",
+  "symbol": "USDY",
+  "underlyingId": "portfolio-usdy-short-term-treasuries",
+  "instrumentType": "debt-security",
+  "denominationCurrency": "USD",
+  "legalStructure": "Senior secured tokenized note issued by a bankruptcy-remote special-purpose vehicle.",
+  "securityType": "Tokenized debt security",
+  "underlyingRights": "Contractual exposure to a portfolio of short-term U.S. Treasuries and bank demand deposits; no direct ownership of portfolio assets.",
+  "redemptionRights": "Eligible non-U.S. investors may redeem subject to the issuer's terms and applicable restrictions.",
+  "offeringType": "Offshore private offering",
+  "regulatoryExemption": "Regulation S",
+  "organizationRoles": [
+    {
+      "organizationId": "ondo-finance",
+      "roles": [
+        "issuer",
+        "asset-manager",
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "Ondo US Dollar Yield Token (USDY), represented through tokenized or blockchain-integrated fund records.",
+  "assetClass": "treasury",
+  "issuerId": "ondo-finance",
+  "tokenizationProviderIds": [
+    "ondo-finance"
+  ],
+  "status": "active",
+  "website": "https://ondo.finance/usdy",
+  "marketDataLinks": [
+    {
+      "provider": "Ondo Finance",
+      "type": "issuer",
+      "url": "https://ondo.finance/usdy",
+      "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    }
+  ],
+  "verifiedBy": [
+    "official-product"
+  ]
+}

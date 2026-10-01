@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-oii",
+  "name": "Oceaneering International",
+  "ticker": "OII",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "oiion"
+  ]
+}

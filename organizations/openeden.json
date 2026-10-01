@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "openeden",
+  "name": "OpenEden",
+  "jurisdiction": "SG",
+  "status": "active",
+  "website": "https://openeden.com",
+  "sources": [
+    {
+      "title": "OpenEden official website",
+      "url": "https://openeden.com",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

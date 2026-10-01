@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-camt",
+  "name": "Camtek",
+  "ticker": "CAMT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "camton"
+  ]
+}

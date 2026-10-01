@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-orbx",
+  "name": "Global X Space Tech ETF",
+  "ticker": "ORBX",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "orbxon"
+  ]
+}

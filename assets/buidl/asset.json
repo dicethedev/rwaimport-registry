@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "buidl",
+  "name": "BlackRock USD Institutional Digital Liquidity Fund",
+  "symbol": "BUIDL",
+  "underlyingId": "fund-buidl",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Private fund managed by BlackRock and tokenized through Securitize.",
+  "securityType": "Private fund share",
+  "underlyingRights": "Beneficial interest in the fund, which invests primarily in cash, U.S. Treasury bills, and repurchase agreements.",
+  "redemptionRights": "Eligible investors may transfer tokens to Securitize Markets for U.S. dollar redemption under fund terms.",
+  "offeringType": "Private placement",
+  "regulatoryExemption": "Securities Act Rule 506(c); Investment Company Act Section 3(c)(7)",
+  "organizationRoles": [
+    {
+      "organizationId": "blackrock",
+      "roles": [
+        "issuer",
+        "asset-manager"
+      ]
+    },
+    {
+      "organizationId": "securitize",
+      "roles": [
+        "tokenization-provider",
+        "transfer-agent",
+        "broker-dealer"
+      ]
+    },
+    {
+      "organizationId": "bny-mellon",
+      "roles": [
+        "custodian",
+        "fund-administrator"
+      ]
+    },
+    {
+      "organizationId": "pricewaterhousecoopers",
+      "roles": [
+        "auditor"
+      ]
+    }
+  ],
+  "description": "BlackRock USD Institutional Digital Liquidity Fund (BUIDL), represented through tokenized or blockchain-integrated fund records.",
+  "assetClass": "money-market",
+  "issuerId": "blackrock",
+  "tokenizationProviderIds": [
+    "securitize"
+  ],
+  "status": "active",
+  "website": "https://securitize.io/learn/press/blackrock-launches-first-tokenized-fund-buidl-on-the-ethereum-network",
+  "marketDataLinks": [
+    {
+      "provider": "BlackRock",
+      "type": "issuer",
+      "url": "https://securitize.io/learn/press/blackrock-launches-first-tokenized-fund-buidl-on-the-ethereum-network",
+      "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    }
+  ],
+  "verifiedBy": [
+    "official-product"
+  ]
+}

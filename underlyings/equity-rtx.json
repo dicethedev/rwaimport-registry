@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-rtx",
+  "name": "RTX",
+  "ticker": "RTX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "rtxon"
+  ]
+}

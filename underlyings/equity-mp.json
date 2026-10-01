@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-mp",
+  "name": "MP Materials",
+  "ticker": "MP",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "mpon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-slb",
+  "name": "SLB",
+  "ticker": "SLB",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "slbon"
+  ]
+}

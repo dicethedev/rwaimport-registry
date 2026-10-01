@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "janus-henderson",
+  "name": "Janus Henderson Investors",
+  "type": "asset-manager",
+  "jurisdiction": "GB",
+  "status": "active",
+  "website": "https://www.janushenderson.com",
+  "sources": [
+    {
+      "title": "Janus Henderson Investors official website",
+      "url": "https://www.janushenderson.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

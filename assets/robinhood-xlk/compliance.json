@@ -4,6 +4,25 @@
   "kycRequired": "yes",
   "identityRequired": "no",
   "transferRestricted": "no",
+  "transferEnforcement": "legal-only",
+  "primaryMarket": {
+    "access": "authorized-participants-only",
+    "kycRequired": "unknown",
+    "kybRequired": "yes",
+    "notes": "Direct subscription and redemption are limited to Authorized Participants after KYB onboarding."
+  },
+  "secondaryMarket": {
+    "access": "permissionless",
+    "kycRequired": "no",
+    "kybRequired": "no",
+    "notes": "The ERC-20 tokens can be held and transferred in compatible wallets, subject to legal jurisdiction restrictions."
+  },
+  "prohibitedJurisdictions": [
+    "US",
+    "CA",
+    "GB",
+    "CH"
+  ],
   "eligibleInvestorTypes": [
     "retail",
     "professional",

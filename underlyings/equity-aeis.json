@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-aeis",
+  "name": "Advanced Energy",
+  "ticker": "AEIS",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US0079731008"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-aeis"
+  ]
+}

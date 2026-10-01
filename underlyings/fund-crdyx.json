@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-crdyx",
+  "name": "WisdomTree Private Credit and Alternative Income Digital Fund",
+  "ticker": "CRDYX",
+  "type": "private-credit",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "crdyx"
+  ]
+}

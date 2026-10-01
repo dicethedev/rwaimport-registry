@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-blk",
+  "name": "Blackrock, Inc.",
+  "ticker": "BLK",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "blkon"
+  ]
+}

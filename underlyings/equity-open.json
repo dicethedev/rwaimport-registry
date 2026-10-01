@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-open",
+  "name": "Opendoor Technologies",
+  "ticker": "OPEN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "openon"
+  ]
+}

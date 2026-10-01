@@ -1,0 +1,15 @@
+[
+  {
+    "id": "official-product",
+    "type": "issuer",
+    "title": "Ondo USDY official product page",
+    "url": "https://ondo.finance/usdy",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  }
+]

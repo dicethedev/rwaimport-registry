@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-axp",
+  "name": "American Express",
+  "ticker": "AXP",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "axpon"
+  ]
+}

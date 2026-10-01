@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ktos",
+  "name": "Kratos Defense & Security Solutions",
+  "ticker": "KTOS",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US50077B2079"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-ktos"
+  ]
+}

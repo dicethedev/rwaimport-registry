@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-celh",
+  "name": "Celsius",
+  "ticker": "CELH",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US15118V2079"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-celh"
+  ]
+}

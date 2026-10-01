@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "fixed",
+  "navSourceUrl": "https://digitalassets.franklintempleton.com/benji/",
+  "updateFrequency": "Provider-published schedule; see the official product page.",
+  "corporateActionModel": "none",
+  "distributionTreatment": "reinvested",
+  "reserveReportingUrl": "https://digitalassets.franklintempleton.com/benji/",
+  "verifiedBy": [
+    "official-product"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-net",
+  "name": "Cloudflare, Inc. Class A common stock",
+  "ticker": "NET",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "neton",
+    "robinhood-net"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US18915M1071"
+    }
+  ]
+}

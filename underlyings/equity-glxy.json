@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-glxy",
+  "name": "Galaxy Digital Inc.",
+  "ticker": "GLXY",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "glxyon",
+    "robinhood-glxy"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US36317J2096"
+    }
+  ]
+}

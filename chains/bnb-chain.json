@@ -6,6 +6,7 @@
   "type": "evm",
   "namespace": "eip155",
   "reference": "56",
+  "addressPattern": "^0x[a-fA-F0-9]{40}$",
   "nativeCurrency": "BNB",
   "explorerUrl": "https://bscscan.com",
   "status": "active"

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-keys",
+  "name": "Keysight Technologies",
+  "ticker": "KEYS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "keyson"
+  ]
+}

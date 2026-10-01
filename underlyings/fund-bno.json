@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-bno",
+  "name": "US Brent Oil Fund",
+  "ticker": "BNO",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "bnoon"
+  ]
+}

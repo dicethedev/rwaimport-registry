@@ -4,108 +4,122 @@
 
 The structured, source-backed asset registry used by RWAImport.
 
-This repository describes real-world assets, their issuers, blockchain deployments,
-token standards, compliance characteristics, and the evidence supporting each claim.
-It does **not** contain API, UI, indexing, or smart-contract analysis code.
+This repository describes tokenized financial products, their underlying instruments,
+organizations, blockchain deployments, legal and compliance characteristics, valuation
+behavior, token standards, and the evidence supporting each claim. It does **not** contain
+API, UI, indexing, or smart-contract analysis code.
 
 ## Core model
 
-An asset is a stable economic identity. A deployment is one token contract or mint
-representing that asset on one chain. An asset may have zero, one, or many deployments.
-Chains use CAIP-2 namespace and reference fields so EVM and non-EVM networks share one model.
+An underlying is the referenced real-world instrument or portfolio. An asset is a distinct
+tokenized product with its own issuer, legal rights, eligibility rules, and redemption terms.
+A deployment is one contract, mint, or ledger asset representing that product on one network.
+This separation lets consumers compare products that reference the same stock, ETF, commodity,
+or fund without treating their legal claims as equivalent.
 
 ```text
-issuer ──< asset ──< deployment >── chain
-                         │
-                         └──< standard
-
-asset ──< source (evidence)
+underlying ──< product ──< deployment >── chain
+                   │             └──< standard + evidence
+                   ├──< organization + role
+                   ├── compliance
+                   ├── valuation
+                   └──< source (evidence + freshness)
 ```
 
 ## Repository layout
 
 ```text
 assets/<asset-id>/
-  asset.json          Asset identity and classification
-  deployments.json    Chain-specific token contracts
-  compliance.json     Published transfer and eligibility requirements
-  sources.json        Evidence supporting the registry entry
-issuers/               One JSON file per issuer or service provider
-chains/                Supported blockchain network definitions
+  asset.json          Product, underlying link, legal model, and organization roles
+  deployments.json    Chain-specific token contracts, mints, or ledger assets
+  compliance.json     Primary/secondary access, transfer, and eligibility requirements
+  sources.json        Evidence, retrieval dates, review dates, and source versions
+  valuation.json      NAV, price/oracle, distributions, and reserve reporting
+underlyings/           Shared underlying instruments and referenced portfolios
+organizations/        Reusable organizations referenced with product-specific roles
+issuers/               Compatibility catalog for issuer/provider IDs
+chains/                Network definitions and network-specific address patterns
 standards/             Token standards understood by RWAImport
 schemas/               JSON Schemas for every record type
-scripts/               Validation and build commands
+scripts/               Import, validation, monitoring, and build commands
 src/                   Reusable registry loading and validation code
 tests/                 Integrity tests and non-production fixtures
 examples/              Copyable examples; never loaded as verified registry data
 ```
 
-The standards catalog includes finalized ERCs, proposals still under review, and maintained
-industry frameworks such as CMTAT. See `standards/README.md` for status meanings and scope.
+The standards catalog includes finalized ERCs, proposals still under review, native ledger
+standards, and maintained industry frameworks such as CMTAT. See `standards/README.md` for
+status meanings and scope.
 
 ## Getting started
 
-Requires Node.js 20 or later.
-
-The repository includes `.nvmrc`; run `nvm use` to select the same Node.js major version
-used by continuous integration.
+Requires Node.js 20 or later. The repository pins Vitest 4 so CI works on Node.js 20.
 
 ```bash
-npm install
+npm ci
 npm run check
-npm run build
 ```
 
-`npm run validate` checks JSON Schemas and cross-file relationships. `npm run build`
-writes a generated API-friendly snapshot to `dist/registry.json` only after validation.
-`npm run verify:onchain` performs live EVM bytecode and Solana Token-2022 mint checks;
-it is intentionally separate from the deterministic test suite because it requires network access.
+`npm run validate` checks JSON Schemas, chain-specific address formats, and cross-file
+relationships. `npm run build` writes the full registry, a compressed copy, a lightweight
+manifest with checksums, one file per product, and indexes by chain, issuer, underlying,
+asset class, and symbol.
+
+Live checks are separate from deterministic tests:
+
+- `npm run verify:onchain` checks EVM bytecode and Solana Token-2022 mints.
+- `npm run check:source-drift` compares current provider catalogs with checked-in records.
+- `npm run check:links` checks evidence and market-data links.
+
+A scheduled workflow runs the network-dependent checks weekly.
 
 ## Current catalog
 
-The catalog contains 595 source-backed assets with 1,382 deployments across Ethereum,
-BNB Smart Chain, Solana, and Robinhood Chain.
+The catalog contains 618 source-backed products, 501 shared underlying records, and 1,402
+deployments across ten network definitions, including EVM chains, Solana, Stellar, and Aptos.
 
-The Ondo collection contains 400 assets representing company equities and
-exchange-traded instruments. It includes 1,187 deployments: 400 each on Ethereum and BNB
-Smart Chain plus 387 valid Token-2022 mints on Solana. EVM deployments come from Ondo Finance's
-official token list at immutable commit `f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4`;
-Solana mints come from Ondo's official simulator catalog at immutable commit
-`0688add3c64aadc7006712989e9ec0592b5b10f8`. Each asset cites its official Ondo product
-page, product/eligibility guide, and a chain explorer for every deployment.
+The Ondo collection contains 400 products representing company equities and exchange-traded
+instruments. It includes 1,187 deployments: 400 each on Ethereum and BNB Smart Chain plus 387
+valid Token-2022 mints on Solana. EVM deployments come from Ondo Finance's official token list
+at immutable commit `f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4`; Solana mints come from
+Ondo's official simulator catalog at immutable commit
+`0688add3c64aadc7006712989e9ec0592b5b10f8`.
 
 The Robinhood collection contains 195 active Stock Tokens and tokenized ETFs issued by
 Robinhood Assets (Jersey) Limited, with 195 deployments on Robinhood Chain mainnet. Records
 come from Robinhood's official asset API as accessed on `2026-10-01`; each includes the
-official asset UID, ISIN, ERC-20 and ERC-8056 standards, issuer disclosures, and a canonical
-Blockscout contract link. Run `npm run import:robinhood-stocks` to refresh from the API or
-pass a downloaded JSON response to reproduce a fixed snapshot.
+official asset UID, ISIN, ERC-20 and ERC-8056 standards, issuer disclosures, and an official
+Blockscout contract link. The raw `2026-10-01` API response is archived under
+`snapshots/robinhood/` and tied to every record by SHA-256. Run
+`npm run import:robinhood-stocks` to refresh from the API or pass a downloaded JSON response.
 
-Every asset also has provider-appropriate `marketDataLinks` for the issuer, independent
-data providers where available, and relevant chain explorers. These are outbound
-verification links, not imported live values. See
-`ATTRIBUTION.md` for the exact credit and provenance policy.
+The institutional-funds batch adds 23 treasury, money-market, income, credit, and registered
+digital-fund products from Ondo, BlackRock/Securitize, Franklin Templeton, Hashnote, Superstate,
+OpenEden, Centrifuge/Janus Henderson, and WisdomTree. It includes 20 deployments published in
+official provider contract catalogs. Products whose transfer-agent records are blockchain-based
+but whose public token address is not disclosed are intentionally represented with zero
+deployments. Run `npm run import:institutional-funds` to reproduce this curated batch.
 
-These collections establish the ingestion and evidence pipeline. Subsequent batches should
-expand treasuries, commodities, credit, real estate, and other issuers without weakening
-source requirements.
+Every product has provider-appropriate `marketDataLinks`. These are outbound verification links,
+not imported live values. See `ATTRIBUTION.md` for the credit and provenance policy.
 
-## Adding an asset
+## Adding a product
 
 1. Copy `examples/assets/example-treasury` to `assets/<asset-id>`.
 2. Replace every example value with facts from primary or authoritative sources.
-3. Add the evidence URLs and access dates to `sources.json`.
-4. Add referenced issuers, chains, and standards if they do not exist.
-5. Run `npm run check`.
+3. Reuse or add the correct underlying and every organization referenced by a role.
+4. Add evidence URLs, freshness fields, and standard evidence for deployments.
+5. Add referenced issuers, chains, and standards if they do not exist.
+6. Run `npm run check`.
 
-Never use example addresses or unverified metadata in `assets/`. New entries should be
-added only after research, source attribution, and review.
+Never use example addresses or unverified metadata in `assets/`. A missing public deployment is
+represented by an empty array, not by a guessed contract.
 
 ## Versioning policy
 
-Every record currently uses `schemaVersion: 1`. Breaking schema changes must increment
-the affected record version and include a migration. Changes to facts do not require a
-schema version change.
+Product records use `schemaVersion: 2`; supporting record types currently use version 1.
+Breaking schema changes must increment the affected record version and include a migration.
+Changes to facts do not require a schema version change. See [MIGRATIONS.md](MIGRATIONS.md).
 
 ## License
 

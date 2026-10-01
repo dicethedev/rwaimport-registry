@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-etn",
+  "name": "Eaton",
+  "ticker": "ETN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "etnon"
+  ]
+}

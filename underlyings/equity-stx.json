@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-stx",
+  "name": "Seagate",
+  "ticker": "STX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "stxon"
+  ]
+}

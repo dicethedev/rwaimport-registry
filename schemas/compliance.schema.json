@@ -11,6 +11,9 @@
     "kycRequired": { "$ref": "#/$defs/answer" },
     "identityRequired": { "$ref": "#/$defs/answer" },
     "transferRestricted": { "$ref": "#/$defs/answer" },
+    "transferEnforcement": { "enum": ["none", "legal-only", "onchain", "mixed", "unknown"] },
+    "primaryMarket": { "$ref": "#/$defs/marketAccess" },
+    "secondaryMarket": { "$ref": "#/$defs/marketAccess" },
     "eligibleInvestorTypes": {
       "type": "array",
       "uniqueItems": true,
@@ -20,6 +23,19 @@
       "type": "array",
       "uniqueItems": true,
       "items": { "type": "string", "pattern": "^[A-Z]{2}$" }
+    },
+    "prohibitedJurisdictions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[A-Z]{2}$" }
+    },
+    "minimumSubscription": { "$ref": "#/$defs/money" },
+    "minimumRedemption": { "$ref": "#/$defs/money" },
+    "lockupPeriod": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "offeringDocuments": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "format": "uri", "pattern": "^https://" }
     },
     "notes": { "type": "string", "minLength": 1, "maxLength": 2000 },
     "verifiedBy": {
@@ -31,6 +47,26 @@
   },
   "$defs": {
     "answer": { "enum": ["yes", "no", "unknown"] },
+    "marketAccess": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["access", "kycRequired", "kybRequired"],
+      "properties": {
+        "access": { "enum": ["permissionless", "issuer-onboarding", "authorized-participants-only", "restricted", "unknown"] },
+        "kycRequired": { "$ref": "#/$defs/answer" },
+        "kybRequired": { "$ref": "#/$defs/answer" },
+        "notes": { "type": "string", "minLength": 1, "maxLength": 1000 }
+      }
+    },
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amount", "currency"],
+      "properties": {
+        "amount": { "type": "string", "pattern": "^[0-9]+(?:\\.[0-9]+)?$" },
+        "currency": { "type": "string", "pattern": "^[A-Z]{3}$" }
+      }
+    },
     "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 }
   }
 }

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-vrt",
+  "name": "Vertiv",
+  "ticker": "VRT",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US92537N1081"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-vrt"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-hpe",
+  "name": "HP Enterprise",
+  "ticker": "HPE",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "hpeon",
+    "robinhood-hpe"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US42824C1099"
+    }
+  ]
+}

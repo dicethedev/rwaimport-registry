@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ame",
+  "name": "AMETEK",
+  "ticker": "AME",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ameon"
+  ]
+}

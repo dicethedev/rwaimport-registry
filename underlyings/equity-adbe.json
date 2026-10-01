@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-adbe",
+  "name": "Adobe",
+  "ticker": "ADBE",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "adbeon",
+    "robinhood-adbe"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US00724F1012"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "wisdomtree-asset-management",
+  "name": "WisdomTree Asset Management",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.wisdomtree.com",
+  "sources": [
+    {
+      "title": "WisdomTree Asset Management official website",
+      "url": "https://www.wisdomtree.com",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

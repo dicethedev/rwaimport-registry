@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-powl",
+  "name": "Powell Industries",
+  "ticker": "POWL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "powlon",
+    "robinhood-powl"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US7391281067"
+    }
+  ]
+}

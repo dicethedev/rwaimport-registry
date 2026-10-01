@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-sedg",
+  "name": "SolarEdge Technologies",
+  "ticker": "SEDG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "sedgon"
+  ]
+}

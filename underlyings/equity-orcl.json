@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-orcl",
+  "name": "Oracle",
+  "ticker": "ORCL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "orclon",
+    "robinhood-orcl"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US68389X1054"
+    }
+  ]
+}

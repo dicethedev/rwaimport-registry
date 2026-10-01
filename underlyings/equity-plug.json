@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-plug",
+  "name": "Plug Power",
+  "ticker": "PLUG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "plugon"
+  ]
+}

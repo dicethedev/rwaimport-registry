@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lly",
+  "name": "Eli Lilly",
+  "ticker": "LLY",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "llyon",
+    "robinhood-lly"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US5324571083"
+    }
+  ]
+}

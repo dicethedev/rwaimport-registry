@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-crdo",
+  "name": "Credo Technology Group",
+  "ticker": "CRDO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "crdoon",
+    "robinhood-crdo"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "KYG254571055"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-rcat",
+  "name": "Red Cat",
+  "ticker": "RCAT",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US75644T1007"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-rcat"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "tj-assurance-partners",
+  "name": "TJ Assurance Partners",
+  "type": "other",
+  "jurisdiction": "SG",
+  "status": "active",
+  "website": "https://www.tjassurance.com",
+  "sources": [
+    {
+      "title": "TJ Assurance Partners official website",
+      "url": "https://www.tjassurance.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

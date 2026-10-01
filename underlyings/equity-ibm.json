@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ibm",
+  "name": "IBM",
+  "ticker": "IBM",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ibmon",
+    "robinhood-ibm"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US4592001014"
+    }
+  ]
+}

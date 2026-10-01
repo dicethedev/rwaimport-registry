@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-cohr",
+  "name": "Coherent",
+  "ticker": "COHR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cohron",
+    "robinhood-cohr"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US19247G1076"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-qqq",
+  "name": "Invesco QQQ",
+  "ticker": "QQQ",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "qqqon",
+    "robinhood-qqq"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US46090E1038"
+    }
+  ]
+}

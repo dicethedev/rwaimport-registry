@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ftgc",
+  "name": "First Trust Global Tactical Commodity Strategy Fund",
+  "ticker": "FTGC",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ftgcon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-efv",
+  "name": "iShares MSCI EAFE Value ETF",
+  "ticker": "EFV",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "efvon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-emr",
+  "name": "Emerson Electric",
+  "ticker": "EMR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "emron"
+  ]
+}

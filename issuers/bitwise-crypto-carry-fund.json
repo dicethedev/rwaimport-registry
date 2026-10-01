@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "bitwise-crypto-carry-fund",
+  "name": "Bitwise Crypto Carry Fund",
+  "type": "issuer",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://superstate.com/assets/uscc",
+  "sources": [
+    {
+      "title": "Bitwise Crypto Carry Fund official website",
+      "url": "https://superstate.com/assets/uscc",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

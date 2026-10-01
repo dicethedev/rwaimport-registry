@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-snow",
+  "name": "Snowflake",
+  "ticker": "SNOW",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US8334451098"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-snow",
+    "snowon"
+  ]
+}

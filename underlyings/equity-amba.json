@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-amba",
+  "name": "Ambarella",
+  "ticker": "AMBA",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "KYG037AX1015"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-amba"
+  ]
+}

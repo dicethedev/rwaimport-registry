@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-bot",
+  "name": "RoboStrategy",
+  "ticker": "BOT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "boton"
+  ]
+}

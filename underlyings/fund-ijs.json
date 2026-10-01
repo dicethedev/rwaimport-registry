@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ijs",
+  "name": "iShares S&P Small-Cap 600 Value ETF",
+  "ticker": "IJS",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ijson"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-peng",
+  "name": "Penguin Solutions",
+  "ticker": "PENG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pengon",
+    "robinhood-peng"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US7069151055"
+    }
+  ]
+}

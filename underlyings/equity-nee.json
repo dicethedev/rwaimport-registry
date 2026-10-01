@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-nee",
+  "name": "NextEra Energy",
+  "ticker": "NEE",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "neeon"
+  ]
+}

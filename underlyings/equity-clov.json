@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-clov",
+  "name": "Clover Health Investments",
+  "ticker": "CLOV",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US18914F1030"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-clov"
+  ]
+}

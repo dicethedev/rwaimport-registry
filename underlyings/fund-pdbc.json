@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-pdbc",
+  "name": "Invesco Optimum Yld Dvsfd Cmd Str No K-1 ETF",
+  "ticker": "PDBC",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pdbcon"
+  ]
+}

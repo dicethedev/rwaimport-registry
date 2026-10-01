@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-bil",
+  "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+  "ticker": "BIL",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "bilon"
+  ]
+}

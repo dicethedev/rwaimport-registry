@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-iren",
+  "name": "IREN Limited",
+  "ticker": "IREN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "irenon",
+    "robinhood-iren"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "AU0000185993"
+    }
+  ]
+}

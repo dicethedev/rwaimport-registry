@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-rddt",
+  "name": "Reddit",
+  "ticker": "RDDT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "rddton",
+    "robinhood-rddt"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US75734B1008"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-msft",
+  "name": "Microsoft",
+  "ticker": "MSFT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "msfton",
+    "robinhood-msft"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US5949181045"
+    }
+  ]
+}

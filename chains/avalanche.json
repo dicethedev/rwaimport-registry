@@ -6,6 +6,7 @@
   "type": "evm",
   "namespace": "eip155",
   "reference": "43114",
+  "addressPattern": "^0x[a-fA-F0-9]{40}$",
   "nativeCurrency": "AVAX",
   "explorerUrl": "https://snowtrace.io",
   "status": "active"

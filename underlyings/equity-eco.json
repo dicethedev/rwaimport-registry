@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-eco",
+  "name": "Okeanis Eco Tankers",
+  "ticker": "ECO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ecoon"
+  ]
+}

@@ -5,7 +5,14 @@
     "title": "WDC metadata in Robinhood's official asset API",
     "url": "https://api.robinhood.com/rhj/assets",
     "publisher": "Robinhood",
-    "accessedAt": "2026-10-01"
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2026-11-01",
+    "sourceVersion": "live-api:2026-10-01",
+    "contentHash": "sha256:f7effaf88d441b79c03df3eb1b1e6c4d2934d55c89916903eee44eccabd576ab",
+    "confidence": "high",
+    "description": "Archived input snapshot: snapshots/robinhood/assets-2026-10-01.json"
   },
   {
     "id": "robinhood-stock-token-docs",
@@ -13,7 +20,12 @@
     "title": "Robinhood Stock Tokens overview, mechanics, and issuer disclosures",
     "url": "https://docs.robinhood.com/chain/stock-tokens/",
     "publisher": "Robinhood",
-    "accessedAt": "2026-10-01"
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2026-11-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
   },
   {
     "id": "robinhood-chain-explorer",
@@ -21,6 +33,11 @@
     "title": "WDC contract on Robinhood Chain",
     "url": "https://robinhoodchain.blockscout.com/token/0xF52597345A8Edf418bc4071b4a35112472277D3e",
     "publisher": "Blockscout",
-    "accessedAt": "2026-10-01"
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2026-11-01",
+    "sourceVersion": "onchain:2026-10-01",
+    "confidence": "high"
   }
 ]

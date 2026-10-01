@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "fixed",
+  "navSourceUrl": "https://securitize.io/learn/press/blackrock-launches-first-tokenized-fund-buidl-on-the-ethereum-network",
+  "updateFrequency": "Provider-published schedule; see the official product page.",
+  "corporateActionModel": "none",
+  "distributionTreatment": "cash",
+  "reserveReportingUrl": "https://securitize.io/learn/press/blackrock-launches-first-tokenized-fund-buidl-on-the-ethereum-network",
+  "verifiedBy": [
+    "official-product"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-argt",
+  "name": "Global X MSCI Argentina ETF",
+  "ticker": "ARGT",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "argton"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-umc",
+  "name": "United Microelectronics",
+  "ticker": "UMC",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US9108734057"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-umc",
+    "umcon"
+  ]
+}

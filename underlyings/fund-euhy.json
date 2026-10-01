@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-euhy",
+  "name": "iShares Euro High Yield Corporate Bond USD Hedged ETF",
+  "ticker": "EUHY",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "euhyon"
+  ]
+}

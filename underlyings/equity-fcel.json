@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-fcel",
+  "name": "FuelCell Energy",
+  "ticker": "FCEL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "fcelon"
+  ]
+}

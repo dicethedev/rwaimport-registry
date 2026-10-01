@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-inro",
+  "name": "iShares US Industry Rotation Active ETF",
+  "ticker": "INRO",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "inroon"
+  ]
+}

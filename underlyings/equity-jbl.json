@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-jbl",
+  "name": "Jabil Inc.",
+  "ticker": "JBL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "jblon",
+    "robinhood-jbl"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US4663131039"
+    }
+  ]
+}

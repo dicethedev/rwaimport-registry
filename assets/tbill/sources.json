@@ -1,0 +1,28 @@
+[
+  {
+    "id": "official-product",
+    "type": "issuer",
+    "title": "OpenEden TBILL official documentation",
+    "url": "https://docs.openeden.com/tbill",
+    "publisher": "OpenEden",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  },
+  {
+    "id": "official-contracts",
+    "type": "issuer",
+    "title": "OpenEden official TBILL contract addresses",
+    "url": "https://docs.openeden.com/tbill/smart-contract-addresses",
+    "publisher": "OpenEden",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  }
+]

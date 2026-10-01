@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-cbrs",
+  "name": "Cerebras Systems",
+  "ticker": "CBRS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cbrson",
+    "robinhood-cbrs"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US15675D1037"
+    }
+  ]
+}

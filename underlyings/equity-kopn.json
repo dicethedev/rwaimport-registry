@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-kopn",
+  "name": "Kopin",
+  "ticker": "KOPN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "kopnon"
+  ]
+}

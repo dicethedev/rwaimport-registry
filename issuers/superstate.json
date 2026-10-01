@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "superstate",
+  "name": "Superstate",
+  "type": "tokenization-provider",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://superstate.com",
+  "sources": [
+    {
+      "title": "Superstate official website",
+      "url": "https://superstate.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-xndu",
+  "name": "Xanadu Quantum",
+  "ticker": "XNDU",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "CA98390R1029"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-xndu"
+  ]
+}

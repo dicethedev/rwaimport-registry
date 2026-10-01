@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-himx",
+  "name": "Himax Technologies",
+  "ticker": "HIMX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "himxon"
+  ]
+}

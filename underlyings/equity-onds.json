@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-onds",
+  "name": "Ondas Holdings",
+  "ticker": "ONDS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ondson"
+  ]
+}

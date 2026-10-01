@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "centrifuge",
+  "name": "Centrifuge",
+  "type": "tokenization-provider",
+  "status": "active",
+  "website": "https://centrifuge.io",
+  "sources": [
+    {
+      "title": "Centrifuge official website",
+      "url": "https://centrifuge.io",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

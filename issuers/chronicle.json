@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "chronicle",
+  "name": "Chronicle",
+  "type": "other",
+  "status": "active",
+  "website": "https://chroniclelabs.org",
+  "sources": [
+    {
+      "title": "Chronicle official website",
+      "url": "https://chroniclelabs.org",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

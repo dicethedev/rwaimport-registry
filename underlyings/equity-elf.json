@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-elf",
+  "name": "e.l.f. Beauty",
+  "ticker": "ELF",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US26856L1035"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-elf"
+  ]
+}

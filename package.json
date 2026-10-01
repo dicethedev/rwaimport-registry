@@ -1,11 +1,21 @@
 {
   "name": "@rwaimport/registry",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.2.0",
+  "private": false,
   "license": "MIT",
   "type": "module",
   "packageManager": "npm@10.8.2",
   "description": "Verified, source-backed metadata for tokenized real-world assets.",
+  "main": "./dist/registry.json",
+  "files": ["dist", "schemas", "README.md", "ATTRIBUTION.md", "LICENSE"],
+  "exports": {
+    ".": "./dist/registry.json",
+    "./registry.json": "./dist/registry.json",
+    "./manifest.json": "./dist/manifest.json",
+    "./indexes/*": "./dist/indexes/*.json",
+    "./assets/*": "./dist/assets/*.json"
+  },
+  "publishConfig": { "access": "public" },
   "engines": {
     "node": ">=20",
     "npm": ">=10"
@@ -13,8 +23,12 @@
   "scripts": {
     "build": "node --import tsx scripts/build-index.ts",
     "check": "npm run typecheck && npm run validate && npm test && npm run build",
+    "check:links": "node --import tsx scripts/check-links.ts",
+    "check:source-drift": "node --import tsx scripts/check-source-drift.ts",
     "import:ondo-stocks": "node --import tsx scripts/import-ondo-stocks.ts",
     "import:robinhood-stocks": "node --import tsx scripts/import-robinhood-stocks.ts",
+    "import:institutional-funds": "node --import tsx scripts/import-institutional-funds.ts",
+    "build:underlyings": "node --import tsx scripts/build-underlyings.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",

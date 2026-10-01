@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ai",
+  "name": "C3.ai",
+  "ticker": "AI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aion"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-pplt",
+  "name": "abrdn Physical Platinum Shares ETF",
+  "ticker": "PPLT",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pplton"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-capr",
+  "name": "Capricor Therapeutics",
+  "ticker": "CAPR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "capron"
+  ]
+}

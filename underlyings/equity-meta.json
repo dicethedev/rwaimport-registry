@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-meta",
+  "name": "Meta Platforms",
+  "ticker": "META",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "metaon",
+    "robinhood-meta"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US30303M1027"
+    }
+  ]
+}

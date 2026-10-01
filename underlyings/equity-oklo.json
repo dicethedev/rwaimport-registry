@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-oklo",
+  "name": "Oklo",
+  "ticker": "OKLO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "okloon",
+    "robinhood-oklo"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US02156V1098"
+    }
+  ]
+}

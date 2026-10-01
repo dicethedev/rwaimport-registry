@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-iwf",
+  "name": "iShares Russell 1000 Growth ETF",
+  "ticker": "IWF",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "iwfon"
+  ]
+}

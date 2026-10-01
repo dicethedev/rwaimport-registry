@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ustb",
+  "name": "Invesco Short Duration US Government Securities Fund",
+  "ticker": "USTB",
+  "type": "treasury",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ustb"
+  ]
+}

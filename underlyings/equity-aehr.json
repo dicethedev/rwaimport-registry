@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-aehr",
+  "name": "Aehr",
+  "ticker": "AEHR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aehron",
+    "robinhood-aehr"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US00760J1088"
+    }
+  ]
+}

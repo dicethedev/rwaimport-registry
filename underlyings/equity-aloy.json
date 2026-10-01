@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-aloy",
+  "name": "REalloys",
+  "ticker": "ALOY",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aloyon"
+  ]
+}

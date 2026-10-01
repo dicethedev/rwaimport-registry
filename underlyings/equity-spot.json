@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-spot",
+  "name": "Spotify",
+  "ticker": "SPOT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "spoton"
+  ]
+}

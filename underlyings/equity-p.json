@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-p",
+  "name": "Everpure",
+  "ticker": "P",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US74624M1027"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-p"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "ousg",
+  "name": "Ondo Short-Term US Government Treasuries",
+  "symbol": "OUSG",
+  "underlyingId": "portfolio-ousg-us-government-securities",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Tokenized interest in an investment product holding short-term U.S. government securities and institutional government liquidity products.",
+  "securityType": "Tokenized fund interest",
+  "underlyingRights": "Economic interest in the OUSG portfolio; not direct ownership of individual portfolio securities.",
+  "redemptionRights": "Eligible onboarded investors may subscribe and redeem under the published OUSG terms.",
+  "offeringType": "Private offering",
+  "regulatoryExemption": "Eligibility and offering restrictions are described in the official offering documents.",
+  "organizationRoles": [
+    {
+      "organizationId": "ondo-finance",
+      "roles": [
+        "issuer",
+        "asset-manager",
+        "tokenization-provider"
+      ]
+    },
+    {
+      "organizationId": "blackrock",
+      "roles": [
+        "asset-manager"
+      ]
+    }
+  ],
+  "description": "Ondo Short-Term US Government Treasuries (OUSG), represented through tokenized or blockchain-integrated fund records.",
+  "assetClass": "treasury",
+  "issuerId": "ondo-finance",
+  "tokenizationProviderIds": [
+    "ondo-finance"
+  ],
+  "status": "active",
+  "website": "https://ondo.finance/ousg",
+  "marketDataLinks": [
+    {
+      "provider": "Ondo Finance",
+      "type": "issuer",
+      "url": "https://ondo.finance/ousg",
+      "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    }
+  ],
+  "verifiedBy": [
+    "official-product"
+  ]
+}

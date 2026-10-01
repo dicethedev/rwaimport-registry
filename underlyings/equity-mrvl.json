@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-mrvl",
+  "name": "Marvell Technology",
+  "ticker": "MRVL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "mrvlon",
+    "robinhood-mrvl"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US5738741041"
+    }
+  ]
+}

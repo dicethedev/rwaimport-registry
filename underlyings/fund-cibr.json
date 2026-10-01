@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-cibr",
+  "name": "First Trust NASDAQ Cybersecurity ETF",
+  "ticker": "CIBR",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cibron"
+  ]
+}

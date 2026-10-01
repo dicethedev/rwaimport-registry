@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-brtr",
+  "name": "iShares Total Return Active ETF",
+  "ticker": "BRTR",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "brtron"
+  ]
+}

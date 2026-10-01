@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lrcx",
+  "name": "Lam Research Corp",
+  "ticker": "LRCX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "lrcxon",
+    "robinhood-lrcx"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US5128073062"
+    }
+  ]
+}

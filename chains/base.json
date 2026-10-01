@@ -6,6 +6,7 @@
   "type": "evm",
   "namespace": "eip155",
   "reference": "8453",
+  "addressPattern": "^0x[a-fA-F0-9]{40}$",
   "nativeCurrency": "ETH",
   "explorerUrl": "https://basescan.org",
   "status": "active"

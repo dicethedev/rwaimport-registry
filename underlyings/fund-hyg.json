@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-hyg",
+  "name": "iBoxx $ High Yield Corporate Bond ETF",
+  "ticker": "HYG",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "hygon"
+  ]
+}

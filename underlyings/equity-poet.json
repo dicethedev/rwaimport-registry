@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-poet",
+  "name": "POET Technologies",
+  "ticker": "POET",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "CA73044W3021"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-poet"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-soun",
+  "name": "SoundHound AI",
+  "ticker": "SOUN",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US8361001071"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-soun",
+    "sounon"
+  ]
+}

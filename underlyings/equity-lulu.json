@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lulu",
+  "name": "Lululemon",
+  "ticker": "LULU",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US5500211090"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-lulu"
+  ]
+}

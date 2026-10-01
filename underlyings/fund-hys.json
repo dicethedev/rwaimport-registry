@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-hys",
+  "name": "PIMCO 0-5 Year High Yield Corporate Bond Index ETF",
+  "ticker": "HYS",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "hyson"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lin",
+  "name": "Linde plc",
+  "ticker": "LIN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "linon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-dis",
+  "name": "Disney",
+  "ticker": "DIS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "dison"
+  ]
+}

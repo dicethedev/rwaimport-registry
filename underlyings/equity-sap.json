@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-sap",
+  "name": "SAP",
+  "ticker": "SAP",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "sapon"
+  ]
+}

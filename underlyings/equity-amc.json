@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-amc",
+  "name": "AMC Entertainment",
+  "ticker": "AMC",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "amcon",
+    "robinhood-amc"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US00165C3025"
+    }
+  ]
+}

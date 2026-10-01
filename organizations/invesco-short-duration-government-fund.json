@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "invesco-short-duration-government-fund",
+  "name": "Invesco Short Duration US Government Securities Fund",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://superstate.com/assets/ustb",
+  "sources": [
+    {
+      "title": "Invesco Short Duration US Government Securities Fund official website",
+      "url": "https://superstate.com/assets/ustb",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

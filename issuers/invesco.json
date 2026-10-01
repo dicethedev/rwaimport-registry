@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "invesco",
+  "name": "Invesco",
+  "legalName": "Invesco Ltd.",
+  "type": "asset-manager",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.invesco.com",
+  "sources": [
+    {
+      "title": "Invesco official website",
+      "url": "https://www.invesco.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

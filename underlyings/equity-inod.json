@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-inod",
+  "name": "Innodata",
+  "ticker": "INOD",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "inodon",
+    "robinhood-inod"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US4576422053"
+    }
+  ]
+}

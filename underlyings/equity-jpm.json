@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-jpm",
+  "name": "JPMorgan Chase",
+  "ticker": "JPM",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "jpmon"
+  ]
+}

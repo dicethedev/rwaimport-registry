@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-usar",
+  "name": "USA Rare Earth",
+  "ticker": "USAR",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US91733P1075"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-usar",
+    "usaron"
+  ]
+}

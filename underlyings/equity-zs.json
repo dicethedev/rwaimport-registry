@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-zs",
+  "name": "Zscaler",
+  "ticker": "ZS",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US98980G1022"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-zs"
+  ]
+}

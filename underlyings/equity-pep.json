@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-pep",
+  "name": "PepsiCo",
+  "ticker": "PEP",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pepon"
+  ]
+}

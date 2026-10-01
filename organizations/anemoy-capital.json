@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "anemoy-capital",
+  "name": "Anemoy Capital",
+  "jurisdiction": "VG",
+  "status": "active",
+  "website": "https://anemoy.io",
+  "sources": [
+    {
+      "title": "Anemoy Capital official website",
+      "url": "https://anemoy.io",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

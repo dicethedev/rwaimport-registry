@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-flnc",
+  "name": "Fluence Energy",
+  "ticker": "FLNC",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "flncon",
+    "robinhood-flnc"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US34379V1035"
+    }
+  ]
+}

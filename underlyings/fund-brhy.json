@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-brhy",
+  "name": "iShares High Yield Active ETF",
+  "ticker": "BRHY",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "brhyon"
+  ]
+}

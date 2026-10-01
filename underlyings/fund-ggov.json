@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ggov",
+  "name": "iShares Global Government Bond USD Hedged Active ETF",
+  "ticker": "GGOV",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ggovon"
+  ]
+}

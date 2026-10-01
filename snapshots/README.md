@@ -1,0 +1,8 @@
+# Source snapshots
+
+This directory preserves inputs that cannot be referenced by an immutable upstream commit.
+Snapshot files are imported verbatim, and their SHA-256 values are stored in the generated
+product source records. Commit-pinned upstream sources remain referenced by immutable URL and
+content hash instead of being duplicated here.
+
+Run the matching importer with a downloaded input file to reproduce or review a snapshot.

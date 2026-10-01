@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "instrument-mag7x",
+  "name": "Ondo Magnificent 7 and Crypto Portfolio",
+  "ticker": "MAG7X",
+  "type": "other",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "mag7xon"
+  ]
+}

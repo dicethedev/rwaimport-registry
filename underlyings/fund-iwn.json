@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-iwn",
+  "name": "iShares Russell 2000 Value ETF",
+  "ticker": "IWN",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "iwnon"
+  ]
+}

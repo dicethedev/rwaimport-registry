@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-pr",
+  "name": "Permian Resources",
+  "ticker": "PR",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US71424F1057"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-pr"
+  ]
+}

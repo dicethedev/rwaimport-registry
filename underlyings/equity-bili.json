@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-bili",
+  "name": "Bilibili",
+  "ticker": "BILI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "bilion"
+  ]
+}

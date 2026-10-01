@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-powi",
+  "name": "Power Integrations",
+  "ticker": "POWI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "powion"
+  ]
+}

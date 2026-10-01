@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tmus",
+  "name": "T-Mobile US",
+  "ticker": "TMUS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "tmuson"
+  ]
+}

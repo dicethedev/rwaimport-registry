@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-botz",
+  "name": "Global X Robotics & Artificial Intelligence ETF",
+  "ticker": "BOTZ",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "botzon"
+  ]
+}

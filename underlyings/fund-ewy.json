@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ewy",
+  "name": "iShares MSCI South Korea fund",
+  "ticker": "EWY",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ewyon",
+    "robinhood-ewy"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US4642867729"
+    }
+  ]
+}

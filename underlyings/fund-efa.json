@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-efa",
+  "name": "iShares MSCI EAFE ETF",
+  "ticker": "EFA",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "efaon"
+  ]
+}

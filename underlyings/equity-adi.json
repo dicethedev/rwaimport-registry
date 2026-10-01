@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-adi",
+  "name": "Analog Devices",
+  "ticker": "ADI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "adion"
+  ]
+}

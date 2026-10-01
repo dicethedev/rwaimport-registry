@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "circle",
+  "name": "Circle",
+  "legalName": "Circle Internet Group, Inc.",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.circle.com",
+  "sources": [
+    {
+      "title": "Circle official website",
+      "url": "https://www.circle.com",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

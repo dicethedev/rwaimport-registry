@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ups",
+  "name": "UPS",
+  "ticker": "UPS",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US9113121068"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-ups"
+  ]
+}

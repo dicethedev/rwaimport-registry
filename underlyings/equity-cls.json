@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-cls",
+  "name": "Celestica",
+  "ticker": "CLS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "clson",
+    "robinhood-cls"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "CA15101Q2071"
+    }
+  ]
+}

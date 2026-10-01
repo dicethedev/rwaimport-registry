@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-riot",
+  "name": "Riot Platforms",
+  "ticker": "RIOT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "rioton"
+  ]
+}

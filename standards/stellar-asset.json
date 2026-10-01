@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "stellar-asset",
+  "name": "Stellar Issued Asset",
+  "category": "fungible-token",
+  "specificationType": "stellar-asset",
+  "maintainer": "Stellar Development Foundation",
+  "description": "A Stellar issued asset identified by an asset code and issuing account, with authorization and clawback flags available to regulated issuers.",
+  "capabilities": ["fungible", "issuer-authorization", "clawback"],
+  "status": "active",
+  "referenceUrl": "https://developers.stellar.org/docs/tokens/stellar-asset-contract"
+}

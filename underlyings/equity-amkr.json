@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-amkr",
+  "name": "Amkor Technology",
+  "ticker": "AMKR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "amkron",
+    "robinhood-amkr"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US0316521006"
+    }
+  ]
+}

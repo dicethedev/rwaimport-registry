@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-sbet",
+  "name": "SharpLink Gaming",
+  "ticker": "SBET",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "sbeton"
+  ]
+}

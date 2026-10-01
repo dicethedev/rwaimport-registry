@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "nav",
+  "navSourceUrl": "https://app.centrifuge.io/pool/281474976710662",
+  "updateFrequency": "Provider-published schedule; see the official product page.",
+  "corporateActionModel": "accumulating-price",
+  "distributionTreatment": "reinvested",
+  "reserveReportingUrl": "https://app.centrifuge.io/pool/281474976710662",
+  "verifiedBy": [
+    "official-product"
+  ]
+}

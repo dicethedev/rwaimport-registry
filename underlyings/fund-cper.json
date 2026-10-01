@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-cper",
+  "name": "US Copper Index Fund",
+  "ticker": "CPER",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cperon"
+  ]
+}

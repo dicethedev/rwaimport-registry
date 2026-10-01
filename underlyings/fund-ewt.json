@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ewt",
+  "name": "iShares MSCI Taiwan Capped ETF",
+  "ticker": "EWT",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US46434G7723"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-ewt"
+  ]
+}

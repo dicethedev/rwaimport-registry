@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ince",
+  "name": "Franklin Income Equity Focus ETF",
+  "ticker": "INCE",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "inceon"
+  ]
+}

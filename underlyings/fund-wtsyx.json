@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-wtsyx",
+  "name": "WisdomTree Short-Term Treasury Digital Fund",
+  "ticker": "WTSYX",
+  "type": "treasury",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "wtsyx"
+  ]
+}

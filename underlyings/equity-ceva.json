@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ceva",
+  "name": "CEVA",
+  "ticker": "CEVA",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cevaon"
+  ]
+}

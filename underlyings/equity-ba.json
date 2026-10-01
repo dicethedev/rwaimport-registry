@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ba",
+  "name": "Boeing",
+  "ticker": "BA",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "baon",
+    "robinhood-ba"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US0970231058"
+    }
+  ]
+}

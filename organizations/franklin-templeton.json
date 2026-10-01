@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "franklin-templeton",
+  "name": "Franklin Templeton",
+  "legalName": "Franklin Resources, Inc.",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.franklintempleton.com",
+  "sources": [
+    {
+      "title": "Franklin Templeton official website",
+      "url": "https://www.franklintempleton.com",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

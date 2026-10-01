@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-bmnr",
+  "name": "BitMine Immersion Technologies",
+  "ticker": "BMNR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "bmnron"
+  ]
+}

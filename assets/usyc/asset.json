@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "id": "usyc",
+  "name": "Hashnote International Short Duration Yield Fund",
+  "symbol": "USYC",
+  "underlyingId": "fund-sdyf",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Tokenized fund share issued to onboarded investors in Hashnote's short-duration yield fund.",
+  "securityType": "Private fund share",
+  "underlyingRights": "Economic interest in the fund's short-duration treasury and reverse-repurchase strategy.",
+  "redemptionRights": "Onboarded investors may subscribe and redeem USYC through the official teller, subject to liquidity and timing rules.",
+  "offeringType": "Private fund",
+  "organizationRoles": [
+    {
+      "organizationId": "hashnote",
+      "roles": [
+        "issuer",
+        "asset-manager",
+        "tokenization-provider"
+      ]
+    },
+    {
+      "organizationId": "circle",
+      "roles": [
+        "other"
+      ]
+    }
+  ],
+  "description": "Hashnote International Short Duration Yield Fund (USYC), represented through tokenized or blockchain-integrated fund records.",
+  "assetClass": "money-market",
+  "issuerId": "hashnote",
+  "tokenizationProviderIds": [
+    "hashnote"
+  ],
+  "status": "active",
+  "website": "https://usyc.docs.hashnote.com/",
+  "marketDataLinks": [
+    {
+      "provider": "Hashnote",
+      "type": "issuer",
+      "url": "https://usyc.docs.hashnote.com/",
+      "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    }
+  ],
+  "verifiedBy": [
+    "official-product"
+  ]
+}

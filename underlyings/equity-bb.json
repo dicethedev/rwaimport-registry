@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-bb",
+  "name": "Blackberry",
+  "ticker": "BB",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "CA09228F1036"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-bb"
+  ]
+}

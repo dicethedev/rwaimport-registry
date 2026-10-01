@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-infq",
+  "name": "Infleqtion",
+  "ticker": "INFQ",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US45676K1034"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-infq"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-aapl",
+  "name": "Apple",
+  "ticker": "AAPL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aaplon",
+    "robinhood-aapl"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US0378331005"
+    }
+  ]
+}

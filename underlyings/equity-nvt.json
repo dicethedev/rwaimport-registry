@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-nvt",
+  "name": "nVent Electric",
+  "ticker": "NVT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nvton"
+  ]
+}

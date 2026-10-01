@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-app",
+  "name": "AppLovin",
+  "ticker": "APP",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "appon",
+    "robinhood-app"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US03831W1080"
+    }
+  ]
+}

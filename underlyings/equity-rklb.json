@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-rklb",
+  "name": "Rocket Lab Corporation",
+  "ticker": "RKLB",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "rklbon",
+    "robinhood-rklb"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US7731211089"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ttd",
+  "name": "Trade Desk",
+  "ticker": "TTD",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US88339J1051"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-ttd"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-uuuu",
+  "name": "Energy Fuels",
+  "ticker": "UUUU",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "uuuuon"
+  ]
+}

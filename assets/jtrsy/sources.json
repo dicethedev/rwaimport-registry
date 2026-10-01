@@ -1,0 +1,28 @@
+[
+  {
+    "id": "official-product",
+    "type": "issuer",
+    "title": "Centrifuge official JTRSY product page",
+    "url": "https://app.centrifuge.io/pool/281474976710662",
+    "publisher": "Anemoy Capital",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  },
+  {
+    "id": "official-contracts",
+    "type": "issuer",
+    "title": "Centrifuge official protocol deployment catalog",
+    "url": "https://docs.centrifuge.io/developer/protocol/deployments/",
+    "publisher": "Anemoy Capital",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  }
+]

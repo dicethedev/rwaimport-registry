@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-fig",
+  "name": "Figma",
+  "ticker": "FIG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "figon",
+    "robinhood-fig"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US3168411052"
+    }
+  ]
+}

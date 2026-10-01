@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-gnrc",
+  "name": "Generac Holdings",
+  "ticker": "GNRC",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "gnrcon"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-spy",
+  "name": "SPDR S&P 500 ETF Trust",
+  "ticker": "SPY",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US78462F1030"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-spy"
+  ]
+}

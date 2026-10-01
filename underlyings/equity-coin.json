@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-coin",
+  "name": "Coinbase",
+  "ticker": "COIN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "coinon",
+    "robinhood-coin"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US19260Q1076"
+    }
+  ]
+}

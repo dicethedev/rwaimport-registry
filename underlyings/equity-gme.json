@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-gme",
+  "name": "GameStop",
+  "ticker": "GME",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "gmeon",
+    "robinhood-gme"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US36467W1099"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-uec",
+  "name": "Uranium Energy",
+  "ticker": "UEC",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "uecon"
+  ]
+}

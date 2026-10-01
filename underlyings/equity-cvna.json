@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-cvna",
+  "name": "Carvana",
+  "ticker": "CVNA",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cvnaon",
+    "robinhood-cvna"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US1468691027"
+    }
+  ]
+}

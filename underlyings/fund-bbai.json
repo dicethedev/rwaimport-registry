@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-bbai",
+  "name": "BigBear.ai Holdings",
+  "ticker": "BBAI",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "bbaion"
+  ]
+}

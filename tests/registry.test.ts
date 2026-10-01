@@ -33,6 +33,48 @@ describe("registry validation", () => {
     expect(result.errors).toContain("Asset example-treasury references unknown issuer missing-issuer");
   });
 
+  it("rejects an unknown underlying or organization role", async () => {
+    const temporaryRoot = await mkdtemp(path.join(tmpdir(), "rwaimport-registry-"));
+    await cp(validFixture, temporaryRoot, { recursive: true });
+    const assetFile = path.join(temporaryRoot, "assets/example-treasury/asset.json");
+    const asset = JSON.parse(await readFile(assetFile, "utf8")) as Record<string, unknown>;
+    asset.underlyingId = "missing-underlying";
+    asset.organizationRoles = [{ organizationId: "missing-organization", roles: ["issuer"] }];
+    await writeFile(assetFile, `${JSON.stringify(asset, null, 2)}\n`, "utf8");
+
+    const result = await validateRegistry(temporaryRoot);
+
+    expect(result.valid).toBe(false);
+    expect(result.errors).toContain(
+      "Asset example-treasury references unknown underlying missing-underlying",
+    );
+    expect(result.errors).toContain(
+      "Asset example-treasury references unknown organization missing-organization",
+    );
+  });
+
+  it("requires freshness metadata for every evidence source", async () => {
+    const temporaryRoot = await mkdtemp(path.join(tmpdir(), "rwaimport-registry-"));
+    await cp(validFixture, temporaryRoot, { recursive: true });
+    const sourceFile = path.join(
+      temporaryRoot,
+      "assets/example-treasury/sources.json",
+    );
+    const sources = JSON.parse(await readFile(sourceFile, "utf8")) as Array<
+      Record<string, unknown>
+    >;
+    if (!sources[0]) throw new Error("Fixture source is missing");
+    delete sources[0].reviewAfter;
+    await writeFile(sourceFile, `${JSON.stringify(sources, null, 2)}\n`, "utf8");
+
+    const result = await validateRegistry(temporaryRoot);
+
+    expect(result.valid).toBe(false);
+    expect(result.errors.some((error) => error.includes("required property 'reviewAfter'"))).toBe(
+      true,
+    );
+  });
+
   it("rejects a deployment whose numeric chain id disagrees with its chain", async () => {
     const temporaryRoot = await mkdtemp(path.join(tmpdir(), "rwaimport-registry-"));
     await cp(validFixture, temporaryRoot, { recursive: true });
@@ -102,6 +144,37 @@ describe("registry validation", () => {
     expect(result.valid).toBe(false);
     expect(result.errors).toContain(
       "Asset example-treasury deployment address is not a 32-byte Solana public key",
+    );
+  });
+
+  it("uses each chain's own address pattern", async () => {
+    const temporaryRoot = await mkdtemp(path.join(tmpdir(), "rwaimport-registry-"));
+    await cp(validFixture, temporaryRoot, { recursive: true });
+    const chainFile = path.join(temporaryRoot, "chains/ethereum.json");
+    const chain = JSON.parse(await readFile(chainFile, "utf8")) as Record<string, unknown>;
+    chain.type = "stellar";
+    chain.namespace = "stellar";
+    chain.reference = "pubnet";
+    chain.addressPattern = "^G[A-Z2-7]{55}$";
+    delete chain.chainId;
+    await writeFile(chainFile, `${JSON.stringify(chain, null, 2)}\n`, "utf8");
+
+    const deploymentFile = path.join(
+      temporaryRoot,
+      "assets/example-treasury/deployments.json",
+    );
+    const deployments = JSON.parse(await readFile(deploymentFile, "utf8")) as Array<
+      Record<string, unknown>
+    >;
+    if (!deployments[0]) throw new Error("Fixture deployment is missing");
+    delete deployments[0].chainId;
+    await writeFile(deploymentFile, `${JSON.stringify(deployments, null, 2)}\n`, "utf8");
+
+    const result = await validateRegistry(temporaryRoot);
+
+    expect(result.valid).toBe(false);
+    expect(result.errors).toContain(
+      "Asset example-treasury deployment address does not match ethereum",
     );
   });
 });

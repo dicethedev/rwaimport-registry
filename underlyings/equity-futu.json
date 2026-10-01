@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-futu",
+  "name": "Futu Holdings",
+  "ticker": "FUTU",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "futuon",
+    "robinhood-futu"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US36118L1061"
+    }
+  ]
+}

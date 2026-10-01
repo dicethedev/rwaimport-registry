@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-pins",
+  "name": "Pinterest",
+  "ticker": "PINS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pinson"
+  ]
+}

@@ -5,7 +5,13 @@
     "title": "Ondo official token list at commit f5a82fca4b2a",
     "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-10-01"
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2026-11-01",
+    "sourceVersion": "f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4",
+    "contentHash": "sha256:002c6a555f6b1ad504e8c63282971372176f1632db8e9b42f9686e2d0f0a4b45",
+    "confidence": "high"
   },
   {
     "id": "ondo-product-page",
@@ -13,7 +19,12 @@
     "title": "Harmonic (Ondo Tokenized) product page",
     "url": "https://app.ondo.finance/assets/hliton",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-10-01"
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2026-11-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
   },
   {
     "id": "ondo-stocks-guide",
@@ -21,7 +32,12 @@
     "title": "Ondo Stocks product, onboarding, and eligibility overview",
     "url": "https://ondo.finance/ondo-stocks",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-10-01"
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2026-11-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
   },
   {
     "id": "ethereum-explorer",
@@ -29,7 +45,12 @@
     "title": "HLITon contract on ethereum",
     "url": "https://etherscan.io/token/0xa4daA3f53405BEa3B1E5701b6Db2DDC0efc4C8b2",
     "publisher": "Etherscan",
-    "accessedAt": "2026-10-01"
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2026-11-01",
+    "sourceVersion": "onchain:2026-10-01",
+    "confidence": "high"
   },
   {
     "id": "bnb-chain-explorer",
@@ -37,7 +58,12 @@
     "title": "HLITon contract on bnb-chain",
     "url": "https://bscscan.com/token/0xfF6f45B2D761CDE4dAb7F5d7A1A5f691F52F3bC3",
     "publisher": "BscScan",
-    "accessedAt": "2026-10-01"
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2026-11-01",
+    "sourceVersion": "onchain:2026-10-01",
+    "confidence": "high"
   },
   {
     "id": "ondo-solana-mint-list",
@@ -45,7 +71,13 @@
     "title": "Ondo official Solana mint list at commit 0688add3c64a",
     "url": "https://raw.githubusercontent.com/ondoprotocol/gm-solana-simulator/0688add3c64aadc7006712989e9ec0592b5b10f8/constants.rs",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-10-01"
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2026-11-01",
+    "sourceVersion": "0688add3c64aadc7006712989e9ec0592b5b10f8",
+    "contentHash": "sha256:a74513434acc4c0343e0c24a44f6fce01580952b49a7440daaaa918f47e93c99",
+    "confidence": "high"
   },
   {
     "id": "solana-explorer",
@@ -53,6 +85,11 @@
     "title": "HLITon mint on Solana",
     "url": "https://explorer.solana.com/address/o3pnLke4uti6hY3LTfb2wVBpHeWG7znjJHj6VXtondo",
     "publisher": "Solana",
-    "accessedAt": "2026-10-01"
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2026-11-01",
+    "sourceVersion": "onchain:2026-10-01",
+    "confidence": "high"
   }
 ]

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-gs",
+  "name": "Goldman Sachs",
+  "ticker": "GS",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "gson"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "nav",
+  "navSourceUrl": "https://ondo.finance/usdy",
+  "updateFrequency": "Provider-published schedule; see the official product page.",
+  "corporateActionModel": "accumulating-price",
+  "distributionTreatment": "reinvested",
+  "reserveReportingUrl": "https://ondo.finance/usdy",
+  "verifiedBy": [
+    "official-product"
+  ]
+}

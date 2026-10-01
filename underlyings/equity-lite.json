@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lite",
+  "name": "Lumentum",
+  "ticker": "LITE",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "liteon",
+    "robinhood-lite"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US55024U1097"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-nvts",
+  "name": "Navitas Semiconductor",
+  "ticker": "NVTS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nvtson",
+    "robinhood-nvts"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US63942X1063"
+    }
+  ]
+}

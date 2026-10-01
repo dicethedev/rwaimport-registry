@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-bidu",
+  "name": "Baidu",
+  "ticker": "BIDU",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "biduon"
+  ]
+}

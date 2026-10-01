@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "wisdomtree-digital-trust",
+  "name": "WisdomTree Digital Trust",
+  "type": "issuer",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.wisdomtree.com/onchain/tokenized-funds",
+  "sources": [
+    {
+      "title": "WisdomTree Digital Trust official website",
+      "url": "https://www.wisdomtree.com/onchain/tokenized-funds",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-wtsix",
+  "name": "WisdomTree Short-Duration Income Digital Fund",
+  "ticker": "WTSIX",
+  "type": "money-market-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "wtsix"
+  ]
+}

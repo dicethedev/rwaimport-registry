@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 2,
+  "id": "jtrsy",
+  "name": "Janus Henderson Anemoy Treasury Fund",
+  "symbol": "JTRSY",
+  "underlyingId": "fund-jtrsy",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "BVI professional fund licensed by the British Virgin Islands Financial Services Commission.",
+  "securityType": "Professional fund share",
+  "underlyingRights": "Fund share representing an interest in a portfolio of directly held short-term U.S. Treasury bills.",
+  "redemptionRights": "Daily subscriptions and redemptions for eligible non-U.S. professional investors, subject to published cutoffs.",
+  "offeringType": "BVI professional fund",
+  "organizationRoles": [
+    {
+      "organizationId": "anemoy-capital",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "janus-henderson",
+      "roles": [
+        "asset-manager"
+      ]
+    },
+    {
+      "organizationId": "centrifuge",
+      "roles": [
+        "tokenization-provider"
+      ]
+    },
+    {
+      "organizationId": "jp-morgan",
+      "roles": [
+        "custodian"
+      ]
+    },
+    {
+      "organizationId": "trident-trust",
+      "roles": [
+        "fund-administrator"
+      ]
+    },
+    {
+      "organizationId": "mha-cayman",
+      "roles": [
+        "auditor"
+      ]
+    },
+    {
+      "organizationId": "chronicle",
+      "roles": [
+        "oracle-provider"
+      ]
+    }
+  ],
+  "description": "Janus Henderson Anemoy Treasury Fund (JTRSY), represented through tokenized or blockchain-integrated fund records.",
+  "assetClass": "treasury",
+  "issuerId": "anemoy-capital",
+  "tokenizationProviderIds": [
+    "centrifuge"
+  ],
+  "status": "active",
+  "website": "https://app.centrifuge.io/pool/281474976710662",
+  "marketDataLinks": [
+    {
+      "provider": "Anemoy Capital",
+      "type": "issuer",
+      "url": "https://app.centrifuge.io/pool/281474976710662",
+      "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    }
+  ],
+  "verifiedBy": [
+    "official-product"
+  ]
+}

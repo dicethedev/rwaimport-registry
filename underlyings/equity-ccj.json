@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ccj",
+  "name": "Cameco",
+  "ticker": "CCJ",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ccjon"
+  ]
+}

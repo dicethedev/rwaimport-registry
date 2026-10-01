@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "uscc",
+  "name": "Bitwise Crypto Carry Fund",
+  "symbol": "USCC",
+  "underlyingId": "fund-uscc",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Series of a Delaware statutory trust.",
+  "securityType": "Private fund share",
+  "underlyingRights": "Fund interest providing exposure to crypto cash-and-carry strategies, staking, and government securities.",
+  "redemptionRights": "Subscriptions and redemptions are processed under the fund documents and applicable liquidity rules.",
+  "offeringType": "Private placement",
+  "regulatoryExemption": "Section 4(a)(2) and Regulation D Rule 506",
+  "organizationRoles": [
+    {
+      "organizationId": "bitwise-crypto-carry-fund",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "superstate",
+      "roles": [
+        "tokenization-provider",
+        "transfer-agent"
+      ]
+    },
+    {
+      "organizationId": "bitwise",
+      "roles": [
+        "asset-manager"
+      ]
+    },
+    {
+      "organizationId": "anchorage-digital",
+      "roles": [
+        "custodian"
+      ]
+    },
+    {
+      "organizationId": "ernst-young",
+      "roles": [
+        "auditor"
+      ]
+    },
+    {
+      "organizationId": "nav-fund-services",
+      "roles": [
+        "fund-administrator"
+      ]
+    }
+  ],
+  "description": "Bitwise Crypto Carry Fund (USCC), represented through tokenized or blockchain-integrated fund records.",
+  "assetClass": "other",
+  "issuerId": "bitwise-crypto-carry-fund",
+  "tokenizationProviderIds": [
+    "superstate"
+  ],
+  "status": "active",
+  "website": "https://superstate.com/assets/uscc",
+  "marketDataLinks": [
+    {
+      "provider": "Bitwise Crypto Carry Fund",
+      "type": "issuer",
+      "url": "https://superstate.com/assets/uscc",
+      "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    }
+  ],
+  "verifiedBy": [
+    "official-product"
+  ]
+}

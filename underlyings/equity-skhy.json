@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-skhy",
+  "name": "SK hynix Inc. American Depositary Shares",
+  "ticker": "SKHY",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US78392B2060"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-skhy",
+    "skhyon"
+  ]
+}

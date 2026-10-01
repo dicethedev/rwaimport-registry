@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-dell",
+  "name": "Dell",
+  "ticker": "DELL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "dellon",
+    "robinhood-dell"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US24703L2025"
+    }
+  ]
+}

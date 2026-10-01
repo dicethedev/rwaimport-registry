@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-sofi",
+  "name": "SoFi Technologies",
+  "ticker": "SOFI",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US83406F1021"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-sofi",
+    "sofion"
+  ]
+}

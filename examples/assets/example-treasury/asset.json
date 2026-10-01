@@ -1,8 +1,15 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "example-treasury",
   "name": "Example Tokenized Treasury Fund",
   "symbol": "EXTF",
+  "underlyingId": "treasury-example",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "organizationRoles": [
+    { "organizationId": "example-issuer", "roles": ["issuer", "asset-manager"] },
+    { "organizationId": "example-tokenization-provider", "roles": ["tokenization-provider"] }
+  ],
   "description": "Illustrative data only. Do not add this record to the verified registry.",
   "assetClass": "treasury",
   "issuerId": "example-issuer",

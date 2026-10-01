@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-schd",
+  "name": "Schwab US Dividend Equity ETF",
+  "ticker": "SCHD",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US8085247976"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-schd"
+  ]
+}

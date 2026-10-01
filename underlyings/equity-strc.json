@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-strc",
+  "name": "Strategy Stretch Preferred",
+  "ticker": "STRC",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "strcon"
+  ]
+}

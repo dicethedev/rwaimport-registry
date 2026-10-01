@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-qbts",
+  "name": "D-Wave Quantum Inc. Common Stock",
+  "ticker": "QBTS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "qbtson",
+    "robinhood-qbts"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US26740W1099"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-jnj",
+  "name": "Johnson & Johnson",
+  "ticker": "JNJ",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "jnjon",
+    "robinhood-jnj"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US4781601046"
+    }
+  ]
+}

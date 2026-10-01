@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ialt",
+  "name": "iShares Systematic Alternatives Active ETF",
+  "ticker": "IALT",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ialton"
+  ]
+}

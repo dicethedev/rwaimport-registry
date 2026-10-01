@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-path",
+  "name": "UiPath",
+  "ticker": "PATH",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US90364P1057"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-path"
+  ]
+}

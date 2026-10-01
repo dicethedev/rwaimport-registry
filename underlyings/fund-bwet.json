@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-bwet",
+  "name": "Breakwave Tanker Shipping ETF",
+  "ticker": "BWET",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "bweton"
+  ]
+}

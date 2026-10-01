@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-glw",
+  "name": "Corning",
+  "ticker": "GLW",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "glwon",
+    "robinhood-glw"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US2193501051"
+    }
+  ]
+}

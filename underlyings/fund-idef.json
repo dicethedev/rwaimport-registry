@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-idef",
+  "name": "iShares Defense Industrials Active ETF",
+  "ticker": "IDEF",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "idefon"
+  ]
+}

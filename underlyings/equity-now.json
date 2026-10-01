@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-now",
+  "name": "ServiceNow",
+  "ticker": "NOW",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nowon",
+    "robinhood-now"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US81762P1021"
+    }
+  ]
+}

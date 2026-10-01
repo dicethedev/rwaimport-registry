@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "robinhood-assets-jersey",
+  "name": "Robinhood Assets (Jersey)",
+  "legalName": "Robinhood Assets (Jersey) Limited",
+  "jurisdiction": "JE",
+  "status": "active",
+  "website": "https://docs.robinhood.com/chain/stock-tokens/",
+  "sources": [
+    {
+      "title": "Robinhood Stock Tokens overview and issuer disclosure",
+      "url": "https://docs.robinhood.com/chain/stock-tokens/",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tem",
+  "name": "Tempus AI",
+  "ticker": "TEM",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US88023B1035"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-tem"
+  ]
+}

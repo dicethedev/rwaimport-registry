@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-rblx",
+  "name": "Roblox",
+  "ticker": "RBLX",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US7710491033"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-rblx"
+  ]
+}

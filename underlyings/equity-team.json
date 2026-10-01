@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-team",
+  "name": "Atlassian Corporation",
+  "ticker": "TEAM",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US0494681010"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-team"
+  ]
+}

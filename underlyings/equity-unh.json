@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-unh",
+  "name": "UnitedHealth",
+  "ticker": "UNH",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US91324P1021"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-unh",
+    "unhon"
+  ]
+}

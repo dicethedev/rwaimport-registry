@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-zm",
+  "name": "Zoom",
+  "ticker": "ZM",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US98980L1017"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-zm"
+  ]
+}

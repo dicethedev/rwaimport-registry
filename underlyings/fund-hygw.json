@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-hygw",
+  "name": "iShares High Yield Corporate Bond BuyWrite Strategy ETF",
+  "ticker": "HYGW",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "hygwon"
+  ]
+}

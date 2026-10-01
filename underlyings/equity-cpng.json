@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-cpng",
+  "name": "Coupang",
+  "ticker": "CPNG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cpngon"
+  ]
+}

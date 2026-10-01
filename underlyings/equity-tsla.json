@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tsla",
+  "name": "Tesla",
+  "ticker": "TSLA",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US88160R1014"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-tsla",
+    "tslaon"
+  ]
+}

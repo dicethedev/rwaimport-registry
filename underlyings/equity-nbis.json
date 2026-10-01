@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-nbis",
+  "name": "Nebius Group",
+  "ticker": "NBIS",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nbison",
+    "robinhood-nbis"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "NL0009805522"
+    }
+  ]
+}

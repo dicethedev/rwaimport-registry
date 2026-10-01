@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-qcom",
+  "name": "Qualcomm",
+  "ticker": "QCOM",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "qcomon",
+    "robinhood-qcom"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US7475251036"
+    }
+  ]
+}

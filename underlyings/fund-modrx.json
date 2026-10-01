@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-modrx",
+  "name": "WisdomTree Siegel Moderate Digital Fund",
+  "ticker": "MODRX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "modrx"
+  ]
+}

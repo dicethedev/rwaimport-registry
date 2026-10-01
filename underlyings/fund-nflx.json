@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-nflx",
+  "name": "Netflix",
+  "ticker": "NFLX",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nflxon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-mrk",
+  "name": "Merck",
+  "ticker": "MRK",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "mrkon"
+  ]
+}

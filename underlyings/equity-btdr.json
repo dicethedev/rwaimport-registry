@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-btdr",
+  "name": "Bitdeer Technologies",
+  "ticker": "BTDR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "btdron"
+  ]
+}

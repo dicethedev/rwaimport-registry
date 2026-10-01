@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ko",
+  "name": "Coca-Cola",
+  "ticker": "KO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "koon"
+  ]
+}

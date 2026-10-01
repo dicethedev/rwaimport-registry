@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-arqq",
+  "name": "Arqit Quantum",
+  "ticker": "ARQQ",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "arqqon"
+  ]
+}

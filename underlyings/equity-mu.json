@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-mu",
+  "name": "Micron Technology",
+  "ticker": "MU",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "muon",
+    "robinhood-mu"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US5951121038"
+    }
+  ]
+}

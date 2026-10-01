@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-panw",
+  "name": "Palo Alto Networks",
+  "ticker": "PANW",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "panwon",
+    "robinhood-panw"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US6974351057"
+    }
+  ]
+}

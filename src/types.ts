@@ -1,8 +1,12 @@
 export interface Asset {
-  schemaVersion: 1;
+  schemaVersion: 2;
   id: string;
   name: string;
   symbol: string;
+  underlyingId: string;
+  instrumentType: string;
+  denominationCurrency: string;
+  organizationRoles: Array<{ organizationId: string; roles: string[] }>;
   assetClass: string;
   issuerId: string;
   tokenizationProviderIds?: string[];
@@ -15,6 +19,8 @@ export interface Deployment {
   chain: string;
   chainId?: number;
   address: string;
+  assetNamespace?: string;
+  assetReference?: string;
   standardIds: string[];
   status: string;
   verifiedBy: string[];
@@ -47,16 +53,46 @@ export interface Chain {
   id: string;
   chainId?: number;
   name: string;
-  type: "evm" | "solana";
+  type: "evm" | "solana" | "stellar" | "xrpl" | "aptos" | "sui" | "cosmos";
   namespace: string;
   reference: string;
+  addressPattern: string;
   [key: string]: unknown;
 }
 
 export interface Standard {
   id: string;
   name: string;
+  referenceUrl: string;
   relatedStandardIds?: string[];
+  [key: string]: unknown;
+}
+
+export interface Underlying {
+  schemaVersion: 1;
+  id: string;
+  name: string;
+  ticker: string;
+  type: string;
+  status: string;
+  sourceAssetIds: string[];
+  [key: string]: unknown;
+}
+
+export interface Organization {
+  schemaVersion: 1;
+  id: string;
+  name: string;
+  status: string;
+  sources: Array<{ url: string; [key: string]: unknown }>;
+  [key: string]: unknown;
+}
+
+export interface Valuation {
+  schemaVersion: 1;
+  quoteCurrency: string;
+  valuationType: string;
+  verifiedBy: string[];
   [key: string]: unknown;
 }
 
@@ -65,6 +101,7 @@ export interface AssetRecord {
   deployments: Deployment[];
   compliance: Compliance;
   sources: Source[];
+  valuation: Valuation;
 }
 
 export interface Registry {
@@ -72,6 +109,8 @@ export interface Registry {
   issuers: Issuer[];
   chains: Chain[];
   standards: Standard[];
+  underlyings: Underlying[];
+  organizations: Organization[];
 }
 
 export interface ValidationResult {

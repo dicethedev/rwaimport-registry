@@ -1,8 +1,24 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "robinhood-nu",
   "name": "Nu • Robinhood Token",
   "symbol": "NU",
+  "underlyingId": "equity-nu",
+  "instrumentType": "debt-security",
+  "denominationCurrency": "USD",
+  "legalStructure": "Tokenized debt security issued by Robinhood Assets (Jersey) Limited.",
+  "securityType": "Tokenized debt security referencing a publicly traded equity or ETF",
+  "underlyingRights": "Economic exposure only; holders do not receive legal or beneficial rights in the referenced underlying security.",
+  "redemptionRights": "Direct subscription and redemption are limited to Authorized Participants after KYB onboarding.",
+  "organizationRoles": [
+    {
+      "organizationId": "robinhood-assets-jersey",
+      "roles": [
+        "issuer",
+        "tokenization-provider"
+      ]
+    }
+  ],
   "description": "Tokenized debt security issued by Robinhood Assets (Jersey) Limited, providing economic exposure to Nu without ownership rights in the underlying security.",
   "identifiers": [
     {

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-coro",
+  "name": "iShares International Country Rotation Active ETF",
+  "ticker": "CORO",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "coroon"
+  ]
+}

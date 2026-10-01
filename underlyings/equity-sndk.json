@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-sndk",
+  "name": "Sandisk Corporation",
+  "ticker": "SNDK",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US80004C2008"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-sndk",
+    "sndkon"
+  ]
+}

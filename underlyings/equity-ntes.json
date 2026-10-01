@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ntes",
+  "name": "NetEase",
+  "ticker": "NTES",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nteson"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-aaoi",
+  "name": "Applied Optoelectronics",
+  "ticker": "AAOI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aaoion",
+    "robinhood-aaoi"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US03823U1025"
+    }
+  ]
+}

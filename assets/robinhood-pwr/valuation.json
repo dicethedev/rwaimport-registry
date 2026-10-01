@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "reference-price",
+  "priceSourceUrl": "https://api.robinhood.com/rhj/prices/PWR",
+  "oracle": {
+    "provider": "Chainlink",
+    "chain": "robinhood-chain"
+  },
+  "updateFrequency": "15 seconds for the issuer REST price endpoint",
+  "corporateActionModel": "scaled-ui-multiplier",
+  "distributionTreatment": "multiplier-adjusted",
+  "verifiedBy": [
+    "robinhood-assets-api",
+    "robinhood-stock-token-docs"
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "official-product",
+    "type": "issuer",
+    "title": "Franklin Templeton BENJI official product page",
+    "url": "https://digitalassets.franklintempleton.com/benji/",
+    "publisher": "Franklin Templeton",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  },
+  {
+    "id": "official-contracts",
+    "type": "issuer",
+    "title": "Franklin Templeton official BENJI contract catalog",
+    "url": "https://digitalassets.franklintempleton.com/benji/benji-contracts/",
+    "publisher": "Franklin Templeton",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  }
+]

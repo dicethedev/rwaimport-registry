@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-lemb",
+  "name": "iShares J.P. Morgan EM Local Currency Bond ETF",
+  "ticker": "LEMB",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "lembon"
+  ]
+}

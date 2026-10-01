@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-tipsx",
+  "name": "WisdomTree TIPS Digital Fund",
+  "ticker": "TIPSX",
+  "type": "treasury",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "tipsx"
+  ]
+}

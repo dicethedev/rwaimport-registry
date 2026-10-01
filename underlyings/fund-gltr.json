@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-gltr",
+  "name": "abrdn Physical Precious Metals Basket Shares ETF",
+  "ticker": "GLTR",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "gltron"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-goog",
+  "name": "Alphabet Inc. Class C",
+  "ticker": "GOOG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "googon"
+  ]
+}

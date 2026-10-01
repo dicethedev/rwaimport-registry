@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-wttsx",
+  "name": "WisdomTree 3-7 Year Treasury Digital Fund",
+  "ticker": "WTTSX",
+  "type": "treasury",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "wttsx"
+  ]
+}

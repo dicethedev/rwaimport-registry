@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-smci",
+  "name": "Super Micro Computer",
+  "ticker": "SMCI",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US86800U3023"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-smci",
+    "smcion"
+  ]
+}

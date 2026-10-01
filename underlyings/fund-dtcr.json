@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-dtcr",
+  "name": "Global X Data Center & Digital Infrastructure ETF",
+  "ticker": "DTCR",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "dtcron"
+  ]
+}

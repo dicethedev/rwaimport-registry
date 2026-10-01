@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-gld",
+  "name": "SPDR Gold Trust",
+  "ticker": "GLD",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "gldon",
+    "robinhood-gld"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US78463V1070"
+    }
+  ]
+}

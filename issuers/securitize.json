@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "securitize",
+  "name": "Securitize",
+  "type": "tokenization-provider",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://securitize.io",
+  "sources": [
+    {
+      "title": "Securitize official website",
+      "url": "https://securitize.io",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

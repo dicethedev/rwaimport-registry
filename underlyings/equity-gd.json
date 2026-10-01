@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-gd",
+  "name": "General Dynamics",
+  "ticker": "GD",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "gdon"
+  ]
+}

@@ -1,0 +1,133 @@
+[
+  {
+    "chain": "ethereum",
+    "chainId": 1,
+    "address": "0x8c213ee79581ff4984583c6a801e5263418c4b86",
+    "assetNamespace": "erc20",
+    "assetReference": "0x8c213ee79581ff4984583c6a801e5263418c4b86",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "base",
+    "chainId": 8453,
+    "address": "0x8c213ee79581ff4984583c6a801e5263418c4b86",
+    "assetNamespace": "erc20",
+    "assetReference": "0x8c213ee79581ff4984583c6a801e5263418c4b86",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "arbitrum",
+    "chainId": 42161,
+    "address": "0x8c213ee79581ff4984583c6a801e5263418c4b86",
+    "assetNamespace": "erc20",
+    "assetReference": "0x8c213ee79581ff4984583c6a801e5263418c4b86",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "avalanche",
+    "chainId": 43114,
+    "address": "0xa5d465251fbcc907f5dd6bb2145488dfc6a2627b",
+    "assetNamespace": "erc20",
+    "assetReference": "0xa5d465251fbcc907f5dd6bb2145488dfc6a2627b",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "bnb-chain",
+    "chainId": 56,
+    "address": "0xa5d465251fBCc907f5Dd6bB2145488DFC6a2627b",
+    "assetNamespace": "bep20",
+    "assetReference": "0xa5d465251fBCc907f5Dd6bB2145488DFC6a2627b",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  },
+  {
+    "chain": "solana",
+    "address": "JTRu97Z4oduVwfVBWdf1fSAz8h7CBBPqEo4Jco9fZPj",
+    "assetNamespace": "spl",
+    "assetReference": "JTRu97Z4oduVwfVBWdf1fSAz8h7CBBPqEo4Jco9fZPj",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "solana-token-2022"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "solana-token-2022",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts"
+    ]
+  }
+]

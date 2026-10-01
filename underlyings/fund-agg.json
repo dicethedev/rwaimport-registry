@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-agg",
+  "name": "iShares Core US Aggregate Bond ETF",
+  "ticker": "AGG",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aggon"
+  ]
+}

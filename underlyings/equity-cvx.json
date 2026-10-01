@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-cvx",
+  "name": "Chevron",
+  "ticker": "CVX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cvxon"
+  ]
+}

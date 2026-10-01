@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-cifr",
+  "name": "Cipher Mining",
+  "ticker": "CIFR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cifron"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-scco",
+  "name": "Southern Copper",
+  "ticker": "SCCO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "sccoon"
+  ]
+}

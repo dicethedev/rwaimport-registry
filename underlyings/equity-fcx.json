@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-fcx",
+  "name": "Freeport-McMoRan",
+  "ticker": "FCX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "fcxon"
+  ]
+}

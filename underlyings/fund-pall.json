@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-pall",
+  "name": "abrdn Physical Palladium Shares ETF",
+  "ticker": "PALL",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pallon"
+  ]
+}

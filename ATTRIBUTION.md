@@ -33,8 +33,25 @@ Credited as the primary source for the Robinhood Stock Token collection:
   official chain documentation.
 
 The API catalog is live rather than commit-addressed. Every generated record therefore stores
-the source URL and access date, and the importer accepts a downloaded response for reproducible
-snapshot builds. No live price or multiplier values are copied into the registry.
+the source URL, access date, SHA-256 content hash, and checked-in raw response path. The importer
+accepts a downloaded response for reproducible snapshot builds and archives the exact input under
+`snapshots/robinhood/`. No live price or multiplier values are copied into the registry.
+
+### Institutional funds
+
+The treasury, money-market, income, and credit batch uses first-party product pages and
+contract catalogs from Ondo, Securitize/BlackRock, Franklin Templeton, Hashnote, Superstate,
+OpenEden, Centrifuge/Janus Henderson, and WisdomTree. Product structure, eligibility, legal
+rights, service-provider roles, and redemption summaries are credited to the provider that
+publishes each claim.
+
+Deployment addresses are included only when an official provider catalog publishes the full
+address. This applies to BUIDL, BENJI, USYC, TBILL, and JTRSY. A provider's product page showing
+that blockchain recordkeeping exists is not treated as proof of a particular public contract;
+those products retain an empty deployment list until address-level evidence is available.
+
+WisdomTree fund names and classifications come from its official tokenized-fund catalog and
+digital-fund product list. Live NAV, AUM, yield, and holdings values are not copied.
 
 ### RWA.xyz
 

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-intu",
+  "name": "Intuit",
+  "ticker": "INTU",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "intuon",
+    "robinhood-intu"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US4612021034"
+    }
+  ]
+}

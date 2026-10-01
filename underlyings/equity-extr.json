@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-extr",
+  "name": "Extreme Networks",
+  "ticker": "EXTR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "extron"
+  ]
+}

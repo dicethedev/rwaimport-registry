@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ten",
+  "name": "Tsakos Energy Navigation",
+  "ticker": "TEN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "tenon"
+  ]
+}

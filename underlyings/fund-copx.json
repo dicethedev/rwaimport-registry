@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-copx",
+  "name": "Global X Copper Miners ETF",
+  "ticker": "COPX",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "copxon"
+  ]
+}

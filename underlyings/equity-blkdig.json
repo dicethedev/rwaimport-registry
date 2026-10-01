@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-blkdig",
+  "name": "Ondo Diversified Growth Powered by BlackRock",
+  "ticker": "BLKDIG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "blkdigon"
+  ]
+}

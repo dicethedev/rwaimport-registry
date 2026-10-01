@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-kweb",
+  "name": "KraneShares CSI China Internet ETF",
+  "ticker": "KWEB",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "kwebon"
+  ]
+}

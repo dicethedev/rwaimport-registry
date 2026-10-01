@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-hii",
+  "name": "Huntington Ingalls",
+  "ticker": "HII",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "hiion",
+    "robinhood-hii"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US4464131063"
+    }
+  ]
+}

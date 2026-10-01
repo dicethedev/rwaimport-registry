@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-inda",
+  "name": "iShares MSCI India ETF",
+  "ticker": "INDA",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "indaon",
+    "robinhood-inda"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US46429B5984"
+    }
+  ]
+}

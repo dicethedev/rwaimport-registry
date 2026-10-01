@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-pg",
+  "name": "Procter & Gamble",
+  "ticker": "PG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pgon"
+  ]
+}

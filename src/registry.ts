@@ -12,9 +12,12 @@ import type {
   Compliance,
   Deployment,
   Issuer,
+  Organization,
   Registry,
   Source,
   Standard,
+  Underlying,
+  Valuation,
   ValidationResult,
 } from "./types.js";
 
@@ -25,7 +28,10 @@ type SchemaName =
   | "sources"
   | "issuer"
   | "chain"
-  | "standard";
+  | "standard"
+  | "underlying"
+  | "organization"
+  | "valuation";
 
 const sourceDirectory = path.dirname(fileURLToPath(import.meta.url));
 const defaultSchemaDirectory = path.resolve(sourceDirectory, "../schemas");
@@ -61,6 +67,9 @@ async function createValidators(schemaDirectory: string): Promise<Record<SchemaN
     "issuer",
     "chain",
     "standard",
+    "underlying",
+    "organization",
+    "valuation",
   ];
   const validators = {} as Record<SchemaName, ValidateFunction>;
 
@@ -150,6 +159,16 @@ export async function validateRegistry(
     validators.standard,
     errors,
   );
+  const underlyings = await loadFlatRecords<Underlying>(
+    path.join(rootDirectory, "underlyings"),
+    validators.underlying,
+    errors,
+  );
+  const organizations = await loadFlatRecords<Organization>(
+    path.join(rootDirectory, "organizations"),
+    validators.organization,
+    errors,
+  );
 
   const assets: AssetRecord[] = [];
   const assetEntries = await readdir(path.join(rootDirectory, "assets"), { withFileTypes: true });
@@ -159,12 +178,14 @@ export async function validateRegistry(
     const deployments = await readJson<Deployment[]>(path.join(assetDirectory, "deployments.json"));
     const compliance = await readJson<Compliance>(path.join(assetDirectory, "compliance.json"));
     const sources = await readJson<Source[]>(path.join(assetDirectory, "sources.json"));
+    const valuation = await readJson<Valuation>(path.join(assetDirectory, "valuation.json"));
 
     for (const [name, value, fileName] of [
       ["asset", asset, "asset.json"],
       ["deployments", deployments, "deployments.json"],
       ["compliance", compliance, "compliance.json"],
       ["sources", sources, "sources.json"],
+      ["valuation", valuation, "valuation.json"],
     ] as const) {
       const validator = validators[name];
       if (!validator(value)) {
@@ -175,7 +196,7 @@ export async function validateRegistry(
     if (asset.id !== entry.name) {
       errors.push(`${assetDirectory}: directory name must equal asset id "${asset.id}"`);
     }
-    assets.push({ asset, deployments, compliance, sources });
+    assets.push({ asset, deployments, compliance, sources, valuation });
   }
 
   checkUnique("asset id", assets.map(({ asset }) => asset.id), errors);
@@ -187,6 +208,8 @@ export async function validateRegistry(
     errors,
   );
   checkUnique("standard id", standards.map((standard) => standard.id), errors);
+  checkUnique("underlying id", underlyings.map((underlying) => underlying.id), errors);
+  checkUnique("organization id", organizations.map((organization) => organization.id), errors);
   checkUnique(
     "deployment",
     assets.flatMap(({ deployments }) =>
@@ -202,6 +225,17 @@ export async function validateRegistry(
   const issuerIds = new Set(issuers.map((issuer) => issuer.id));
   const chainById = new Map(chains.map((chain) => [chain.id, chain]));
   const standardIds = new Set(standards.map((standard) => standard.id));
+  const underlyingIds = new Set(underlyings.map((underlying) => underlying.id));
+  const organizationIds = new Set(organizations.map((organization) => organization.id));
+  const assetIds = new Set(assets.map(({ asset }) => asset.id));
+
+  for (const underlying of underlyings) {
+    for (const sourceAssetId of underlying.sourceAssetIds) {
+      if (!assetIds.has(sourceAssetId)) {
+        errors.push(`Underlying ${underlying.id} references unknown source asset ${sourceAssetId}`);
+      }
+    }
+  }
 
   for (const chain of chains) {
     if (chain.type === "evm" && chain.chainId === undefined) {
@@ -220,14 +254,24 @@ export async function validateRegistry(
     }
   }
 
-  for (const { asset, deployments, compliance, sources } of assets) {
+  for (const { asset, deployments, compliance, sources, valuation } of assets) {
     const sourceIds = new Set(sources.map((source) => source.id));
     checkUnique(`source id in asset ${asset.id}`, sources.map((source) => source.id), errors);
 
     for (const issuerId of [asset.issuerId, ...(asset.tokenizationProviderIds ?? [])]) {
       if (!issuerIds.has(issuerId)) errors.push(`Asset ${asset.id} references unknown issuer ${issuerId}`);
     }
-    for (const sourceId of [...asset.verifiedBy, ...compliance.verifiedBy]) {
+    if (!underlyingIds.has(asset.underlyingId)) {
+      errors.push(`Asset ${asset.id} references unknown underlying ${asset.underlyingId}`);
+    }
+    for (const organizationRole of asset.organizationRoles) {
+      if (!organizationIds.has(organizationRole.organizationId)) {
+        errors.push(
+          `Asset ${asset.id} references unknown organization ${organizationRole.organizationId}`,
+        );
+      }
+    }
+    for (const sourceId of [...asset.verifiedBy, ...compliance.verifiedBy, ...valuation.verifiedBy]) {
       if (!sourceIds.has(sourceId)) errors.push(`Asset ${asset.id} references unknown source ${sourceId}`);
     }
     for (const deployment of deployments) {
@@ -240,6 +284,8 @@ export async function validateRegistry(
         errors.push(`Asset ${asset.id} deployment must not use numeric chainId for ${deployment.chain}`);
       } else if (chain.type === "solana" && base58DecodedLength(deployment.address) !== 32) {
         errors.push(`Asset ${asset.id} deployment address is not a 32-byte Solana public key`);
+      } else if (!new RegExp(chain.addressPattern).test(deployment.address)) {
+        errors.push(`Asset ${asset.id} deployment address does not match ${deployment.chain}`);
       }
       for (const standardId of deployment.standardIds) {
         if (!standardIds.has(standardId)) {
@@ -254,6 +300,6 @@ export async function validateRegistry(
     }
   }
 
-  const registry: Registry = { assets, issuers, chains, standards };
+  const registry: Registry = { assets, issuers, chains, standards, underlyings, organizations };
   return errors.length === 0 ? { valid: true, errors, registry } : { valid: false, errors };
 }

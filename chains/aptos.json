@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "aptos",
+  "name": "Aptos",
+  "type": "aptos",
+  "namespace": "aptos",
+  "reference": "1",
+  "addressPattern": "^0x[a-fA-F0-9]{64}$",
+  "nativeCurrency": "APT",
+  "explorerUrl": "https://explorer.aptoslabs.com",
+  "status": "active"
+}

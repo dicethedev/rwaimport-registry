@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-jaaa",
+  "name": "Janus Henderson AAA CLO ETF",
+  "ticker": "JAAA",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "jaaaon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-iei",
+  "name": "iShares 3-7 Year Treasury Bond ETF",
+  "ticker": "IEI",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ieion"
+  ]
+}

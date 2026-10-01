@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lwlg",
+  "name": "Lightwave Logic",
+  "ticker": "LWLG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "lwlgon"
+  ]
+}

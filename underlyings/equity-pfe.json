@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-pfe",
+  "name": "Pfizer",
+  "ticker": "PFE",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pfeon",
+    "robinhood-pfe"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US7170811035"
+    }
+  ]
+}

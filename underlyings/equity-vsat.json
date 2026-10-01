@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-vsat",
+  "name": "ViaSat",
+  "ticker": "VSAT",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US92552V1008"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-vsat"
+  ]
+}

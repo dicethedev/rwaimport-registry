@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lunr",
+  "name": "Intuitive Machines",
+  "ticker": "LUNR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "lunron",
+    "robinhood-lunr"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US46125A1007"
+    }
+  ]
+}

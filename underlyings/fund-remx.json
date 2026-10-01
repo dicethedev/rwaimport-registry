@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-remx",
+  "name": "VanEck Rare Earth and Strategic Metals ETF",
+  "ticker": "REMX",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "remxon"
+  ]
+}

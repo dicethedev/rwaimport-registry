@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-oust",
+  "name": "Ouster",
+  "ticker": "OUST",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ouston",
+    "robinhood-oust"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US68989M2026"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-schw",
+  "name": "Charles Schwab",
+  "ticker": "SCHW",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "schwon"
+  ]
+}

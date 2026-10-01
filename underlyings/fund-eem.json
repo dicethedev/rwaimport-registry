@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-eem",
+  "name": "iShares MSCI Emerging Markets ETF",
+  "ticker": "EEM",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "eemon"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "anchorage-digital",
+  "name": "Anchorage Digital",
+  "type": "other",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.anchorage.com",
+  "sources": [
+    {
+      "title": "Anchorage Digital official website",
+      "url": "https://www.anchorage.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

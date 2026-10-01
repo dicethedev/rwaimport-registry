@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tsm",
+  "name": "Taiwan Semiconductor Manufacturing",
+  "ticker": "TSM",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US8740391003"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-tsm",
+    "tsmon"
+  ]
+}

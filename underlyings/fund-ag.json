@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ag",
+  "name": "First Majestic Silver",
+  "ticker": "AG",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "agon"
+  ]
+}

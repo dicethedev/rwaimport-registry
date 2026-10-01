@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-uamy",
+  "name": "United States Antimony",
+  "ticker": "UAMY",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "uamyon"
+  ]
+}

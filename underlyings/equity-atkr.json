@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-atkr",
+  "name": "Atkore",
+  "ticker": "ATKR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "atkron"
+  ]
+}

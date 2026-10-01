@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-pdd",
+  "name": "PDD Holdings",
+  "ticker": "PDD",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pddon"
+  ]
+}

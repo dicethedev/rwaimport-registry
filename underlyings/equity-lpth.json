@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lpth",
+  "name": "LightPath Technologies",
+  "ticker": "LPTH",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "lpthon"
+  ]
+}

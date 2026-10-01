@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-te",
+  "name": "T1 Energy",
+  "ticker": "TE",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US35834F1049"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-te"
+  ]
+}

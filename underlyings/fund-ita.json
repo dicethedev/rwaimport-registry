@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ita",
+  "name": "iShares US Aerospace and Defense ETF",
+  "ticker": "ITA",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "itaon"
+  ]
+}

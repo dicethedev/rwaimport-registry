@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "blackrock",
+  "name": "BlackRock",
+  "legalName": "BlackRock, Inc.",
+  "type": "asset-manager",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.blackrock.com",
+  "sources": [
+    {
+      "title": "BlackRock official website",
+      "url": "https://www.blackrock.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

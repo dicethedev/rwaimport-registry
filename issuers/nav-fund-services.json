@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "nav-fund-services",
+  "name": "NAV Fund Services",
+  "type": "other",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.navconsulting.net",
+  "sources": [
+    {
+      "title": "NAV Fund Services official website",
+      "url": "https://www.navconsulting.net",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

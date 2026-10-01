@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-mtsi",
+  "name": "MACOM",
+  "ticker": "MTSI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "mtsion",
+    "robinhood-mtsi"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US55405Y1001"
+    }
+  ]
+}

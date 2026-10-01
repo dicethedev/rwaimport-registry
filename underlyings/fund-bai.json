@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-bai",
+  "name": "iShares A.I. Innovation and Tech Active ETF",
+  "ticker": "BAI",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "baion"
+  ]
+}

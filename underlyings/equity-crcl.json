@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-crcl",
+  "name": "Circle Internet Group",
+  "ticker": "CRCL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "crclon",
+    "robinhood-crcl"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US1725731079"
+    }
+  ]
+}

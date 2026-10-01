@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-kss",
+  "name": "Kohls Corporation",
+  "ticker": "KSS",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US5002551043"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-kss"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-btg",
+  "name": "B2Gold",
+  "ticker": "BTG",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "btgon"
+  ]
+}

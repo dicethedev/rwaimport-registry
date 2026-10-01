@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-mstr",
+  "name": "Strategy Inc.",
+  "ticker": "MSTR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "mstron",
+    "robinhood-mstr"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US5949724083"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-grab",
+  "name": "Grab Holdings",
+  "ticker": "GRAB",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "grabon"
+  ]
+}

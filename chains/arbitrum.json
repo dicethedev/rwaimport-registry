@@ -6,6 +6,7 @@
   "type": "evm",
   "namespace": "eip155",
   "reference": "42161",
+  "addressPattern": "^0x[a-fA-F0-9]{40}$",
   "nativeCurrency": "ETH",
   "explorerUrl": "https://arbiscan.io",
   "status": "active"

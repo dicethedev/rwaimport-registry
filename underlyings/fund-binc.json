@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-binc",
+  "name": "iShares Flexible Income Active ETF",
+  "ticker": "BINC",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "bincon"
+  ]
+}

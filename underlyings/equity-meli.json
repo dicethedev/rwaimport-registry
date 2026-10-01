@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-meli",
+  "name": "MercadoLibre",
+  "ticker": "MELI",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "melion"
+  ]
+}

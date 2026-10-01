@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ewz",
+  "name": "iShares MSCI Brazil ETF",
+  "ticker": "EWZ",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ewzon"
+  ]
+}

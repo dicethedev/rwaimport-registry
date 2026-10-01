@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-lit",
+  "name": "Global X Lithium & Battery Tech ETF",
+  "ticker": "LIT",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "liton"
+  ]
+}

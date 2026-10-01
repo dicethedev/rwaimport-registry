@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-axon",
+  "name": "Axon",
+  "ticker": "AXON",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US05464C1018"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-axon"
+  ]
+}

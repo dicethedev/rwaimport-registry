@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-acn",
+  "name": "Accenture",
+  "ticker": "ACN",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "acnon"
+  ]
+}

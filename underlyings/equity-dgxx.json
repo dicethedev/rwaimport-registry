@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-dgxx",
+  "name": "Digi Power X",
+  "ticker": "DGXX",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "dgxxon"
+  ]
+}

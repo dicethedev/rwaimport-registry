@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-vti",
+  "name": "Vanguard Morningstar Total Stock Market ETF",
+  "ticker": "VTI",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US9229087690"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-vti"
+  ]
+}

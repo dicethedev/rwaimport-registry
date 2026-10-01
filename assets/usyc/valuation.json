@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "oracle-price",
+  "navSourceUrl": "https://usyc.docs.hashnote.com/",
+  "updateFrequency": "Provider-published schedule; see the official product page.",
+  "corporateActionModel": "accumulating-price",
+  "distributionTreatment": "reinvested",
+  "reserveReportingUrl": "https://usyc.docs.hashnote.com/",
+  "verifiedBy": [
+    "official-product"
+  ]
+}

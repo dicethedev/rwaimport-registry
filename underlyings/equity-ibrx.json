@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-ibrx",
+  "name": "ImmunityBio,",
+  "ticker": "IBRX",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US45256X1037"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-ibrx"
+  ]
+}

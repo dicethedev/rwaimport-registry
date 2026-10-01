@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lasr",
+  "name": "nLIGHT",
+  "ticker": "LASR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "lasron"
+  ]
+}

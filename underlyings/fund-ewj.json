@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ewj",
+  "name": "iShares MSCI Japan ETF",
+  "ticker": "EWJ",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ewjon"
+  ]
+}

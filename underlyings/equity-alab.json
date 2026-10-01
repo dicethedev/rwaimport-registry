@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-alab",
+  "name": "Astera Labs, Inc.",
+  "ticker": "ALAB",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "alabon",
+    "robinhood-alab"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US04626A1034"
+    }
+  ]
+}

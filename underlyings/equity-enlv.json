@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-enlv",
+  "name": "Enlivex Therapeutics",
+  "ticker": "ENLV",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "enlvon"
+  ]
+}

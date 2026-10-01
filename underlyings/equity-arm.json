@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-arm",
+  "name": "Arm Holdings plc",
+  "ticker": "ARM",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "armon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-cloi",
+  "name": "VanEck CLO ETF",
+  "ticker": "CLOI",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cloion"
+  ]
+}

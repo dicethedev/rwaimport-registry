@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-flttx",
+  "name": "WisdomTree Floating Rate Treasury Digital Fund",
+  "ticker": "FLTTX",
+  "type": "treasury",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "flttx"
+  ]
+}

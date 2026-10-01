@@ -4,6 +4,19 @@
   "kycRequired": "yes",
   "identityRequired": "no",
   "transferRestricted": "yes",
+  "transferEnforcement": "unknown",
+  "primaryMarket": {
+    "access": "issuer-onboarding",
+    "kycRequired": "yes",
+    "kybRequired": "unknown",
+    "notes": "Direct minting and redemption require Ondo onboarding and eligibility checks."
+  },
+  "secondaryMarket": {
+    "access": "restricted",
+    "kycRequired": "no",
+    "kybRequired": "no",
+    "notes": "Tokens may be acquired through third parties without direct Ondo onboarding, subject to jurisdictional, sanctions, and other restrictions."
+  },
   "eligibleInvestorTypes": [
     "retail",
     "professional",

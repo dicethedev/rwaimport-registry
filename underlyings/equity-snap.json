@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-snap",
+  "name": "Snap",
+  "ticker": "SNAP",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US83304A1060"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-snap",
+    "snapon"
+  ]
+}

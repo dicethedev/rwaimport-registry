@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-anet",
+  "name": "Arista",
+  "ticker": "ANET",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "aneton",
+    "robinhood-anet"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US0404132054"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-stld",
+  "name": "Steel Dynamics",
+  "ticker": "STLD",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "stldon"
+  ]
+}

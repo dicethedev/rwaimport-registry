@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "hashnote",
+  "name": "Hashnote",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.hashnote.com",
+  "sources": [
+    {
+      "title": "Hashnote official website",
+      "url": "https://www.hashnote.com",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

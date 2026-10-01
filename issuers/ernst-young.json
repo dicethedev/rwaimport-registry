@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "ernst-young",
+  "name": "Ernst & Young",
+  "type": "other",
+  "status": "active",
+  "website": "https://www.ey.com",
+  "sources": [
+    {
+      "title": "Ernst & Young official website",
+      "url": "https://www.ey.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

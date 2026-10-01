@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tt",
+  "name": "Trane Technologies",
+  "ticker": "TT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "tton"
+  ]
+}

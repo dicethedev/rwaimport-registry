@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-oxy",
+  "name": "Occidental Petroleum",
+  "ticker": "OXY",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "oxyon"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-dynf",
+  "name": "iShares US Equity Factor Rotation Active ETF",
+  "ticker": "DYNF",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "dynfon"
+  ]
+}

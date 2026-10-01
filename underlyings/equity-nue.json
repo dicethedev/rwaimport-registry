@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-nue",
+  "name": "Nucor",
+  "ticker": "NUE",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nueon"
+  ]
+}

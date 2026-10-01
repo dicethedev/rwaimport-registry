@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-ibit",
+  "name": "iShares Bitcoin Trust",
+  "ticker": "IBIT",
+  "type": "exchange-traded-fund",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ibiton"
+  ]
+}

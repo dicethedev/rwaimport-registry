@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-c",
+  "name": "Citigroup",
+  "ticker": "C",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "con"
+  ]
+}

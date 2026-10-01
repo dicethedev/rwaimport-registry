@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-t",
+  "name": "AT&T",
+  "ticker": "T",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "ton"
+  ]
+}

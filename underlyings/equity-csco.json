@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-csco",
+  "name": "Cisco Systems",
+  "ticker": "CSCO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "cscoon",
+    "robinhood-csco"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US17275R1023"
+    }
+  ]
+}

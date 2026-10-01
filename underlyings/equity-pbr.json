@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-pbr",
+  "name": "Petrobras",
+  "ticker": "PBR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pbron"
+  ]
+}

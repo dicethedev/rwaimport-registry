@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-bac",
+  "name": "Bank of America",
+  "ticker": "BAC",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "bacon"
+  ]
+}

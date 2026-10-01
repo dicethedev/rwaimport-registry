@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-pwr",
+  "name": "Quanta",
+  "ticker": "PWR",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "pwron",
+    "robinhood-pwr"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US74762E1029"
+    }
+  ]
+}

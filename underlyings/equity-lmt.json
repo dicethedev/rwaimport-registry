@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-lmt",
+  "name": "Lockheed",
+  "ticker": "LMT",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "lmton",
+    "robinhood-lmt"
+  ],
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US5398301094"
+    }
+  ]
+}

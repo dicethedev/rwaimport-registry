@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-isrg",
+  "name": "Intuitive Surgical",
+  "ticker": "ISRG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "isrgon"
+  ]
+}

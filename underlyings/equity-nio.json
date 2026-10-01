@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-nio",
+  "name": "NIO",
+  "ticker": "NIO",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "nioon"
+  ]
+}

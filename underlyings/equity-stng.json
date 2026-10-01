@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-stng",
+  "name": "Scorpio Tankers",
+  "ticker": "STNG",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "stngon"
+  ]
+}

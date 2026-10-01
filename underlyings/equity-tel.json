@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-tel",
+  "name": "TE Connectivity",
+  "ticker": "TEL",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "telon"
+  ]
+}

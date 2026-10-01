@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-vicr",
+  "name": "Vicor",
+  "ticker": "VICR",
+  "type": "equity",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US9258151029"
+    }
+  ],
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "robinhood-vicr"
+  ]
+}

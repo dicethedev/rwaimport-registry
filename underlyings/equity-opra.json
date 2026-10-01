@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "equity-opra",
+  "name": "Opera",
+  "ticker": "OPRA",
+  "type": "equity",
+  "currency": "USD",
+  "status": "active",
+  "sourceAssetIds": [
+    "opraon"
+  ]
+}
