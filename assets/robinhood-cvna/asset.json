@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "robinhood-cvna",
+  "name": "Carvana • Robinhood Token",
+  "symbol": "CVNA",
+  "description": "Tokenized debt security issued by Robinhood Assets (Jersey) Limited, providing economic exposure to Carvana without ownership rights in the underlying security.",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US1468691027"
+    },
+    {
+      "scheme": "issuer-id",
+      "value": "0x00000000000000000000000000000000551774b7a07e4f24a8901f266c16a86d"
+    }
+  ],
+  "assetClass": "public-equity",
+  "issuerId": "robinhood-assets-jersey",
+  "status": "active",
+  "website": "https://docs.robinhood.com/chain/stock-tokens/",
+  "marketDataLinks": [
+    {
+      "provider": "Robinhood",
+      "type": "issuer",
+      "url": "https://api.robinhood.com/rhj/assets",
+      "description": "Official asset metadata and deployment catalog; search for CVNA."
+    },
+    {
+      "provider": "Robinhood Chain Blockscout",
+      "type": "chain-explorer",
+      "url": "https://robinhoodchain.blockscout.com/token/0xa4f319104089FE321dc8093C6E707d4fE190A988",
+      "description": "Onchain contract, supply, holders, and transfers on Robinhood Chain."
+    }
+  ],
+  "verifiedBy": [
+    "robinhood-assets-api",
+    "robinhood-stock-token-docs"
+  ]
+}

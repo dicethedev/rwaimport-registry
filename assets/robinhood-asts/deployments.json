@@ -1,0 +1,17 @@
+[
+  {
+    "chain": "robinhood-chain",
+    "chainId": 4663,
+    "address": "0x1AF6446f07eb1d97c546AFC8c9544cBDF3AD5137",
+    "standardIds": [
+      "erc20",
+      "erc8056"
+    ],
+    "decimals": 18,
+    "status": "active",
+    "verifiedBy": [
+      "robinhood-assets-api",
+      "robinhood-chain-explorer"
+    ]
+  }
+]

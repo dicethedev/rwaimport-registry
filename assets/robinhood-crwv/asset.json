@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "robinhood-crwv",
+  "name": "CoreWeave • Robinhood Token",
+  "symbol": "CRWV",
+  "description": "Tokenized debt security issued by Robinhood Assets (Jersey) Limited, providing economic exposure to CoreWeave without ownership rights in the underlying security.",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US21873S1087"
+    },
+    {
+      "scheme": "issuer-id",
+      "value": "0x000000000000000000000000000000007f48cdbfaced4ff4b34fbc832f449c33"
+    }
+  ],
+  "assetClass": "public-equity",
+  "issuerId": "robinhood-assets-jersey",
+  "status": "active",
+  "website": "https://docs.robinhood.com/chain/stock-tokens/",
+  "marketDataLinks": [
+    {
+      "provider": "Robinhood",
+      "type": "issuer",
+      "url": "https://api.robinhood.com/rhj/assets",
+      "description": "Official asset metadata and deployment catalog; search for CRWV."
+    },
+    {
+      "provider": "Robinhood Chain Blockscout",
+      "type": "chain-explorer",
+      "url": "https://robinhoodchain.blockscout.com/token/0x5f10A1C971B69e47e059e1dC91901B59b3fB49C3",
+      "description": "Onchain contract, supply, holders, and transfers on Robinhood Chain."
+    }
+  ],
+  "verifiedBy": [
+    "robinhood-assets-api",
+    "robinhood-stock-token-docs"
+  ]
+}

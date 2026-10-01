@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "robinhood-gev",
+  "name": "GE Vernova • Robinhood Token",
+  "symbol": "GEV",
+  "description": "Tokenized debt security issued by Robinhood Assets (Jersey) Limited, providing economic exposure to GE Vernova without ownership rights in the underlying security.",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US36828A1016"
+    },
+    {
+      "scheme": "issuer-id",
+      "value": "0x00000000000000000000000000000000bf86ec8b050b46a9a7ad5a532b90c6af"
+    }
+  ],
+  "assetClass": "public-equity",
+  "issuerId": "robinhood-assets-jersey",
+  "status": "active",
+  "website": "https://docs.robinhood.com/chain/stock-tokens/",
+  "marketDataLinks": [
+    {
+      "provider": "Robinhood",
+      "type": "issuer",
+      "url": "https://api.robinhood.com/rhj/assets",
+      "description": "Official asset metadata and deployment catalog; search for GEV."
+    },
+    {
+      "provider": "Robinhood Chain Blockscout",
+      "type": "chain-explorer",
+      "url": "https://robinhoodchain.blockscout.com/token/0x94B8AAE43A1cCc08Aa64B7D1F29b4D920aF4a0C9",
+      "description": "Onchain contract, supply, holders, and transfers on Robinhood Chain."
+    }
+  ],
+  "verifiedBy": [
+    "robinhood-assets-api",
+    "robinhood-stock-token-docs"
+  ]
+}

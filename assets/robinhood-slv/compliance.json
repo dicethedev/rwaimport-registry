@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "permissioned": "no",
+  "kycRequired": "yes",
+  "identityRequired": "no",
+  "transferRestricted": "no",
+  "eligibleInvestorTypes": [
+    "retail",
+    "professional",
+    "institutional"
+  ],
+  "notes": "Direct subscription and redemption are limited to Authorized Participants after KYB onboarding. Tokens are transferable ERC-20s and may be acquired through secondary markets, but offers and sales are prohibited to U.S. persons and restricted in other jurisdictions, including Canada, the United Kingdom, and Switzerland.",
+  "verifiedBy": [
+    "robinhood-stock-token-docs"
+  ]
+}

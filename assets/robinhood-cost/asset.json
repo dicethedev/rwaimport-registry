@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "robinhood-cost",
+  "name": "Costco • Robinhood Token",
+  "symbol": "COST",
+  "description": "Tokenized debt security issued by Robinhood Assets (Jersey) Limited, providing economic exposure to Costco without ownership rights in the underlying security.",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US22160K1051"
+    },
+    {
+      "scheme": "issuer-id",
+      "value": "0x00000000000000000000000000000000e0e44220991548d0b030699e3062c2a7"
+    }
+  ],
+  "assetClass": "public-equity",
+  "issuerId": "robinhood-assets-jersey",
+  "status": "active",
+  "website": "https://docs.robinhood.com/chain/stock-tokens/",
+  "marketDataLinks": [
+    {
+      "provider": "Robinhood",
+      "type": "issuer",
+      "url": "https://api.robinhood.com/rhj/assets",
+      "description": "Official asset metadata and deployment catalog; search for COST."
+    },
+    {
+      "provider": "Robinhood Chain Blockscout",
+      "type": "chain-explorer",
+      "url": "https://robinhoodchain.blockscout.com/token/0x4EA005168D7F09a7A0Ba9D1DEf21a479950E44C2",
+      "description": "Onchain contract, supply, holders, and transfers on Robinhood Chain."
+    }
+  ],
+  "verifiedBy": [
+    "robinhood-assets-api",
+    "robinhood-stock-token-docs"
+  ]
+}

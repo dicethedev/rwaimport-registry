@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "robinhood-panw",
+  "name": "Palo Alto Networks • Robinhood Token",
+  "symbol": "PANW",
+  "description": "Tokenized debt security issued by Robinhood Assets (Jersey) Limited, providing economic exposure to Palo Alto Networks without ownership rights in the underlying security.",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US6974351057"
+    },
+    {
+      "scheme": "issuer-id",
+      "value": "0x00000000000000000000000000000000423f62d0b1e146a3b90e9b1ffcbf6e16"
+    }
+  ],
+  "assetClass": "public-equity",
+  "issuerId": "robinhood-assets-jersey",
+  "status": "active",
+  "website": "https://docs.robinhood.com/chain/stock-tokens/",
+  "marketDataLinks": [
+    {
+      "provider": "Robinhood",
+      "type": "issuer",
+      "url": "https://api.robinhood.com/rhj/assets",
+      "description": "Official asset metadata and deployment catalog; search for PANW."
+    },
+    {
+      "provider": "Robinhood Chain Blockscout",
+      "type": "chain-explorer",
+      "url": "https://robinhoodchain.blockscout.com/token/0xB039597eD45CBa7B6E2fb9E8BE51802969CEe5Be",
+      "description": "Onchain contract, supply, holders, and transfers on Robinhood Chain."
+    }
+  ],
+  "verifiedBy": [
+    "robinhood-assets-api",
+    "robinhood-stock-token-docs"
+  ]
+}

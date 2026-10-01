@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "robinhood-shy",
+  "name": "iShares 1-3 Year Treasury Bond ETF • Robinhood Token",
+  "symbol": "SHY",
+  "description": "Tokenized debt security issued by Robinhood Assets (Jersey) Limited, providing economic exposure to iShares 1-3 Year Treasury Bond ETF without ownership rights in the underlying security.",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US4642874576"
+    },
+    {
+      "scheme": "issuer-id",
+      "value": "0x000000000000000000000000000000009cc71272a7ec45f0adb8a7469632dd4d"
+    }
+  ],
+  "assetClass": "exchange-traded-fund",
+  "issuerId": "robinhood-assets-jersey",
+  "status": "active",
+  "website": "https://docs.robinhood.com/chain/stock-tokens/",
+  "marketDataLinks": [
+    {
+      "provider": "Robinhood",
+      "type": "issuer",
+      "url": "https://api.robinhood.com/rhj/assets",
+      "description": "Official asset metadata and deployment catalog; search for SHY."
+    },
+    {
+      "provider": "Robinhood Chain Blockscout",
+      "type": "chain-explorer",
+      "url": "https://robinhoodchain.blockscout.com/token/0xBE274710Bf3d9567e1B290eF6a5F9f90ca016FD8",
+      "description": "Onchain contract, supply, holders, and transfers on Robinhood Chain."
+    }
+  ],
+  "verifiedBy": [
+    "robinhood-assets-api",
+    "robinhood-stock-token-docs"
+  ]
+}

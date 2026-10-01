@@ -1,0 +1,26 @@
+[
+  {
+    "id": "robinhood-assets-api",
+    "type": "issuer",
+    "title": "GLW metadata in Robinhood's official asset API",
+    "url": "https://api.robinhood.com/rhj/assets",
+    "publisher": "Robinhood",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "robinhood-stock-token-docs",
+    "type": "documentation",
+    "title": "Robinhood Stock Tokens overview, mechanics, and issuer disclosures",
+    "url": "https://docs.robinhood.com/chain/stock-tokens/",
+    "publisher": "Robinhood",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "robinhood-chain-explorer",
+    "type": "chain-explorer",
+    "title": "GLW contract on Robinhood Chain",
+    "url": "https://robinhoodchain.blockscout.com/token/0x7c04E6A3368F2A1DE3874f0e80d2e0A1a9915da6",
+    "publisher": "Blockscout",
+    "accessedAt": "2026-10-01"
+  }
+]

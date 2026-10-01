@@ -1,0 +1,26 @@
+[
+  {
+    "id": "robinhood-assets-api",
+    "type": "issuer",
+    "title": "CEG metadata in Robinhood's official asset API",
+    "url": "https://api.robinhood.com/rhj/assets",
+    "publisher": "Robinhood",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "robinhood-stock-token-docs",
+    "type": "documentation",
+    "title": "Robinhood Stock Tokens overview, mechanics, and issuer disclosures",
+    "url": "https://docs.robinhood.com/chain/stock-tokens/",
+    "publisher": "Robinhood",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "robinhood-chain-explorer",
+    "type": "chain-explorer",
+    "title": "CEG contract on Robinhood Chain",
+    "url": "https://robinhoodchain.blockscout.com/token/0xaE517A2903E68bd929Dfd15be875F8369D53e94a",
+    "publisher": "Blockscout",
+    "accessedAt": "2026-10-01"
+  }
+]

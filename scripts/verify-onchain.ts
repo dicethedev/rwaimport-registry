@@ -19,9 +19,30 @@ interface SolanaRpcResponse {
 const rpcUrls: Record<number, string> = {
   1: "https://ethereum-rpc.publicnode.com",
   56: "https://bsc-rpc.publicnode.com",
+  4663: "https://rpc.mainnet.chain.robinhood.com",
 };
 const solanaRpcUrl = "https://api.mainnet-beta.solana.com";
 const token2022ProgramId = "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb";
+
+function wait(milliseconds: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
+}
+
+async function postRpc(url: string, body: unknown): Promise<Response> {
+  for (let attempt = 0; attempt < 5; attempt += 1) {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(30_000),
+    });
+    if (response.status !== 429) return response;
+    await response.text();
+    const retryAfter = Number(response.headers.get("retry-after"));
+    await wait(Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1_000 : 2 ** attempt * 1_000);
+  }
+  throw new Error(`RPC rate limit did not clear for ${url}`);
+}
 
 const rootDirectory = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const validation = await validateRegistry(rootDirectory);
@@ -38,49 +59,48 @@ for (const [chainIdText, rpcUrl] of Object.entries(rpcUrls)) {
   const chainId = Number(chainIdText);
   const chainDeployments = deployments.filter((deployment) => deployment.chainId === chainId);
   if (chainDeployments.length === 0) continue;
+  const batchSize = chainId === 4663 ? 5 : 50;
 
-  const payload = chainDeployments.map((deployment, index) => ({
-    jsonrpc: "2.0",
-    id: index,
-    method: "eth_getCode",
-    params: [deployment.address, "latest"],
-  }));
-  const response = await fetch(rpcUrl, {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify(payload),
-  });
-  if (!response.ok) throw new Error(`${chainId} RPC returned HTTP ${response.status}`);
-  const results = (await response.json()) as EvmRpcResponse[];
-  const resultById = new Map(results.map((result) => [result.id, result]));
+  for (let offset = 0; offset < chainDeployments.length; offset += batchSize) {
+    const batch = chainDeployments.slice(offset, offset + batchSize);
+    const payload = batch.map((deployment, index) => ({
+      jsonrpc: "2.0",
+      id: offset + index,
+      method: "eth_getCode",
+      params: [deployment.address, "latest"],
+    }));
+    const response = await postRpc(rpcUrl, payload);
+    if (!response.ok) throw new Error(`${chainId} RPC returned HTTP ${response.status}`);
+    const results = (await response.json()) as EvmRpcResponse[];
+    const resultById = new Map(results.map((result) => [result.id, result]));
 
-  chainDeployments.forEach((deployment, index) => {
-    const result = resultById.get(index);
-    if (!result || result.error || !result.result || result.result === "0x") {
-      errors.push(
-        `${deployment.assetId} ${deployment.chain} ${deployment.address}: ` +
-          (result?.error?.message ?? "no deployed bytecode"),
-      );
+    batch.forEach((deployment, index) => {
+      const result = resultById.get(offset + index);
+      if (!result || result.error || !result.result || result.result === "0x") {
+        errors.push(
+          `${deployment.assetId} ${deployment.chain} ${deployment.address}: ` +
+            (result?.error?.message ?? "no deployed bytecode"),
+        );
+      }
+    });
+    if (chainId === 4663 && offset + batchSize < chainDeployments.length) {
+      await wait(1_000);
     }
-  });
+  }
   console.log(`Verified ${chainDeployments.length} deployed contracts on chain ${chainId}.`);
 }
 
 const solanaDeployments = deployments.filter((deployment) => deployment.chain === "solana");
 for (let offset = 0; offset < solanaDeployments.length; offset += 100) {
   const batch = solanaDeployments.slice(offset, offset + 100);
-  const response = await fetch(solanaRpcUrl, {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify({
-      jsonrpc: "2.0",
-      id: offset / 100,
-      method: "getMultipleAccounts",
-      params: [
-        batch.map((deployment) => deployment.address),
-        { encoding: "base64", commitment: "confirmed" },
-      ],
-    }),
+  const response = await postRpc(solanaRpcUrl, {
+    jsonrpc: "2.0",
+    id: offset / 100,
+    method: "getMultipleAccounts",
+    params: [
+      batch.map((deployment) => deployment.address),
+      { encoding: "base64", commitment: "confirmed" },
+    ],
   });
   if (!response.ok) throw new Error(`Solana RPC returned HTTP ${response.status}`);
   const result = (await response.json()) as SolanaRpcResponse;

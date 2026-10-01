@@ -1,0 +1,26 @@
+[
+  {
+    "id": "robinhood-assets-api",
+    "type": "issuer",
+    "title": "WDAY metadata in Robinhood's official asset API",
+    "url": "https://api.robinhood.com/rhj/assets",
+    "publisher": "Robinhood",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "robinhood-stock-token-docs",
+    "type": "documentation",
+    "title": "Robinhood Stock Tokens overview, mechanics, and issuer disclosures",
+    "url": "https://docs.robinhood.com/chain/stock-tokens/",
+    "publisher": "Robinhood",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "robinhood-chain-explorer",
+    "type": "chain-explorer",
+    "title": "WDAY contract on Robinhood Chain",
+    "url": "https://robinhoodchain.blockscout.com/token/0x82DA4646242e1D962e96e932269Dc644c94a9CaA",
+    "publisher": "Blockscout",
+    "accessedAt": "2026-10-01"
+  }
+]

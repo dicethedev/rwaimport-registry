@@ -1,0 +1,26 @@
+[
+  {
+    "id": "robinhood-assets-api",
+    "type": "issuer",
+    "title": "SOFI metadata in Robinhood's official asset API",
+    "url": "https://api.robinhood.com/rhj/assets",
+    "publisher": "Robinhood",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "robinhood-stock-token-docs",
+    "type": "documentation",
+    "title": "Robinhood Stock Tokens overview, mechanics, and issuer disclosures",
+    "url": "https://docs.robinhood.com/chain/stock-tokens/",
+    "publisher": "Robinhood",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "robinhood-chain-explorer",
+    "type": "chain-explorer",
+    "title": "SOFI contract on Robinhood Chain",
+    "url": "https://robinhoodchain.blockscout.com/token/0x98E75885157C80992A8D41b696D8c9C6Fb30A926",
+    "publisher": "Blockscout",
+    "accessedAt": "2026-10-01"
+  }
+]

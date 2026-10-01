@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "robinhood-vti",
+  "name": "Vanguard Morningstar Total Stock Market ETF • Robinhood Token",
+  "symbol": "VTI",
+  "description": "Tokenized debt security issued by Robinhood Assets (Jersey) Limited, providing economic exposure to Vanguard Morningstar Total Stock Market ETF without ownership rights in the underlying security.",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "US9229087690"
+    },
+    {
+      "scheme": "issuer-id",
+      "value": "0x000000000000000000000000000000007bf2fcc61eea41048648bcfbe4066b63"
+    }
+  ],
+  "assetClass": "exchange-traded-fund",
+  "issuerId": "robinhood-assets-jersey",
+  "status": "active",
+  "website": "https://docs.robinhood.com/chain/stock-tokens/",
+  "marketDataLinks": [
+    {
+      "provider": "Robinhood",
+      "type": "issuer",
+      "url": "https://api.robinhood.com/rhj/assets",
+      "description": "Official asset metadata and deployment catalog; search for VTI."
+    },
+    {
+      "provider": "Robinhood Chain Blockscout",
+      "type": "chain-explorer",
+      "url": "https://robinhoodchain.blockscout.com/token/0x0594134DF3f171a354D9C85eBD65b7A6148F6D09",
+      "description": "Onchain contract, supply, holders, and transfers on Robinhood Chain."
+    }
+  ],
+  "verifiedBy": [
+    "robinhood-assets-api",
+    "robinhood-stock-token-docs"
+  ]
+}

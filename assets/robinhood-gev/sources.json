@@ -1,0 +1,26 @@
+[
+  {
+    "id": "robinhood-assets-api",
+    "type": "issuer",
+    "title": "GEV metadata in Robinhood's official asset API",
+    "url": "https://api.robinhood.com/rhj/assets",
+    "publisher": "Robinhood",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "robinhood-stock-token-docs",
+    "type": "documentation",
+    "title": "Robinhood Stock Tokens overview, mechanics, and issuer disclosures",
+    "url": "https://docs.robinhood.com/chain/stock-tokens/",
+    "publisher": "Robinhood",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "robinhood-chain-explorer",
+    "type": "chain-explorer",
+    "title": "GEV contract on Robinhood Chain",
+    "url": "https://robinhoodchain.blockscout.com/token/0x94B8AAE43A1cCc08Aa64B7D1F29b4D920aF4a0C9",
+    "publisher": "Blockscout",
+    "accessedAt": "2026-10-01"
+  }
+]

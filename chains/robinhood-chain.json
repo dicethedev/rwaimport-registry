@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "robinhood-chain",
+  "name": "Robinhood Chain",
+  "chainId": 4663,
+  "type": "evm",
+  "namespace": "eip155",
+  "reference": "4663",
+  "nativeCurrency": "ETH",
+  "explorerUrl": "https://robinhoodchain.blockscout.com",
+  "status": "active"
+}

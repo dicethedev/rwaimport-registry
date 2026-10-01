@@ -21,6 +21,21 @@ The import is pinned to token-list commit
 The Solana mint import is independently pinned to commit
 `0688add3c64aadc7006712989e9ec0592b5b10f8`.
 
+### Robinhood
+
+Credited as the primary source for the Robinhood Stock Token collection:
+
+- names, symbols, ISINs, decimals, stable issuer asset IDs, status, and Robinhood Chain
+  contract addresses come from Robinhood's official `/rhj/assets` API;
+- product structure, ERC-20 and ERC-8056 behavior, direct-issuance KYB requirements, and
+  jurisdictional restrictions come from Robinhood Chain's official Stock Token documentation;
+- Robinhood Chain ID `4663`, RPC, native currency, and explorer details come from Robinhood's
+  official chain documentation.
+
+The API catalog is live rather than commit-addressed. Every generated record therefore stores
+the source URL and access date, and the importer accepts a downloaded response for reproducible
+snapshot builds. No live price or multiplier values are copied into the registry.
+
 ### RWA.xyz
 
 Credited as an independent tokenized-asset market-data provider. Each stock record links
@@ -34,7 +49,7 @@ Credited as an independent price-data provider. Each supported deployment links 
 to DefiLlama's public current-price API by chain and contract address. RWAImport currently
 does not copy or cache the returned price.
 
-### Etherscan, BscScan, and Solana Explorer
+### Etherscan, BscScan, Solana Explorer, and Robinhood Chain Blockscout
 
 Credited as chain explorers. Deployment records link to the appropriate explorer for
 contract or mint details, token supply, holders, and transfer activity.

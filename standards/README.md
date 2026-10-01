@@ -22,6 +22,7 @@ not mean every listed asset implements it or that the specification is formally 
 | `erc7551` | German eWpG crypto-security interface | Draft |
 | `erc7651` | Fractionally represented NFTs | Draft |
 | `erc7943` | Universal RWA compliance and enforcement interface | Final |
+| `erc8056` | Scaled UI amounts for stock splits and corporate actions | Draft |
 | `cmtat` | CMTA framework for regulated financial instruments | Active industry framework |
 | `solana-token-2022` | Extensible fungible tokens on Solana | Active Solana program |
 

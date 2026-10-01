@@ -63,7 +63,10 @@ it is intentionally separate from the deterministic test suite because it requir
 
 ## Current catalog
 
-The curated catalog contains 400 Ondo assets representing company equities and
+The catalog contains 595 source-backed assets with 1,382 deployments across Ethereum,
+BNB Smart Chain, Solana, and Robinhood Chain.
+
+The Ondo collection contains 400 assets representing company equities and
 exchange-traded instruments. It includes 1,187 deployments: 400 each on Ethereum and BNB
 Smart Chain plus 387 valid Token-2022 mints on Solana. EVM deployments come from Ondo Finance's
 official token list at immutable commit `f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4`;
@@ -71,13 +74,21 @@ Solana mints come from Ondo's official simulator catalog at immutable commit
 `0688add3c64aadc7006712989e9ec0592b5b10f8`. Each asset cites its official Ondo product
 page, product/eligibility guide, and a chain explorer for every deployment.
 
-Every asset also has `marketDataLinks` for the issuer, RWA.xyz, DefiLlama, and the relevant
-chain explorers. These are outbound verification links, not imported live values. See
+The Robinhood collection contains 195 active Stock Tokens and tokenized ETFs issued by
+Robinhood Assets (Jersey) Limited, with 195 deployments on Robinhood Chain mainnet. Records
+come from Robinhood's official asset API as accessed on `2026-10-01`; each includes the
+official asset UID, ISIN, ERC-20 and ERC-8056 standards, issuer disclosures, and a canonical
+Blockscout contract link. Run `npm run import:robinhood-stocks` to refresh from the API or
+pass a downloaded JSON response to reproduce a fixed snapshot.
+
+Every asset also has provider-appropriate `marketDataLinks` for the issuer, independent
+data providers where available, and relevant chain explorers. These are outbound
+verification links, not imported live values. See
 `ATTRIBUTION.md` for the exact credit and provenance policy.
 
-This batch establishes the ingestion and evidence pipeline. It is issuer-concentrated by
-design; subsequent batches should expand treasuries, commodities, credit, real estate, and
-other issuers without weakening source requirements.
+These collections establish the ingestion and evidence pipeline. Subsequent batches should
+expand treasuries, commodities, credit, real estate, and other issuers without weakening
+source requirements.
 
 ## Adding an asset
 

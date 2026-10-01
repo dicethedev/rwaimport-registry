@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "erc8056",
+  "name": "ERC-8056 Scaled UI Amount Extension",
+  "category": "rwa-interface",
+  "specificationType": "erc",
+  "maintainer": "Ethereum community",
+  "description": "Draft ERC-20 extension for applying an issuer-controlled display multiplier to token amounts, enabling stock splits and other corporate actions without changing raw balances or total supply.",
+  "capabilities": ["scaled-ui-amounts", "corporate-actions", "pending-multiplier", "interface-detection"],
+  "relatedStandardIds": ["erc20"],
+  "status": "draft",
+  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-8056"
+}
