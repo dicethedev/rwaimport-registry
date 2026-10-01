@@ -1,0 +1,43 @@
+[
+  {
+    "chain": "ethereum",
+    "chainId": 1,
+    "address": "0xa6CdB19b22B03e03EA89e133A8a46aDc3017aa6d",
+    "standardIds": [
+      "erc20"
+    ],
+    "decimals": 18,
+    "status": "active",
+    "verifiedBy": [
+      "ondo-token-list",
+      "ethereum-explorer"
+    ]
+  },
+  {
+    "chain": "bnb-chain",
+    "chainId": 56,
+    "address": "0xdB0748297fbEf0B33dF89e86519A0BD3adAf6459",
+    "standardIds": [
+      "erc20"
+    ],
+    "decimals": 18,
+    "status": "active",
+    "verifiedBy": [
+      "ondo-token-list",
+      "bnb-chain-explorer"
+    ]
+  },
+  {
+    "chain": "solana",
+    "address": "DBNwt3FoYCKQWdfzxKFNZ4mzuz4Jz1iRzFf7HFzondo",
+    "standardIds": [
+      "solana-token-2022"
+    ],
+    "decimals": 9,
+    "status": "active",
+    "verifiedBy": [
+      "ondo-solana-mint-list",
+      "solana-explorer"
+    ]
+  }
+]

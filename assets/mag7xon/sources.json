@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ondo-token-list",
+    "type": "issuer",
+    "title": "Ondo official token list at commit f5a82fca4b2a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-product-page",
+    "type": "issuer",
+    "title": "Ondo Magnificent 7 and Crypto Portfolio product page",
+    "url": "https://app.ondo.finance/assets/mag7xon",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-stocks-guide",
+    "type": "documentation",
+    "title": "Ondo Stocks product, onboarding, and eligibility overview",
+    "url": "https://ondo.finance/ondo-stocks",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ethereum-explorer",
+    "type": "chain-explorer",
+    "title": "MAG7Xon contract on ethereum",
+    "url": "https://etherscan.io/token/0xEE69f45715bfa6A4cffe2bB7e0D71093B9D58705",
+    "publisher": "Etherscan",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "bnb-chain-explorer",
+    "type": "chain-explorer",
+    "title": "MAG7Xon contract on bnb-chain",
+    "url": "https://bscscan.com/token/0x50436eC45316A98E72b03Ead5752E8543f11ec09",
+    "publisher": "BscScan",
+    "accessedAt": "2026-10-01"
+  }
+]

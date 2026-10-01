@@ -5,7 +5,7 @@
     "title": "Ondo official token list at commit f5a82fca4b2a",
     "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "ondo-product-page",
@@ -13,7 +13,7 @@
     "title": "Bank of America (Ondo Tokenized) product page",
     "url": "https://app.ondo.finance/assets/bacon",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "ondo-stocks-guide",
@@ -21,7 +21,7 @@
     "title": "Ondo Stocks product, onboarding, and eligibility overview",
     "url": "https://ondo.finance/ondo-stocks",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "ethereum-explorer",
@@ -29,7 +29,7 @@
     "title": "BACon contract on ethereum",
     "url": "https://etherscan.io/token/0x576e9CA70E3a040c00d8139B0665A2b7B7B64844",
     "publisher": "Etherscan",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "bnb-chain-explorer",
@@ -37,6 +37,22 @@
     "title": "BACon contract on bnb-chain",
     "url": "https://bscscan.com/token/0xd615468088B19FB9D4f03cB3ce9e33876fF3dB99",
     "publisher": "BscScan",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-solana-mint-list",
+    "type": "issuer",
+    "title": "Ondo official Solana mint list at commit 0688add3c64a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/gm-solana-simulator/0688add3c64aadc7006712989e9ec0592b5b10f8/constants.rs",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "solana-explorer",
+    "type": "chain-explorer",
+    "title": "BACon mint on Solana",
+    "url": "https://explorer.solana.com/address/Wk8gC6iTNp8dqd4ghkJ3h1giiUnyhykwHh7tYWjondo",
+    "publisher": "Solana",
+    "accessedAt": "2026-10-01"
   }
 ]

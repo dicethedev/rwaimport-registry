@@ -4,6 +4,8 @@
   "name": "Base",
   "chainId": 8453,
   "type": "evm",
+  "namespace": "eip155",
+  "reference": "8453",
   "nativeCurrency": "ETH",
   "explorerUrl": "https://basescan.org",
   "status": "active"

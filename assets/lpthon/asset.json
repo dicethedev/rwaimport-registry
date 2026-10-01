@@ -47,6 +47,18 @@
       "type": "chain-explorer",
       "url": "https://bscscan.com/token/0x6AD19E0A57Cfea0bC521A12C6c82372852842933",
       "description": "Onchain supply, holders, transfers, and contract activity on bnb-chain."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/solana:dhEXYTmQKbYBH3wbWTMqeZZpADSRprM4jiGYbUMondo",
+      "description": "Current third-party price response for the Solana deployment."
+    },
+    {
+      "provider": "Solana Explorer",
+      "type": "chain-explorer",
+      "url": "https://explorer.solana.com/address/dhEXYTmQKbYBH3wbWTMqeZZpADSRprM4jiGYbUMondo",
+      "description": "Onchain supply, holders, transfers, and mint activity on Solana."
     }
   ],
   "verifiedBy": [

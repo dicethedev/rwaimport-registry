@@ -4,6 +4,8 @@
   "name": "BNB Smart Chain",
   "chainId": 56,
   "type": "evm",
+  "namespace": "eip155",
+  "reference": "56",
   "nativeCurrency": "BNB",
   "explorerUrl": "https://bscscan.com",
   "status": "active"

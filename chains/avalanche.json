@@ -4,6 +4,8 @@
   "name": "Avalanche C-Chain",
   "chainId": 43114,
   "type": "evm",
+  "namespace": "eip155",
+  "reference": "43114",
   "nativeCurrency": "AVAX",
   "explorerUrl": "https://snowtrace.io",
   "status": "active"

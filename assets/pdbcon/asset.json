@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "pdbcon",
+  "name": "Invesco Optimum Yld Dvsfd Cmd Str No K-1 ETF (Ondo Tokenized)",
+  "symbol": "PDBCon",
+  "description": "Tokenized economic exposure to the Invesco Optimum Yld Dvsfd Cmd Str No K-1 ETF instrument, issued by Ondo Global Markets (BVI) Limited.",
+  "assetClass": "exchange-traded-fund",
+  "issuerId": "ondo-global-markets",
+  "tokenizationProviderIds": [
+    "ondo-finance"
+  ],
+  "status": "active",
+  "website": "https://app.ondo.finance/assets/pdbcon",
+  "marketDataLinks": [
+    {
+      "provider": "Ondo Finance",
+      "type": "issuer",
+      "url": "https://app.ondo.finance/assets/pdbcon",
+      "description": "Issuer product page and primary instrument information."
+    },
+    {
+      "provider": "RWA.xyz",
+      "type": "aggregator",
+      "url": "https://app.rwa-xyz.com/stocks",
+      "description": "Independent tokenized-stock market dashboard; search for PDBCon."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/ethereum:0x46c0a02A877C1412Cb32b57028b2F771c0364A7E",
+      "description": "Current third-party price response for the ethereum deployment."
+    },
+    {
+      "provider": "Etherscan",
+      "type": "chain-explorer",
+      "url": "https://etherscan.io/token/0x46c0a02A877C1412Cb32b57028b2F771c0364A7E",
+      "description": "Onchain supply, holders, transfers, and contract activity on ethereum."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/bsc:0xcf3E84e62002CA459dB81b2032d7fe13715BAd51",
+      "description": "Current third-party price response for the bnb-chain deployment."
+    },
+    {
+      "provider": "BscScan",
+      "type": "chain-explorer",
+      "url": "https://bscscan.com/token/0xcf3E84e62002CA459dB81b2032d7fe13715BAd51",
+      "description": "Onchain supply, holders, transfers, and contract activity on bnb-chain."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/solana:M6agiXbNgy8Xon9ngiW4ZDPbMFcNCTMkMMkshZyondo",
+      "description": "Current third-party price response for the Solana deployment."
+    },
+    {
+      "provider": "Solana Explorer",
+      "type": "chain-explorer",
+      "url": "https://explorer.solana.com/address/M6agiXbNgy8Xon9ngiW4ZDPbMFcNCTMkMMkshZyondo",
+      "description": "Onchain supply, holders, transfers, and mint activity on Solana."
+    }
+  ],
+  "verifiedBy": [
+    "ondo-token-list",
+    "ondo-product-page"
+  ]
+}

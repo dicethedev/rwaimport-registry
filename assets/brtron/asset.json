@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "brtron",
+  "name": "iShares Total Return Active ETF (Ondo Tokenized)",
+  "symbol": "BRTRon",
+  "description": "Tokenized economic exposure to the iShares Total Return Active ETF instrument, issued by Ondo Global Markets (BVI) Limited.",
+  "assetClass": "exchange-traded-fund",
+  "issuerId": "ondo-global-markets",
+  "tokenizationProviderIds": [
+    "ondo-finance"
+  ],
+  "status": "active",
+  "website": "https://app.ondo.finance/assets/brtron",
+  "marketDataLinks": [
+    {
+      "provider": "Ondo Finance",
+      "type": "issuer",
+      "url": "https://app.ondo.finance/assets/brtron",
+      "description": "Issuer product page and primary instrument information."
+    },
+    {
+      "provider": "RWA.xyz",
+      "type": "aggregator",
+      "url": "https://app.rwa-xyz.com/stocks",
+      "description": "Independent tokenized-stock market dashboard; search for BRTRon."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/ethereum:0x3d45D340a30f49F036142e5e4D8993b9ad4e3F9a",
+      "description": "Current third-party price response for the ethereum deployment."
+    },
+    {
+      "provider": "Etherscan",
+      "type": "chain-explorer",
+      "url": "https://etherscan.io/token/0x3d45D340a30f49F036142e5e4D8993b9ad4e3F9a",
+      "description": "Onchain supply, holders, transfers, and contract activity on ethereum."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/bsc:0x463196CC72cBad2D1AC1896CDE0766bfBBd64443",
+      "description": "Current third-party price response for the bnb-chain deployment."
+    },
+    {
+      "provider": "BscScan",
+      "type": "chain-explorer",
+      "url": "https://bscscan.com/token/0x463196CC72cBad2D1AC1896CDE0766bfBBd64443",
+      "description": "Onchain supply, holders, transfers, and contract activity on bnb-chain."
+    },
+    {
+      "provider": "DefiLlama",
+      "type": "price-api",
+      "url": "https://coins.llama.fi/prices/current/solana:gPwmyo4BM4qgYYCTVgA4eJmzsnYNVMUJYBecYkCondo",
+      "description": "Current third-party price response for the Solana deployment."
+    },
+    {
+      "provider": "Solana Explorer",
+      "type": "chain-explorer",
+      "url": "https://explorer.solana.com/address/gPwmyo4BM4qgYYCTVgA4eJmzsnYNVMUJYBecYkCondo",
+      "description": "Onchain supply, holders, transfers, and mint activity on Solana."
+    }
+  ],
+  "verifiedBy": [
+    "ondo-token-list",
+    "ondo-product-page"
+  ]
+}

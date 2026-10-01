@@ -26,5 +26,18 @@
       "ondo-token-list",
       "bnb-chain-explorer"
     ]
+  },
+  {
+    "chain": "solana",
+    "address": "ou1uE526v7zmUYP2qCb2LJgfXAyWAtWS9SETtr8ondo",
+    "standardIds": [
+      "solana-token-2022"
+    ],
+    "decimals": 9,
+    "status": "active",
+    "verifiedBy": [
+      "ondo-solana-mint-list",
+      "solana-explorer"
+    ]
   }
 ]

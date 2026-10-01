@@ -54,4 +54,54 @@ describe("registry validation", () => {
       "Asset example-treasury deployment chainId does not match ethereum",
     );
   });
+
+  it("rejects a numeric chain id on a non-EVM deployment", async () => {
+    const temporaryRoot = await mkdtemp(path.join(tmpdir(), "rwaimport-registry-"));
+    await cp(validFixture, temporaryRoot, { recursive: true });
+    const chainFile = path.join(temporaryRoot, "chains/ethereum.json");
+    const chain = JSON.parse(await readFile(chainFile, "utf8")) as Record<string, unknown>;
+    chain.type = "solana";
+    chain.namespace = "solana";
+    chain.reference = "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp";
+    await writeFile(chainFile, `${JSON.stringify(chain, null, 2)}\n`, "utf8");
+
+    const result = await validateRegistry(temporaryRoot);
+
+    expect(result.valid).toBe(false);
+    expect(result.errors).toContain("Non-EVM chain ethereum must not define a numeric chainId");
+    expect(result.errors).toContain(
+      "Asset example-treasury deployment must not use numeric chainId for ethereum",
+    );
+  });
+
+  it("rejects a Base58 value that is not a 32-byte Solana public key", async () => {
+    const temporaryRoot = await mkdtemp(path.join(tmpdir(), "rwaimport-registry-"));
+    await cp(validFixture, temporaryRoot, { recursive: true });
+    const chainFile = path.join(temporaryRoot, "chains/ethereum.json");
+    const chain = JSON.parse(await readFile(chainFile, "utf8")) as Record<string, unknown>;
+    chain.type = "solana";
+    chain.namespace = "solana";
+    chain.reference = "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp";
+    delete chain.chainId;
+    await writeFile(chainFile, `${JSON.stringify(chain, null, 2)}\n`, "utf8");
+
+    const deploymentFile = path.join(
+      temporaryRoot,
+      "assets/example-treasury/deployments.json",
+    );
+    const deployments = JSON.parse(await readFile(deploymentFile, "utf8")) as Array<
+      Record<string, unknown>
+    >;
+    if (!deployments[0]) throw new Error("Fixture deployment is missing");
+    delete deployments[0].chainId;
+    deployments[0].address = "7qy1j4Mechfyr6AST3djH4vk4kiEYC2cjEytXdondo";
+    await writeFile(deploymentFile, `${JSON.stringify(deployments, null, 2)}\n`, "utf8");
+
+    const result = await validateRegistry(temporaryRoot);
+
+    expect(result.valid).toBe(false);
+    expect(result.errors).toContain(
+      "Asset example-treasury deployment address is not a 32-byte Solana public key",
+    );
+  });
 });

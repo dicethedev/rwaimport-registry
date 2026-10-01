@@ -4,6 +4,8 @@
   "name": "Polygon",
   "chainId": 137,
   "type": "evm",
+  "namespace": "eip155",
+  "reference": "137",
   "nativeCurrency": "POL",
   "explorerUrl": "https://polygonscan.com",
   "status": "active"

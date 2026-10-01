@@ -4,6 +4,8 @@
   "name": "Arbitrum One",
   "chainId": 42161,
   "type": "evm",
+  "namespace": "eip155",
+  "reference": "42161",
   "nativeCurrency": "ETH",
   "explorerUrl": "https://arbiscan.io",
   "status": "active"

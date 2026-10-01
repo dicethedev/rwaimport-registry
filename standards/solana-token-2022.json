@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "solana-token-2022",
+  "name": "Solana Token Extensions (Token-2022)",
+  "category": "fungible-token",
+  "specificationType": "solana-program",
+  "maintainer": "Solana",
+  "description": "Solana's extensible token program, supporting optional mint and account features such as transfer hooks, pausing, metadata, and permanent delegates.",
+  "capabilities": ["fungible", "extensions", "transfer-controls", "metadata"],
+  "status": "active",
+  "referenceUrl": "https://solana.com/docs/tokens/extensions"
+}

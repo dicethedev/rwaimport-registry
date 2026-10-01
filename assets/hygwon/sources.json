@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ondo-token-list",
+    "type": "issuer",
+    "title": "Ondo official token list at commit f5a82fca4b2a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-product-page",
+    "type": "issuer",
+    "title": "iShares High Yield Corporate Bond BuyWrite Strategy ETF (Ondo Tokenized) product page",
+    "url": "https://app.ondo.finance/assets/hygwon",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-stocks-guide",
+    "type": "documentation",
+    "title": "Ondo Stocks product, onboarding, and eligibility overview",
+    "url": "https://ondo.finance/ondo-stocks",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ethereum-explorer",
+    "type": "chain-explorer",
+    "title": "HYGWon contract on ethereum",
+    "url": "https://etherscan.io/token/0x67Eb4e3f674484CA980de8eB953AA435De2F23cb",
+    "publisher": "Etherscan",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "bnb-chain-explorer",
+    "type": "chain-explorer",
+    "title": "HYGWon contract on bnb-chain",
+    "url": "https://bscscan.com/token/0x85b53A9344884ae428E0E15f05A1819D280D4bE7",
+    "publisher": "BscScan",
+    "accessedAt": "2026-10-01"
+  }
+]

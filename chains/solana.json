@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "solana",
+  "name": "Solana Mainnet",
+  "type": "solana",
+  "namespace": "solana",
+  "reference": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+  "nativeCurrency": "SOL",
+  "explorerUrl": "https://explorer.solana.com",
+  "status": "active"
+}

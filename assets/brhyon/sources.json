@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ondo-token-list",
+    "type": "issuer",
+    "title": "Ondo official token list at commit f5a82fca4b2a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-product-page",
+    "type": "issuer",
+    "title": "iShares High Yield Active ETF (Ondo Tokenized) product page",
+    "url": "https://app.ondo.finance/assets/brhyon",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-stocks-guide",
+    "type": "documentation",
+    "title": "Ondo Stocks product, onboarding, and eligibility overview",
+    "url": "https://ondo.finance/ondo-stocks",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ethereum-explorer",
+    "type": "chain-explorer",
+    "title": "BRHYon contract on ethereum",
+    "url": "https://etherscan.io/token/0xaeB2C4f3540a162045cC3Bd82d367AC38C2F4Da6",
+    "publisher": "Etherscan",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "bnb-chain-explorer",
+    "type": "chain-explorer",
+    "title": "BRHYon contract on bnb-chain",
+    "url": "https://bscscan.com/token/0x6860a2f969A8133A23421ddce21397995139D7e8",
+    "publisher": "BscScan",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-solana-mint-list",
+    "type": "issuer",
+    "title": "Ondo official Solana mint list at commit 0688add3c64a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/gm-solana-simulator/0688add3c64aadc7006712989e9ec0592b5b10f8/constants.rs",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "solana-explorer",
+    "type": "chain-explorer",
+    "title": "BRHYon mint on Solana",
+    "url": "https://explorer.solana.com/address/fznj92AnTcQ6mAFvt68JgLJS5pHag5uPmJ7LmSLondo",
+    "publisher": "Solana",
+    "accessedAt": "2026-10-01"
+  }
+]

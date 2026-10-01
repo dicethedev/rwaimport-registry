@@ -13,7 +13,7 @@ export interface Asset {
 
 export interface Deployment {
   chain: string;
-  chainId: number;
+  chainId?: number;
   address: string;
   standardIds: string[];
   status: string;
@@ -45,8 +45,11 @@ export interface Issuer {
 
 export interface Chain {
   id: string;
-  chainId: number;
+  chainId?: number;
   name: string;
+  type: "evm" | "solana";
+  namespace: string;
+  reference: string;
   [key: string]: unknown;
 }
 

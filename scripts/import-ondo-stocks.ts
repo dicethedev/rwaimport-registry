@@ -15,14 +15,23 @@ interface TokenList {
   tokens: TokenListEntry[];
 }
 
+interface SolanaMint {
+  symbol: string;
+  address: string;
+}
+
 const TOKEN_LIST_COMMIT = "f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4";
 const TOKEN_LIST_URL =
   `https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/${TOKEN_LIST_COMMIT}/tokenlist.json`;
-const ACCESSED_AT = "2026-09-30";
-const TARGET_ASSET_COUNT = 300;
-const excludedNamePattern =
+const SOLANA_LIST_COMMIT = "0688add3c64aadc7006712989e9ec0592b5b10f8";
+const SOLANA_LIST_URL =
+  `https://raw.githubusercontent.com/ondoprotocol/gm-solana-simulator/${SOLANA_LIST_COMMIT}/constants.rs`;
+const ACCESSED_AT = "2026-10-01";
+const TARGET_ASSET_COUNT = 400;
+const CORE_EQUITY_COUNT = 300;
+const excludedEquityNamePattern =
   /ETF|ETN|Fund|Trust|Index|Treasury|Bond|Notes|Portfolio|Bitcoin|Ethereum|Gold|Silver|Oil|Commodity|VIX|Ultra|Short|Bear|Bull|Leveraged|Income|Dividend|Covered Call|S&P|Russell|Nasdaq|Dow Jones/i;
-const excludedSymbols = new Set([
+const excludedEquitySymbols = new Set([
   "BLKDIGon",
   "BLKGRWon",
   "BOTon",
@@ -31,6 +40,7 @@ const excludedSymbols = new Set([
   "USDY",
   "USDon",
 ]);
+const excludedCatalogSymbols = new Set(["USDY", "USDon"]);
 
 const chainDetails: Record<
   number,
@@ -58,33 +68,85 @@ function underlyingName(name: string): string {
   return name.replace(/\s*\(Ondo Tokenized\)$/, "");
 }
 
-async function loadTokenList(): Promise<TokenList> {
-  const suppliedPath = process.argv[2];
-  if (suppliedPath) {
-    return JSON.parse(await readFile(path.resolve(suppliedPath), "utf8")) as TokenList;
+function assetClass(name: string): "public-equity" | "exchange-traded-fund" | "other" {
+  if (/Portfolio/i.test(name)) return "other";
+  if (
+    /ETF|ETN|Fund|Trust|Index|Treasury|Bond|Notes|Bitcoin|Ethereum|Gold|Silver|Oil|Commodity|VIX|Ultra|Short|Bear|Bull|Leveraged|Income|Dividend|Covered Call|S&P|Russell|Nasdaq|Dow Jones/i.test(
+      name,
+    )
+  ) {
+    return "exchange-traded-fund";
   }
-  const response = await fetch(TOKEN_LIST_URL);
-  if (!response.ok) throw new Error(`Unable to download token list: ${response.status}`);
-  return (await response.json()) as TokenList;
+  return "public-equity";
+}
+
+function base58DecodedLength(value: string): number {
+  const alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
+  let number = 0n;
+  for (const character of value) {
+    const digit = alphabet.indexOf(character);
+    if (digit < 0) return -1;
+    number = number * 58n + BigInt(digit);
+  }
+  let length = 0;
+  while (number > 0n) {
+    length += 1;
+    number >>= 8n;
+  }
+  for (const character of value) {
+    if (character !== "1") break;
+    length += 1;
+  }
+  return length;
+}
+
+async function loadText(suppliedPath: string | undefined, url: string): Promise<string> {
+  if (suppliedPath) return readFile(path.resolve(suppliedPath), "utf8");
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`Unable to download source: ${response.status} ${url}`);
+  return response.text();
+}
+
+function parseSolanaMints(source: string): Map<string, SolanaMint> {
+  const mints = new Map<string, SolanaMint>();
+  for (const match of source.matchAll(/\("([A-Za-z0-9]+)",\s*"([1-9A-HJ-NP-Za-km-z]{32,44})"\),/g)) {
+    const [, symbol, address] = match;
+    if (!symbol || !address) continue;
+    if (base58DecodedLength(address) !== 32) continue;
+    if (mints.has(symbol)) throw new Error(`Duplicate Solana mint symbol ${symbol}`);
+    mints.set(symbol, { symbol, address });
+  }
+  if (mints.size < TARGET_ASSET_COUNT) {
+    throw new Error(`Expected at least ${TARGET_ASSET_COUNT} Solana mints but found ${mints.size}`);
+  }
+  return mints;
 }
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const tokenList = await loadTokenList();
-const selectedSymbols = [
+const tokenList = JSON.parse(await loadText(process.argv[2], TOKEN_LIST_URL)) as TokenList;
+const solanaMints = parseSolanaMints(await loadText(process.argv[3], SOLANA_LIST_URL));
+const ethereumTokens = tokenList.tokens.filter(
+  (token) => token.chainId === 1 && token.address && !excludedCatalogSymbols.has(token.symbol),
+);
+const coreEquitySymbols = [
   ...new Set(
-    tokenList.tokens
+    ethereumTokens
       .filter(
         (token) =>
-          token.chainId === 1 &&
-          token.address &&
-          !excludedNamePattern.test(token.name) &&
-          !excludedSymbols.has(token.symbol),
+          !excludedEquityNamePattern.test(token.name) &&
+          !excludedEquitySymbols.has(token.symbol),
       )
       .map((token) => token.symbol),
   ),
 ]
   .sort((left, right) => left.localeCompare(right))
-  .slice(0, TARGET_ASSET_COUNT);
+  .slice(0, CORE_EQUITY_COUNT);
+const coreSet = new Set(coreEquitySymbols);
+const supplementalSymbols = [...new Set(ethereumTokens.map((token) => token.symbol))]
+  .filter((symbol) => !coreSet.has(symbol))
+  .sort((left, right) => left.localeCompare(right))
+  .slice(0, TARGET_ASSET_COUNT - CORE_EQUITY_COUNT);
+const selectedSymbols = [...coreEquitySymbols, ...supplementalSymbols];
 
 if (selectedSymbols.length !== TARGET_ASSET_COUNT) {
   throw new Error(
@@ -92,16 +154,19 @@ if (selectedSymbols.length !== TARGET_ASSET_COUNT) {
   );
 }
 
+let solanaDeploymentCount = 0;
 for (const symbol of selectedSymbols) {
-  const tokens = tokenList.tokens.filter(
+  const evmTokens = tokenList.tokens.filter(
     (token) => token.symbol === symbol && token.address && chainDetails[token.chainId],
   );
-  if (tokens.length === 0) throw new Error(`Selected asset ${symbol} has no supported deployment`);
+  if (evmTokens.length === 0) throw new Error(`Selected asset ${symbol} has no supported deployment`);
 
-  const primary = tokens.find((token) => token.chainId === 1) ?? tokens[0];
+  const primary = evmTokens.find((token) => token.chainId === 1) ?? evmTokens[0];
   if (!primary) throw new Error(`Selected asset ${symbol} is missing primary metadata`);
+  const solanaMint = solanaMints.get(symbol);
   const id = assetIdFromSymbol(symbol);
   const name = underlyingName(primary.name);
+  const classification = assetClass(name);
   const assetDirectory = path.join(repositoryRoot, "assets", id);
   await mkdir(assetDirectory, { recursive: true });
 
@@ -110,8 +175,11 @@ for (const symbol of selectedSymbols) {
     id,
     name: primary.name,
     symbol,
-    description: `Tokenized economic exposure to ${name}, issued by Ondo Global Markets (BVI) Limited.`,
-    assetClass: "public-equity",
+    description:
+      classification === "public-equity"
+        ? `Tokenized economic exposure to ${name}, issued by Ondo Global Markets (BVI) Limited.`
+        : `Tokenized economic exposure to the ${name} instrument, issued by Ondo Global Markets (BVI) Limited.`,
+    assetClass: classification,
     issuerId: "ondo-global-markets",
     tokenizationProviderIds: ["ondo-finance"],
     status: "active",
@@ -129,7 +197,7 @@ for (const symbol of selectedSymbols) {
         url: "https://app.rwa-xyz.com/stocks",
         description: `Independent tokenized-stock market dashboard; search for ${symbol}.`,
       },
-      ...tokens.flatMap((token) => {
+      ...evmTokens.flatMap((token) => {
         const chain = chainDetails[token.chainId];
         if (!chain || !token.address) throw new Error(`Unsupported deployment for ${symbol}`);
         return [
@@ -147,24 +215,55 @@ for (const symbol of selectedSymbols) {
           },
         ];
       }),
+      ...(solanaMint
+        ? [
+            {
+              provider: "DefiLlama",
+              type: "price-api",
+              url: `https://coins.llama.fi/prices/current/solana:${solanaMint.address}`,
+              description: "Current third-party price response for the Solana deployment.",
+            },
+            {
+              provider: "Solana Explorer",
+              type: "chain-explorer",
+              url: `https://explorer.solana.com/address/${solanaMint.address}`,
+              description: "Onchain supply, holders, transfers, and mint activity on Solana.",
+            },
+          ]
+        : []),
     ],
     verifiedBy: ["ondo-token-list", "ondo-product-page"],
   };
-  const deployments = tokens
-    .sort((left, right) => left.chainId - right.chainId)
-    .map((token) => {
-      const chain = chainDetails[token.chainId];
-      if (!chain || !token.address) throw new Error(`Unsupported deployment for ${symbol}`);
-      return {
-        chain: chain.id,
-        chainId: token.chainId,
-        address: token.address,
-        standardIds: ["erc20"],
-        decimals: token.decimals,
-        status: "active",
-        verifiedBy: ["ondo-token-list", `${chain.id}-explorer`],
-      };
-    });
+  const deployments = [
+    ...evmTokens
+      .sort((left, right) => left.chainId - right.chainId)
+      .map((token) => {
+        const chain = chainDetails[token.chainId];
+        if (!chain || !token.address) throw new Error(`Unsupported deployment for ${symbol}`);
+        return {
+          chain: chain.id,
+          chainId: token.chainId,
+          address: token.address,
+          standardIds: ["erc20"],
+          decimals: token.decimals,
+          status: "active",
+          verifiedBy: ["ondo-token-list", `${chain.id}-explorer`],
+        };
+      }),
+    ...(solanaMint
+      ? [
+          {
+            chain: "solana",
+            address: solanaMint.address,
+            standardIds: ["solana-token-2022"],
+            decimals: 9,
+            status: "active",
+            verifiedBy: ["ondo-solana-mint-list", "solana-explorer"],
+          },
+        ]
+      : []),
+  ];
+  if (solanaMint) solanaDeploymentCount += 1;
   const compliance = {
     schemaVersion: 1,
     permissioned: "no",
@@ -201,7 +300,7 @@ for (const symbol of selectedSymbols) {
       publisher: "Ondo Finance",
       accessedAt: ACCESSED_AT,
     },
-    ...tokens.map((token) => {
+    ...evmTokens.map((token) => {
       const chain = chainDetails[token.chainId];
       if (!chain || !token.address) throw new Error(`Unsupported deployment for ${symbol}`);
       return {
@@ -213,6 +312,26 @@ for (const symbol of selectedSymbols) {
         accessedAt: ACCESSED_AT,
       };
     }),
+    ...(solanaMint
+      ? [
+          {
+            id: "ondo-solana-mint-list",
+            type: "issuer",
+            title: `Ondo official Solana mint list at commit ${SOLANA_LIST_COMMIT.slice(0, 12)}`,
+            url: SOLANA_LIST_URL,
+            publisher: "Ondo Finance",
+            accessedAt: ACCESSED_AT,
+          },
+          {
+            id: "solana-explorer",
+            type: "chain-explorer",
+            title: `${symbol} mint on Solana`,
+            url: `https://explorer.solana.com/address/${solanaMint.address}`,
+            publisher: "Solana",
+            accessedAt: ACCESSED_AT,
+          },
+        ]
+      : []),
   ];
 
   await Promise.all([
@@ -230,5 +349,5 @@ for (const symbol of selectedSymbols) {
 }
 
 console.log(
-  `Imported ${selectedSymbols.length} Ondo Stocks from token list dated ${tokenList.timestamp}.`,
+  `Imported ${selectedSymbols.length} Ondo assets with ${solanaDeploymentCount} Solana deployments from pinned official sources.`,
 );

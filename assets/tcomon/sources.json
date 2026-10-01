@@ -5,7 +5,7 @@
     "title": "Ondo official token list at commit f5a82fca4b2a",
     "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "ondo-product-page",
@@ -13,7 +13,7 @@
     "title": "Trip.com Group (Ondo Tokenized) product page",
     "url": "https://app.ondo.finance/assets/tcomon",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "ondo-stocks-guide",
@@ -21,7 +21,7 @@
     "title": "Ondo Stocks product, onboarding, and eligibility overview",
     "url": "https://ondo.finance/ondo-stocks",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "ethereum-explorer",
@@ -29,7 +29,7 @@
     "title": "TCOMon contract on ethereum",
     "url": "https://etherscan.io/token/0x398F7F759380f3D309B9Fc0e6CB3D36E0D67818D",
     "publisher": "Etherscan",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "bnb-chain-explorer",
@@ -37,6 +37,22 @@
     "title": "TCOMon contract on bnb-chain",
     "url": "https://bscscan.com/token/0x6459303F58244fF1e7a42b90aa3782Dfb6ca6969",
     "publisher": "BscScan",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-solana-mint-list",
+    "type": "issuer",
+    "title": "Ondo official Solana mint list at commit 0688add3c64a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/gm-solana-simulator/0688add3c64aadc7006712989e9ec0592b5b10f8/constants.rs",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "solana-explorer",
+    "type": "chain-explorer",
+    "title": "TCOMon mint on Solana",
+    "url": "https://explorer.solana.com/address/9PMjLqd8zPdKkJUXarnit5t7tPL3cCscwHzy7ATondo",
+    "publisher": "Solana",
+    "accessedAt": "2026-10-01"
   }
 ]

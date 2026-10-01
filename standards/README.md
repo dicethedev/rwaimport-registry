@@ -23,10 +23,12 @@ not mean every listed asset implements it or that the specification is formally 
 | `erc7651` | Fractionally represented NFTs | Draft |
 | `erc7943` | Universal RWA compliance and enforcement interface | Final |
 | `cmtat` | CMTA framework for regulated financial instruments | Active industry framework |
+| `solana-token-2022` | Extensible fungible tokens on Solana | Active Solana program |
 
 ## Status meanings
 
 - `final`, `review`, `draft`, and `stagnant` follow the Ethereum ERC process for published ERCs.
 - `active` is used for maintained industry specifications such as CMTAT and ERC-1404 that
   are not represented as finalized Ethereum ERC documents.
+- `solana-program` identifies a maintained Solana program specification rather than an ERC.
 - Always follow `referenceUrl` for the primary specification and current implementation guidance.

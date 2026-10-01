@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ondo-token-list",
+    "type": "issuer",
+    "title": "Ondo official token list at commit f5a82fca4b2a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-product-page",
+    "type": "issuer",
+    "title": "iShares MSCI EAFE ETF (Ondo Tokenized) product page",
+    "url": "https://app.ondo.finance/assets/efaon",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-stocks-guide",
+    "type": "documentation",
+    "title": "Ondo Stocks product, onboarding, and eligibility overview",
+    "url": "https://ondo.finance/ondo-stocks",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ethereum-explorer",
+    "type": "chain-explorer",
+    "title": "EFAon contract on ethereum",
+    "url": "https://etherscan.io/token/0x4111b60bc87F2Bd1e81E783E271D7F0ec6EE088B",
+    "publisher": "Etherscan",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "bnb-chain-explorer",
+    "type": "chain-explorer",
+    "title": "EFAon contract on bnb-chain",
+    "url": "https://bscscan.com/token/0x38B9A53bfDc5dba58a29bD6992341927C2fca637",
+    "publisher": "BscScan",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-solana-mint-list",
+    "type": "issuer",
+    "title": "Ondo official Solana mint list at commit 0688add3c64a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/gm-solana-simulator/0688add3c64aadc7006712989e9ec0592b5b10f8/constants.rs",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "solana-explorer",
+    "type": "chain-explorer",
+    "title": "EFAon mint on Solana",
+    "url": "https://explorer.solana.com/address/AbvryMGnaba9oADMZk8Vp2Av6MtczsncGyfWaC4ondo",
+    "publisher": "Solana",
+    "accessedAt": "2026-10-01"
+  }
+]

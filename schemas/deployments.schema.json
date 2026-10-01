@@ -6,11 +6,17 @@
   "items": {
     "type": "object",
     "additionalProperties": false,
-    "required": ["chain", "chainId", "address", "standardIds", "status", "verifiedBy"],
+    "required": ["chain", "address", "standardIds", "status", "verifiedBy"],
     "properties": {
       "chain": { "$ref": "#/$defs/id" },
       "chainId": { "type": "integer", "minimum": 1 },
-      "address": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+      "address": {
+        "type": "string",
+        "oneOf": [
+          { "pattern": "^0x[a-fA-F0-9]{40}$" },
+          { "pattern": "^[1-9A-HJ-NP-Za-km-z]{32,44}$" }
+        ]
+      },
       "standardIds": {
         "type": "array",
         "minItems": 1,

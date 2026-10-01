@@ -5,7 +5,7 @@
     "title": "Ondo official token list at commit f5a82fca4b2a",
     "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "ondo-product-page",
@@ -13,7 +13,7 @@
     "title": "Ondas Holdings (Ondo Tokenized) product page",
     "url": "https://app.ondo.finance/assets/ondson",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "ondo-stocks-guide",
@@ -21,7 +21,7 @@
     "title": "Ondo Stocks product, onboarding, and eligibility overview",
     "url": "https://ondo.finance/ondo-stocks",
     "publisher": "Ondo Finance",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "ethereum-explorer",
@@ -29,7 +29,7 @@
     "title": "ONDSon contract on ethereum",
     "url": "https://etherscan.io/token/0x818234860A647D480B9bbcc9A47A23889f2Ec900",
     "publisher": "Etherscan",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   },
   {
     "id": "bnb-chain-explorer",
@@ -37,6 +37,6 @@
     "title": "ONDSon contract on bnb-chain",
     "url": "https://bscscan.com/token/0xd85D4cE29b4cA361Ff72ef0E53d6236E334c5Db6",
     "publisher": "BscScan",
-    "accessedAt": "2026-09-30"
+    "accessedAt": "2026-10-01"
   }
 ]

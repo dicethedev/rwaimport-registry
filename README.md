@@ -10,8 +10,9 @@ It does **not** contain API, UI, indexing, or smart-contract analysis code.
 
 ## Core model
 
-An asset is a stable economic identity. A deployment is one token contract representing
-that asset on one chain. An asset may have zero, one, or many deployments.
+An asset is a stable economic identity. A deployment is one token contract or mint
+representing that asset on one chain. An asset may have zero, one, or many deployments.
+Chains use CAIP-2 namespace and reference fields so EVM and non-EVM networks share one model.
 
 ```text
 issuer ──< asset ──< deployment >── chain
@@ -57,15 +58,18 @@ npm run build
 
 `npm run validate` checks JSON Schemas and cross-file relationships. `npm run build`
 writes a generated API-friendly snapshot to `dist/registry.json` only after validation.
-`npm run verify:onchain` performs a live RPC bytecode check for every supported deployment;
+`npm run verify:onchain` performs live EVM bytecode and Solana Token-2022 mint checks;
 it is intentionally separate from the deterministic test suite because it requires network access.
 
 ## Current catalog
 
-The first curated batch contains 300 Ondo Stocks representing individual company
-equities, with deployments sourced from Ondo Finance's official token list at immutable
-commit `f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4`. Each asset cites its official Ondo
-product page, product/eligibility guide, and a chain explorer for every deployment.
+The curated catalog contains 400 Ondo assets representing company equities and
+exchange-traded instruments. It includes 1,187 deployments: 400 each on Ethereum and BNB
+Smart Chain plus 387 valid Token-2022 mints on Solana. EVM deployments come from Ondo Finance's
+official token list at immutable commit `f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4`;
+Solana mints come from Ondo's official simulator catalog at immutable commit
+`0688add3c64aadc7006712989e9ec0592b5b10f8`. Each asset cites its official Ondo product
+page, product/eligibility guide, and a chain explorer for every deployment.
 
 Every asset also has `marketDataLinks` for the issuer, RWA.xyz, DefiLlama, and the relevant
 chain explorers. These are outbound verification links, not imported live values. See

@@ -4,17 +4,33 @@
   "title": "RWAImport chain",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "id", "name", "chainId", "type", "nativeCurrency", "explorerUrl", "status"],
+  "required": ["schemaVersion", "id", "name", "type", "namespace", "reference", "nativeCurrency", "explorerUrl", "status"],
   "properties": {
     "schemaVersion": { "const": 1 },
     "id": { "$ref": "#/$defs/id" },
     "name": { "type": "string", "minLength": 1, "maxLength": 100 },
     "chainId": { "type": "integer", "minimum": 1 },
-    "type": { "const": "evm" },
+    "type": { "enum": ["evm", "solana"] },
+    "namespace": { "enum": ["eip155", "solana"] },
+    "reference": { "type": "string", "pattern": "^[-_a-zA-Z0-9]{1,32}$" },
     "nativeCurrency": { "type": "string", "minLength": 1, "maxLength": 12 },
     "explorerUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
     "status": { "enum": ["active", "inactive"] }
   },
+  "allOf": [
+    {
+      "if": { "properties": { "type": { "const": "evm" } }, "required": ["type"] },
+      "then": {
+        "properties": { "namespace": { "const": "eip155" } }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "solana" } }, "required": ["type"] },
+      "then": {
+        "properties": { "namespace": { "const": "solana" } }
+      }
+    }
+  ],
   "$defs": {
     "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 }
   }

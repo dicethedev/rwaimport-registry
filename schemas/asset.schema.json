@@ -12,7 +12,7 @@
     "symbol": { "type": "string", "minLength": 1, "maxLength": 32 },
     "description": { "type": "string", "minLength": 1, "maxLength": 2000 },
     "assetClass": {
-      "enum": ["treasury", "money-market", "private-credit", "public-equity", "real-estate", "commodity", "stablecoin", "other"]
+      "enum": ["treasury", "money-market", "private-credit", "public-equity", "exchange-traded-fund", "real-estate", "commodity", "stablecoin", "other"]
     },
     "issuerId": { "$ref": "#/$defs/id" },
     "tokenizationProviderIds": {

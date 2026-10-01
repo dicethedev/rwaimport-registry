@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ondo-token-list",
+    "type": "issuer",
+    "title": "Ondo official token list at commit f5a82fca4b2a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/ondo-global-markets-token-list/f5a82fca4b2a81aa8fc1ce65b8982f36d6cd40f4/tokenlist.json",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-product-page",
+    "type": "issuer",
+    "title": "VanEck Rare Earth and Strategic Metals ETF (Ondo Tokenized) product page",
+    "url": "https://app.ondo.finance/assets/remxon",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-stocks-guide",
+    "type": "documentation",
+    "title": "Ondo Stocks product, onboarding, and eligibility overview",
+    "url": "https://ondo.finance/ondo-stocks",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ethereum-explorer",
+    "type": "chain-explorer",
+    "title": "REMXon contract on ethereum",
+    "url": "https://etherscan.io/token/0x1140043f02d8EE34b10eAe2e32Ae921CdA1459ee",
+    "publisher": "Etherscan",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "bnb-chain-explorer",
+    "type": "chain-explorer",
+    "title": "REMXon contract on bnb-chain",
+    "url": "https://bscscan.com/token/0xc16f47c4a7Ed39372b9a0E3e2016CEdE9b4cB83A",
+    "publisher": "BscScan",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "ondo-solana-mint-list",
+    "type": "issuer",
+    "title": "Ondo official Solana mint list at commit 0688add3c64a",
+    "url": "https://raw.githubusercontent.com/ondoprotocol/gm-solana-simulator/0688add3c64aadc7006712989e9ec0592b5b10f8/constants.rs",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01"
+  },
+  {
+    "id": "solana-explorer",
+    "type": "chain-explorer",
+    "title": "REMXon mint on Solana",
+    "url": "https://explorer.solana.com/address/tiitb2Z1HtpB2DpVr6V7tdCFS3jmTinLeuGj9EVondo",
+    "publisher": "Solana",
+    "accessedAt": "2026-10-01"
+  }
+]

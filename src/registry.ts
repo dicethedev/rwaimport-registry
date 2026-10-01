@@ -108,6 +108,26 @@ function checkUnique(label: string, values: string[], errors: string[]): void {
   }
 }
 
+function base58DecodedLength(value: string): number {
+  const alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
+  let number = 0n;
+  for (const character of value) {
+    const digit = alphabet.indexOf(character);
+    if (digit < 0) return -1;
+    number = number * 58n + BigInt(digit);
+  }
+  let length = 0;
+  while (number > 0n) {
+    length += 1;
+    number >>= 8n;
+  }
+  for (const character of value) {
+    if (character !== "1") break;
+    length += 1;
+  }
+  return length;
+}
+
 export async function validateRegistry(
   rootDirectory: string,
   schemaDirectory = defaultSchemaDirectory,
@@ -161,12 +181,20 @@ export async function validateRegistry(
   checkUnique("asset id", assets.map(({ asset }) => asset.id), errors);
   checkUnique("issuer id", issuers.map((issuer) => issuer.id), errors);
   checkUnique("chain id", chains.map((chain) => chain.id), errors);
-  checkUnique("numeric chain id", chains.map((chain) => String(chain.chainId)), errors);
+  checkUnique(
+    "network reference",
+    chains.map((chain) => `${chain.namespace}:${chain.reference}`),
+    errors,
+  );
   checkUnique("standard id", standards.map((standard) => standard.id), errors);
   checkUnique(
     "deployment",
     assets.flatMap(({ deployments }) =>
-      deployments.map((deployment) => `${deployment.chainId}:${deployment.address.toLowerCase()}`),
+      deployments.map((deployment) => {
+        const chain = chains.find((candidate) => candidate.id === deployment.chain);
+        const address = chain?.type === "evm" ? deployment.address.toLowerCase() : deployment.address;
+        return `${deployment.chain}:${address}`;
+      }),
     ),
     errors,
   );
@@ -174,6 +202,15 @@ export async function validateRegistry(
   const issuerIds = new Set(issuers.map((issuer) => issuer.id));
   const chainById = new Map(chains.map((chain) => [chain.id, chain]));
   const standardIds = new Set(standards.map((standard) => standard.id));
+
+  for (const chain of chains) {
+    if (chain.type === "evm" && chain.chainId === undefined) {
+      errors.push(`EVM chain ${chain.id} must define a numeric chainId`);
+    }
+    if (chain.type !== "evm" && chain.chainId !== undefined) {
+      errors.push(`Non-EVM chain ${chain.id} must not define a numeric chainId`);
+    }
+  }
 
   for (const standard of standards) {
     for (const relatedId of standard.relatedStandardIds ?? []) {
@@ -197,8 +234,12 @@ export async function validateRegistry(
       const chain = chainById.get(deployment.chain);
       if (!chain) {
         errors.push(`Asset ${asset.id} references unknown chain ${deployment.chain}`);
-      } else if (chain.chainId !== deployment.chainId) {
+      } else if (chain.type === "evm" && chain.chainId !== deployment.chainId) {
         errors.push(`Asset ${asset.id} deployment chainId does not match ${deployment.chain}`);
+      } else if (chain.type !== "evm" && deployment.chainId !== undefined) {
+        errors.push(`Asset ${asset.id} deployment must not use numeric chainId for ${deployment.chain}`);
+      } else if (chain.type === "solana" && base58DecodedLength(deployment.address) !== 32) {
+        errors.push(`Asset ${asset.id} deployment address is not a 32-byte Solana public key`);
       }
       for (const standardId of deployment.standardIds) {
         if (!standardIds.has(standardId)) {
