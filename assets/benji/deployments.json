@@ -18,7 +18,25 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "stellar-horizon",
+      "accountDataSha256": "f7db2afe42509d42a97de6b0a63c7c28a71fb7d4bafac42c86f2454b4d0bb2c0",
+      "explorerVerified": "unknown",
+      "observedSymbol": "BENJI",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "unknown",
+        "contractAdmin": "unknown",
+        "explorerVerification": "unknown",
+        "observedName": "unknown",
+        "observedSymbol": "known",
+        "observedDecimals": "unknown"
+      }
+    }
   },
   {
     "chain": "polygon",
@@ -40,7 +58,28 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "3cc5e539eb61133fec38655ae3f55d8e1f944fce2cbc02e151972cf9c9880545",
+      "explorerVerified": "unknown",
+      "observedName": "Franklin OnChain U.S. Government Money Fund",
+      "observedSymbol": "BENJI",
+      "observedDecimals": 18,
+      "implementationAddress": "0xc1df95cf7f96f020f511f2f03fbf6cc18f8464b2",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "arbitrum",
@@ -62,7 +101,28 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "3cc5e539eb61133fec38655ae3f55d8e1f944fce2cbc02e151972cf9c9880545",
+      "explorerVerified": "unknown",
+      "observedName": "Franklin OnChain U.S. Government Money Fund",
+      "observedSymbol": "BENJI",
+      "observedDecimals": 18,
+      "implementationAddress": "0x956a399818c7cbabbd0b868a60f61ec9027136cd",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "avalanche",
@@ -84,7 +144,28 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "65f9db61df14109ff165eb5b6ba869b3cd2194b5d536bfed7ca77524e8aefe59",
+      "explorerVerified": "unknown",
+      "observedName": "Franklin OnChain U.S. Government Money Fund",
+      "observedSymbol": "BENJI",
+      "observedDecimals": 18,
+      "implementationAddress": "0x5c118e6a0bd2de0af66655806e3001727c13d105",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "aptos",
@@ -105,7 +186,24 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "aptos-api",
+      "accountDataSha256": "ae5675723efa267960f589da3d4d020a9c6412d1147295ad130f5e3afced500e",
+      "explorerVerified": "unknown",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "unknown",
+        "contractAdmin": "unknown",
+        "explorerVerification": "unknown",
+        "observedName": "unknown",
+        "observedSymbol": "unknown",
+        "observedDecimals": "unknown"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -127,7 +225,28 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "65f9db61df14109ff165eb5b6ba869b3cd2194b5d536bfed7ca77524e8aefe59",
+      "explorerVerified": "unknown",
+      "observedName": "Franklin OnChain U.S. Government Money Fund",
+      "observedSymbol": "BENJI",
+      "observedDecimals": 18,
+      "implementationAddress": "0x20ca56f1215c3376b25bba1f2f9d3701c5def4c5",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "base",
@@ -149,7 +268,28 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "65f9db61df14109ff165eb5b6ba869b3cd2194b5d536bfed7ca77524e8aefe59",
+      "explorerVerified": "unknown",
+      "observedName": "Franklin OnChain U.S. Government Money Fund",
+      "observedSymbol": "BENJI",
+      "observedDecimals": 18,
+      "implementationAddress": "0xab12adb95bbbb71007669cde208a0b1f89d1a101",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "solana",
@@ -170,6 +310,25 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "solana-account-owner",
+      "accountDataSha256": "ba99e9ae70bc4c4d9ff4f5ec1b6aac64c2b616c906d66c5b985d742b15bce313",
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "explorerVerified": "unknown",
+      "observedDecimals": 9,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "unknown",
+        "contractAdmin": "unknown",
+        "explorerVerification": "unknown",
+        "observedName": "unknown",
+        "observedSymbol": "unknown",
+        "observedDecimals": "known"
+      }
+    }
   }
 ]

@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "flttx"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

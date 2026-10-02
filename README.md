@@ -35,6 +35,8 @@ assets/<asset-id>/
   compliance.json     Primary/secondary access, transfer, and eligibility requirements
   sources.json        Evidence, retrieval dates, review dates, and source versions
   valuation.json      NAV, price/oracle, distributions, and reserve reporting
+  claims.json         Field-level links from asserted facts to evidence sources
+  history.json        Append-only product, legal, and deployment change events
 underlyings/           Shared underlying instruments and referenced portfolios
 organizations/        Reusable organizations referenced with product-specific roles
 issuers/               Compatibility catalog for issuer/provider IDs
@@ -45,6 +47,7 @@ scripts/               Import, validation, monitoring, and build commands
 src/                   Reusable registry loading and validation code
 tests/                 Integrity tests and non-production fixtures
 examples/              Copyable examples; never loaded as verified registry data
+snapshots/             Provider inputs and stored onchain verification evidence
 ```
 
 The standards catalog includes finalized ERCs, proposals still under review, native ledger
@@ -63,19 +66,23 @@ npm run check
 `npm run validate` checks JSON Schemas, chain-specific address formats, and cross-file
 relationships. `npm run build` writes the full registry, a compressed copy, a lightweight
 manifest with checksums, one file per product, and indexes by chain, issuer, underlying,
-asset class, and symbol.
+asset class, and symbol. It also writes `dist/completeness.json`, with identity, legal,
+compliance, deployment-verification, valuation, and source-freshness scores for every product.
 
 Live checks are separate from deterministic tests:
 
-- `npm run verify:onchain` checks EVM bytecode and Solana Token-2022 mints.
+- `npm run verify:onchain` checks stored hashes, EIP-1967 implementations and admins, EVM token
+  metadata, Solana Token-2022 mints, Stellar assets, and Aptos objects.
+- `npm run verify:onchain:write` refreshes stored verification evidence after review.
 - `npm run check:source-drift` compares current provider catalogs with checked-in records.
+- `npm run check:underlyings:sec` checks shared ticker, exchange, and CIK metadata against the SEC.
 - `npm run check:links` checks evidence and market-data links.
 
 A scheduled workflow runs the network-dependent checks weekly.
 
 ## Current catalog
 
-The catalog contains 618 source-backed products, 501 shared underlying records, and 1,402
+The catalog contains 629 source-backed products, 511 underlying records, and 1,405
 deployments across ten network definitions, including EVM chains, Solana, Stellar, and Aptos.
 
 The Ondo collection contains 400 products representing company equities and exchange-traded
@@ -100,6 +107,18 @@ official provider contract catalogs. Products whose transfer-agent records are b
 but whose public token address is not disclosed are intentionally represented with zero
 deployments. Run `npm run import:institutional-funds` to reproduce this curated batch.
 
+The first diversification batch adds eleven source-backed products: PAXG, XAUT, KAU, KAG,
+ACRED, HLSCOPE, JAAA, ACRDX, HYB, ORY X, and NIFCOT1. It establishes dedicated commodity,
+private-credit, fixed-income, and real-estate records while leaving undisclosed deployments
+empty. The three public PAXG/XAUT deployments are verified onchain. Run
+`npm run import:diversification-batch` to reproduce the batch.
+
+All 118 underlyings shared by more than one product have identifiers. The 117 exchange-listed
+underlyings also have exchange and listing-jurisdiction evidence. Most are checked against the
+SEC company ticker/exchange catalog; QQQ, EWY, and INDA use official manager product documents.
+The remaining shared underlying is the Apollo Diversified Credit Fund, which is not
+exchange-listed.
+
 Every product has provider-appropriate `marketDataLinks`. These are outbound verification links,
 not imported live values. See `ATTRIBUTION.md` for the credit and provenance policy.
 
@@ -109,8 +128,10 @@ not imported live values. See `ATTRIBUTION.md` for the credit and provenance pol
 2. Replace every example value with facts from primary or authoritative sources.
 3. Reuse or add the correct underlying and every organization referenced by a role.
 4. Add evidence URLs, freshness fields, and standard evidence for deployments.
-5. Add referenced issuers, chains, and standards if they do not exist.
-6. Run `npm run check`.
+5. Add `claims.json` mappings and preserve material changes in `history.json`.
+6. Use explicit `known`, `unknown`, or `not-applicable` availability states; never guess.
+7. Add referenced issuers, chains, and standards if they do not exist.
+8. Run `npm run check`.
 
 Never use example addresses or unverified metadata in `assets/`. A missing public deployment is
 represented by an empty array, not by a guessed contract.

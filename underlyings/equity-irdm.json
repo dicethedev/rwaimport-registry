@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "irdmon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

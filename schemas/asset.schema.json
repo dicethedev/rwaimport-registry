@@ -4,7 +4,7 @@
   "title": "RWAImport asset",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "id", "name", "symbol", "underlyingId", "instrumentType", "denominationCurrency", "organizationRoles", "assetClass", "issuerId", "status", "marketDataLinks", "verifiedBy"],
+  "required": ["schemaVersion", "id", "name", "symbol", "underlyingId", "instrumentType", "denominationCurrency", "organizationRoles", "assetClass", "issuerId", "status", "marketDataLinks", "dataAvailability", "verifiedBy"],
   "properties": {
     "schemaVersion": { "const": 2 },
     "id": { "$ref": "#/$defs/id" },
@@ -23,6 +23,37 @@
     "offeringType": { "type": "string", "minLength": 1, "maxLength": 200 },
     "regulatoryExemption": { "type": "string", "minLength": 1, "maxLength": 300 },
     "prospectusUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "dataAvailability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["securityType", "shareClass", "offeringType", "regulatoryExemption", "prospectusUrl"],
+      "properties": {
+        "securityType": { "$ref": "#/$defs/availability" },
+        "shareClass": { "$ref": "#/$defs/availability" },
+        "offeringType": { "$ref": "#/$defs/availability" },
+        "regulatoryExemption": { "$ref": "#/$defs/availability" },
+        "prospectusUrl": { "$ref": "#/$defs/availability" }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "assetId", "verifiedBy"],
+        "properties": {
+          "type": { "enum": ["wraps-product", "share-class-of", "bridged-from", "replaces-product", "issued-against", "same-economic-exposure-as"] },
+          "assetId": { "$ref": "#/$defs/id" },
+          "verifiedBy": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "$ref": "#/$defs/id" }
+          }
+        }
+      }
+    },
     "organizationRoles": {
       "type": "array",
       "minItems": 1,
@@ -93,6 +124,7 @@
     }
   },
   "$defs": {
-    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 }
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 },
+    "availability": { "enum": ["known", "unknown", "not-applicable"] }
   }
 }

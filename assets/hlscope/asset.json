@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "hlscope",
+  "name": "Hamilton Lane Senior Credit Opportunities Tokenized Feeder Fund",
+  "symbol": "HLSCOPE",
+  "underlyingId": "underlying-hlscope",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Regulated tokenized feeder structure providing access to Hamilton Lane's evergreen senior credit fund.",
+  "securityType": "Private feeder-fund share",
+  "underlyingRights": "Fund interest providing exposure to a portfolio focused on floating-rate senior secured private loans.",
+  "redemptionRights": "Monthly subscriptions and redemptions are described in the fund terms.",
+  "offeringType": "Private fund offering",
+  "regulatoryExemption": "Available to qualifying investors through Securitize",
+  "organizationRoles": [
+    {
+      "organizationId": "securitize-hamilton-lane-scope-feeder",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "securitize",
+      "roles": [
+        "tokenization-provider",
+        "transfer-agent",
+        "fund-administrator",
+        "broker-dealer"
+      ]
+    },
+    {
+      "organizationId": "hamilton-lane",
+      "roles": [
+        "asset-manager"
+      ]
+    }
+  ],
+  "description": "Hamilton Lane Senior Credit Opportunities Tokenized Feeder Fund (HLSCOPE), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "private-credit",
+  "issuerId": "securitize-hamilton-lane-scope-feeder",
+  "tokenizationProviderIds": [
+    "securitize"
+  ],
+  "status": "active",
+  "website": "https://investors.securitize.io/news/news-details/2023/Securitize-Expands-Access-to-Hamilton-Lanes-SCOPE-Fund-05-04-2023/default.aspx",
+  "marketDataLinks": [
+    {
+      "provider": "Securitize",
+      "type": "issuer",
+      "url": "https://investors.securitize.io/news/news-details/2023/Securitize-Expands-Access-to-Hamilton-Lanes-SCOPE-Fund-05-04-2023/default.aspx",
+      "description": "Official product, legal, reserve, or fund information."
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "known",
+    "prospectusUrl": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

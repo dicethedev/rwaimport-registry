@@ -15,5 +15,44 @@
       "scheme": "isin",
       "value": "US46429B5984"
     }
+  ],
+  "exchange": "Cboe BZX",
+  "jurisdiction": "US",
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "known",
+    "jurisdiction": "known"
+  },
+  "sources": [
+    {
+      "id": "ishares-inda-fact-sheet",
+      "title": "iShares MSCI India ETF official fact sheet",
+      "url": "https://www.ishares.com/us/literature/fact-sheet/inda-ishares-msci-india-etf-fund-fact-sheet-en-us.pdf",
+      "publisher": "iShares",
+      "retrievedAt": "2026-10-01T12:20:00Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "identifiers",
+      "sourceIds": [
+        "ishares-inda-fact-sheet"
+      ],
+      "reviewStatus": "verified"
+    },
+    {
+      "field": "exchange",
+      "sourceIds": [
+        "ishares-inda-fact-sheet"
+      ],
+      "reviewStatus": "verified"
+    },
+    {
+      "field": "jurisdiction",
+      "sourceIds": [
+        "ishares-inda-fact-sheet"
+      ],
+      "reviewStatus": "verified"
+    }
   ]
 }

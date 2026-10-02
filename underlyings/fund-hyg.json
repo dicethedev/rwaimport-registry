@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "hygon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

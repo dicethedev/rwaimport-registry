@@ -4,10 +4,10 @@
   "name": "ERC-1400",
   "category": "security-token",
   "specificationType": "erc",
-  "maintainer": "Ethereum community",
+  "maintainer": "Security Token Standard contributors",
   "description": "A security-token interface supporting transfer restrictions and document metadata.",
   "capabilities": ["transfer-restrictions", "partitioned-balances", "document-management", "forced-transfer"],
   "relatedStandardIds": ["erc20", "erc1404", "cmtat"],
   "status": "stagnant",
-  "referenceUrl": "https://eips.ethereum.org/EIPS/eip-1400"
+  "referenceUrl": "https://github.com/SecurityTokenStandard/EIP-Spec/blob/master/eip/eip-1400.md"
 }

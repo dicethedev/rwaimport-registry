@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "paxg",
+  "name": "Pax Gold",
+  "symbol": "PAXG",
+  "underlyingId": "underlying-paxg",
+  "instrumentType": "certificate",
+  "denominationCurrency": "USD",
+  "legalStructure": "Regulated asset-backed token issued by Paxos Trust Company and backed by allocated London Good Delivery gold.",
+  "securityType": "Gold-backed digital token",
+  "underlyingRights": "Each token represents beneficial ownership of one fine troy ounce of allocated London Good Delivery gold.",
+  "redemptionRights": "Verified Paxos customers may redeem under the PAX Gold terms for supported physical gold, unallocated gold, or fiat settlement.",
+  "offeringType": "Regulated commodity-backed token",
+  "organizationRoles": [
+    {
+      "organizationId": "paxos",
+      "roles": [
+        "issuer",
+        "custodian",
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "Pax Gold (PAXG), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "commodity",
+  "issuerId": "paxos",
+  "tokenizationProviderIds": [
+    "paxos"
+  ],
+  "status": "active",
+  "website": "https://www.paxos.com/pax-gold",
+  "marketDataLinks": [
+    {
+      "provider": "Paxos",
+      "type": "issuer",
+      "url": "https://www.paxos.com/pax-gold",
+      "description": "Official product, legal, reserve, or fund information."
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

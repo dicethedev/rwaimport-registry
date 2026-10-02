@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "dnnon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

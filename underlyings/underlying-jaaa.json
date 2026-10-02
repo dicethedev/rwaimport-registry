@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-jaaa",
+  "name": "Janus Henderson Anemoy AAA CLO Fund underlying",
+  "ticker": "JAAA",
+  "type": "private-credit",
+  "jurisdiction": "VG",
+  "currency": "USD",
+  "status": "active",
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "known"
+  },
+  "sourceAssetIds": [
+    "jaaa"
+  ]
+}

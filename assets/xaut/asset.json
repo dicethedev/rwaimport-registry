@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "id": "xaut",
+  "name": "Tether Gold",
+  "symbol": "XAUT",
+  "underlyingId": "underlying-xaut",
+  "instrumentType": "certificate",
+  "denominationCurrency": "USD",
+  "legalStructure": "Gold-backed digital asset issued by TG Commodities, S.A. de C.V. under its published terms and disclosures.",
+  "securityType": "Gold-backed digital token",
+  "underlyingRights": "A token represents ownership exposure to one fine troy ounce of gold allocated within specified London Good Delivery bars under the issuer terms.",
+  "redemptionRights": "Verified customers may redeem subject to minimums, fees, delivery options, and the issuer terms.",
+  "offeringType": "Digital commodity offering",
+  "organizationRoles": [
+    {
+      "organizationId": "tg-commodities",
+      "roles": [
+        "issuer",
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "Tether Gold (XAUT), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "commodity",
+  "issuerId": "tg-commodities",
+  "tokenizationProviderIds": [
+    "tg-commodities"
+  ],
+  "status": "active",
+  "website": "https://gold.tether.to",
+  "marketDataLinks": [
+    {
+      "provider": "Tether Gold",
+      "type": "issuer",
+      "url": "https://gold.tether.to",
+      "description": "Official product, legal, reserve, or fund information."
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

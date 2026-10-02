@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "reference-price",
+  "priceSourceUrl": "https://www.paxos.com/pax-gold",
+  "updateFrequency": "See the official product source.",
+  "corporateActionModel": "none",
+  "distributionTreatment": "none",
+  "reserveReportingUrl": "https://www.paxos.com/pax-gold",
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "known"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

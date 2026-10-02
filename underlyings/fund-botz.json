@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "botzon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

@@ -5,5 +5,9 @@
   "priceSourceUrl": "https://example.invalid/product",
   "corporateActionModel": "none",
   "distributionTreatment": "reinvested",
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "unknown"
+  },
   "verifiedBy": ["product-page"]
 }

@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "soon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

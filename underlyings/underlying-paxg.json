@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-paxg",
+  "name": "Pax Gold underlying",
+  "ticker": "PAXG",
+  "type": "commodity",
+  "currency": "USD",
+  "status": "active",
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  },
+  "sourceAssetIds": [
+    "paxg"
+  ]
+}

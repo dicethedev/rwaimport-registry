@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "dison"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

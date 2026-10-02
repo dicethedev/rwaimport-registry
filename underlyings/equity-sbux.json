@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "sbuxon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

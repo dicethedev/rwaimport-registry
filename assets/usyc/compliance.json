@@ -27,5 +27,10 @@
   "eligibleInvestorTypes": [
     "institutional",
     "professional"
-  ]
+  ],
+  "dataAvailability": {
+    "minimumSubscription": "unknown",
+    "minimumRedemption": "unknown",
+    "lockupPeriod": "unknown"
+  }
 }

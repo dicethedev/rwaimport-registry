@@ -1,0 +1,44 @@
+[
+  {
+    "chain": "ethereum",
+    "chainId": 1,
+    "address": "0x45804880De22913dAFE09f4980848ECE6EcbAf78",
+    "assetNamespace": "erc20",
+    "assetReference": "0x45804880De22913dAFE09f4980848ECE6EcbAf78",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "status": "active",
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-product"
+      }
+    ],
+    "verifiedBy": [
+      "official-product"
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "0cc3661444715ecc358c2e32cb85a3175cfe9ab09b3bcd9b436e0f7c2d0a4e66",
+      "explorerVerified": "unknown",
+      "observedName": "Paxos Gold",
+      "observedSymbol": "PAXG",
+      "observedDecimals": 18,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "not-applicable",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
+  }
+]

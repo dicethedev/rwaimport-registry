@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "iywon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

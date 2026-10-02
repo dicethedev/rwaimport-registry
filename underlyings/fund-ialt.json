@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "ialton"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

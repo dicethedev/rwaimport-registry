@@ -19,7 +19,28 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "2ba82d8bab877d1aa0a0115c2dcee9a98347bf7d90125166f3d5a12cfcc2ffec",
+      "explorerVerified": "unknown",
+      "observedName": "US Yield Coin",
+      "observedSymbol": "USYC",
+      "observedDecimals": 6,
+      "implementationAddress": "0xbf0f2f3aad6b99893d80c550fbacec915545eb92",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "bnb-chain",
@@ -41,7 +62,28 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "8754daae9034d2c0a96598190e6873bff831f9a4f299f18b6e7dd80baec6e5c9",
+      "explorerVerified": "unknown",
+      "observedName": "US Yield Coin",
+      "observedSymbol": "USYC",
+      "observedDecimals": 6,
+      "implementationAddress": "0x191fb6f3ba332f1b8789caf67abbaba56147445b",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "solana",
@@ -62,6 +104,25 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "solana-account-owner",
+      "accountDataSha256": "77e66b87698c1917f0591f97dac95ba2f616ee09ccaf17e498c5e95164719b57",
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "explorerVerified": "unknown",
+      "observedDecimals": 6,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "unknown",
+        "contractAdmin": "unknown",
+        "explorerVerification": "unknown",
+        "observedName": "unknown",
+        "observedSymbol": "unknown",
+        "observedDecimals": "known"
+      }
+    }
   }
 ]

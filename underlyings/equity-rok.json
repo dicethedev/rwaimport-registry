@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "rokon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

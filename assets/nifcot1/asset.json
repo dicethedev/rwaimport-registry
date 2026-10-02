@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "id": "nifcot1",
+  "name": "NIFCOT1 Tokenized Real Estate Exposure",
+  "symbol": "NIFCOT1",
+  "underlyingId": "underlying-nifcot1",
+  "instrumentType": "spv-interest",
+  "denominationCurrency": "USD",
+  "legalStructure": "Digital token issued by a special-purpose vehicle providing economic exposure referenced to a regulated real-estate fund.",
+  "securityType": "Tokenized SPV interest",
+  "underlyingRights": "Contractual economic exposure to the referenced real-estate fund; rights are defined by the SPV and offering documents.",
+  "redemptionRights": "Redemption and transfer rights are governed by the issuer's product documents.",
+  "offeringType": "Tokenized real-estate SPV offering",
+  "organizationRoles": [
+    {
+      "organizationId": "toyow",
+      "roles": [
+        "issuer",
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "NIFCOT1 Tokenized Real Estate Exposure (NIFCOT1), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "real-estate",
+  "issuerId": "toyow",
+  "tokenizationProviderIds": [
+    "toyow"
+  ],
+  "status": "active",
+  "website": "https://www.toyow.com/insights/nifcot1-tokenized-real-estate-toyow",
+  "marketDataLinks": [
+    {
+      "provider": "Toyow",
+      "type": "issuer",
+      "url": "https://www.toyow.com/insights/nifcot1-tokenized-real-estate-toyow",
+      "description": "Official product, legal, reserve, or fund information."
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

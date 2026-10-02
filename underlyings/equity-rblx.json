@@ -14,5 +14,10 @@
   "status": "active",
   "sourceAssetIds": [
     "robinhood-rblx"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

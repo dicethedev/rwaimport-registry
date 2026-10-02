@@ -6,5 +6,10 @@
   "type": "treasury",
   "currency": "USD",
   "status": "active",
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "not-applicable",
+    "jurisdiction": "unknown"
+  },
   "sourceAssetIds": ["example-treasury"]
 }

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-xaut",
+  "name": "Tether Gold underlying",
+  "ticker": "XAUT",
+  "type": "commodity",
+  "currency": "USD",
+  "status": "active",
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  },
+  "sourceAssetIds": [
+    "xaut"
+  ]
+}

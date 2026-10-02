@@ -19,7 +19,27 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "8a1922fd0a610c5408c2fedcf59694120a00c71e2fe0cc411b398a6088aa22c4",
+      "explorerVerified": "unknown",
+      "observedName": "Janus Henderson Treasury Fund",
+      "observedSymbol": "JTRSY",
+      "observedDecimals": 6,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "not-applicable",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "base",
@@ -41,7 +61,27 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "7215d5b91d33b4e1d1d40a5e57a665d79e83bc1d059dbbf6ad23ae031b472af8",
+      "explorerVerified": "unknown",
+      "observedName": "Janus Henderson Treasury Fund",
+      "observedSymbol": "JTRSY",
+      "observedDecimals": 6,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "not-applicable",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "arbitrum",
@@ -63,7 +103,27 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "37692f6a0b36e15fbd2dad86bba1b2e64c2967ebbb4257fe39587c6ee47d5abd",
+      "explorerVerified": "unknown",
+      "observedName": "Janus Henderson Treasury Fund",
+      "observedSymbol": "JTRSY",
+      "observedDecimals": 6,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "not-applicable",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "avalanche",
@@ -85,7 +145,27 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "2a7fd349137bf64fdc2d0c295a48dcaf728539a3a98cd99a4143f28acb2afe47",
+      "explorerVerified": "unknown",
+      "observedName": "Janus Henderson Treasury Fund",
+      "observedSymbol": "JTRSY",
+      "observedDecimals": 6,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "not-applicable",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "bnb-chain",
@@ -107,7 +187,27 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "3350d2cf5af41a41e141d5becfb2f0e6b3aa3fdb29947f222c00e728d4b72396",
+      "explorerVerified": "unknown",
+      "observedName": "Janus Henderson Treasury Fund",
+      "observedSymbol": "JTRSY",
+      "observedDecimals": 6,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "not-applicable",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "solana",
@@ -128,6 +228,25 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "solana-account-owner",
+      "accountDataSha256": "9a9ff389a824493686494fbc07299f8ed36435f890d6d1c6b893430256e6e7f0",
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "explorerVerified": "unknown",
+      "observedDecimals": 6,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "unknown",
+        "contractAdmin": "unknown",
+        "explorerVerification": "unknown",
+        "observedName": "unknown",
+        "observedSymbol": "unknown",
+        "observedDecimals": "known"
+      }
+    }
   }
 ]

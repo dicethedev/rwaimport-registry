@@ -8,6 +8,10 @@
     {
       "scheme": "isin",
       "value": "US8740391003"
+    },
+    {
+      "scheme": "cik",
+      "value": "0001046179"
     }
   ],
   "currency": "USD",
@@ -15,5 +19,44 @@
   "sourceAssetIds": [
     "robinhood-tsm",
     "tsmon"
+  ],
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "known",
+    "jurisdiction": "known"
+  },
+  "exchange": "NYSE",
+  "jurisdiction": "US",
+  "sources": [
+    {
+      "id": "sec-company-tickers-exchange",
+      "title": "SEC company ticker and exchange catalog",
+      "url": "https://www.sec.gov/files/company_tickers_exchange.json",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "retrievedAt": "2026-10-01T12:21:05.324Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "identifiers",
+      "sourceIds": [
+        "sec-company-tickers-exchange"
+      ],
+      "reviewStatus": "verified"
+    },
+    {
+      "field": "exchange",
+      "sourceIds": [
+        "sec-company-tickers-exchange"
+      ],
+      "reviewStatus": "verified"
+    },
+    {
+      "field": "jurisdiction",
+      "sourceIds": [
+        "sec-company-tickers-exchange"
+      ],
+      "reviewStatus": "verified"
+    }
   ]
 }

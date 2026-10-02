@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-hlscope",
+  "name": "Hamilton Lane Senior Credit Opportunities Tokenized Feeder Fund underlying",
+  "ticker": "HLSCOPE",
+  "type": "private-credit",
+  "jurisdiction": "US",
+  "currency": "USD",
+  "status": "active",
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "known"
+  },
+  "sourceAssetIds": [
+    "hlscope"
+  ]
+}

@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "lowon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

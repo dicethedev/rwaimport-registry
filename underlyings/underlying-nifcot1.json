@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-nifcot1",
+  "name": "NIFCOT1 Tokenized Real Estate Exposure underlying",
+  "ticker": "NIFCOT1",
+  "type": "real-estate",
+  "jurisdiction": "AE",
+  "currency": "USD",
+  "status": "active",
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "known"
+  },
+  "sourceAssetIds": [
+    "nifcot1"
+  ]
+}

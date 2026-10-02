@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "mag7xon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

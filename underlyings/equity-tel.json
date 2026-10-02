@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "telon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

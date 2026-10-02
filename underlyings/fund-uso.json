@@ -14,5 +14,10 @@
   "status": "active",
   "sourceAssetIds": [
     "robinhood-uso"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

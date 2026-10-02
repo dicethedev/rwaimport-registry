@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "aphon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

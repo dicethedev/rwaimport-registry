@@ -13,5 +13,9 @@
   "verifiedBy": [
     "robinhood-assets-api",
     "robinhood-stock-token-docs"
-  ]
+  ],
+  "dataAvailability": {
+    "oracle": "known",
+    "reserveReporting": "unknown"
+  }
 }

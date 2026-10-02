@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "aoslon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

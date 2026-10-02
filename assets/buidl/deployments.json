@@ -19,7 +19,28 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "ec9c737dafc40dfe31c9d46ac0f6cb1f40180d31428a9a4e96453b036170fc2a",
+      "explorerVerified": "unknown",
+      "observedName": "BlackRock USD Institutional Digital Liquidity Fund - I Class",
+      "observedSymbol": "BUIDL-I",
+      "observedDecimals": 6,
+      "implementationAddress": "0x9e2693f54831f6f52b0bb952c2935d26919a3626",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "solana",
@@ -40,6 +61,25 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "solana-account-owner",
+      "accountDataSha256": "bdf38c4931679a5b41889cedbbb78812f0a0a293ac9849d05758a656dff5bbff",
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "explorerVerified": "unknown",
+      "observedDecimals": 6,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "unknown",
+        "contractAdmin": "unknown",
+        "explorerVerification": "unknown",
+        "observedName": "unknown",
+        "observedSymbol": "unknown",
+        "observedDecimals": "known"
+      }
+    }
   }
 ]

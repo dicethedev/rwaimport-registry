@@ -14,5 +14,10 @@
   "status": "active",
   "sourceAssetIds": [
     "robinhood-bull"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

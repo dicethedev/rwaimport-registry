@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "paxos",
+  "name": "Paxos",
+  "legalName": "Paxos Trust Company, National Association",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.paxos.com",
+  "sources": [
+    {
+      "title": "Paxos official website",
+      "url": "https://www.paxos.com",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

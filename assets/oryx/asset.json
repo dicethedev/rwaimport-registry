@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "id": "oryx",
+  "name": "ORY X Tokenized Real Estate Fund",
+  "symbol": "ORY X",
+  "underlyingId": "underlying-oryx",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Single-asset tokenized fund providing exposure to a commercial real-estate development in GIFT City, India.",
+  "securityType": "Tokenized real-estate fund interest",
+  "underlyingRights": "Fund interest providing economic exposure to the ORYX commercial development rather than direct title to a specific unit.",
+  "redemptionRights": "Transfer and exit rights are governed by the fund documents.",
+  "offeringType": "Private tokenized real-estate fund",
+  "organizationRoles": [
+    {
+      "organizationId": "terazo",
+      "roles": [
+        "issuer",
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "ORY X Tokenized Real Estate Fund (ORY X), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "real-estate",
+  "issuerId": "terazo",
+  "tokenizationProviderIds": [
+    "terazo"
+  ],
+  "status": "active",
+  "website": "https://www.terazo.network/",
+  "marketDataLinks": [
+    {
+      "provider": "Terazo",
+      "type": "issuer",
+      "url": "https://www.terazo.network/",
+      "description": "Official product, legal, reserve, or fund information."
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

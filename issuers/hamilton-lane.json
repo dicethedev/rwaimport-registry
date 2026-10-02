@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "hamilton-lane",
+  "name": "Hamilton Lane",
+  "legalName": "Hamilton Lane Incorporated",
+  "type": "asset-manager",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.hamiltonlane.com",
+  "sources": [
+    {
+      "title": "Hamilton Lane official website",
+      "url": "https://www.hamiltonlane.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

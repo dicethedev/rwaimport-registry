@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "dramon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

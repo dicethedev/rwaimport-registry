@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "cmgon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "fund-apollo-diversified-credit",
+  "name": "Apollo Diversified Credit Fund",
+  "ticker": "ACRDX",
+  "type": "private-credit",
+  "jurisdiction": "VG",
+  "currency": "USD",
+  "status": "active",
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "known"
+  },
+  "sourceAssetIds": [
+    "acred",
+    "acrdx"
+  ]
+}

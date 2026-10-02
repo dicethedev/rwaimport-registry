@@ -349,3 +349,5 @@ for (const product of products) {
 }
 
 console.log(`Imported ${products.length} institutional fund products with ${products.reduce((count, product) => count + (product.deployments?.length ?? 0), 0)} verified deployments.`);
+
+await import("./migrate-reliability-fields.js");

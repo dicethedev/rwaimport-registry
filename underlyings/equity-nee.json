@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "neeon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "jaaa",
+  "name": "Janus Henderson Anemoy AAA CLO Fund",
+  "symbol": "JAAA",
+  "underlyingId": "underlying-jaaa",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Tokenized professional fund managed within the Janus Henderson and Anemoy fund structure.",
+  "securityType": "Professional fund share",
+  "underlyingRights": "Fund interest providing exposure to a portfolio of AAA-rated collateralized loan obligations.",
+  "redemptionRights": "Subscriptions and redemptions are governed by the fund documents and platform process.",
+  "offeringType": "Professional fund offering",
+  "organizationRoles": [
+    {
+      "organizationId": "anemoy-capital",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "janus-henderson",
+      "roles": [
+        "asset-manager"
+      ]
+    },
+    {
+      "organizationId": "centrifuge",
+      "roles": [
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "Janus Henderson Anemoy AAA CLO Fund (JAAA), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "private-credit",
+  "issuerId": "anemoy-capital",
+  "tokenizationProviderIds": [
+    "centrifuge"
+  ],
+  "status": "active",
+  "website": "https://centrifuge.io/blog/fission-centrifuge",
+  "marketDataLinks": [
+    {
+      "provider": "Centrifuge",
+      "type": "issuer",
+      "url": "https://centrifuge.io/blog/fission-centrifuge",
+      "description": "Official product, legal, reserve, or fund information."
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

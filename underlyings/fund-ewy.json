@@ -14,6 +14,49 @@
     {
       "scheme": "isin",
       "value": "US4642867729"
+    },
+    {
+      "scheme": "cusip",
+      "value": "464286772"
+    }
+  ],
+  "exchange": "NYSE Arca",
+  "jurisdiction": "US",
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "known",
+    "jurisdiction": "known"
+  },
+  "sources": [
+    {
+      "id": "ishares-ewy-product",
+      "title": "iShares MSCI South Korea ETF official product page",
+      "url": "https://www.ishares.com/us/products/239681/ishares-msci-south-korea-etf",
+      "publisher": "iShares",
+      "retrievedAt": "2026-10-01T12:20:00Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "identifiers",
+      "sourceIds": [
+        "ishares-ewy-product"
+      ],
+      "reviewStatus": "verified"
+    },
+    {
+      "field": "exchange",
+      "sourceIds": [
+        "ishares-ewy-product"
+      ],
+      "reviewStatus": "verified"
+    },
+    {
+      "field": "jurisdiction",
+      "sourceIds": [
+        "ishares-ewy-product"
+      ],
+      "reviewStatus": "verified"
     }
   ]
 }

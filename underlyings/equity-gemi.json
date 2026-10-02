@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "gemion"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

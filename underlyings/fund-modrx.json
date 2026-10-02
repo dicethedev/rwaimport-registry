@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "modrx"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

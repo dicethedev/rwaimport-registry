@@ -19,6 +19,27 @@
     "status": "active",
     "verifiedBy": [
       "official-contracts"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "3cc5e539eb61133fec38655ae3f55d8e1f944fce2cbc02e151972cf9c9880545",
+      "explorerVerified": "unknown",
+      "observedName": "OpenEden T-Bills",
+      "observedSymbol": "TBILL",
+      "observedDecimals": 6,
+      "implementationAddress": "0xc4545bf80f935894cbe138d86b506923dab7c048",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   }
 ]

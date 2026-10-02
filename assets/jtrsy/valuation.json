@@ -9,5 +9,9 @@
   "reserveReportingUrl": "https://app.centrifuge.io/pool/281474976710662",
   "verifiedBy": [
     "official-product"
-  ]
+  ],
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "known"
+  }
 }

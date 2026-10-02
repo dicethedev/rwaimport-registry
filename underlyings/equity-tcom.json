@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "tcomon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

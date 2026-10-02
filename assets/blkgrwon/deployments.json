@@ -21,7 +21,27 @@
     "verifiedBy": [
       "ondo-token-list",
       "ethereum-explorer"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "6030ab82b1a4d0a4ff7a100ec7ae55d79a89909923997957af16336271f29224",
+      "explorerVerified": "unknown",
+      "observedName": "Ondo High Growth Powered by BlackRock",
+      "observedSymbol": "BLKGRWon",
+      "observedDecimals": 18,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "not-applicable",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "bnb-chain",
@@ -45,6 +65,26 @@
     "verifiedBy": [
       "ondo-token-list",
       "bnb-chain-explorer"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "6030ab82b1a4d0a4ff7a100ec7ae55d79a89909923997957af16336271f29224",
+      "explorerVerified": "unknown",
+      "observedName": "Ondo High Growth Powered by BlackRock",
+      "observedSymbol": "BLKGRWon",
+      "observedDecimals": 18,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "not-applicable",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   }
 ]

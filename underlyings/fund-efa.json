@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "efaon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

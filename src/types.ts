@@ -12,6 +12,8 @@ export interface Asset {
   tokenizationProviderIds?: string[];
   status: string;
   verifiedBy: string[];
+  dataAvailability: Record<string, "known" | "unknown" | "not-applicable">;
+  relationships?: Array<{ type: string; assetId: string; verifiedBy: string[] }>;
   [key: string]: unknown;
 }
 
@@ -24,6 +26,12 @@ export interface Deployment {
   standardIds: string[];
   status: string;
   verifiedBy: string[];
+  verification?: {
+    lastVerifiedAt: string;
+    accountExists: boolean;
+    method: string;
+    [key: string]: unknown;
+  };
   [key: string]: unknown;
 }
 
@@ -76,6 +84,9 @@ export interface Underlying {
   type: string;
   status: string;
   sourceAssetIds: string[];
+  dataAvailability: Record<string, "known" | "unknown" | "not-applicable">;
+  sources?: Array<{ id: string; [key: string]: unknown }>;
+  claims?: Array<{ field: string; sourceIds: string[]; [key: string]: unknown }>;
   [key: string]: unknown;
 }
 
@@ -96,12 +107,33 @@ export interface Valuation {
   [key: string]: unknown;
 }
 
+export interface Claim {
+  field: string;
+  sourceIds: string[];
+  reviewedAt: string;
+  reviewStatus: "verified" | "needs-review" | "disputed";
+  confidence: "high" | "medium" | "low";
+  [key: string]: unknown;
+}
+
+export interface HistoryEvent {
+  id: string;
+  type: string;
+  effectiveAt: string;
+  recordedAt: string;
+  summary: string;
+  sourceIds: string[];
+  [key: string]: unknown;
+}
+
 export interface AssetRecord {
   asset: Asset;
   deployments: Deployment[];
   compliance: Compliance;
   sources: Source[];
   valuation: Valuation;
+  claims: Claim[];
+  history: HistoryEvent[];
 }
 
 export interface Registry {

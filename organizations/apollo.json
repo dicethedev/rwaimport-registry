@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "apollo",
+  "name": "Apollo Global Management",
+  "legalName": "Apollo Global Management, Inc.",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.apollo.com",
+  "sources": [
+    {
+      "title": "Apollo Global Management official website",
+      "url": "https://www.apollo.com",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

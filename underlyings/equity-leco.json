@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "lecoon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

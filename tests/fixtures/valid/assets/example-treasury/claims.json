@@ -1,0 +1,9 @@
+[
+  {
+    "field": "asset.name",
+    "sourceIds": ["product-page"],
+    "reviewedAt": "2026-09-30",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  }
+]

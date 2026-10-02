@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "axpon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "pyplon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

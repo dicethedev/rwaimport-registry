@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "toyow",
+  "name": "Toyow",
+  "type": "tokenization-provider",
+  "jurisdiction": "AE",
+  "status": "active",
+  "website": "https://www.toyow.com",
+  "sources": [
+    {
+      "title": "Toyow official website",
+      "url": "https://www.toyow.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

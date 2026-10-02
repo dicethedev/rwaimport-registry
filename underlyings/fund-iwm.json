@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "iwmon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

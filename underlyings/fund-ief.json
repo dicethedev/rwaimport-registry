@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "iefon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "rxrxon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

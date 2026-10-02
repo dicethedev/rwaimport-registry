@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "koon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

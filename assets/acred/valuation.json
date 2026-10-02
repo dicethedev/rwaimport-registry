@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "nav",
+  "priceSourceUrl": "https://investors.securitize.io/news/news-details/2025/Apollo-and-Securitize-Announce-Partnership-and-Launch-Tokenized-Access-to-Credit-Fund-on-Aptos-Avalanche-Ethereum-Ink-Polygon-and-Solana-Networks-01-30-2025/default.aspx",
+  "updateFrequency": "See the official product source.",
+  "corporateActionModel": "none",
+  "distributionTreatment": "unknown",
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

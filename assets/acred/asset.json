@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "acred",
+  "name": "Securitize Tokenized Apollo Diversified Credit Fund",
+  "symbol": "ACRED",
+  "underlyingId": "fund-apollo-diversified-credit",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Tokenized feeder fund investing substantially all assets in Apollo Diversified Credit Fund.",
+  "securityType": "Private feeder-fund share",
+  "underlyingRights": "Fund interest providing exposure to Apollo's diversified global credit strategy; no direct ownership of portfolio loans.",
+  "redemptionRights": "Qualified investors receive native redemptions at daily NAV subject to fund terms.",
+  "offeringType": "Private fund offering",
+  "regulatoryExemption": "Available to qualifying investors through Securitize Markets",
+  "organizationRoles": [
+    {
+      "organizationId": "securitize-apollo-credit-fund",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "securitize",
+      "roles": [
+        "tokenization-provider",
+        "transfer-agent",
+        "fund-administrator",
+        "broker-dealer"
+      ]
+    },
+    {
+      "organizationId": "apollo",
+      "roles": [
+        "asset-manager"
+      ]
+    }
+  ],
+  "description": "Securitize Tokenized Apollo Diversified Credit Fund (ACRED), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "private-credit",
+  "issuerId": "securitize-apollo-credit-fund",
+  "tokenizationProviderIds": [
+    "securitize"
+  ],
+  "status": "active",
+  "website": "https://investors.securitize.io/news/news-details/2025/Apollo-and-Securitize-Announce-Partnership-and-Launch-Tokenized-Access-to-Credit-Fund-on-Aptos-Avalanche-Ethereum-Ink-Polygon-and-Solana-Networks-01-30-2025/default.aspx",
+  "marketDataLinks": [
+    {
+      "provider": "Securitize",
+      "type": "issuer",
+      "url": "https://investors.securitize.io/news/news-details/2025/Apollo-and-Securitize-Announce-Partnership-and-Launch-Tokenized-Access-to-Credit-Fund-on-Aptos-Avalanche-Ethereum-Ink-Polygon-and-Solana-Networks-01-30-2025/default.aspx",
+      "description": "Official product, legal, reserve, or fund information."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "same-economic-exposure-as",
+      "assetId": "acrdx",
+      "verifiedBy": [
+        "official-product"
+      ]
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "known",
+    "prospectusUrl": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

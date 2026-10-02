@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "aipon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

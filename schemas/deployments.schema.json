@@ -6,7 +6,7 @@
   "items": {
     "type": "object",
     "additionalProperties": false,
-    "required": ["chain", "address", "standardIds", "status", "verifiedBy"],
+    "required": ["chain", "address", "standardIds", "status", "verification", "verifiedBy"],
     "properties": {
       "chain": { "$ref": "#/$defs/id" },
       "chainId": { "type": "integer", "minimum": 1 },
@@ -44,18 +44,35 @@
       "verification": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["lastVerifiedAt", "accountExists", "method"],
+        "required": ["lastVerifiedAt", "accountExists", "method", "explorerVerified", "dataAvailability"],
         "properties": {
           "lastVerifiedAt": { "type": "string", "format": "date-time" },
           "accountExists": { "type": "boolean" },
-          "method": { "enum": ["evm-bytecode", "solana-account-owner", "explorer", "manual"] },
+          "method": { "enum": ["evm-bytecode", "solana-account-owner", "stellar-horizon", "aptos-api", "explorer", "manual"] },
           "runtimeCodeSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
           "accountDataSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
           "owner": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "implementationAddress": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+          "contractAdmin": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
           "explorerVerified": { "enum": ["yes", "no", "unknown"] },
           "observedName": { "type": "string", "minLength": 1, "maxLength": 200 },
           "observedSymbol": { "type": "string", "minLength": 1, "maxLength": 32 },
-          "observedDecimals": { "type": "integer", "minimum": 0, "maximum": 255 }
+          "observedDecimals": { "type": "integer", "minimum": 0, "maximum": 255 },
+          "dataAvailability": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["deploymentTransaction", "deploymentBlock", "proxyImplementation", "contractAdmin", "explorerVerification", "observedName", "observedSymbol", "observedDecimals"],
+            "properties": {
+              "deploymentTransaction": { "$ref": "#/$defs/availability" },
+              "deploymentBlock": { "$ref": "#/$defs/availability" },
+              "proxyImplementation": { "$ref": "#/$defs/availability" },
+              "contractAdmin": { "$ref": "#/$defs/availability" },
+              "explorerVerification": { "$ref": "#/$defs/availability" },
+              "observedName": { "$ref": "#/$defs/availability" },
+              "observedSymbol": { "$ref": "#/$defs/availability" },
+              "observedDecimals": { "$ref": "#/$defs/availability" }
+            }
+          }
         }
       },
       "verifiedBy": {
@@ -67,6 +84,7 @@
     }
   },
   "$defs": {
-    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 }
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 },
+    "availability": { "enum": ["known", "unknown", "not-applicable"] }
   }
 }

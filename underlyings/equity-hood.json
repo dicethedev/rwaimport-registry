@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "hoodon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

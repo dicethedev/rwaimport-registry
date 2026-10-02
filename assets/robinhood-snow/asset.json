@@ -51,5 +51,12 @@
   "verifiedBy": [
     "robinhood-assets-api",
     "robinhood-stock-token-docs"
-  ]
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "unknown",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  }
 }

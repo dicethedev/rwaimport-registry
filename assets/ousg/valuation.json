@@ -9,5 +9,9 @@
   "reserveReportingUrl": "https://ondo.finance/ousg",
   "verifiedBy": [
     "official-product"
-  ]
+  ],
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "known"
+  }
 }

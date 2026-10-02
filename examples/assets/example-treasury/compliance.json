@@ -7,5 +7,10 @@
   "eligibleInvestorTypes": ["institutional"],
   "eligibleJurisdictions": ["US"],
   "notes": "Illustrative requirements only.",
+  "dataAvailability": {
+    "minimumSubscription": "unknown",
+    "minimumRedemption": "unknown",
+    "lockupPeriod": "unknown"
+  },
   "verifiedBy": ["official-product-page"]
 }

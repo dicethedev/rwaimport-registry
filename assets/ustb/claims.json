@@ -1,0 +1,344 @@
+[
+  {
+    "field": "asset.assetClass",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.denominationCurrency",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.description",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.id",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.instrumentType",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.issuerId",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.legalStructure",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.marketDataLinks",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.name",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.offeringType",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.organizationRoles",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.redemptionRights",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.regulatoryExemption",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.securityType",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.status",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.symbol",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.tokenizationProviderIds",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.underlyingId",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.underlyingRights",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.website",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.eligibleInvestorTypes",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.eligibleJurisdictions",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.identityRequired",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.kycRequired",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.notes",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.offeringDocuments",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.permissioned",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.primaryMarket",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.secondaryMarket",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.transferEnforcement",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.transferRestricted",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.corporateActionModel",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.distributionTreatment",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.navSourceUrl",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.quoteCurrency",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.reserveReportingUrl",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.updateFrequency",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.valuationType",
+    "sourceIds": [
+      "official-product"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  }
+]

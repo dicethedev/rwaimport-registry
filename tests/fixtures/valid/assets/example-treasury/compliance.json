@@ -4,5 +4,10 @@
   "kycRequired": "unknown",
   "identityRequired": "unknown",
   "transferRestricted": "unknown",
+  "dataAvailability": {
+    "minimumSubscription": "unknown",
+    "minimumRedemption": "unknown",
+    "lockupPeriod": "unknown"
+  },
   "verifiedBy": ["product-page"]
 }

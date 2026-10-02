@@ -9,5 +9,9 @@
   "reserveReportingUrl": "https://www.wisdomtree.com/onchain/tokenized-funds",
   "verifiedBy": [
     "official-product"
-  ]
+  ],
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "known"
+  }
 }

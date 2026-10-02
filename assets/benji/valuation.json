@@ -9,5 +9,9 @@
   "reserveReportingUrl": "https://digitalassets.franklintempleton.com/benji/",
   "verifiedBy": [
     "official-product"
-  ]
+  ],
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "known"
+  }
 }

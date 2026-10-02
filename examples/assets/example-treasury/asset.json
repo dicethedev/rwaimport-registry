@@ -15,6 +15,13 @@
   "issuerId": "example-issuer",
   "tokenizationProviderIds": ["example-tokenization-provider"],
   "status": "active",
+  "dataAvailability": {
+    "securityType": "unknown",
+    "shareClass": "unknown",
+    "offeringType": "unknown",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  },
   "website": "https://example.invalid/products/example-treasury",
   "marketDataLinks": [
     {

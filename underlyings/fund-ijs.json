@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "ijson"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

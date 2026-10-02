@@ -12,6 +12,13 @@
   "assetClass": "treasury",
   "issuerId": "example-issuer",
   "status": "active",
+  "dataAvailability": {
+    "securityType": "unknown",
+    "shareClass": "unknown",
+    "offeringType": "unknown",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  },
   "marketDataLinks": [
     {
       "provider": "Example Data",

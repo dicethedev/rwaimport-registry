@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-kag",
+  "name": "Kinesis Silver underlying",
+  "ticker": "KAG",
+  "type": "commodity",
+  "currency": "USD",
+  "status": "active",
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  },
+  "sourceAssetIds": [
+    "kag"
+  ]
+}

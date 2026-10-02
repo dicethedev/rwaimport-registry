@@ -30,5 +30,10 @@
   ],
   "prohibitedJurisdictions": [
     "US"
-  ]
+  ],
+  "dataAvailability": {
+    "minimumSubscription": "unknown",
+    "minimumRedemption": "unknown",
+    "lockupPeriod": "unknown"
+  }
 }

@@ -7,5 +7,9 @@
   "distributionTreatment": "unknown",
   "verifiedBy": [
     "ondo-product-page"
-  ]
+  ],
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "unknown"
+  }
 }

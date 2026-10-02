@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "kau",
+  "name": "Kinesis Gold",
+  "symbol": "KAU",
+  "underlyingId": "underlying-kau",
+  "instrumentType": "certificate",
+  "denominationCurrency": "USD",
+  "legalStructure": "Digital record of allocated physical gold held through the Kinesis structure.",
+  "securityType": "Allocated gold-backed digital currency",
+  "underlyingRights": "One KAU represents legal title to one fine gram of allocated physical gold.",
+  "redemptionRights": "Holders may redeem physical bullion subject to the issuer's onboarding, minimums, and fees.",
+  "offeringType": "Allocated bullion-backed digital currency",
+  "organizationRoles": [
+    {
+      "organizationId": "kinesis",
+      "roles": [
+        "issuer",
+        "custodian",
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "Kinesis Gold (KAU), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "commodity",
+  "issuerId": "kinesis",
+  "tokenizationProviderIds": [
+    "kinesis"
+  ],
+  "status": "active",
+  "website": "https://kinesis.money/gold/",
+  "marketDataLinks": [
+    {
+      "provider": "Kinesis",
+      "type": "issuer",
+      "url": "https://kinesis.money/gold/",
+      "description": "Official product, legal, reserve, or fund information."
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

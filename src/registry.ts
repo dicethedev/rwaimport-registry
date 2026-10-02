@@ -18,6 +18,8 @@ import type {
   Standard,
   Underlying,
   Valuation,
+  Claim,
+  HistoryEvent,
   ValidationResult,
 } from "./types.js";
 
@@ -31,7 +33,9 @@ type SchemaName =
   | "standard"
   | "underlying"
   | "organization"
-  | "valuation";
+  | "valuation"
+  | "claims"
+  | "history";
 
 const sourceDirectory = path.dirname(fileURLToPath(import.meta.url));
 const defaultSchemaDirectory = path.resolve(sourceDirectory, "../schemas");
@@ -70,6 +74,8 @@ async function createValidators(schemaDirectory: string): Promise<Record<SchemaN
     "underlying",
     "organization",
     "valuation",
+    "claims",
+    "history",
   ];
   const validators = {} as Record<SchemaName, ValidateFunction>;
 
@@ -179,6 +185,8 @@ export async function validateRegistry(
     const compliance = await readJson<Compliance>(path.join(assetDirectory, "compliance.json"));
     const sources = await readJson<Source[]>(path.join(assetDirectory, "sources.json"));
     const valuation = await readJson<Valuation>(path.join(assetDirectory, "valuation.json"));
+    const claims = await readJson<Claim[]>(path.join(assetDirectory, "claims.json"));
+    const history = await readJson<HistoryEvent[]>(path.join(assetDirectory, "history.json"));
 
     for (const [name, value, fileName] of [
       ["asset", asset, "asset.json"],
@@ -186,6 +194,8 @@ export async function validateRegistry(
       ["compliance", compliance, "compliance.json"],
       ["sources", sources, "sources.json"],
       ["valuation", valuation, "valuation.json"],
+      ["claims", claims, "claims.json"],
+      ["history", history, "history.json"],
     ] as const) {
       const validator = validators[name];
       if (!validator(value)) {
@@ -196,7 +206,7 @@ export async function validateRegistry(
     if (asset.id !== entry.name) {
       errors.push(`${assetDirectory}: directory name must equal asset id "${asset.id}"`);
     }
-    assets.push({ asset, deployments, compliance, sources, valuation });
+    assets.push({ asset, deployments, compliance, sources, valuation, claims, history });
   }
 
   checkUnique("asset id", assets.map(({ asset }) => asset.id), errors);
@@ -235,6 +245,20 @@ export async function validateRegistry(
         errors.push(`Underlying ${underlying.id} references unknown source asset ${sourceAssetId}`);
       }
     }
+    const underlyingSourceIdList = (underlying.sources ?? []).map((source) => source.id);
+    const underlyingSourceIds = new Set(underlyingSourceIdList);
+    checkUnique(
+      `source id in underlying ${underlying.id}`,
+      underlyingSourceIdList,
+      errors,
+    );
+    for (const claim of underlying.claims ?? []) {
+      for (const sourceId of claim.sourceIds) {
+        if (!underlyingSourceIds.has(sourceId)) {
+          errors.push(`Underlying ${underlying.id} claim ${claim.field} references unknown source ${sourceId}`);
+        }
+      }
+    }
   }
 
   for (const chain of chains) {
@@ -254,7 +278,7 @@ export async function validateRegistry(
     }
   }
 
-  for (const { asset, deployments, compliance, sources, valuation } of assets) {
+  for (const { asset, deployments, compliance, sources, valuation, claims, history } of assets) {
     const sourceIds = new Set(sources.map((source) => source.id));
     checkUnique(`source id in asset ${asset.id}`, sources.map((source) => source.id), errors);
 
@@ -273,6 +297,34 @@ export async function validateRegistry(
     }
     for (const sourceId of [...asset.verifiedBy, ...compliance.verifiedBy, ...valuation.verifiedBy]) {
       if (!sourceIds.has(sourceId)) errors.push(`Asset ${asset.id} references unknown source ${sourceId}`);
+    }
+    for (const relationship of asset.relationships ?? []) {
+      if (relationship.assetId === asset.id) {
+        errors.push(`Asset ${asset.id} must not relate to itself`);
+      }
+      if (!assetIds.has(relationship.assetId)) {
+        errors.push(`Asset ${asset.id} relationship references unknown asset ${relationship.assetId}`);
+      }
+      for (const sourceId of relationship.verifiedBy) {
+        if (!sourceIds.has(sourceId)) {
+          errors.push(`Asset ${asset.id} relationship references unknown source ${sourceId}`);
+        }
+      }
+    }
+    checkUnique(`history event id in asset ${asset.id}`, history.map((event) => event.id), errors);
+    for (const claim of claims) {
+      for (const sourceId of claim.sourceIds) {
+        if (!sourceIds.has(sourceId)) {
+          errors.push(`Asset ${asset.id} claim ${claim.field} references unknown source ${sourceId}`);
+        }
+      }
+    }
+    for (const event of history) {
+      for (const sourceId of event.sourceIds) {
+        if (!sourceIds.has(sourceId)) {
+          errors.push(`Asset ${asset.id} history event ${event.id} references unknown source ${sourceId}`);
+        }
+      }
     }
     for (const deployment of deployments) {
       const chain = chainById.get(deployment.chain);
@@ -301,5 +353,5 @@ export async function validateRegistry(
   }
 
   const registry: Registry = { assets, issuers, chains, standards, underlyings, organizations };
-  return errors.length === 0 ? { valid: true, errors, registry } : { valid: false, errors };
+  return { valid: errors.length === 0, errors, registry };
 }

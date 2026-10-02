@@ -1,14 +1,18 @@
 import { createHash } from "node:crypto";
-import { mkdir, rm, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { gzip } from "node:zlib";
 import { promisify } from "node:util";
 
 import { validateRegistry } from "../src/registry.js";
+import { scoreCompleteness } from "../src/completeness.js";
 
 const gzipAsync = promisify(gzip);
 const rootDirectory = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const packageMetadata = JSON.parse(
+  await readFile(path.join(rootDirectory, "package.json"), "utf8"),
+) as { version: string };
 const result = await validateRegistry(rootDirectory);
 
 function json(value: unknown): string {
@@ -59,6 +63,7 @@ if (!result.valid || !result.registry) {
     bySymbol: {} as Record<string, string[]>,
   };
   const assetChecksums: Record<string, string> = {};
+  const completeness: Record<string, ReturnType<typeof scoreCompleteness>> = {};
   let deploymentCount = 0;
 
   for (const record of result.registry.assets) {
@@ -66,6 +71,7 @@ if (!result.valid || !result.registry) {
     const recordJson = json(record);
     await writeFile(path.join(outputAssetsDirectory, `${assetId}.json`), recordJson, "utf8");
     assetChecksums[assetId] = sha256(recordJson);
+    completeness[assetId] = scoreCompleteness(record, new Date(generatedAt));
     deploymentCount += record.deployments.length;
     addToIndex(indexes.byIssuer, record.asset.issuerId, assetId);
     addToIndex(indexes.byUnderlying, record.asset.underlyingId, assetId);
@@ -79,11 +85,14 @@ if (!result.valid || !result.registry) {
       writeFile(path.join(outputIndexesDirectory, `${name}.json`), json(value), "utf8"),
     ),
   );
+  await writeFile(path.join(outputDirectory, "completeness.json"), json(completeness), "utf8");
+
+  const scores = Object.values(completeness).map(({ total }) => total);
 
   const manifest = {
     schemaVersion: 1,
     generatedAt,
-    registryVersion: "0.2.0",
+    registryVersion: packageMetadata.version,
     counts: {
       assets: result.registry.assets.length,
       deployments: deploymentCount,
@@ -92,10 +101,15 @@ if (!result.valid || !result.registry) {
       issuers: result.registry.issuers.length,
       chains: result.registry.chains.length,
       standards: result.registry.standards.length,
+      averageCompleteness: Math.round(scores.reduce((sum, score) => sum + score, 0) / scores.length),
     },
     files: {
       "registry.json": { sha256: sha256(snapshotJson), bytes: Buffer.byteLength(snapshotJson) },
       "registry.json.gz": { sha256: sha256(snapshotGzip), bytes: snapshotGzip.byteLength },
+      "completeness.json": {
+        sha256: sha256(json(completeness)),
+        bytes: Buffer.byteLength(json(completeness)),
+      },
     },
     assetChecksums,
   };

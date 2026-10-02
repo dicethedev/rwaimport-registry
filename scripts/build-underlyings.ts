@@ -27,6 +27,11 @@ interface UnderlyingOutput {
   currency: string;
   status: string;
   sourceAssetIds: string[];
+  dataAvailability?: Record<string, string>;
+  exchange?: string;
+  jurisdiction?: string;
+  sources?: unknown[];
+  claims?: unknown[];
 }
 
 function underlyingName(asset: AssetInput): string {
@@ -98,9 +103,41 @@ for (const entry of entries.filter((candidate) => candidate.isDirectory())) {
 await mkdir(underlyingsDirectory, { recursive: true });
 for (const record of [...records.values()].sort((left, right) => left.id.localeCompare(right.id))) {
   record.sourceAssetIds.sort();
+  const outputPath = path.join(underlyingsDirectory, `${record.id}.json`);
+  let existing: UnderlyingOutput | undefined;
+  try {
+    existing = JSON.parse(await readFile(outputPath, "utf8")) as UnderlyingOutput;
+  } catch {
+    existing = undefined;
+  }
+  const existingIdentifiers = existing?.identifiers ?? [];
+  const identifiers = [...(record.identifiers ?? [])];
+  const identifierKeys = new Set(identifiers.map(({ scheme, value }) => `${scheme}:${value}`));
+  for (const identifier of existingIdentifiers) {
+    if (!identifierKeys.has(`${identifier.scheme}:${identifier.value}`)) identifiers.push(identifier);
+  }
+  const output = {
+    ...record,
+    ...(existing ? {
+      name: existing.name,
+      ticker: existing.ticker,
+      type: existing.type,
+      currency: existing.currency,
+    } : {}),
+    ...(identifiers.length > 0 ? { identifiers } : {}),
+    ...(existing?.exchange ? { exchange: existing.exchange } : {}),
+    ...(existing?.jurisdiction ? { jurisdiction: existing.jurisdiction } : {}),
+    dataAvailability: existing?.dataAvailability ?? {
+      identifiers: identifiers.length > 0 ? "known" : "unknown",
+      exchange: existing?.exchange ? "known" : "unknown",
+      jurisdiction: existing?.jurisdiction ? "known" : "unknown",
+    },
+    ...(existing?.sources ? { sources: existing.sources } : {}),
+    ...(existing?.claims ? { claims: existing.claims } : {}),
+  };
   await writeFile(
-    path.join(underlyingsDirectory, `${record.id}.json`),
-    `${JSON.stringify(record, null, 2)}\n`,
+    outputPath,
+    `${JSON.stringify(output, null, 2)}\n`,
   );
 }
 

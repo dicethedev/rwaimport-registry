@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "reference-price",
+  "priceSourceUrl": "https://gold.tether.to",
+  "updateFrequency": "See the official product source.",
+  "corporateActionModel": "none",
+  "distributionTreatment": "none",
+  "reserveReportingUrl": "https://gold.tether.to",
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "known"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

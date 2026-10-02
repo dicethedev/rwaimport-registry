@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "securitize-hamilton-lane-scope-feeder",
+  "name": "Securitize Hamilton Lane SCOPE Feeder",
+  "legalName": "Securitize Feeder - Hamilton Lane Senior Credit Opportunities Fund",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://securitize.io",
+  "sources": [
+    {
+      "title": "Securitize Hamilton Lane SCOPE Feeder official website",
+      "url": "https://securitize.io",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

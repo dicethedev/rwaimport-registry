@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "schwon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

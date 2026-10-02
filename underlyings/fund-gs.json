@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "gson"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

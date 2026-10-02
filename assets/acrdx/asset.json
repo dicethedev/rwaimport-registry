@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "id": "acrdx",
+  "name": "Anemoy Apollo Diversified Credit Fund",
+  "symbol": "ACRDX",
+  "underlyingId": "fund-apollo-diversified-credit",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Tokenized professional fund providing access to Apollo's diversified credit strategy through the Anemoy and Centrifuge structure.",
+  "securityType": "Professional fund share",
+  "underlyingRights": "Fund interest providing diversified credit exposure; no direct ownership of individual credit instruments.",
+  "redemptionRights": "Subscriptions and redemptions are governed by the fund documents and platform process.",
+  "offeringType": "Professional fund offering",
+  "organizationRoles": [
+    {
+      "organizationId": "anemoy-capital",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "apollo",
+      "roles": [
+        "asset-manager"
+      ]
+    },
+    {
+      "organizationId": "centrifuge",
+      "roles": [
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "Anemoy Apollo Diversified Credit Fund (ACRDX), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "private-credit",
+  "issuerId": "anemoy-capital",
+  "tokenizationProviderIds": [
+    "centrifuge"
+  ],
+  "status": "active",
+  "website": "https://centrifuge.io/blog/fission-centrifuge",
+  "marketDataLinks": [
+    {
+      "provider": "Centrifuge",
+      "type": "issuer",
+      "url": "https://centrifuge.io/blog/fission-centrifuge",
+      "description": "Official product, legal, reserve, or fund information."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "same-economic-exposure-as",
+      "assetId": "acred",
+      "verifiedBy": [
+        "official-product"
+      ]
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-hyb",
+  "name": "Anemoy New York Life High Yield Corporate Bond Fund underlying",
+  "ticker": "HYB",
+  "type": "bond",
+  "jurisdiction": "VG",
+  "currency": "USD",
+  "status": "active",
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "known"
+  },
+  "sourceAssetIds": [
+    "hyb"
+  ]
+}

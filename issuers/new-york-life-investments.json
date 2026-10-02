@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "new-york-life-investments",
+  "name": "New York Life Investments",
+  "legalName": "New York Life Investment Management LLC",
+  "type": "asset-manager",
+  "jurisdiction": "US",
+  "status": "active",
+  "website": "https://www.newyorklifeinvestments.com",
+  "sources": [
+    {
+      "title": "New York Life Investments official website",
+      "url": "https://www.newyorklifeinvestments.com",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

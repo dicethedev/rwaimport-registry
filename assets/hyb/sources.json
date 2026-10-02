@@ -1,0 +1,15 @@
+[
+  {
+    "id": "official-product",
+    "type": "issuer",
+    "title": "Centrifuge official institutional fund liquidity announcement",
+    "url": "https://centrifuge.io/blog/fission-centrifuge",
+    "publisher": "Centrifuge",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T12:30:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  }
+]

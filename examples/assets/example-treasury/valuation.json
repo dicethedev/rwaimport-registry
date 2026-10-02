@@ -6,5 +6,9 @@
   "updateFrequency": "daily",
   "corporateActionModel": "accumulating-price",
   "distributionTreatment": "reinvested",
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "unknown"
+  },
   "verifiedBy": ["official-product-page"]
 }

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "toyow",
+  "name": "Toyow",
+  "jurisdiction": "AE",
+  "status": "active",
+  "website": "https://www.toyow.com",
+  "sources": [
+    {
+      "title": "Toyow official website",
+      "url": "https://www.toyow.com",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

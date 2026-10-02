@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "jpmon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

@@ -50,6 +50,7 @@ function sha256(value: string): string {
 }
 
 function assetClass(name: string): "public-equity" | "exchange-traded-fund" {
+  if (name === "Invesco QQQ") return "exchange-traded-fund";
   return /\bETF\b|\bETN\b|\bFund\b|\bTrust\b|\bIndex\b|\bTreasury\b|\bBond\b|\bS&P\b|\bRussell\b|\bNasdaq\b|\bDow Jones\b/i.test(
     name,
   )
@@ -283,3 +284,5 @@ for (const sourceAsset of activeAssets) {
 console.log(
   `Imported ${activeAssets.length} active Robinhood Stock Tokens from the official asset API.`,
 );
+
+await import("./migrate-reliability-fields.js");

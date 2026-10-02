@@ -9,5 +9,9 @@
   "reserveReportingUrl": "https://superstate.com/assets/ustb",
   "verifiedBy": [
     "official-product"
-  ]
+  ],
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "known"
+  }
 }

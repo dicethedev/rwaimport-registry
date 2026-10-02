@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "txnon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

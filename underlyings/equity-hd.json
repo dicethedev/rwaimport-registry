@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "hdon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

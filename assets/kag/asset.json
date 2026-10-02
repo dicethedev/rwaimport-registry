@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "kag",
+  "name": "Kinesis Silver",
+  "symbol": "KAG",
+  "underlyingId": "underlying-kag",
+  "instrumentType": "certificate",
+  "denominationCurrency": "USD",
+  "legalStructure": "Digital record of allocated physical silver held through the Kinesis structure.",
+  "securityType": "Allocated silver-backed digital currency",
+  "underlyingRights": "One KAG represents legal title to one troy ounce of allocated physical silver.",
+  "redemptionRights": "Holders may redeem physical bullion subject to the issuer's onboarding, minimums, and fees.",
+  "offeringType": "Allocated bullion-backed digital currency",
+  "organizationRoles": [
+    {
+      "organizationId": "kinesis",
+      "roles": [
+        "issuer",
+        "custodian",
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "Kinesis Silver (KAG), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "commodity",
+  "issuerId": "kinesis",
+  "tokenizationProviderIds": [
+    "kinesis"
+  ],
+  "status": "active",
+  "website": "https://kinesis.money/silver/",
+  "marketDataLinks": [
+    {
+      "provider": "Kinesis",
+      "type": "issuer",
+      "url": "https://kinesis.money/silver/",
+      "description": "Official product, legal, reserve, or fund information."
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

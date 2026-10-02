@@ -1,0 +1,15 @@
+[
+  {
+    "id": "official-product",
+    "type": "issuer",
+    "title": "Tether Gold official product and disclosure site",
+    "url": "https://gold.tether.to",
+    "publisher": "Tether Gold",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T12:30:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  }
+]

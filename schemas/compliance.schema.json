@@ -4,7 +4,7 @@
   "title": "RWAImport published compliance requirements",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "permissioned", "kycRequired", "identityRequired", "transferRestricted", "verifiedBy"],
+  "required": ["schemaVersion", "permissioned", "kycRequired", "identityRequired", "transferRestricted", "dataAvailability", "verifiedBy"],
   "properties": {
     "schemaVersion": { "const": 1 },
     "permissioned": { "$ref": "#/$defs/answer" },
@@ -32,6 +32,16 @@
     "minimumSubscription": { "$ref": "#/$defs/money" },
     "minimumRedemption": { "$ref": "#/$defs/money" },
     "lockupPeriod": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "dataAvailability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minimumSubscription", "minimumRedemption", "lockupPeriod"],
+      "properties": {
+        "minimumSubscription": { "$ref": "#/$defs/availability" },
+        "minimumRedemption": { "$ref": "#/$defs/availability" },
+        "lockupPeriod": { "$ref": "#/$defs/availability" }
+      }
+    },
     "offeringDocuments": {
       "type": "array",
       "uniqueItems": true,
@@ -47,6 +57,7 @@
   },
   "$defs": {
     "answer": { "enum": ["yes", "no", "unknown"] },
+    "availability": { "enum": ["known", "unknown", "not-applicable"] },
     "marketAccess": {
       "type": "object",
       "additionalProperties": false,

@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "copxon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

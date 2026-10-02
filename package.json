@@ -1,6 +1,6 @@
 {
   "name": "@rwaimport/registry",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": false,
   "license": "MIT",
   "type": "module",
@@ -12,6 +12,7 @@
     ".": "./dist/registry.json",
     "./registry.json": "./dist/registry.json",
     "./manifest.json": "./dist/manifest.json",
+    "./completeness.json": "./dist/completeness.json",
     "./indexes/*": "./dist/indexes/*.json",
     "./assets/*": "./dist/assets/*.json"
   },
@@ -28,12 +29,17 @@
     "import:ondo-stocks": "node --import tsx scripts/import-ondo-stocks.ts",
     "import:robinhood-stocks": "node --import tsx scripts/import-robinhood-stocks.ts",
     "import:institutional-funds": "node --import tsx scripts/import-institutional-funds.ts",
+    "import:diversification-batch": "node --import tsx scripts/import-diversification-batch.ts",
     "build:underlyings": "node --import tsx scripts/build-underlyings.ts",
+    "enrich:underlyings:sec": "node --import tsx scripts/enrich-underlyings-sec.ts",
+    "check:underlyings:sec": "node --import tsx scripts/enrich-underlyings-sec.ts --check",
+    "migrate:reliability": "node --import tsx scripts/migrate-reliability-fields.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "validate": "node --import tsx scripts/validate.ts",
-    "verify:onchain": "node --import tsx scripts/verify-onchain.ts"
+    "verify:onchain": "node --import tsx scripts/verify-onchain.ts",
+    "verify:onchain:write": "node --import tsx scripts/verify-onchain.ts --write"
   },
   "dependencies": {
     "ajv": "^8.17.1",

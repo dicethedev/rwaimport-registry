@@ -25,5 +25,10 @@
   "notes": "Direct minting and redemption require Ondo onboarding and KYC. Tokens may be held or acquired through third parties without direct onboarding, subject to jurisdictional, sanctions, and other restrictions.",
   "verifiedBy": [
     "ondo-stocks-guide"
-  ]
+  ],
+  "dataAvailability": {
+    "minimumSubscription": "unknown",
+    "minimumRedemption": "unknown",
+    "lockupPeriod": "unknown"
+  }
 }

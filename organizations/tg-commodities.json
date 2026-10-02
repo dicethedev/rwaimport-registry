@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "tg-commodities",
+  "name": "Tether Gold",
+  "legalName": "TG Commodities, S.A. de C.V.",
+  "jurisdiction": "SV",
+  "status": "active",
+  "website": "https://gold.tether.to",
+  "sources": [
+    {
+      "title": "Tether Gold official website",
+      "url": "https://gold.tether.to",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

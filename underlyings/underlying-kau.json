@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-kau",
+  "name": "Kinesis Gold underlying",
+  "ticker": "KAU",
+  "type": "commodity",
+  "currency": "USD",
+  "status": "active",
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  },
+  "sourceAssetIds": [
+    "kau"
+  ]
+}

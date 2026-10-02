@@ -34,5 +34,10 @@
   ],
   "eligibleJurisdictions": [
     "US"
-  ]
+  ],
+  "dataAvailability": {
+    "minimumSubscription": "known",
+    "minimumRedemption": "unknown",
+    "lockupPeriod": "unknown"
+  }
 }

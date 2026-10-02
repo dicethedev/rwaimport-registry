@@ -1,0 +1,378 @@
+[
+  {
+    "field": "asset.assetClass",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.denominationCurrency",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.description",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.id",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.instrumentType",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.issuerId",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.legalStructure",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.marketDataLinks",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.name",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.organizationRoles",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.redemptionRights",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.status",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.symbol",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.tokenizationProviderIds",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.underlyingId",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.underlyingRights",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.website",
+    "sourceIds": [
+      "ondo-token-list",
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.eligibleInvestorTypes",
+    "sourceIds": [
+      "ondo-stocks-guide"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.identityRequired",
+    "sourceIds": [
+      "ondo-stocks-guide"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.kycRequired",
+    "sourceIds": [
+      "ondo-stocks-guide"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.notes",
+    "sourceIds": [
+      "ondo-stocks-guide"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.permissioned",
+    "sourceIds": [
+      "ondo-stocks-guide"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.primaryMarket",
+    "sourceIds": [
+      "ondo-stocks-guide"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.secondaryMarket",
+    "sourceIds": [
+      "ondo-stocks-guide"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.transferEnforcement",
+    "sourceIds": [
+      "ondo-stocks-guide"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.transferRestricted",
+    "sourceIds": [
+      "ondo-stocks-guide"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.corporateActionModel",
+    "sourceIds": [
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.distributionTreatment",
+    "sourceIds": [
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.priceSourceUrl",
+    "sourceIds": [
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.quoteCurrency",
+    "sourceIds": [
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.valuationType",
+    "sourceIds": [
+      "ondo-product-page"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[0].chain",
+    "sourceIds": [
+      "ondo-token-list",
+      "ethereum-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[0].address",
+    "sourceIds": [
+      "ondo-token-list",
+      "ethereum-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[0].standardIds",
+    "sourceIds": [
+      "ondo-token-list",
+      "ethereum-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[0].status",
+    "sourceIds": [
+      "ondo-token-list",
+      "ethereum-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[1].chain",
+    "sourceIds": [
+      "ondo-token-list",
+      "bnb-chain-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[1].address",
+    "sourceIds": [
+      "ondo-token-list",
+      "bnb-chain-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[1].standardIds",
+    "sourceIds": [
+      "ondo-token-list",
+      "bnb-chain-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[1].status",
+    "sourceIds": [
+      "ondo-token-list",
+      "bnb-chain-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  }
+]

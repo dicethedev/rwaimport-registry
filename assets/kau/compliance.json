@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "permissioned": "unknown",
+  "kycRequired": "yes",
+  "identityRequired": "unknown",
+  "transferRestricted": "unknown",
+  "transferEnforcement": "unknown",
+  "primaryMarket": {
+    "access": "issuer-onboarding",
+    "kycRequired": "yes",
+    "kybRequired": "unknown"
+  },
+  "secondaryMarket": {
+    "access": "unknown",
+    "kycRequired": "unknown",
+    "kybRequired": "unknown"
+  },
+  "dataAvailability": {
+    "minimumSubscription": "unknown",
+    "minimumRedemption": "unknown",
+    "lockupPeriod": "unknown"
+  },
+  "notes": "Consult the current product documents before transacting; this registry summary is not legal or investment advice.",
+  "verifiedBy": [
+    "official-product"
+  ]
+}

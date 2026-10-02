@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "pplton"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

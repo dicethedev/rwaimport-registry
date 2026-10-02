@@ -1,0 +1,15 @@
+[
+  {
+    "id": "official-product",
+    "type": "issuer",
+    "title": "Kinesis official KAG silver product page",
+    "url": "https://kinesis.money/silver/",
+    "publisher": "Kinesis",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T12:30:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  }
+]

@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "mtzon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "kinesis",
+  "name": "Kinesis",
+  "legalName": "Kinesis Cayman",
+  "type": "issuer",
+  "jurisdiction": "KY",
+  "status": "active",
+  "website": "https://kinesis.money",
+  "sources": [
+    {
+      "title": "Kinesis official website",
+      "url": "https://kinesis.money",
+      "accessedAt": "2026-10-01"
+    }
+  ]
+}

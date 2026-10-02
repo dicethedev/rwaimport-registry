@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "wtstx"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

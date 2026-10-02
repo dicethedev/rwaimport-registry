@@ -8,6 +8,22 @@
     "deploymentType": "issuer-native",
     "standardIds": ["erc20"],
     "status": "active",
+    "verification": {
+      "lastVerifiedAt": "2026-09-30T00:00:00Z",
+      "accountExists": true,
+      "method": "manual",
+      "explorerVerified": "unknown",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "unknown",
+        "contractAdmin": "unknown",
+        "explorerVerification": "unknown",
+        "observedName": "unknown",
+        "observedSymbol": "unknown",
+        "observedDecimals": "unknown"
+      }
+    },
     "verifiedBy": ["explorer"]
   }
 ]

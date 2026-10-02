@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "clfon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

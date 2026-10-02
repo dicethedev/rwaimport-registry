@@ -69,5 +69,12 @@
   ],
   "verifiedBy": [
     "official-product"
-  ]
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "known",
+    "prospectusUrl": "unknown"
+  }
 }

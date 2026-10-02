@@ -84,5 +84,12 @@
   "verifiedBy": [
     "ondo-token-list",
     "ondo-product-page"
-  ]
+  ],
+  "dataAvailability": {
+    "securityType": "unknown",
+    "shareClass": "unknown",
+    "offeringType": "unknown",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  }
 }

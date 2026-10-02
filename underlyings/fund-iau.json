@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "iauon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

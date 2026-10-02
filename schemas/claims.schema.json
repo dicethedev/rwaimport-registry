@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rwaimport.org/schemas/claims.schema.json",
+  "title": "RWAImport claim-level evidence",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["field", "sourceIds", "reviewedAt", "reviewStatus", "confidence"],
+    "properties": {
+      "field": { "type": "string", "pattern": "^(asset|compliance|valuation|deployments)(\\.[A-Za-z0-9_-]+|\\[[0-9]+\\])+$", "maxLength": 300 },
+      "sourceIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+      "reviewedAt": { "type": "string", "format": "date" },
+      "reviewStatus": { "enum": ["verified", "needs-review", "disputed"] },
+      "confidence": { "enum": ["high", "medium", "low"] },
+      "evidenceNote": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "excerptSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 }
+  }
+}

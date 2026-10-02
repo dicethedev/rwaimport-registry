@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "corzon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

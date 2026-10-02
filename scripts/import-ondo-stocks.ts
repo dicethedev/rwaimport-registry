@@ -458,3 +458,5 @@ for (const symbol of selectedSymbols) {
 console.log(
   `Imported ${selectedSymbols.length} Ondo assets with ${solanaDeploymentCount} Solana deployments from pinned official sources.`,
 );
+
+await import("./migrate-reliability-fields.js");

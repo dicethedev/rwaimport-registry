@@ -9,5 +9,9 @@
   "reserveReportingUrl": "https://docs.openeden.com/tbill",
   "verifiedBy": [
     "official-product"
-  ]
+  ],
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "known"
+  }
 }

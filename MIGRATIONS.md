@@ -27,3 +27,22 @@ The npm package exports the full `dist/registry.json`, `dist/manifest.json`, per
 under `dist/assets/`, and indexes under `dist/indexes/`. The full registry is also available as
 `dist/registry.json.gz`. Consumers should verify manifest SHA-256 values when transporting
 generated artifacts.
+
+## Reliability changes in 0.3.0
+
+Version 0.3.0 makes missing information explicit and adds durable evidence artifacts without
+changing the product schema version:
+
+1. Every product, compliance, valuation, and underlying record has `dataAvailability` values
+   using `known`, `unknown`, or `not-applicable`.
+2. Every product directory contains `claims.json` and `history.json`.
+3. Every public deployment contains persisted verification. EVM results include runtime
+   bytecode hashes, observed token metadata, and EIP-1967 implementation/admin values when
+   present. Other ledgers store network-appropriate account evidence.
+4. `snapshots/onchain/deployments.json` preserves verification across deterministic importer
+   reruns. Refresh it with `npm run verify:onchain:write` after reviewing live changes.
+5. Generated distributions include `completeness.json`; the manifest reports the catalog's
+   average completeness score.
+
+Run `npm run migrate:reliability` after a custom bulk import, then refresh onchain evidence for
+new public deployments. Existing import commands run the reliability migration automatically.

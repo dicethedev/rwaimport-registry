@@ -30,7 +30,7 @@
       "value": "0x000000000000000000000000000000002470b933c52d47ccad017ed9ee80c9ed"
     }
   ],
-  "assetClass": "public-equity",
+  "assetClass": "exchange-traded-fund",
   "issuerId": "robinhood-assets-jersey",
   "status": "active",
   "website": "https://docs.robinhood.com/chain/stock-tokens/",
@@ -51,5 +51,12 @@
   "verifiedBy": [
     "robinhood-assets-api",
     "robinhood-stock-token-docs"
-  ]
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "unknown",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  }
 }

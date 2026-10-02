@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "hyb",
+  "name": "Anemoy New York Life High Yield Corporate Bond Fund",
+  "symbol": "HYB",
+  "underlyingId": "underlying-hyb",
+  "instrumentType": "fund-share",
+  "denominationCurrency": "USD",
+  "legalStructure": "Tokenized professional fund providing access to a U.S. high-yield corporate-bond strategy.",
+  "securityType": "Professional fund share",
+  "underlyingRights": "Fund interest providing exposure to the managed high-yield corporate-bond portfolio.",
+  "redemptionRights": "Subscriptions and redemptions are governed by the fund documents and platform process.",
+  "offeringType": "Professional fund offering",
+  "organizationRoles": [
+    {
+      "organizationId": "anemoy-capital",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "new-york-life-investments",
+      "roles": [
+        "asset-manager"
+      ]
+    },
+    {
+      "organizationId": "centrifuge",
+      "roles": [
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "Anemoy New York Life High Yield Corporate Bond Fund (HYB), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "other",
+  "issuerId": "anemoy-capital",
+  "tokenizationProviderIds": [
+    "centrifuge"
+  ],
+  "status": "active",
+  "website": "https://centrifuge.io/blog/fission-centrifuge",
+  "marketDataLinks": [
+    {
+      "provider": "Centrifuge",
+      "type": "issuer",
+      "url": "https://centrifuge.io/blog/fission-centrifuge",
+      "description": "Official product, legal, reserve, or fund information."
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "gnrcon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

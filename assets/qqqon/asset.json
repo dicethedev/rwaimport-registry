@@ -24,7 +24,7 @@
     }
   ],
   "description": "Tokenized economic exposure to Invesco QQQ, issued by Ondo Global Markets (BVI) Limited.",
-  "assetClass": "public-equity",
+  "assetClass": "exchange-traded-fund",
   "issuerId": "ondo-global-markets",
   "tokenizationProviderIds": [
     "ondo-finance"
@@ -84,5 +84,12 @@
   "verifiedBy": [
     "ondo-token-list",
     "ondo-product-page"
-  ]
+  ],
+  "dataAvailability": {
+    "securityType": "unknown",
+    "shareClass": "unknown",
+    "offeringType": "unknown",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "unknown"
+  }
 }

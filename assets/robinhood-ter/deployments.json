@@ -27,6 +27,26 @@
     "verifiedBy": [
       "robinhood-assets-api",
       "robinhood-chain-explorer"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "399ec4bc5b43db03486ceae11f9a6fc5c126427f8f8e10c90fed0c773f4325c6",
+      "explorerVerified": "unknown",
+      "observedName": "Teradyne • Robinhood Token",
+      "observedSymbol": "TER",
+      "observedDecimals": 18,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "not-applicable",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   }
 ]

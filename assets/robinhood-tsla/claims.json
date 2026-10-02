@@ -1,0 +1,382 @@
+[
+  {
+    "field": "asset.assetClass",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.denominationCurrency",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.description",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.id",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.identifiers",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.instrumentType",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.issuerId",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.legalStructure",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.marketDataLinks",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.name",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.organizationRoles",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.redemptionRights",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.securityType",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.status",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.symbol",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.underlyingId",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.underlyingRights",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "asset.website",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.eligibleInvestorTypes",
+    "sourceIds": [
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.identityRequired",
+    "sourceIds": [
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.kycRequired",
+    "sourceIds": [
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.notes",
+    "sourceIds": [
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.permissioned",
+    "sourceIds": [
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.primaryMarket",
+    "sourceIds": [
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.prohibitedJurisdictions",
+    "sourceIds": [
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.secondaryMarket",
+    "sourceIds": [
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.transferEnforcement",
+    "sourceIds": [
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "compliance.transferRestricted",
+    "sourceIds": [
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.corporateActionModel",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.distributionTreatment",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.oracle",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.priceSourceUrl",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.quoteCurrency",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.updateFrequency",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "valuation.valuationType",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-stock-token-docs"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[0].chain",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-chain-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[0].address",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-chain-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[0].standardIds",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-chain-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[0].status",
+    "sourceIds": [
+      "robinhood-assets-api",
+      "robinhood-chain-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  }
+]

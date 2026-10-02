@@ -28,6 +28,9 @@ jobs:
       - name: Check official source drift
         run: npm run check:source-drift
 
+      - name: Check SEC underlying metadata drift
+        run: npm run check:underlyings:sec
+
       - name: Check source and verification links
         run: npm run check:links
 

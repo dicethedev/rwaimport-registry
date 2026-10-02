@@ -21,7 +21,27 @@
     "verifiedBy": [
       "ondo-token-list",
       "ethereum-explorer"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "6060dd38da4f6b8a88c46c019ee34a863b3db7b0df25ecdf7af71d0339fdb314",
+      "explorerVerified": "unknown",
+      "observedName": "Axcelis Technologies (Ondo Tokenized)",
+      "observedSymbol": "ACLSon",
+      "observedDecimals": 18,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "not-applicable",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "bnb-chain",
@@ -45,7 +65,27 @@
     "verifiedBy": [
       "ondo-token-list",
       "bnb-chain-explorer"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "e696145eb05732cec127a85c3b0a3ac5db14f4f565d8099ee4645b2d60a238fa",
+      "explorerVerified": "unknown",
+      "observedName": "Axcelis Technologies (Ondo Tokenized)",
+      "observedSymbol": "ACLSon",
+      "observedDecimals": 18,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "not-applicable",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   },
   {
     "chain": "solana",
@@ -68,6 +108,25 @@
     "verifiedBy": [
       "ondo-solana-mint-list",
       "solana-explorer"
-    ]
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-02T08:49:21.485Z",
+      "accountExists": true,
+      "method": "solana-account-owner",
+      "accountDataSha256": "8d9c422fbe10934588f71e4b3945b77a611f7673b2bb187b647192fb07616494",
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "explorerVerified": "unknown",
+      "observedDecimals": 9,
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "unknown",
+        "contractAdmin": "unknown",
+        "explorerVerification": "unknown",
+        "observedName": "unknown",
+        "observedSymbol": "unknown",
+        "observedDecimals": "known"
+      }
+    }
   }
 ]

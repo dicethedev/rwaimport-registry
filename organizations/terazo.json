@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "terazo",
+  "name": "Terazo",
+  "jurisdiction": "IN",
+  "status": "active",
+  "website": "https://www.terazo.network",
+  "sources": [
+    {
+      "title": "Terazo official website",
+      "url": "https://www.terazo.network",
+      "accessedAt": "2026-10-01",
+      "lastVerifiedAt": "2026-10-01",
+      "reviewAfter": "2027-01-01",
+      "confidence": "high"
+    }
+  ]
+}

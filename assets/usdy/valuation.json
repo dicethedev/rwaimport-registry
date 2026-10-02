@@ -9,5 +9,9 @@
   "reserveReportingUrl": "https://ondo.finance/usdy",
   "verifiedBy": [
     "official-product"
-  ]
+  ],
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "known"
+  }
 }

@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "lasron"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

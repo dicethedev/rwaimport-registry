@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "tnkon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

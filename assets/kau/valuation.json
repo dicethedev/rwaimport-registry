@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "reference-price",
+  "priceSourceUrl": "https://kinesis.money/gold/",
+  "updateFrequency": "See the official product source.",
+  "corporateActionModel": "none",
+  "distributionTreatment": "none",
+  "reserveReportingUrl": "https://kinesis.money/audits/",
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "known"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

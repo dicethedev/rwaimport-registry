@@ -3,7 +3,7 @@
   "id": "equity-qqq",
   "name": "Invesco QQQ",
   "ticker": "QQQ",
-  "type": "equity",
+  "type": "exchange-traded-fund",
   "currency": "USD",
   "status": "active",
   "sourceAssetIds": [
@@ -14,6 +14,49 @@
     {
       "scheme": "isin",
       "value": "US46090E1038"
+    },
+    {
+      "scheme": "cusip",
+      "value": "46090E103"
+    }
+  ],
+  "exchange": "Nasdaq",
+  "jurisdiction": "US",
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "known",
+    "jurisdiction": "known"
+  },
+  "sources": [
+    {
+      "id": "invesco-qqq-product",
+      "title": "Invesco QQQ official product details",
+      "url": "https://www.invesco.com/us/financial-products/etfs/product-detail?audienceType=investors&productId=QQQ&ticker=QQQ",
+      "publisher": "Invesco",
+      "retrievedAt": "2026-10-01T12:20:00Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "identifiers",
+      "sourceIds": [
+        "invesco-qqq-product"
+      ],
+      "reviewStatus": "verified"
+    },
+    {
+      "field": "exchange",
+      "sourceIds": [
+        "invesco-qqq-product"
+      ],
+      "reviewStatus": "verified"
+    },
+    {
+      "field": "jurisdiction",
+      "sourceIds": [
+        "invesco-qqq-product"
+      ],
+      "reviewStatus": "verified"
     }
   ]
 }

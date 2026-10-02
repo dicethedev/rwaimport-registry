@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "fcelon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }

@@ -8,5 +8,10 @@
   "status": "active",
   "sourceAssetIds": [
     "copon"
-  ]
+  ],
+  "dataAvailability": {
+    "identifiers": "unknown",
+    "exchange": "unknown",
+    "jurisdiction": "unknown"
+  }
 }
