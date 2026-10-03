@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T08:49:21.485Z",
+  "generatedAt": "2026-10-03T15:40:21.213Z",
   "deployments": [
     {
       "assetId": "aalon",
@@ -3679,6 +3679,33 @@
       }
     },
     {
+      "assetId": "bc3m",
+      "chain": "arbitrum",
+      "address": "0x2f123cf3f37ce3328cc9b5b8415f9ec5109b45e7",
+      "verification": {
+        "lastVerifiedAt": "2026-10-03T15:40:21.213Z",
+        "accountExists": true,
+        "method": "evm-bytecode",
+        "runtimeCodeSha256": "0eb08f58ef84554fa48b53030ccedca646dc75bb8a8172569eeea85a2596fa53",
+        "explorerVerified": "unknown",
+        "observedName": "Backed GOVIES 0-6 months EURO investment grade",
+        "observedSymbol": "bC3M",
+        "observedDecimals": 18,
+        "implementationAddress": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
+        "contractAdmin": "0xf2057bdff8439dbffce073e14a9854945d5e5644",
+        "dataAvailability": {
+          "deploymentTransaction": "unknown",
+          "deploymentBlock": "unknown",
+          "proxyImplementation": "known",
+          "contractAdmin": "known",
+          "explorerVerification": "unknown",
+          "observedName": "known",
+          "observedSymbol": "known",
+          "observedDecimals": "known"
+        }
+      }
+    },
+    {
       "assetId": "benji",
       "chain": "stellar",
       "address": "GBHNGLLIE3KWGKCHIKMHJ5HVZHYIK7WTBE4QF5PLAKL4CJGSEU7HZIW5",
@@ -3947,6 +3974,114 @@
           "explorerVerification": "unknown",
           "observedName": "unknown",
           "observedSymbol": "unknown",
+          "observedDecimals": "known"
+        }
+      }
+    },
+    {
+      "assetId": "bernx",
+      "chain": "arbitrum",
+      "address": "0x3f95aa88ddbb7d9d484aa3d482bf0a80009c52c9",
+      "verification": {
+        "lastVerifiedAt": "2026-10-03T15:40:21.213Z",
+        "accountExists": true,
+        "method": "evm-bytecode",
+        "runtimeCodeSha256": "0eb08f58ef84554fa48b53030ccedca646dc75bb8a8172569eeea85a2596fa53",
+        "explorerVerified": "unknown",
+        "observedName": "Backed ERNX € Ultrashort Bond",
+        "observedSymbol": "bERNX",
+        "observedDecimals": 18,
+        "implementationAddress": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
+        "contractAdmin": "0xf2057bdff8439dbffce073e14a9854945d5e5644",
+        "dataAvailability": {
+          "deploymentTransaction": "unknown",
+          "deploymentBlock": "unknown",
+          "proxyImplementation": "known",
+          "contractAdmin": "known",
+          "explorerVerification": "unknown",
+          "observedName": "known",
+          "observedSymbol": "known",
+          "observedDecimals": "known"
+        }
+      }
+    },
+    {
+      "assetId": "bhigh",
+      "chain": "arbitrum",
+      "address": "0x20c64dee8fda5269a78f2d5bdba861ca1d83df7a",
+      "verification": {
+        "lastVerifiedAt": "2026-10-03T15:40:21.213Z",
+        "accountExists": true,
+        "method": "evm-bytecode",
+        "runtimeCodeSha256": "0eb08f58ef84554fa48b53030ccedca646dc75bb8a8172569eeea85a2596fa53",
+        "explorerVerified": "unknown",
+        "observedName": "Backed HIGH € High Yield Corp Bond",
+        "observedSymbol": "bHIGH",
+        "observedDecimals": 18,
+        "implementationAddress": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
+        "contractAdmin": "0xf2057bdff8439dbffce073e14a9854945d5e5644",
+        "dataAvailability": {
+          "deploymentTransaction": "unknown",
+          "deploymentBlock": "unknown",
+          "proxyImplementation": "known",
+          "contractAdmin": "known",
+          "explorerVerification": "unknown",
+          "observedName": "known",
+          "observedSymbol": "known",
+          "observedDecimals": "known"
+        }
+      }
+    },
+    {
+      "assetId": "bib01",
+      "chain": "arbitrum",
+      "address": "0xca30c93b02514f86d5c86a6e375e3a330b435fb5",
+      "verification": {
+        "lastVerifiedAt": "2026-10-03T15:40:21.213Z",
+        "accountExists": true,
+        "method": "evm-bytecode",
+        "runtimeCodeSha256": "0eb08f58ef84554fa48b53030ccedca646dc75bb8a8172569eeea85a2596fa53",
+        "explorerVerified": "unknown",
+        "observedName": "Backed IB01 $ Treasury Bond 0-1yr",
+        "observedSymbol": "bIB01",
+        "observedDecimals": 18,
+        "implementationAddress": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
+        "contractAdmin": "0xf2057bdff8439dbffce073e14a9854945d5e5644",
+        "dataAvailability": {
+          "deploymentTransaction": "unknown",
+          "deploymentBlock": "unknown",
+          "proxyImplementation": "known",
+          "contractAdmin": "known",
+          "explorerVerification": "unknown",
+          "observedName": "known",
+          "observedSymbol": "known",
+          "observedDecimals": "known"
+        }
+      }
+    },
+    {
+      "assetId": "bibta",
+      "chain": "arbitrum",
+      "address": "0x52d134c6db5889fad3542a09eaf7aa90c0fdf9e4",
+      "verification": {
+        "lastVerifiedAt": "2026-10-03T15:40:21.213Z",
+        "accountExists": true,
+        "method": "evm-bytecode",
+        "runtimeCodeSha256": "0eb08f58ef84554fa48b53030ccedca646dc75bb8a8172569eeea85a2596fa53",
+        "explorerVerified": "unknown",
+        "observedName": "Backed IBTA $ Treasury Bond 1-3yr",
+        "observedSymbol": "bIBTA",
+        "observedDecimals": 18,
+        "implementationAddress": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
+        "contractAdmin": "0xf2057bdff8439dbffce073e14a9854945d5e5644",
+        "dataAvailability": {
+          "deploymentTransaction": "unknown",
+          "deploymentBlock": "unknown",
+          "proxyImplementation": "known",
+          "contractAdmin": "known",
+          "explorerVerification": "unknown",
+          "observedName": "known",
+          "observedSymbol": "known",
           "observedDecimals": "known"
         }
       }
@@ -5497,6 +5632,32 @@
         "observedSymbol": "BUIDL-I",
         "observedDecimals": 6,
         "implementationAddress": "0x9e2693f54831f6f52b0bb952c2935d26919a3626",
+        "dataAvailability": {
+          "deploymentTransaction": "unknown",
+          "deploymentBlock": "unknown",
+          "proxyImplementation": "known",
+          "contractAdmin": "not-applicable",
+          "explorerVerification": "unknown",
+          "observedName": "known",
+          "observedSymbol": "known",
+          "observedDecimals": "known"
+        }
+      }
+    },
+    {
+      "assetId": "buidl",
+      "chain": "arbitrum",
+      "address": "0xA6525Ae43eDCd03dC08E775774dCAbd3bb925872",
+      "verification": {
+        "lastVerifiedAt": "2026-10-03T15:40:21.213Z",
+        "accountExists": true,
+        "method": "evm-bytecode",
+        "runtimeCodeSha256": "ec9c737dafc40dfe31c9d46ac0f6cb1f40180d31428a9a4e96453b036170fc2a",
+        "explorerVerified": "unknown",
+        "observedName": "BlackRock USD Institutional Digital Liquidity Fund",
+        "observedSymbol": "BUIDL",
+        "observedDecimals": 6,
+        "implementationAddress": "0xdbf6db49066784a69244d3b33cf44c25ec86c0f7",
         "dataAvailability": {
           "deploymentTransaction": "unknown",
           "deploymentBlock": "unknown",
@@ -32765,6 +32926,32 @@
       }
     },
     {
+      "assetId": "tbill",
+      "chain": "arbitrum",
+      "address": "0xF84D28A8D28292842dD73D1c5F99476A80b6666A",
+      "verification": {
+        "lastVerifiedAt": "2026-10-03T15:40:21.213Z",
+        "accountExists": true,
+        "method": "evm-bytecode",
+        "runtimeCodeSha256": "3cc5e539eb61133fec38655ae3f55d8e1f944fce2cbc02e151972cf9c9880545",
+        "explorerVerified": "unknown",
+        "observedName": "OpenEden T-Bills",
+        "observedSymbol": "TBILL",
+        "observedDecimals": 6,
+        "implementationAddress": "0x78365404fc5edabef6eca2f6b2f1ba1471727a07",
+        "dataAvailability": {
+          "deploymentTransaction": "unknown",
+          "deploymentBlock": "unknown",
+          "proxyImplementation": "known",
+          "contractAdmin": "not-applicable",
+          "explorerVerification": "unknown",
+          "observedName": "known",
+          "observedSymbol": "known",
+          "observedDecimals": "known"
+        }
+      }
+    },
+    {
       "assetId": "tcomon",
       "chain": "ethereum",
       "address": "0x398F7F759380f3D309B9Fc0e6CB3D36E0D67818D",
@@ -34462,6 +34649,33 @@
           "explorerVerification": "unknown",
           "observedName": "unknown",
           "observedSymbol": "unknown",
+          "observedDecimals": "known"
+        }
+      }
+    },
+    {
+      "assetId": "usdy",
+      "chain": "arbitrum",
+      "address": "0x35E050D3c0Ec2d29D269a8EcEa763A183bDF9a9D",
+      "verification": {
+        "lastVerifiedAt": "2026-10-03T15:40:21.213Z",
+        "accountExists": true,
+        "method": "evm-bytecode",
+        "runtimeCodeSha256": "a4b285e849ddcdb37bfdc39f456a33e8f8718047a16f49f39163c9278c3e3132",
+        "explorerVerified": "unknown",
+        "observedName": "Ondo U.S. Dollar Yield",
+        "observedSymbol": "USDY",
+        "observedDecimals": 18,
+        "implementationAddress": "0x5692349f8e7081e2ad0ba629e01761b43187304c",
+        "contractAdmin": "0xb7bcc4af60fb5267946deff1fe373989995352b2",
+        "dataAvailability": {
+          "deploymentTransaction": "unknown",
+          "deploymentBlock": "unknown",
+          "proxyImplementation": "known",
+          "contractAdmin": "known",
+          "explorerVerification": "unknown",
+          "observedName": "known",
+          "observedSymbol": "known",
           "observedDecimals": "known"
         }
       }

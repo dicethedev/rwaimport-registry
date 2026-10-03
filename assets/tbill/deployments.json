@@ -41,5 +41,49 @@
         "observedDecimals": "known"
       }
     }
+  },
+  {
+    "chain": "arbitrum",
+    "chainId": 42161,
+    "address": "0xF84D28A8D28292842dD73D1c5F99476A80b6666A",
+    "assetNamespace": "erc20",
+    "assetReference": "0xF84D28A8D28292842dD73D1c5F99476A80b6666A",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts",
+      "arbitrum-explorer"
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-03T15:40:21.213Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "3cc5e539eb61133fec38655ae3f55d8e1f944fce2cbc02e151972cf9c9880545",
+      "explorerVerified": "unknown",
+      "observedName": "OpenEden T-Bills",
+      "observedSymbol": "TBILL",
+      "observedDecimals": 6,
+      "implementationAddress": "0x78365404fc5edabef6eca2f6b2f1ba1471727a07",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
   }
 ]

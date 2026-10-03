@@ -15,6 +15,7 @@ interface DeploymentSeed {
   address: string;
   namespace: string;
   standards: string[];
+  deploymentType?: "issuer-native" | "bridged";
 }
 
 interface ProductSeed {
@@ -91,6 +92,7 @@ const organizations: OrganizationSeed[] = [
 
 const buidlDeployments: DeploymentSeed[] = [
   { chain: "ethereum", chainId: 1, address: "0x6a9DA2D710BB9B700acde7Cb81F10F1fF8C89041", namespace: "erc20", standards: ["erc20"] },
+  { chain: "arbitrum", chainId: 42161, address: "0xA6525Ae43eDCd03dC08E775774dCAbd3bb925872", namespace: "erc20", standards: ["erc20"], deploymentType: "bridged" },
   { chain: "solana", address: "GyWgeqpy5GueU2YbkE8xqUeVEokCMMCEeUrfbtMw6phr", namespace: "spl", standards: ["solana-token-2022"] },
 ];
 
@@ -125,7 +127,7 @@ const products: ProductSeed[] = [
     id: "ousg", name: "Ondo Short-Term US Government Treasuries", symbol: "OUSG", underlyingId: "portfolio-ousg-us-government-securities", underlyingName: "OUSG US Government Securities Portfolio", underlyingType: "treasury", assetClass: "treasury", issuerId: "ondo-finance", organizations: [{ organizationId: "ondo-finance", roles: ["issuer", "asset-manager", "tokenization-provider"] }, { organizationId: "blackrock", roles: ["asset-manager"] }], website: "https://ondo.finance/ousg", sourceTitle: "Ondo OUSG official product page", legalStructure: "Tokenized interest in an investment product holding short-term U.S. government securities and institutional government liquidity products.", securityType: "Tokenized fund interest", underlyingRights: "Economic interest in the OUSG portfolio; not direct ownership of individual portfolio securities.", redemptionRights: "Eligible onboarded investors may subscribe and redeem under the published OUSG terms.", offeringType: "Private offering", regulatoryExemption: "Eligibility and offering restrictions are described in the official offering documents.", investorPreset: "institutional", minimumSubscription: "100000", valuationType: "nav"
   },
   {
-    id: "usdy", name: "Ondo US Dollar Yield Token", symbol: "USDY", underlyingId: "portfolio-usdy-short-term-treasuries", underlyingName: "USDY Short-Term Treasury and Bank Deposit Portfolio", underlyingType: "treasury", assetClass: "treasury", issuerId: "ondo-finance", organizations: [{ organizationId: "ondo-finance", roles: ["issuer", "asset-manager", "tokenization-provider"] }], website: "https://ondo.finance/usdy", sourceTitle: "Ondo USDY official product page", instrumentType: "debt-security", legalStructure: "Senior secured tokenized note issued by a bankruptcy-remote special-purpose vehicle.", securityType: "Tokenized debt security", underlyingRights: "Contractual exposure to a portfolio of short-term U.S. Treasuries and bank demand deposits; no direct ownership of portfolio assets.", redemptionRights: "Eligible non-U.S. investors may redeem subject to the issuer's terms and applicable restrictions.", offeringType: "Offshore private offering", regulatoryExemption: "Regulation S", investorPreset: "non-us-professional", valuationType: "nav"
+    id: "usdy", name: "Ondo US Dollar Yield Token", symbol: "USDY", underlyingId: "portfolio-usdy-short-term-treasuries", underlyingName: "USDY Short-Term Treasury and Bank Deposit Portfolio", underlyingType: "treasury", assetClass: "treasury", issuerId: "ondo-finance", organizations: [{ organizationId: "ondo-finance", roles: ["issuer", "asset-manager", "tokenization-provider"] }], website: "https://ondo.finance/usdy", sourceTitle: "Ondo USDY official product page", instrumentType: "debt-security", legalStructure: "Senior secured tokenized note issued by a bankruptcy-remote special-purpose vehicle.", securityType: "Tokenized debt security", underlyingRights: "Contractual exposure to a portfolio of short-term U.S. Treasuries and bank demand deposits; no direct ownership of portfolio assets.", redemptionRights: "Eligible non-U.S. investors may redeem subject to the issuer's terms and applicable restrictions.", offeringType: "Offshore private offering", regulatoryExemption: "Regulation S", investorPreset: "non-us-professional", valuationType: "nav", deployments: [{ chain: "arbitrum", chainId: 42161, address: "0x35E050D3c0Ec2d29D269a8EcEa763A183bDF9a9D", namespace: "erc20", standards: ["erc20"] }], contractSource: "https://ondo.finance/usdy", contractSourceTitle: "Ondo official USDY network and contract catalog"
   },
   {
     id: "buidl", name: "BlackRock USD Institutional Digital Liquidity Fund", symbol: "BUIDL", underlyingId: "fund-buidl", underlyingName: "BlackRock USD Institutional Digital Liquidity Fund", underlyingType: "money-market-fund", assetClass: "money-market", issuerId: "blackrock", organizations: [{ organizationId: "blackrock", roles: ["issuer", "asset-manager"] }, { organizationId: "securitize", roles: ["tokenization-provider", "transfer-agent", "broker-dealer"] }, { organizationId: "bny-mellon", roles: ["custodian", "fund-administrator"] }, { organizationId: "pricewaterhousecoopers", roles: ["auditor"] }], website: "https://securitize.io/learn/press/blackrock-launches-first-tokenized-fund-buidl-on-the-ethereum-network", sourceTitle: "Securitize and BlackRock BUIDL launch announcement", legalStructure: "Private fund managed by BlackRock and tokenized through Securitize.", securityType: "Private fund share", underlyingRights: "Beneficial interest in the fund, which invests primarily in cash, U.S. Treasury bills, and repurchase agreements.", redemptionRights: "Eligible investors may transfer tokens to Securitize Markets for U.S. dollar redemption under fund terms.", offeringType: "Private placement", regulatoryExemption: "Securities Act Rule 506(c); Investment Company Act Section 3(c)(7)", investorPreset: "us-private", minimumSubscription: "5000000", valuationType: "fixed", distributionTreatment: "cash", deployments: buidlDeployments, contractSource: "https://investors.securitize.io/news/news-details/2025/BlackRock-and-Securitize-Debut-New-BUIDL-Share-Class-on-Solana-Network-03-25-2025/default.aspx", contractSourceTitle: "Official BUIDL Ethereum and Solana deployment disclosures"
@@ -143,7 +145,7 @@ const products: ProductSeed[] = [
     id: "uscc", name: "Bitwise Crypto Carry Fund", symbol: "USCC", underlyingId: "fund-uscc", underlyingName: "Bitwise Crypto Carry Fund", underlyingType: "other", assetClass: "other", issuerId: "bitwise-crypto-carry-fund", organizations: [{ organizationId: "bitwise-crypto-carry-fund", roles: ["issuer"] }, { organizationId: "superstate", roles: ["tokenization-provider", "transfer-agent"] }, { organizationId: "bitwise", roles: ["asset-manager"] }, { organizationId: "anchorage-digital", roles: ["custodian"] }, { organizationId: "ernst-young", roles: ["auditor"] }, { organizationId: "nav-fund-services", roles: ["fund-administrator"] }], website: "https://superstate.com/assets/uscc", sourceTitle: "Superstate USCC official product page", legalStructure: "Series of a Delaware statutory trust.", securityType: "Private fund share", underlyingRights: "Fund interest providing exposure to crypto cash-and-carry strategies, staking, and government securities.", redemptionRights: "Subscriptions and redemptions are processed under the fund documents and applicable liquidity rules.", offeringType: "Private placement", regulatoryExemption: "Section 4(a)(2) and Regulation D Rule 506", investorPreset: "us-private", minimumSubscription: "100000", valuationType: "nav"
   },
   {
-    id: "tbill", name: "OpenEden TBILL Vault", symbol: "TBILL", underlyingId: "fund-openeden-tbill", underlyingName: "OpenEden TBILL Fund", underlyingType: "treasury", assetClass: "treasury", issuerId: "openeden", organizations: [{ organizationId: "openeden", roles: ["issuer", "tokenization-provider"] }, { organizationId: "bny-mellon", roles: ["asset-manager", "custodian"] }, { organizationId: "protege-fund-services", roles: ["fund-administrator"] }, { organizationId: "tj-assurance-partners", roles: ["auditor"] }, { organizationId: "ernst-young", roles: ["auditor"] }], website: "https://docs.openeden.com/tbill", sourceTitle: "OpenEden TBILL official documentation", instrumentType: "fund-share", legalStructure: "BVI professional fund regulated by the British Virgin Islands Financial Services Commission.", securityType: "Professional fund share", underlyingRights: "Proportional economic interest in the fund's net assets, backed primarily by short-dated U.S. Treasury bills and U.S. dollars.", redemptionRights: "Fully onboarded investors may mint and redeem through the TBILL Vault under the fund terms.", offeringType: "BVI professional fund", investorPreset: "non-us-professional", valuationType: "nav", deployments: [{ chain: "ethereum", chainId: 1, address: "0xdd50C053C096CB04A3e3362E2b622529EC5f2e8a", namespace: "erc20", standards: ["erc20"] }], contractSource: "https://docs.openeden.com/tbill/smart-contract-addresses", contractSourceTitle: "OpenEden official TBILL contract addresses"
+    id: "tbill", name: "OpenEden TBILL Vault", symbol: "TBILL", underlyingId: "fund-openeden-tbill", underlyingName: "OpenEden TBILL Fund", underlyingType: "treasury", assetClass: "treasury", issuerId: "openeden", organizations: [{ organizationId: "openeden", roles: ["issuer", "tokenization-provider"] }, { organizationId: "bny-mellon", roles: ["asset-manager", "custodian"] }, { organizationId: "protege-fund-services", roles: ["fund-administrator"] }, { organizationId: "tj-assurance-partners", roles: ["auditor"] }, { organizationId: "ernst-young", roles: ["auditor"] }], website: "https://docs.openeden.com/tbill", sourceTitle: "OpenEden TBILL official documentation", instrumentType: "fund-share", legalStructure: "BVI professional fund regulated by the British Virgin Islands Financial Services Commission.", securityType: "Professional fund share", underlyingRights: "Proportional economic interest in the fund's net assets, backed primarily by short-dated U.S. Treasury bills and U.S. dollars.", redemptionRights: "Fully onboarded investors may mint and redeem through the TBILL Vault under the fund terms.", offeringType: "BVI professional fund", investorPreset: "non-us-professional", valuationType: "nav", deployments: [{ chain: "ethereum", chainId: 1, address: "0xdd50C053C096CB04A3e3362E2b622529EC5f2e8a", namespace: "erc20", standards: ["erc20"] }, { chain: "arbitrum", chainId: 42161, address: "0xF84D28A8D28292842dD73D1c5F99476A80b6666A", namespace: "erc20", standards: ["erc20"] }], contractSource: "https://docs.openeden.com/tbill/smart-contract-addresses", contractSourceTitle: "OpenEden official TBILL contract addresses"
   },
   {
     id: "jtrsy", name: "Janus Henderson Anemoy Treasury Fund", symbol: "JTRSY", underlyingId: "fund-jtrsy", underlyingName: "Janus Henderson Anemoy Treasury Fund", underlyingType: "treasury", assetClass: "treasury", issuerId: "anemoy-capital", organizations: [{ organizationId: "anemoy-capital", roles: ["issuer"] }, { organizationId: "janus-henderson", roles: ["asset-manager"] }, { organizationId: "centrifuge", roles: ["tokenization-provider"] }, { organizationId: "jp-morgan", roles: ["custodian"] }, { organizationId: "trident-trust", roles: ["fund-administrator"] }, { organizationId: "mha-cayman", roles: ["auditor"] }, { organizationId: "chronicle", roles: ["oracle-provider"] }], website: "https://app.centrifuge.io/pool/281474976710662", sourceTitle: "Centrifuge official JTRSY product page", legalStructure: "BVI professional fund licensed by the British Virgin Islands Financial Services Commission.", securityType: "Professional fund share", underlyingRights: "Fund share representing an interest in a portfolio of directly held short-term U.S. Treasury bills.", redemptionRights: "Daily subscriptions and redemptions for eligible non-U.S. professional investors, subject to published cutoffs.", offeringType: "BVI professional fund", investorPreset: "non-us-professional", minimumSubscription: "500000", valuationType: "nav", deployments: jtrsyDeployments, contractSource: "https://docs.centrifuge.io/developer/protocol/deployments/", contractSourceTitle: "Centrifuge official protocol deployment catalog"
@@ -195,10 +197,10 @@ for (const [id, name, symbol, assetClass, underlyingType] of wisdomTreeFunds) {
   });
 }
 
-function sourceRecord(id: string, title: string, url: string, publisher: string) {
+function sourceRecord(id: string, title: string, url: string, publisher: string, type: "issuer" | "chain-explorer" = "issuer") {
   return {
     id,
-    type: "issuer",
+    type,
     title,
     url,
     publisher,
@@ -276,6 +278,11 @@ for (const product of products) {
   if (product.contractSource && product.contractSourceTitle) {
     sources.push(sourceRecord("official-contracts", product.contractSourceTitle, product.contractSource, organizationName(product.organizations[0]?.organizationId ?? product.issuerId)));
   }
+  const hasArbitrumDeployment = product.deployments?.some(({ chain }) => chain === "arbitrum") ?? false;
+  if (hasArbitrumDeployment) {
+    const address = product.deployments?.find(({ chain }) => chain === "arbitrum")?.address;
+    sources.push(sourceRecord("arbitrum-explorer", `${product.symbol} contract on Arbitrum One`, `https://arbiscan.io/token/${address}`, "Arbiscan", "chain-explorer"));
+  }
   const directory = path.join(root, "assets", product.id);
   await mkdir(directory, { recursive: true });
 
@@ -300,7 +307,10 @@ for (const product of products) {
     tokenizationProviderIds: product.organizations.filter(({ roles }) => roles.includes("tokenization-provider")).map(({ organizationId }) => organizationId),
     status: "active",
     website: product.website,
-    marketDataLinks: [{ provider: organizationName(product.organizations[0]?.organizationId ?? product.issuerId), type: "issuer", url: product.website, description: "Official product information, NAV, holdings, performance, or investor documentation." }],
+    marketDataLinks: [
+      { provider: organizationName(product.organizations[0]?.organizationId ?? product.issuerId), type: "issuer", url: product.website, description: "Official product information, NAV, holdings, performance, or investor documentation." },
+      ...(hasArbitrumDeployment ? [{ provider: "Arbiscan", type: "chain-explorer" as const, url: `https://arbiscan.io/token/${product.deployments?.find(({ chain }) => chain === "arbitrum")?.address}`, description: "Inspect the live Arbitrum One contract, holders, supply, and transfers." }] : []),
+    ],
     verifiedBy: ["official-product"],
   };
   const deployments = (product.deployments ?? []).map((deployment) => ({
@@ -309,11 +319,11 @@ for (const product of products) {
     address: deployment.address,
     assetNamespace: deployment.namespace,
     assetReference: deployment.address,
-    deploymentType: "issuer-native",
+    deploymentType: deployment.deploymentType ?? "issuer-native",
     standardIds: deployment.standards,
     standardEvidence: deployment.standards.map((standardId) => ({ standardId, method: "issuer-documentation", sourceId: "official-contracts" })),
     status: "active",
-    verifiedBy: ["official-contracts"],
+    verifiedBy: ["official-contracts", ...(deployment.chain === "arbitrum" ? ["arbitrum-explorer"] : [])],
   }));
   const valuation = {
     schemaVersion: 1,

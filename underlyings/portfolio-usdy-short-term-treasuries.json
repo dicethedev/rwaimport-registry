@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "portfolio-usdy-short-term-treasuries",
-  "name": "Ondo US Dollar Yield Token",
+  "name": "USDY Short-Term Treasury and Bank Deposit Portfolio",
   "ticker": "USDY",
   "type": "treasury",
+  "jurisdiction": "VG",
   "currency": "USD",
   "status": "active",
   "sourceAssetIds": [
@@ -12,6 +13,6 @@
   "dataAvailability": {
     "identifiers": "unknown",
     "exchange": "unknown",
-    "jurisdiction": "unknown"
+    "jurisdiction": "known"
   }
 }

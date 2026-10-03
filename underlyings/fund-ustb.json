@@ -4,6 +4,7 @@
   "name": "Invesco Short Duration US Government Securities Fund",
   "ticker": "USTB",
   "type": "treasury",
+  "jurisdiction": "US",
   "currency": "USD",
   "status": "active",
   "sourceAssetIds": [
@@ -12,6 +13,6 @@
   "dataAvailability": {
     "identifiers": "unknown",
     "exchange": "unknown",
-    "jurisdiction": "unknown"
+    "jurisdiction": "known"
   }
 }

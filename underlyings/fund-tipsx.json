@@ -3,7 +3,8 @@
   "id": "fund-tipsx",
   "name": "WisdomTree TIPS Digital Fund",
   "ticker": "TIPSX",
-  "type": "treasury",
+  "type": "bond",
+  "jurisdiction": "US",
   "currency": "USD",
   "status": "active",
   "sourceAssetIds": [
@@ -12,6 +13,6 @@
   "dataAvailability": {
     "identifiers": "unknown",
     "exchange": "unknown",
-    "jurisdiction": "unknown"
+    "jurisdiction": "known"
   }
 }

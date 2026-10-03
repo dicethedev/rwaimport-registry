@@ -36,6 +36,12 @@
       "type": "issuer",
       "url": "https://digitalassets.franklintempleton.com/benji/",
       "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    },
+    {
+      "provider": "Arbiscan",
+      "type": "chain-explorer",
+      "url": "https://arbiscan.io/token/0xB9e4765BCE2609bC1949592059B17Ea72fEe6C6A",
+      "description": "Inspect the live Arbitrum One contract, holders, supply, and transfers."
     }
   ],
   "verifiedBy": [

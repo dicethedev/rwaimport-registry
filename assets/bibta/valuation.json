@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "quoteCurrency": "USD",
+  "valuationType": "nav",
+  "priceSourceUrl": "https://assets.backed.fi/products/bibta",
+  "updateFrequency": "See the official product source.",
+  "corporateActionModel": "none",
+  "distributionTreatment": "unknown",
+  "dataAvailability": {
+    "oracle": "unknown",
+    "reserveReporting": "unknown"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

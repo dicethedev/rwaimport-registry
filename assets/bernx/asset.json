@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "bernx",
+  "name": "Backed ERNX Euro Ultrashort Bond",
+  "symbol": "bERNX",
+  "underlyingId": "underlying-bernx",
+  "instrumentType": "certificate",
+  "denominationCurrency": "EUR",
+  "legalStructure": "Tracker certificate issued by Backed Assets (JE) Limited and collateralized by the referenced ETF under the product terms.",
+  "securityType": "Tracker certificate",
+  "underlyingRights": "The certificate tracks the iShares € Ultrashort Bond UCITS ETF; holders have contractual rights under the certificate terms rather than direct ownership of ETF shares.",
+  "redemptionRights": "New issuance is closed; the issuer states that redemption remains supported for existing holders subject to its terms and onboarding requirements.",
+  "offeringType": "Prospectus-based structured product",
+  "prospectusUrl": "https://assets.backed.fi/legal-documentation",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "CH1173294302"
+    }
+  ],
+  "organizationRoles": [
+    {
+      "organizationId": "backed-assets-je",
+      "roles": [
+        "issuer"
+      ]
+    },
+    {
+      "organizationId": "backed-finance",
+      "roles": [
+        "tokenization-provider"
+      ]
+    }
+  ],
+  "description": "Backed ERNX Euro Ultrashort Bond (bERNX), represented through blockchain or blockchain-integrated ownership records.",
+  "assetClass": "other",
+  "issuerId": "backed-assets-je",
+  "tokenizationProviderIds": [
+    "backed-finance"
+  ],
+  "status": "inactive",
+  "website": "https://assets.backed.fi/products/bernx",
+  "marketDataLinks": [
+    {
+      "provider": "Backed",
+      "type": "issuer",
+      "url": "https://assets.backed.fi/products/bernx",
+      "description": "Official product, legal, reserve, or fund information."
+    },
+    {
+      "provider": "Arbiscan",
+      "type": "chain-explorer",
+      "url": "https://arbiscan.io/token/0x3f95aa88ddbb7d9d484aa3d482bf0a80009c52c9",
+      "description": "Inspect the live Arbitrum One contract, holders, supply, and transfers."
+    }
+  ],
+  "dataAvailability": {
+    "securityType": "known",
+    "shareClass": "unknown",
+    "offeringType": "known",
+    "regulatoryExemption": "unknown",
+    "prospectusUrl": "known"
+  },
+  "verifiedBy": [
+    "official-product"
+  ]
+}

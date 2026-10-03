@@ -56,6 +56,12 @@
       "type": "issuer",
       "url": "https://securitize.io/learn/press/blackrock-launches-first-tokenized-fund-buidl-on-the-ethereum-network",
       "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    },
+    {
+      "provider": "Arbiscan",
+      "type": "chain-explorer",
+      "url": "https://arbiscan.io/token/0xA6525Ae43eDCd03dC08E775774dCAbd3bb925872",
+      "description": "Inspect the live Arbitrum One contract, holders, supply, and transfers."
     }
   ],
   "verifiedBy": [

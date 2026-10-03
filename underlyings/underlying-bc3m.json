@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-bc3m",
+  "name": "Backed C3M Euro Government Bond 0-6 Month underlying",
+  "ticker": "bC3M",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "FR0010754200"
+    }
+  ],
+  "jurisdiction": "JE",
+  "currency": "EUR",
+  "status": "inactive",
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "unknown",
+    "jurisdiction": "known"
+  },
+  "sourceAssetIds": [
+    "bc3m"
+  ]
+}

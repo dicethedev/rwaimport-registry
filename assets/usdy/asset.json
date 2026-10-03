@@ -36,6 +36,12 @@
       "type": "issuer",
       "url": "https://ondo.finance/usdy",
       "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    },
+    {
+      "provider": "Arbiscan",
+      "type": "chain-explorer",
+      "url": "https://arbiscan.io/token/0x35E050D3c0Ec2d29D269a8EcEa763A183bDF9a9D",
+      "description": "Inspect the live Arbitrum One contract, holders, supply, and transfers."
     }
   ],
   "verifiedBy": [

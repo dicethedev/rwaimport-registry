@@ -24,5 +24,18 @@
     "reviewAfter": "2027-01-01",
     "sourceVersion": "live-page:2026-10-01",
     "confidence": "high"
+  },
+  {
+    "id": "arbitrum-explorer",
+    "type": "chain-explorer",
+    "title": "JTRSY contract on Arbitrum One",
+    "url": "https://arbiscan.io/token/0x8c213ee79581ff4984583c6a801e5263418c4b86",
+    "publisher": "Arbiscan",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
   }
 ]

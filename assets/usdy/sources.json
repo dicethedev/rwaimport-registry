@@ -11,5 +11,31 @@
     "reviewAfter": "2027-01-01",
     "sourceVersion": "live-page:2026-10-01",
     "confidence": "high"
+  },
+  {
+    "id": "official-contracts",
+    "type": "issuer",
+    "title": "Ondo official USDY network and contract catalog",
+    "url": "https://ondo.finance/usdy",
+    "publisher": "Ondo Finance",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
+  },
+  {
+    "id": "arbitrum-explorer",
+    "type": "chain-explorer",
+    "title": "USDY contract on Arbitrum One",
+    "url": "https://arbiscan.io/token/0x35E050D3c0Ec2d29D269a8EcEa763A183bDF9a9D",
+    "publisher": "Arbiscan",
+    "accessedAt": "2026-10-01",
+    "retrievedAt": "2026-10-01T00:00:00Z",
+    "lastVerifiedAt": "2026-10-01",
+    "reviewAfter": "2027-01-01",
+    "sourceVersion": "live-page:2026-10-01",
+    "confidence": "high"
   }
 ]

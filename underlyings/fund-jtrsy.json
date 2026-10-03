@@ -4,6 +4,7 @@
   "name": "Janus Henderson Anemoy Treasury Fund",
   "ticker": "JTRSY",
   "type": "treasury",
+  "jurisdiction": "VG",
   "currency": "USD",
   "status": "active",
   "sourceAssetIds": [
@@ -12,6 +13,6 @@
   "dataAvailability": {
     "identifiers": "unknown",
     "exchange": "unknown",
-    "jurisdiction": "unknown"
+    "jurisdiction": "known"
   }
 }

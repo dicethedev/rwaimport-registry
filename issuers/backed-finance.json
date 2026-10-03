@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "backed-finance",
+  "name": "Backed Finance",
+  "legalName": "Backed Finance AG",
+  "type": "tokenization-provider",
+  "jurisdiction": "CH",
+  "status": "active",
+  "website": "https://backed.fi",
+  "sources": [
+    {
+      "title": "Backed Finance official website",
+      "url": "https://backed.fi",
+      "accessedAt": "2026-10-03"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-bib01",
+  "name": "Backed IB01 $ Treasury Bond 0-1yr underlying",
+  "ticker": "bIB01",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "IE00BGSF1X88"
+    }
+  ],
+  "jurisdiction": "JE",
+  "currency": "USD",
+  "status": "inactive",
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "unknown",
+    "jurisdiction": "known"
+  },
+  "sourceAssetIds": [
+    "bib01"
+  ]
+}

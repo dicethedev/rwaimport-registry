@@ -53,6 +53,15 @@ those products retain an empty deployment list until address-level evidence is a
 WisdomTree fund names and classifications come from its official tokenized-fund catalog and
 digital-fund product list. Live NAV, AUM, yield, and holdings values are not copied.
 
+### Backed
+
+Credited for the bIB01, bIBTA, bC3M, bHIGH, and bERNX tracker-certificate records. Product and
+underlying ISINs, referenced ETFs, legal structure, Arbitrum addresses, and the current
+issuance/redemption status come from Backed's official product catalog and legal-documentation
+page. These products are marked inactive because Backed says new issuance is unavailable;
+redemption support and the deployed contracts are recorded separately rather than implying that
+the products are still being issued.
+
 ### RWA.xyz
 
 Credited as an independent tokenized-asset market-data provider. Each stock record links
@@ -66,7 +75,7 @@ Credited as an independent price-data provider. Each supported deployment links 
 to DefiLlama's public current-price API by chain and contract address. RWAImport currently
 does not copy or cache the returned price.
 
-### Etherscan, BscScan, Solana Explorer, and Robinhood Chain Blockscout
+### Etherscan, BscScan, Arbiscan, Solana Explorer, and Robinhood Chain Blockscout
 
 Credited as chain explorers. Deployment records link to the appropriate explorer for
 contract or mint details, token supply, holders, and transfer activity.

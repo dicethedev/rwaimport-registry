@@ -4,6 +4,7 @@
   "name": "Franklin OnChain U.S. Government Money Fund",
   "ticker": "BENJI",
   "type": "money-market-fund",
+  "jurisdiction": "US",
   "currency": "USD",
   "status": "active",
   "sourceAssetIds": [
@@ -12,6 +13,6 @@
   "dataAvailability": {
     "identifiers": "unknown",
     "exchange": "unknown",
-    "jurisdiction": "unknown"
+    "jurisdiction": "known"
   }
 }

@@ -69,6 +69,12 @@
       "type": "issuer",
       "url": "https://app.centrifuge.io/pool/281474976710662",
       "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    },
+    {
+      "provider": "Arbiscan",
+      "type": "chain-explorer",
+      "url": "https://arbiscan.io/token/0x8c213ee79581ff4984583c6a801e5263418c4b86",
+      "description": "Inspect the live Arbitrum One contract, holders, supply, and transfers."
     }
   ],
   "verifiedBy": [

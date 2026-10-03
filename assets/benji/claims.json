@@ -407,7 +407,8 @@
   {
     "field": "deployments[2].chain",
     "sourceIds": [
-      "official-contracts"
+      "official-contracts",
+      "arbitrum-explorer"
     ],
     "reviewedAt": "2026-10-01",
     "reviewStatus": "verified",
@@ -416,7 +417,8 @@
   {
     "field": "deployments[2].address",
     "sourceIds": [
-      "official-contracts"
+      "official-contracts",
+      "arbitrum-explorer"
     ],
     "reviewedAt": "2026-10-01",
     "reviewStatus": "verified",
@@ -425,7 +427,8 @@
   {
     "field": "deployments[2].standardIds",
     "sourceIds": [
-      "official-contracts"
+      "official-contracts",
+      "arbitrum-explorer"
     ],
     "reviewedAt": "2026-10-01",
     "reviewStatus": "verified",
@@ -434,7 +437,8 @@
   {
     "field": "deployments[2].status",
     "sourceIds": [
-      "official-contracts"
+      "official-contracts",
+      "arbitrum-explorer"
     ],
     "reviewedAt": "2026-10-01",
     "reviewStatus": "verified",

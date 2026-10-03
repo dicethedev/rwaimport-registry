@@ -82,8 +82,14 @@ A scheduled workflow runs the network-dependent checks weekly.
 
 ## Current catalog
 
-The catalog contains 629 source-backed products, 511 underlying records, and 1,405
+The catalog contains 634 source-backed products, 516 underlying records, and 1,413
 deployments across ten network definitions, including EVM chains, Solana, Stellar, and Aptos.
+
+Arbitrum One currently has ten live, bytecode-verified deployments spanning tokenized treasury
+and money-market products, registered fund shares, and fixed-income tracker certificates. The
+network batch includes BUIDL, BENJI, USDY, TBILL, JTRSY, bIB01, bIBTA, bC3M, bHIGH, and bERNX;
+each address links back to first-party product or contract documentation and is independently
+checked through the Arbitrum One RPC.
 
 The Ondo collection contains 400 products representing company equities and exchange-traded
 instruments. It includes 1,187 deployments: 400 each on Ethereum and BNB Smart Chain plus 387
@@ -102,15 +108,18 @@ Blockscout contract link. The raw `2026-10-01` API response is archived under
 
 The institutional-funds batch adds 23 treasury, money-market, income, credit, and registered
 digital-fund products from Ondo, BlackRock/Securitize, Franklin Templeton, Hashnote, Superstate,
-OpenEden, Centrifuge/Janus Henderson, and WisdomTree. It includes 20 deployments published in
+OpenEden, Centrifuge/Janus Henderson, and WisdomTree. It includes 23 deployments published in
 official provider contract catalogs. Products whose transfer-agent records are blockchain-based
 but whose public token address is not disclosed are intentionally represented with zero
 deployments. Run `npm run import:institutional-funds` to reproduce this curated batch.
 
-The first diversification batch adds eleven source-backed products: PAXG, XAUT, KAU, KAG,
-ACRED, HLSCOPE, JAAA, ACRDX, HYB, ORY X, and NIFCOT1. It establishes dedicated commodity,
-private-credit, fixed-income, and real-estate records while leaving undisclosed deployments
-empty. The three public PAXG/XAUT deployments are verified onchain. Run
+The diversification batch adds sixteen source-backed products: PAXG, XAUT, KAU, KAG, ACRED,
+HLSCOPE, JAAA, ACRDX, HYB, ORY X, NIFCOT1, bIB01, bIBTA, bC3M, bHIGH, and bERNX. It establishes
+dedicated commodity, private-credit, treasury, money-market, corporate-bond, and real-estate
+records while leaving undisclosed deployments empty. The eight public deployments are verified
+onchain. Backed's five legacy tracker certificates are explicitly marked inactive because new
+issuance has ended; their active Arbitrum contracts and continuing redemption support remain
+recorded. Run
 `npm run import:diversification-batch` to reproduce the batch.
 
 All 118 underlyings shared by more than one product have identifiers. The 117 exchange-listed

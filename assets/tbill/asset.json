@@ -59,6 +59,12 @@
       "type": "issuer",
       "url": "https://docs.openeden.com/tbill",
       "description": "Official product information, NAV, holdings, performance, or investor documentation."
+    },
+    {
+      "provider": "Arbiscan",
+      "type": "chain-explorer",
+      "url": "https://arbiscan.io/token/0xF84D28A8D28292842dD73D1c5F99476A80b6666A",
+      "description": "Inspect the live Arbitrum One contract, holders, supply, and transfers."
     }
   ],
   "verifiedBy": [

@@ -3,7 +3,8 @@
   "id": "fund-wtsix",
   "name": "WisdomTree Short-Duration Income Digital Fund",
   "ticker": "WTSIX",
-  "type": "money-market-fund",
+  "type": "bond",
+  "jurisdiction": "US",
   "currency": "USD",
   "status": "active",
   "sourceAssetIds": [
@@ -12,6 +13,6 @@
   "dataAvailability": {
     "identifiers": "unknown",
     "exchange": "unknown",
-    "jurisdiction": "unknown"
+    "jurisdiction": "known"
   }
 }

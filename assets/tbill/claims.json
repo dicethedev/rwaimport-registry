@@ -367,5 +367,45 @@
     "reviewedAt": "2026-10-01",
     "reviewStatus": "verified",
     "confidence": "high"
+  },
+  {
+    "field": "deployments[1].chain",
+    "sourceIds": [
+      "official-contracts",
+      "arbitrum-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[1].address",
+    "sourceIds": [
+      "official-contracts",
+      "arbitrum-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[1].standardIds",
+    "sourceIds": [
+      "official-contracts",
+      "arbitrum-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[1].status",
+    "sourceIds": [
+      "official-contracts",
+      "arbitrum-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
   }
 ]

@@ -3,7 +3,8 @@
   "id": "fund-techx",
   "name": "WisdomTree Technology & Innovation 100 Digital Fund",
   "ticker": "TECHX",
-  "type": "equity",
+  "type": "other",
+  "jurisdiction": "US",
   "currency": "USD",
   "status": "active",
   "sourceAssetIds": [
@@ -12,6 +13,6 @@
   "dataAvailability": {
     "identifiers": "unknown",
     "exchange": "unknown",
-    "jurisdiction": "unknown"
+    "jurisdiction": "known"
   }
 }

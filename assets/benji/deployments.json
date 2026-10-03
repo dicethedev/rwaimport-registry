@@ -100,7 +100,8 @@
     ],
     "status": "active",
     "verifiedBy": [
-      "official-contracts"
+      "official-contracts",
+      "arbitrum-explorer"
     ],
     "verification": {
       "lastVerifiedAt": "2026-10-02T08:49:21.485Z",

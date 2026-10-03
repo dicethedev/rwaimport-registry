@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-bernx",
+  "name": "Backed ERNX Euro Ultrashort Bond underlying",
+  "ticker": "bERNX",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "IE000RHYOR04"
+    }
+  ],
+  "jurisdiction": "JE",
+  "currency": "EUR",
+  "status": "inactive",
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "unknown",
+    "jurisdiction": "known"
+  },
+  "sourceAssetIds": [
+    "bernx"
+  ]
+}

@@ -389,7 +389,8 @@
   {
     "field": "deployments[1].chain",
     "sourceIds": [
-      "official-contracts"
+      "official-contracts",
+      "arbitrum-explorer"
     ],
     "reviewedAt": "2026-10-01",
     "reviewStatus": "verified",
@@ -398,7 +399,8 @@
   {
     "field": "deployments[1].address",
     "sourceIds": [
-      "official-contracts"
+      "official-contracts",
+      "arbitrum-explorer"
     ],
     "reviewedAt": "2026-10-01",
     "reviewStatus": "verified",
@@ -407,7 +409,8 @@
   {
     "field": "deployments[1].standardIds",
     "sourceIds": [
-      "official-contracts"
+      "official-contracts",
+      "arbitrum-explorer"
     ],
     "reviewedAt": "2026-10-01",
     "reviewStatus": "verified",
@@ -415,6 +418,43 @@
   },
   {
     "field": "deployments[1].status",
+    "sourceIds": [
+      "official-contracts",
+      "arbitrum-explorer"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[2].chain",
+    "sourceIds": [
+      "official-contracts"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[2].address",
+    "sourceIds": [
+      "official-contracts"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[2].standardIds",
+    "sourceIds": [
+      "official-contracts"
+    ],
+    "reviewedAt": "2026-10-01",
+    "reviewStatus": "verified",
+    "confidence": "high"
+  },
+  {
+    "field": "deployments[2].status",
     "sourceIds": [
       "official-contracts"
     ],

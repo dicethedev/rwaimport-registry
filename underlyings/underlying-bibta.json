@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-bibta",
+  "name": "Backed IBTA $ Treasury Bond 1-3yr underlying",
+  "ticker": "bIBTA",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "IE00BYXPSP02"
+    }
+  ],
+  "jurisdiction": "JE",
+  "currency": "USD",
+  "status": "inactive",
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "unknown",
+    "jurisdiction": "known"
+  },
+  "sourceAssetIds": [
+    "bibta"
+  ]
+}

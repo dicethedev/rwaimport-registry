@@ -43,6 +43,50 @@
     }
   },
   {
+    "chain": "arbitrum",
+    "chainId": 42161,
+    "address": "0xA6525Ae43eDCd03dC08E775774dCAbd3bb925872",
+    "assetNamespace": "erc20",
+    "assetReference": "0xA6525Ae43eDCd03dC08E775774dCAbd3bb925872",
+    "deploymentType": "bridged",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts",
+      "arbitrum-explorer"
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-03T15:40:21.213Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "ec9c737dafc40dfe31c9d46ac0f6cb1f40180d31428a9a4e96453b036170fc2a",
+      "explorerVerified": "unknown",
+      "observedName": "BlackRock USD Institutional Digital Liquidity Fund",
+      "observedSymbol": "BUIDL",
+      "observedDecimals": 6,
+      "implementationAddress": "0xdbf6db49066784a69244d3b33cf44c25ec86c0f7",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "not-applicable",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
+  },
+  {
     "chain": "solana",
     "address": "GyWgeqpy5GueU2YbkE8xqUeVEokCMMCEeUrfbtMw6phr",
     "assetNamespace": "spl",

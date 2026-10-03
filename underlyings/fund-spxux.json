@@ -3,7 +3,8 @@
   "id": "fund-spxux",
   "name": "WisdomTree 500 Digital Fund",
   "ticker": "SPXUX",
-  "type": "equity",
+  "type": "other",
+  "jurisdiction": "US",
   "currency": "USD",
   "status": "active",
   "sourceAssetIds": [
@@ -12,6 +13,6 @@
   "dataAvailability": {
     "identifiers": "unknown",
     "exchange": "unknown",
-    "jurisdiction": "unknown"
+    "jurisdiction": "known"
   }
 }

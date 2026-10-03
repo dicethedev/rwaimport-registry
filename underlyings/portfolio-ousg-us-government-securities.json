@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "portfolio-ousg-us-government-securities",
-  "name": "Ondo Short-Term US Government Treasuries",
+  "name": "OUSG US Government Securities Portfolio",
   "ticker": "OUSG",
   "type": "treasury",
+  "jurisdiction": "US",
   "currency": "USD",
   "status": "active",
   "sourceAssetIds": [
@@ -12,6 +13,6 @@
   "dataAvailability": {
     "identifiers": "unknown",
     "exchange": "unknown",
-    "jurisdiction": "unknown"
+    "jurisdiction": "known"
   }
 }

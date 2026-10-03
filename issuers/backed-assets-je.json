@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "backed-assets-je",
+  "name": "Backed Assets (JE)",
+  "legalName": "Backed Assets (JE) Limited",
+  "type": "issuer",
+  "jurisdiction": "JE",
+  "status": "active",
+  "website": "https://assets.backed.fi",
+  "sources": [
+    {
+      "title": "Backed Assets (JE) official website",
+      "url": "https://assets.backed.fi",
+      "accessedAt": "2026-10-03"
+    }
+  ]
+}

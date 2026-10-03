@@ -1,0 +1,28 @@
+[
+  {
+    "id": "official-product",
+    "type": "issuer",
+    "title": "Backed official bIB01 product page",
+    "url": "https://assets.backed.fi/products/bib01",
+    "publisher": "Backed",
+    "accessedAt": "2026-10-03",
+    "retrievedAt": "2026-10-03T12:30:00Z",
+    "lastVerifiedAt": "2026-10-03",
+    "reviewAfter": "2027-01-03",
+    "sourceVersion": "live-page:2026-10-03",
+    "confidence": "high"
+  },
+  {
+    "id": "arbitrum-explorer",
+    "type": "chain-explorer",
+    "title": "bIB01 contract on Arbitrum One",
+    "url": "https://arbiscan.io/token/0xca30c93b02514f86d5c86a6e375e3a330b435fb5",
+    "publisher": "Arbiscan",
+    "accessedAt": "2026-10-03",
+    "retrievedAt": "2026-10-03T12:30:00Z",
+    "lastVerifiedAt": "2026-10-03",
+    "reviewAfter": "2027-01-03",
+    "sourceVersion": "live-page:2026-10-03",
+    "confidence": "high"
+  }
+]

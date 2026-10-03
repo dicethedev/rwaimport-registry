@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "chain": "arbitrum",
+    "chainId": 42161,
+    "address": "0x35E050D3c0Ec2d29D269a8EcEa763A183bDF9a9D",
+    "assetNamespace": "erc20",
+    "assetReference": "0x35E050D3c0Ec2d29D269a8EcEa763A183bDF9a9D",
+    "deploymentType": "issuer-native",
+    "standardIds": [
+      "erc20"
+    ],
+    "standardEvidence": [
+      {
+        "standardId": "erc20",
+        "method": "issuer-documentation",
+        "sourceId": "official-contracts"
+      }
+    ],
+    "status": "active",
+    "verifiedBy": [
+      "official-contracts",
+      "arbitrum-explorer"
+    ],
+    "verification": {
+      "lastVerifiedAt": "2026-10-03T15:40:21.213Z",
+      "accountExists": true,
+      "method": "evm-bytecode",
+      "runtimeCodeSha256": "a4b285e849ddcdb37bfdc39f456a33e8f8718047a16f49f39163c9278c3e3132",
+      "explorerVerified": "unknown",
+      "observedName": "Ondo U.S. Dollar Yield",
+      "observedSymbol": "USDY",
+      "observedDecimals": 18,
+      "implementationAddress": "0x5692349f8e7081e2ad0ba629e01761b43187304c",
+      "contractAdmin": "0xb7bcc4af60fb5267946deff1fe373989995352b2",
+      "dataAvailability": {
+        "deploymentTransaction": "unknown",
+        "deploymentBlock": "unknown",
+        "proxyImplementation": "known",
+        "contractAdmin": "known",
+        "explorerVerification": "unknown",
+        "observedName": "known",
+        "observedSymbol": "known",
+        "observedDecimals": "known"
+      }
+    }
+  }
+]

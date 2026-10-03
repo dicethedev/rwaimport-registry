@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "underlying-bhigh",
+  "name": "Backed High Yield Corporate Bond underlying",
+  "ticker": "bHIGH",
+  "type": "exchange-traded-fund",
+  "identifiers": [
+    {
+      "scheme": "isin",
+      "value": "IE00BF3N7094"
+    }
+  ],
+  "jurisdiction": "JE",
+  "currency": "EUR",
+  "status": "inactive",
+  "dataAvailability": {
+    "identifiers": "known",
+    "exchange": "unknown",
+    "jurisdiction": "known"
+  },
+  "sourceAssetIds": [
+    "bhigh"
+  ]
+}

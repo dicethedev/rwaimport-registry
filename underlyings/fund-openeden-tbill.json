@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "fund-openeden-tbill",
-  "name": "OpenEden TBILL Vault",
+  "name": "OpenEden TBILL Fund",
   "ticker": "TBILL",
   "type": "treasury",
+  "jurisdiction": "VG",
   "currency": "USD",
   "status": "active",
   "sourceAssetIds": [
@@ -12,6 +13,6 @@
   "dataAvailability": {
     "identifiers": "unknown",
     "exchange": "unknown",
-    "jurisdiction": "unknown"
+    "jurisdiction": "known"
   }
 }
