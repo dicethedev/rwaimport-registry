@@ -1,0 +1,111 @@
+name: Release registry
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      registry_ref:
+        description: Registry commit, branch, or tag to validate and publish
+        default: main
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: registry-release-${{ github.event.release.tag_name || inputs.registry_ref || github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  compatibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      commit: ${{ steps.registry-commit.outputs.commit }}
+    steps:
+      - name: Check out the exact registry release
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name || inputs.registry_ref || github.sha }}
+          path: rwaimport-registry
+
+      - name: Check out API consumer
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.API_REPOSITORY || 'dicethedev/rwaimport-api' }}
+          ref: ${{ vars.API_COMPATIBILITY_REF || 'main' }}
+          path: rwaimport-api
+
+      - name: Check out resolver consumer
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.RESOLVER_REPOSITORY || 'dicethedev/rwaimport-resolver' }}
+          ref: ${{ vars.RESOLVER_COMPATIBILITY_REF || 'main' }}
+          path: rwaimport-resolver
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            rwaimport-registry/package-lock.json
+            rwaimport-api/package-lock.json
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Record immutable registry commit
+        id: registry-commit
+        working-directory: rwaimport-registry
+        run: echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Validate and build registry release
+        working-directory: rwaimport-registry
+        run: npm ci && npm run check
+
+      - name: Check API compatibility
+        working-directory: rwaimport-api
+        env:
+          REGISTRY_SCHEMA_DIR: ${{ github.workspace }}/rwaimport-registry/schemas
+          REGISTRY_DIST_DIR: ${{ github.workspace }}/rwaimport-registry/dist
+        run: |
+          npm ci
+          npm run types:generate
+          git diff --exit-code -- src/contracts/generated
+          npm run check
+          npm run smoke
+
+      - name: Check resolver compatibility
+        working-directory: rwaimport-resolver
+        run: |
+          cargo test --locked
+          cargo build --locked --release
+          target/release/rwaimport-resolver --check-registry ../rwaimport-registry/dist
+
+      - name: Retain immutable registry distribution
+        uses: actions/upload-artifact@v4
+        with:
+          name: registry-${{ steps.registry-commit.outputs.commit }}
+          path: rwaimport-registry/dist/
+          if-no-files-found: error
+          retention-days: 30
+
+  notify-resolver:
+    needs: compatibility
+    runs-on: ubuntu-latest
+    environment: registry-release
+    steps:
+      - name: Notify resolver publication workflow with exact commit
+        env:
+          GH_TOKEN: ${{ secrets.RWAIMPORT_RELEASE_TOKEN }}
+          REGISTRY_COMMIT: ${{ needs.compatibility.outputs.commit }}
+          RESOLVER_REPOSITORY: ${{ vars.RESOLVER_REPOSITORY || 'dicethedev/rwaimport-resolver' }}
+        run: |
+          test -n "$GH_TOKEN"
+          test "$REGISTRY_COMMIT" != "main"
+          gh api --method POST "repos/$RESOLVER_REPOSITORY/dispatches" \
+            -f event_type=registry-published \
+            -f "client_payload[commit]=$REGISTRY_COMMIT"

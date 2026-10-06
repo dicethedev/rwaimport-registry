@@ -12,7 +12,7 @@ const endpoint = "https://www.sec.gov/files/company_tickers_exchange.json";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const checkMode = process.argv.includes("--check");
 const response = await fetch(endpoint, {
-  headers: { "user-agent": "RWAImport Registry maintainers registry@rwaimport.org" },
+  headers: { "user-agent": "RWAImport Registry maintainers registry@rwaimport.xyz" },
   signal: AbortSignal.timeout(30_000),
 });
 if (!response.ok) throw new Error(`SEC company ticker catalog returned HTTP ${response.status}`);

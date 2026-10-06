@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://rwaimport.org/schemas/deployments.schema.json",
+  "$id": "https://rwaimport.xyz/schemas/deployments.schema.json",
   "title": "RWAImport asset deployments",
   "type": "array",
   "items": {
@@ -81,7 +81,25 @@
         "uniqueItems": true,
         "items": { "$ref": "#/$defs/id" }
       }
-    }
+    },
+    "allOf": [
+      {
+        "if": {
+          "properties": { "chain": { "const": "aptos" }, "assetNamespace": { "const": "coin" } },
+          "required": ["chain", "assetNamespace"]
+        },
+        "then": {
+          "required": ["assetReference"],
+          "properties": {
+            "assetReference": {
+              "type": "string",
+              "pattern": "^0x[a-fA-F0-9]{1,64}::[A-Za-z_][A-Za-z0-9_]*::[A-Za-z_][A-Za-z0-9_]*$",
+              "maxLength": 256
+            }
+          }
+        }
+      }
+    ]
   },
   "$defs": {
     "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 },

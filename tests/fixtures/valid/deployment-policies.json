@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-06T00:00:00Z",
+  "deployments": [
+    {
+      "assetId": "example-treasury",
+      "deployment": {
+        "chain": "ethereum",
+        "address": "0x1111111111111111111111111111111111111111",
+        "assetReference": "0x1111111111111111111111111111111111111111"
+      },
+      "input": {
+        "chainId": 1,
+        "address": "0x1111111111111111111111111111111111111111"
+      },
+      "permissions": {
+        "owner": { "availability": "unknown" },
+        "admin": { "availability": "unknown" },
+        "mint": { "availability": "unknown" },
+        "burn": { "availability": "unknown" },
+        "pause": { "availability": "unknown" },
+        "upgrade": { "availability": "unknown" }
+      },
+      "standardPolicies": {},
+      "supportedChecks": ["evm-read"],
+      "evmChecks": [
+        {
+          "field": "owner",
+          "signature": "owner()",
+          "expected": "0x1111111111111111111111111111111111111111"
+        }
+      ],
+      "ledgerChecks": [],
+      "provenance": {
+        "sourceIds": ["explorer"],
+        "reviewedAt": "2026-09-30",
+        "reviewer": "fixture-reviewer",
+        "reviewStatus": "verified"
+      }
+    }
+  ]
+}

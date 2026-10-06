@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://rwaimport.org/schemas/asset.schema.json",
+  "$id": "https://rwaimport.xyz/schemas/asset.schema.json",
   "title": "RWAImport asset",
   "type": "object",
   "additionalProperties": false,

@@ -50,9 +50,22 @@ if (!result.valid || !result.registry) {
   };
   const snapshotJson = json(snapshot);
   const snapshotGzip = await gzipAsync(snapshotJson, { level: 9 });
+  const policyJson = json(result.registry.deploymentPolicies);
+  const resolverPolicyJson = json({
+    schemaVersion: 1,
+    deployments: result.registry.deploymentPolicies.deployments
+      .filter((policy) => policy.evmChecks.length > 0 || policy.ledgerChecks.length > 0)
+      .map((policy) => ({
+        input: policy.input,
+        ...(policy.evmChecks.length > 0 ? { evmChecks: policy.evmChecks } : {}),
+        ...(policy.ledgerChecks.length > 0 ? { ledgerChecks: policy.ledgerChecks } : {}),
+      })),
+  });
   await Promise.all([
     writeFile(path.join(outputDirectory, "registry.json"), snapshotJson, "utf8"),
     writeFile(path.join(outputDirectory, "registry.json.gz"), snapshotGzip),
+    writeFile(path.join(outputDirectory, "deployment-policies.json"), policyJson, "utf8"),
+    writeFile(path.join(outputDirectory, "resolver-policies.json"), resolverPolicyJson, "utf8"),
   ]);
 
   const indexes = {
@@ -101,6 +114,7 @@ if (!result.valid || !result.registry) {
       issuers: result.registry.issuers.length,
       chains: result.registry.chains.length,
       standards: result.registry.standards.length,
+      deploymentPolicies: result.registry.deploymentPolicies.deployments.length,
       averageCompleteness: Math.round(scores.reduce((sum, score) => sum + score, 0) / scores.length),
     },
     files: {
@@ -109,6 +123,14 @@ if (!result.valid || !result.registry) {
       "completeness.json": {
         sha256: sha256(json(completeness)),
         bytes: Buffer.byteLength(json(completeness)),
+      },
+      "deployment-policies.json": {
+        sha256: sha256(policyJson),
+        bytes: Buffer.byteLength(policyJson),
+      },
+      "resolver-policies.json": {
+        sha256: sha256(resolverPolicyJson),
+        bytes: Buffer.byteLength(resolverPolicyJson),
       },
     },
     assetChecksums,

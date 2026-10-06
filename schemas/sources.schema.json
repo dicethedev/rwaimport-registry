@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://rwaimport.org/schemas/sources.schema.json",
+  "$id": "https://rwaimport.xyz/schemas/sources.schema.json",
   "title": "RWAImport evidence sources",
   "type": "array",
   "minItems": 1,

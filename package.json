@@ -4,21 +4,31 @@
   "private": false,
   "license": "MIT",
   "type": "module",
-  "packageManager": "npm@10.8.2",
+  "packageManager": "npm@12.2.0",
   "description": "Verified, source-backed metadata for tokenized real-world assets.",
   "main": "./dist/registry.json",
-  "files": ["dist", "schemas", "README.md", "ATTRIBUTION.md", "LICENSE"],
+  "files": [
+    "dist",
+    "schemas",
+    "README.md",
+    "ATTRIBUTION.md",
+    "LICENSE"
+  ],
   "exports": {
     ".": "./dist/registry.json",
     "./registry.json": "./dist/registry.json",
     "./manifest.json": "./dist/manifest.json",
     "./completeness.json": "./dist/completeness.json",
+    "./deployment-policies.json": "./dist/deployment-policies.json",
+    "./resolver-policies.json": "./dist/resolver-policies.json",
     "./indexes/*": "./dist/indexes/*.json",
     "./assets/*": "./dist/assets/*.json"
   },
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
-    "node": ">=20",
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0",
     "npm": ">=10"
   },
   "scripts": {
@@ -34,6 +44,7 @@
     "enrich:underlyings:sec": "node --import tsx scripts/enrich-underlyings-sec.ts",
     "check:underlyings:sec": "node --import tsx scripts/enrich-underlyings-sec.ts --check",
     "migrate:reliability": "node --import tsx scripts/migrate-reliability-fields.ts",
+    "sync:deployment-policies": "node --import tsx scripts/sync-deployment-policies.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
@@ -42,13 +53,13 @@
     "verify:onchain:write": "node --import tsx scripts/verify-onchain.ts --write"
   },
   "dependencies": {
-    "ajv": "^8.17.1",
+    "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1"
   },
   "devDependencies": {
-    "@types/node": "^20.17.30",
-    "tsx": "^4.19.3",
-    "typescript": "~5.8.3",
-    "vitest": "~4.1.11"
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "~7.0.2",
+    "vitest": "~5.0.3"
   }
 }

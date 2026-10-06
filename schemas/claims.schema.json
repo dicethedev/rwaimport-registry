@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://rwaimport.org/schemas/claims.schema.json",
+  "$id": "https://rwaimport.xyz/schemas/claims.schema.json",
   "title": "RWAImport claim-level evidence",
   "type": "array",
   "items": {

@@ -126,6 +126,33 @@ export interface HistoryEvent {
   [key: string]: unknown;
 }
 
+export interface DeploymentPolicy {
+  assetId: string;
+  deployment: { chain: string; address: string; assetReference?: string };
+  input:
+    | { chainId: number; address: string }
+    | { network: "solana" | "stellar" | "aptos"; address: string; assetCode?: string; coinType?: string };
+  permissions: Record<string, { availability: "known" | "unknown" | "not-applicable"; [key: string]: unknown }>;
+  standardPolicies: Record<string, unknown>;
+  nonEvmPolicy?: Record<string, unknown>;
+  supportedChecks: string[];
+  evmChecks: Array<{ field: string; signature: string; expected: unknown; [key: string]: unknown }>;
+  ledgerChecks: Array<{ field: string; pointer: string; expected: unknown }>;
+  provenance: {
+    sourceIds: string[];
+    reviewedAt: string;
+    reviewer: string;
+    reviewStatus: "verified" | "needs-review" | "disputed";
+    [key: string]: unknown;
+  };
+}
+
+export interface DeploymentPolicyCatalog {
+  schemaVersion: 1;
+  generatedAt: string;
+  deployments: DeploymentPolicy[];
+}
+
 export interface AssetRecord {
   asset: Asset;
   deployments: Deployment[];
@@ -143,6 +170,7 @@ export interface Registry {
   standards: Standard[];
   underlyings: Underlying[];
   organizations: Organization[];
+  deploymentPolicies: DeploymentPolicyCatalog;
 }
 
 export interface ValidationResult {

@@ -9,6 +9,8 @@ organizations, blockchain deployments, legal and compliance characteristics, val
 behavior, token standards, and the evidence supporting each claim. It does **not** contain
 API, UI, indexing, or smart-contract analysis code.
 
+Use Node 22.22.2+, Node 24.15.0+, or Node 26+ with the pinned npm 12.2.0 toolchain.
+
 ## Core model
 
 An underlying is the referenced real-world instrument or portfolio. An asset is a distinct
@@ -48,6 +50,7 @@ src/                   Reusable registry loading and validation code
 tests/                 Integrity tests and non-production fixtures
 examples/              Copyable examples; never loaded as verified registry data
 snapshots/             Provider inputs and stored onchain verification evidence
+deployment-policies.json Permission, standard, and ledger expectations for every deployment
 ```
 
 The standards catalog includes finalized ERCs, proposals still under review, native ledger
@@ -56,7 +59,7 @@ status meanings and scope.
 
 ## Getting started
 
-Requires Node.js 20 or later. The repository pins Vitest 4 so CI works on Node.js 20.
+Use one of the Node.js and npm versions declared above and in `package.json`.
 
 ```bash
 npm ci
@@ -79,6 +82,26 @@ Live checks are separate from deterministic tests:
 - `npm run check:links` checks evidence and market-data links.
 
 A scheduled workflow runs the network-dependent checks weekly.
+
+## Deployment permission policies
+
+`deployment-policies.json` records explicit owner, admin, mint, burn, pause, and upgrade
+expectations for every deployment. It also supports ERC-3643 relationships, ERC-4626 vault
+settings, ERC-1404 restrictions, CMTAT controls, Solana authorities and extensions, Stellar
+signers and thresholds, and Aptos object or legacy Coin capabilities. Unknown values remain
+explicitly unknown; the policy synchronizer never infers a privileged account from a token name
+or issuer.
+
+Each policy points to its exact deployment and contains evidence source IDs, a review date,
+reviewer, and review status. Run `npm run sync:deployment-policies` after adding or removing
+deployments, then replace generated `needs-review` expectations only when evidence supports the
+change. Builds emit the complete catalog as `dist/deployment-policies.json` and executable,
+resolver-compatible checks as `dist/resolver-policies.json`.
+
+Published GitHub releases run the registry against the current API and resolver before notifying
+the resolver's `registry-published` workflow with the exact registry commit SHA. Configure the
+`RWAIMPORT_RELEASE_TOKEN` environment secret with permission to dispatch the resolver workflow;
+repository and compatibility refs can be overridden with the documented workflow variables.
 
 ## Current catalog
 

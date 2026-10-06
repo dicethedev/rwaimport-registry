@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rwaimport.xyz/schemas/deployment-policies.schema.json",
+  "title": "RWAImport deployment permission policies",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "deployments"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "deployments": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/deploymentPolicy" }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 },
+    "address": { "type": "string", "minLength": 1, "maxLength": 300 },
+    "authorityExpectation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["availability"],
+      "properties": {
+        "availability": { "enum": ["known", "unknown", "not-applicable"] },
+        "accounts": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/address" }
+        },
+        "controlType": { "enum": ["account", "multisig", "role", "contract", "immutable", "unknown"] },
+        "roleId": { "type": "string", "pattern": "^0x[a-fA-F0-9]{64}$" },
+        "notes": { "type": "string", "minLength": 1, "maxLength": 500 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "availability": { "const": "known" } }, "required": ["availability"] },
+          "then": { "properties": { "accounts": {} }, "required": ["accounts"] }
+        }
+      ]
+    },
+    "permissions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["owner", "admin", "mint", "burn", "pause", "upgrade"],
+      "properties": {
+        "owner": { "$ref": "#/$defs/authorityExpectation" },
+        "admin": { "$ref": "#/$defs/authorityExpectation" },
+        "mint": { "$ref": "#/$defs/authorityExpectation" },
+        "burn": { "$ref": "#/$defs/authorityExpectation" },
+        "pause": { "$ref": "#/$defs/authorityExpectation" },
+        "upgrade": { "$ref": "#/$defs/authorityExpectation" }
+      }
+    },
+    "valueExpectation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["availability"],
+      "properties": {
+        "availability": { "enum": ["known", "unknown", "not-applicable"] },
+        "value": {},
+        "notes": { "type": "string", "minLength": 1, "maxLength": 500 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "availability": { "const": "known" } }, "required": ["availability"] },
+          "then": { "properties": { "value": {} }, "required": ["value"] }
+        }
+      ]
+    },
+    "standardPolicies": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "erc3643": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["identityRegistry", "compliance", "agents"],
+          "properties": {
+            "identityRegistry": { "$ref": "#/$defs/valueExpectation" },
+            "compliance": { "$ref": "#/$defs/valueExpectation" },
+            "agents": { "$ref": "#/$defs/authorityExpectation" }
+          }
+        },
+        "erc4626": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["asset", "depositsEnabled", "withdrawalsEnabled", "maxDeposit", "maxRedeem"],
+          "properties": {
+            "asset": { "$ref": "#/$defs/valueExpectation" },
+            "depositsEnabled": { "$ref": "#/$defs/valueExpectation" },
+            "withdrawalsEnabled": { "$ref": "#/$defs/valueExpectation" },
+            "maxDeposit": { "$ref": "#/$defs/valueExpectation" },
+            "maxRedeem": { "$ref": "#/$defs/valueExpectation" }
+          }
+        },
+        "erc1404": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["restrictionMode", "restrictionDetection"],
+          "properties": {
+            "restrictionMode": { "$ref": "#/$defs/valueExpectation" },
+            "restrictionDetection": { "$ref": "#/$defs/valueExpectation" }
+          }
+        },
+        "cmtat": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["ruleEngine", "version", "terms"],
+          "properties": {
+            "ruleEngine": { "$ref": "#/$defs/valueExpectation" },
+            "version": { "$ref": "#/$defs/valueExpectation" },
+            "terms": { "$ref": "#/$defs/valueExpectation" }
+          }
+        }
+      }
+    },
+    "solanaPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["network", "tokenProgram", "mintAuthority", "freezeAuthority", "updateAuthority", "extensions"],
+      "properties": {
+        "network": { "const": "solana" },
+        "tokenProgram": { "$ref": "#/$defs/valueExpectation" },
+        "mintAuthority": { "$ref": "#/$defs/authorityExpectation" },
+        "freezeAuthority": { "$ref": "#/$defs/authorityExpectation" },
+        "updateAuthority": { "$ref": "#/$defs/authorityExpectation" },
+        "extensions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "expected"],
+            "properties": {
+              "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+              "expected": { "$ref": "#/$defs/valueExpectation" },
+              "authority": { "$ref": "#/$defs/authorityExpectation" }
+            }
+          }
+        }
+      }
+    },
+    "stellarPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["network", "signers", "thresholds", "authorizationFlags"],
+      "properties": {
+        "network": { "const": "stellar" },
+        "signers": { "$ref": "#/$defs/valueExpectation" },
+        "thresholds": { "$ref": "#/$defs/valueExpectation" },
+        "authorizationFlags": { "$ref": "#/$defs/valueExpectation" }
+      }
+    },
+    "aptosPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["network", "assetModel", "objectOwner", "capabilities"],
+      "properties": {
+        "network": { "const": "aptos" },
+        "assetModel": { "enum": ["fungible-asset", "legacy-coin"] },
+        "coinType": { "type": "string", "pattern": "^0x[a-fA-F0-9]{1,64}::[A-Za-z_][A-Za-z0-9_]*::[A-Za-z_][A-Za-z0-9_]*$", "maxLength": 256 },
+        "objectOwner": { "$ref": "#/$defs/authorityExpectation" },
+        "capabilities": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["mint", "burn", "freeze", "transfer"],
+          "properties": {
+            "mint": { "$ref": "#/$defs/authorityExpectation" },
+            "burn": { "$ref": "#/$defs/authorityExpectation" },
+            "freeze": { "$ref": "#/$defs/authorityExpectation" },
+            "transfer": { "$ref": "#/$defs/authorityExpectation" }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "assetModel": { "const": "legacy-coin" } }, "required": ["assetModel"] },
+          "then": { "properties": { "coinType": {} }, "required": ["coinType"] }
+        }
+      ]
+    },
+    "evmCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field", "signature", "expected"],
+      "properties": {
+        "field": { "type": "string", "pattern": "^[A-Za-z0-9._-]{1,120}$" },
+        "signature": { "type": "string", "minLength": 3, "maxLength": 200 },
+        "target": { "enum": ["deployment", "implementation", "proxyAdmin"] },
+        "args": { "type": "array", "maxItems": 8, "items": { "type": "string", "maxLength": 256 } },
+        "expected": {}
+      }
+    },
+    "ledgerCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field", "pointer", "expected"],
+      "properties": {
+        "field": { "type": "string", "pattern": "^[A-Za-z0-9._-]{1,120}$" },
+        "pointer": { "type": "string", "pattern": "^/", "maxLength": 512 },
+        "expected": {}
+      }
+    },
+    "deploymentPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["assetId", "deployment", "input", "permissions", "standardPolicies", "supportedChecks", "evmChecks", "ledgerChecks", "provenance"],
+      "properties": {
+        "assetId": { "$ref": "#/$defs/id" },
+        "deployment": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["chain", "address"],
+          "properties": {
+            "chain": { "$ref": "#/$defs/id" },
+            "address": { "$ref": "#/$defs/address" },
+            "assetReference": { "$ref": "#/$defs/address" }
+          }
+        },
+        "input": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["chainId", "address"],
+              "properties": {
+                "chainId": { "type": "integer", "minimum": 1 },
+                "address": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["network", "address"],
+              "properties": {
+                "network": { "enum": ["solana", "stellar", "aptos"] },
+                "address": { "$ref": "#/$defs/address" },
+                "assetCode": { "type": "string", "minLength": 1, "maxLength": 12 },
+                "coinType": { "type": "string", "pattern": "^0x[a-fA-F0-9]{1,64}::[A-Za-z_][A-Za-z0-9_]*::[A-Za-z_][A-Za-z0-9_]*$", "maxLength": 256 }
+              }
+            }
+          ]
+        },
+        "permissions": { "$ref": "#/$defs/permissions" },
+        "standardPolicies": { "$ref": "#/$defs/standardPolicies" },
+        "nonEvmPolicy": { "oneOf": [{ "$ref": "#/$defs/solanaPolicy" }, { "$ref": "#/$defs/stellarPolicy" }, { "$ref": "#/$defs/aptosPolicy" }] },
+        "supportedChecks": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["evm-read", "eip1967-storage", "solana-mint-authorities", "solana-token-extensions", "stellar-signers", "stellar-thresholds", "stellar-authorization-flags", "aptos-object-owner", "aptos-capabilities", "aptos-coin-info"] }
+        },
+        "evmChecks": { "type": "array", "maxItems": 32, "items": { "$ref": "#/$defs/evmCheck" } },
+        "ledgerChecks": { "type": "array", "maxItems": 32, "items": { "$ref": "#/$defs/ledgerCheck" } },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sourceIds", "reviewedAt", "reviewer", "reviewStatus"],
+          "properties": {
+            "sourceIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+            "reviewedAt": { "type": "string", "format": "date" },
+            "reviewer": { "type": "string", "minLength": 1, "maxLength": 120 },
+            "reviewStatus": { "enum": ["verified", "needs-review", "disputed"] },
+            "notes": { "type": "string", "minLength": 1, "maxLength": 1000 }
+          }
+        }
+      }
+    }
+  }
+}

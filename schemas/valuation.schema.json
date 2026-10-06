@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://rwaimport.org/schemas/valuation.schema.json",
+  "$id": "https://rwaimport.xyz/schemas/valuation.schema.json",
   "title": "RWAImport valuation and corporate-action metadata",
   "type": "object",
   "additionalProperties": false,

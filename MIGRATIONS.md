@@ -46,3 +46,19 @@ changing the product schema version:
 
 Run `npm run migrate:reliability` after a custom bulk import, then refresh onchain evidence for
 new public deployments. Existing import commands run the reliability migration automatically.
+
+## Schema identifier domain
+
+Registry-owned JSON Schema `$id` URLs now use `https://rwaimport.xyz/schemas/`.
+Record shapes and schema version numbers are unchanged. Consumers should refresh
+cached schema copies and consume schemas from the same distribution. Local
+validation does not fetch these URLs.
+
+## Deployment permission policies
+
+Registry distributions now include a top-level `deploymentPolicies` catalog plus
+`dist/deployment-policies.json` and `dist/resolver-policies.json`. Every deployment must have one
+matching policy record. New deployments should be followed by `npm run sync:deployment-policies`;
+generated authority values intentionally remain `unknown` and `needs-review` until evidence is
+added. Aptos deployments may now use `assetNamespace: "coin"` with a canonical
+`0xpackage::module::Coin` `assetReference` and the `aptos-coin` standard.

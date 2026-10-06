@@ -25,6 +25,9 @@ not mean every listed asset implements it or that the specification is formally 
 | `erc8056` | Scaled UI amounts for stock splits and corporate actions | Draft |
 | `cmtat` | CMTA framework for regulated financial instruments | Active industry framework |
 | `solana-token-2022` | Extensible fungible tokens on Solana | Active Solana program |
+| `stellar-asset` | Issuer-based Stellar assets | Active ledger standard |
+| `aptos-fungible-asset` | Object-based Aptos fungible assets | Active Move standard |
+| `aptos-coin` | Legacy `package::module::Coin` assets on Aptos | Active Move standard |
 
 ## Status meanings
 

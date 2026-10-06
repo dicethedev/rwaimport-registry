@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "aptos-coin",
+  "name": "Aptos Coin",
+  "category": "fungible-token",
+  "specificationType": "move-standard",
+  "maintainer": "Aptos Labs",
+  "description": "Legacy Aptos fungible-asset model identified by a canonical package::module::Coin type.",
+  "capabilities": ["fungible", "coin-info", "mint-capability", "burn-capability", "freeze-capability"],
+  "relatedStandardIds": ["aptos-fungible-asset"],
+  "status": "active",
+  "referenceUrl": "https://aptos.dev/build/smart-contracts/aptos-coin"
+}
