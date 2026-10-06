@@ -54,7 +54,7 @@ if (!result.valid || !result.registry) {
   const resolverPolicyJson = json({
     schemaVersion: 1,
     deployments: result.registry.deploymentPolicies.deployments
-      .filter((policy) => policy.evmChecks.length > 0 || policy.ledgerChecks.length > 0)
+      .filter((policy) => policy.provenance.reviewStatus === "verified" && (policy.evmChecks.length > 0 || policy.ledgerChecks.length > 0))
       .map((policy) => ({
         input: policy.input,
         ...(policy.evmChecks.length > 0 ? { evmChecks: policy.evmChecks } : {}),
